@@ -1,0 +1,23 @@
+// abstracts/_variables.scss
+// Central location for colors, spacing, and brand variables
+
+// Brand palette
+$color-principal: #2e7d32;
+$color-secundario: #84b64c;
+$color-acento: #51440f;
+$color-fondo: #fafafa;
+$color-blanco: #ffffff;
+$color-negro: #000000;
+$color-fondo-suave: #f7f7f7; // Un gris claro para fondos suaves
+
+// Example contrasting backgrounds for sections
+// (Use strong contrasts or brand colors)
+$section-bg-1: #ffffff; // Section 1 background
+$section-bg-2: #f1f1f1; // Section 2 background
+$section-bg-3: #e9e9e9; // Section 3 background
+$section-bg-4: #dedede; // Section 4 background
+
+// Fonts, spacing, etc.
+$body-font: "Open Sans", sans-serif;
+$heading-font-weight: 700;
+$base-line-height: 1.6;

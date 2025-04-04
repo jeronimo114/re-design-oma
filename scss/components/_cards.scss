@@ -1,0 +1,15 @@
+.product-card,
+.doc-card,
+.news-card,
+.rep-card {
+  background: $color-blanco;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  @include box-shadow(0, 2px, 8px, rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

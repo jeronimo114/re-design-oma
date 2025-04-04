@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Catálogo de Productos Químicos OMA - Soluciones agrícolas especializadas"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Catálogo Inteligente - Químicos OMA" />
+    <meta
+      property="og:description"
+      content="Encuentra la solución perfecta para tus cultivos con nuestro sistema de filtrado avanzado"
+    />
+    <meta property="og:image" content="assets/og-catalogo.jpg" />
+    <meta property="og:url" content="https://www.quimicosoma.com/catalogo" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <title>Catálogo Inteligente - Químicos OMA</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <style>
+      /* Maintain existing SCSS variables and mixins */
+      .filter-header {
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+
+      .cultivo-card {
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
+
+      .cultivo-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(46, 125, 50, 0.1);
+      }
+
+      .product-badge {
+        font-size: 0.75rem;
+        padding: 0.35em 0.65em;
+        margin: 2px;
+        background: var(--color-secundario);
+        color: white;
+      }
+
+      .glossary-term {
+        border-bottom: 1px dashed var(--color-principal);
+        cursor: help;
+        color: var(--color-principal);
+      }
+
+      .product-card {
+        transition: all 0.3s ease;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: white;
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
+
+      .product-card:hover {
+        box-shadow: 0 8px 20px rgba(46, 125, 50, 0.1);
+      }
+
+      .btn-doc {
+        background: var(--color-principal);
+        color: white !important;
+        transition: all 0.3s ease;
+      }
+
+      .btn-doc:hover {
+        background: var(--color-secundario);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Cabecera -->
+    <header id="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/media/oma.png" alt="Químicos OMA Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Alternar navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="catalogo.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#documentacion"
+                  >Documentación</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#noticias">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#representantes"
+                  >Representantes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Filtros Sticky -->
+    <div class="filter-header sticky-top py-3">
+      <div class="container">
+        <div class="row g-3 align-items-center">
+          <!-- Filtro Problema -->
+          <!-- Update the Problem Filter Section -->
+          <div class="col-lg-4">
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-primary dropdown-toggle w-100 text-start"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fas fa-bug me-2"></i>Problema por Cultivo
+              </button>
+              <div class="dropdown-menu p-3" style="min-width: 300px">
+                <select class="form-select mb-2" id="cropFilter">
+                  <option value="">Seleccionar Cultivo</option>
+                  <option value="papa">Papa</option>
+                  <option value="rosa">Rosa</option>
+                  <option value="clavel">Clavel</option>
+                  <option value="pompon">Pompon</option>
+                  <option value="crisantemo">Crisantemo</option>
+                  <option value="hortensia">Hortensia</option>
+                  <option value="arroz">Arroz</option>
+                  <option value="tomate">Tomate</option>
+                  <option value="cebolla">Cebolla</option>
+                  <option value="frijol">Frijol</option>
+                  <option value="fresa">Fresa</option>
+                  <option value="aguacate">Aguacate</option>
+                  <option value="maiz">Maíz</option>
+                  <option value="arveja">Arveja</option>
+                </select>
+                <select class="form-select" id="problemFilter" disabled>
+                  <option value="">Seleccionar Problema</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soluciones por Cultivo Section -->
+          <div class="col-lg-4">
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-primary dropdown-toggle w-100 text-start"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fas fa-spa me-2"></i>Soluciones por Cultivo
+              </button>
+              <div class="dropdown-menu p-3 dropdown-menu-xl">
+                <div class="row row-cols-3 g-3">
+                  <!-- Flores -->
+                  <div class="col mb-3">
+                    <button class="btn btn-cultivo w-100" data-cultivo="rosa">
+                      <i class="fas fa-rose text-danger"></i>
+                      <span class="d-block mt-2 small">Rosa</span>
+                    </button>
+                  </div>
+                  <div class="col mb-3">
+                    <button class="btn btn-cultivo w-100" data-cultivo="clavel">
+                      <i class="fas fa-spa text-pink"></i>
+                      <span class="d-block mt-2 small">Clavel</span>
+                    </button>
+                  </div>
+                  <div class="col mb-3">
+                    <button class="btn btn-cultivo w-100" data-cultivo="pompon">
+                      <i class="fas fa-circle-nodes text-purple"></i>
+                      <span class="d-block mt-2 small">Pompon</span>
+                    </button>
+                  </div>
+                  <div class="col mb-3">
+                    <button
+                      class="btn btn-cultivo w-100"
+                      data-cultivo="crisantemo"
+                    >
+                      <i class="fas fa-sun text-warning"></i>
+                      <span class="d-block mt-2 small">Crisantemo</span>
+                    </button>
+                  </div>
+                  <div class="col mb-3">
+                    <button
+                      class="btn btn-cultivo w-100"
+                      data-cultivo="hortensia"
+                    >
+                      <i class="fas fa-snowflake text-info"></i>
+                      <span class="d-block mt-2 small">Hortensia</span>
+                    </button>
+                  </div>
+
+                  <!-- Cultivos Básicos -->
+                  <div class="col mb-3">
+                    <button class="btn btn-cultivo w-100" data-cultivo="papa">
+                      <i class="fas fa-seedling text-success"></i>
+                      <span class="d-block mt-2 small">Papa</span>
+                    </button>
+                  </div>
+                  <div class="col mb-3">
+                    <button class="btn btn-cultivo w-100" data-cultivo="arroz">
+                      <i class="fas fa-wheat-awn text-warning"></i>
+                      <span class="d-block mt-2 small">Arroz</span>
+                    </button>
+                  </div>
+                  <div class="col mb-3">
+                    <button class="btn btn-cultivo w-100" data-cultivo="tomate">
+                      <i class="fas fa-apple-whole text-danger"></i>
+                      <span class="d-block mt-2 small">Tomate</span>
+                    </button>
+                  </div>
+                  <div class="col mb-3">
+                    <button
+                      class="btn btn-cultivo w-100"
+                      data-cultivo="cebolla"
+                    >
+                      <i class="fas fa-layer-group text-secondary"></i>
+                      <span class="d-block mt-2 small">Cebolla</span>
+                    </button>
+                  </div>
+                  <div class="col mb-3">
+                    <button class="btn btn-cultivo w-100" data-cultivo="frijol">
+                      <i class="fas fa-ellipsis text-brown"></i>
+                      <span class="d-block mt-2 small">Frijol</span>
+                    </button>
+                  </div>
+                  <div class="col mb-3">
+                    <button class="btn btn-cultivo w-100" data-cultivo="fresa">
+                      <i class="fas fa-berry text-danger"></i>
+                      <span class="d-block mt-2 small">Fresa</span>
+                    </button>
+                  </div>
+                  <div class="col mb-3">
+                    <button
+                      class="btn btn-cultivo w-100"
+                      data-cultivo="aguacate"
+                    >
+                      <i class="fas fa-avocado text-success"></i>
+                      <span class="d-block mt-2 small">Aguacate</span>
+                    </button>
+                  </div>
+                  <div class="col mb-3">
+                    <button class="btn btn-cultivo w-100" data-cultivo="maiz">
+                      <i class="fas fa-corn text-warning"></i>
+                      <span class="d-block mt-2 small">Maíz</span>
+                    </button>
+                  </div>
+                  <div class="col mb-3">
+                    <button class="btn btn-cultivo w-100" data-cultivo="arveja">
+                      <i class="fas fa-peapod text-success"></i>
+                      <span class="d-block mt-2 small">Arveja</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Buscador -->
+          <div class="col-lg-4">
+            <div class="input-group">
+              <span class="input-group-text bg-primary text-white">
+                <i class="fas fa-search"></i>
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Buscar producto..."
+                id="searchInput"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <main class="catalogo py-5">
+      <div class="container">
+        <h1 class="text-center fw-bold mb-4">Catálogo de Productos</h1>
+        <p class="text-center mb-5 lead">
+          Encuentra la solución perfecta para tus cultivos utilizando nuestro
+          sistema de filtrado inteligente
+        </p>
+
+        <!-- Product Grid -->
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+          id="productGrid"
+        >
+          <!-- Producto Ejemplo -->
+          <div
+            class="col"
+            data-cultivos="papa"
+            data-problemas="gota"
+            data-categoria="insecticida"
+          >
+            <div class="product-card h-100 p-3">
+              <div class="position-relative">
+                <img
+                  src="/media/ciromex.png"
+                  class="img-fluid rounded mb-3"
+                  alt="CIROMEX"
+                />
+
+                <!-- Badges -->
+                <div
+                  class="position-absolute top-0 end-0 mt-2 me-2 d-flex gap-1"
+                >
+                  <span
+                    class="product-badge rounded-pill"
+                    data-bs-toggle="tooltip"
+                    title="Registrado para Papa"
+                  >
+                    <i class="fas fa-seedling"></i>
+                  </span>
+                  <span
+                    class="product-badge rounded-pill"
+                    data-bs-toggle="tooltip"
+                    title="Combate Gota"
+                  >
+                    <i class="fas fa-biohazard"></i>
+                  </span>
+                </div>
+              </div>
+
+              <h5 class="fw-bold mb-2 text-primary">CIROMEX 1 LT</h5>
+              <p class="text-muted small mb-3">
+                Insecticida agrícola de amplio espectro
+              </p>
+
+              <!-- Términos Glosario -->
+              <div class="mb-3">
+                <span class="glossary-term" data-term="gota">Gota</span>,
+                <span class="glossary-term" data-term="tizon"
+                  >Tizón Tardío</span
+                >
+              </div>
+
+              <button
+                class="btn btn-doc w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                <i class="fas fa-file-alt me-2"></i>Ficha Técnica
+              </button>
+              <button
+                class="btn btn-doc w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                <i class="fas fa-file-alt me-2"></i>Tarjeta de Emergencia
+              </button>
+              <button
+                class="btn btn-doc w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                <i class="fas fa-file-alt me-2"></i>Ficha datos de Seguridad
+              </button>
+            </div>
+          </div>
+
+          <!-- Más productos -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-about">
+          <a href="#" class="footer-about__logo">
+            <img src="/media/oma.png" alt="Químicos OMA Logo" />
+            <span>Químicos OMA</span>
+          </a>
+          <p class="footer-about__text">
+            Más de 25 años brindando soluciones innovadoras para el cuidado y
+            protección de cultivos.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-links">
+          <h5>Enlaces</h5>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#documentacion">Documentación</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-contact">
+          <h5>Contáctanos</h5>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span>Cota, Cundinamarca - Colombia</span>
+            </li>
+            <li>
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <a href="tel:6018985180">601-8985180</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:servicioalcliente@quimicosoma.com"
+                >servicioalcliente@quimicosoma.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-social">
+          <h5>Síguenos</h5>
+          <div class="social-icons">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="social-icon"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="social-icon"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="social-icon"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 Químicos OMA. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Initialize tooltips
+      const tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      tooltips.forEach((t) => new bootstrap.Tooltip(t));
+
+      // Crop-problem relationships
+      const cropProblems = {
+        papa: [
+          "Gota",
+          "Tizón Tardío",
+          "Polilla Guatemalteca",
+          "Marchitez Bacteriana",
+        ],
+        rosa: ["Mildeo", "Ácaros", "Trips", "Mancha Negra"],
+        clavel: ["Fusarium", "Botritis", "Nemátodos", "Virus del Bronceado"],
+        pompon: ["Oídio", "Mosca Blanca", "Minador de Hoja", "Royas"],
+        crisantemo: ["Pythium", "Mancha Foliar", "Pulgones", "Tuta Absoluta"],
+        hortensia: [
+          "Clorosis",
+          "Podredumbre Radicular",
+          "Cochinillas",
+          "Antracnosis",
+        ],
+        arroz: [
+          "Pyricularia",
+          "Helminthosporium",
+          "Chinche del Arroz",
+          "Malezas",
+        ],
+        tomate: ["Tuta Absoluta", "Mosca Blanca", "Virus del Mosaico", "Oídio"],
+        cebolla: ["Trips", "Botritis", "Mildiu", "Podredumbre Blanca"],
+        frijol: ["Antracnosis", "Mosca Blanca", "Roya", "Mustia Hilachosa"],
+        fresa: ["Ácaro Ciclamen", "Botritis", "Oídio", "Mancha Angular"],
+        aguacate: [
+          "Trips",
+          "Ácaro Cristalino",
+          "Antracnosis",
+          "Podredumbre Radicular",
+        ],
+        maiz: [
+          "Gusano Cogollero",
+          "Mancha de Asfalto",
+          "Tizón Norteño",
+          "Pulgones",
+        ],
+        arveja: ["Oídio", "Mildiu", "Trips", "Virus del Enanismo"],
+      };
+
+      // Dynamic problem filter
+      document
+        .getElementById("cropFilter")
+        .addEventListener("change", function () {
+          const problemFilter = document.getElementById("problemFilter");
+          problemFilter.innerHTML =
+            '<option value="">Seleccionar Problema</option>';
+
+          if (this.value && cropProblems[this.value]) {
+            problemFilter.disabled = false;
+            cropProblems[this.value].forEach((p) => {
+              problemFilter.innerHTML += `<option value="${p
+                .toLowerCase()
+                .replace(/ /g, "-")}">${p}</option>`;
+            });
+          } else {
+            problemFilter.disabled = true;
+          }
+        });
+
+      // Filter function
+      function filterProducts() {
+        const crop = document.getElementById("cropFilter").value;
+        const problem = document
+          .getElementById("problemFilter")
+          .value.toLowerCase()
+          .replace(/ /g, "-");
+        const search = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
+
+        document.querySelectorAll("#productGrid .col").forEach((product) => {
+          const productCrops = product.dataset.cultivos.split(",");
+          const productProblems = product.dataset.problemas.split(",");
+
+          const matchesCrop = !crop || productCrops.includes(crop);
+          const matchesProblem = !problem || productProblems.includes(problem);
+          const matchesSearch = product.textContent
+            .toLowerCase()
+            .includes(search);
+
+          product.style.display =
+            matchesCrop && matchesProblem && matchesSearch ? "block" : "none";
+        });
+      }
+
+      // Event listeners
+      document
+        .querySelectorAll("#cropFilter, #problemFilter, #searchInput")
+        .forEach((el) => el.addEventListener("input", filterProducts));
+
+      // Initial filter
+      filterProducts();
+
+      // products-loader.js
+      fetch("products.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const container = document.getElementById("products-container");
+
+          data.products.forEach((product) => {
+            container.innerHTML += `
+        <div class="product-card" 
+             data-category="${product.category.toLowerCase()}" 
+             data-subcategory="${product.subcategory
+               .toLowerCase()
+               .replace(/ /g, "-")}">
+          
+          <div class="product-header">
+            <img src="images/products/${product.category.toLowerCase()}/${
+              product.id
+            }.jpg" 
+                 alt="${product.name}" 
+                 loading="lazy">
+            <span class="ica-badge">${product.targets[0].ica}</span>
+          </div>
+          
+          <div class="product-body">
+            <h3>${product.name}</h3>
+            <p class="ingredient">${product.active_ingredient}</p>
+            
+            <div class="targets">
+              ${product.targets
+                .map(
+                  (target) => `
+                <div class="target">
+                  <span class="crop">${target.crop}</span>
+                  <span class="pest">${target.pest}</span>
+                  <span class="dose">${target.dose}</span>
+                </div>
+              `
+                )
+                .join("")}
+            </div>
+            
+            ${
+              product.toxicity
+                ? `
+            <div class="toxicity-alert">
+              <i class="fas fa-exclamation-triangle"></i>
+              Categoría Toxicológica ${product.toxicity}
+            </div>`
+                : ""
+            }
+          </div>
+        </div>
+      `;
+          });
+
+          // Add safety notice
+          container.innerHTML += `
+      <div class="safety-notice">
+        <h4><i class="fas fa-skull-crossbones"></i> ADVERTENCIA</h4>
+        <p>${data.safety_notice}</p>
+      </div>
+    `;
+        });
+    </script>
+  </body>
+</html>

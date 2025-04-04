@@ -1,0 +1,25 @@
+// base/_reset.scss
+@use "abstracts/variables" as vars; // <-- We must import or @use the variables first
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden; // Prevent horizontal scroll
+}
+
+body {
+  font-family: vars.$body-font; // use namespace "vars"
+  line-height: vars.$base-line-height;
+  background: vars.$color-fondo;
+  color: vars.$color-negro;
+  max-width: 100%;
+  overflow-x: hidden; // Also on body
+}

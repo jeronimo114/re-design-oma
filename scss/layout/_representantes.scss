@@ -1,0 +1,41 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+.representantes {
+  // Sección general
+  .card {
+    border: none;
+    border-radius: 0.5rem;
+  }
+
+  .card-title {
+    color: vars.$color-principal;
+  }
+
+  // Leyenda de mapa
+  .map-legend {
+    .legend-marker {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .map-wrapper {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+
+    // Borde o sombra adicional si deseas
+    // box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    #map {
+      // Full size
+      height: 100%;
+      width: 100%;
+      // Leaflet markers or controls styling, if needed
+    }
+  }
+}

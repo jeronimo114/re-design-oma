@@ -1,0 +1,60 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+// Container styling is likely in base or general
+#productos {
+  .product-card {
+    background: vars.$color-blanco;
+    border-radius: 0.5rem;
+    @include mix.box-shadow(0, 2px, 8px, rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
+    text-align: center;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: vars.$color-principal;
+    }
+
+    p.small {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .btn-doc {
+      background: vars.$color-principal;
+      color: #fff;
+      border: none;
+      border-radius: 0.3rem;
+      padding: 0.5rem 1rem;
+      transition: background 0.3s ease;
+
+      &:hover,
+      &:focus {
+        background: vars.$color-secundario;
+      }
+    }
+  }
+
+  .btn-cta {
+    background: vars.$color-secundario;
+    color: #fff;
+    border-radius: 0.3rem;
+    border: none;
+
+    &:hover,
+    &:focus {
+      background: vars.$color-acento;
+    }
+  }
+}

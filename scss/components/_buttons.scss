@@ -1,0 +1,20 @@
+.btn-cta {
+  background: $color-secundario;
+  color: $color-blanco;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background: $color-acento;
+    transform: translateY(-2px);
+  }
+
+  @include respond-to(sm) {
+    font-size: 1.125rem;
+  }
+}

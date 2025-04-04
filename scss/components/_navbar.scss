@@ -1,0 +1,24 @@
+.navbar {
+  background: $color-principal !important;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: 0.05em;
+
+  img {
+    height: 40px;
+    width: auto;
+  }
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: $color-secundario;
+  }
+}

@@ -1,0 +1,78 @@
+@use "../abstracts/variables" as vars;
+
+.contacto {
+  background: vars.$color-fondo-suave; // Fondo sutil para diferenciar la sección
+  padding: 4rem 0;
+
+  h2 {
+    color: vars.$color-principal;
+  }
+
+  .card {
+    background: vars.$color-blanco;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(vars.$color-negro, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+
+  .form-label {
+    font-weight: bold;
+    color: vars.$color-negro;
+  }
+
+  .input-group-text {
+    background: vars.$color-principal;
+    color: vars.$color-blanco;
+    border: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .form-control {
+    border-radius: 0.5rem;
+    border: 1px solid vars.$color-acento;
+    padding: 0.75rem;
+    transition: border 0.3s ease;
+
+    &:focus {
+      border-color: vars.$color-secundario;
+      box-shadow: 0 0 5px rgba(vars.$color-secundario, 0.5);
+    }
+  }
+
+  .btn-submit {
+    background: vars.$color-principal;
+    color: vars.$color-blanco;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      background: vars.$color-secundario;
+      transform: translateY(-3px);
+    }
+
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .text-center p {
+    font-size: 1.1rem;
+    color: vars.$color-negro;
+  }
+
+  .text-center a {
+    color: vars.$color-principal;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

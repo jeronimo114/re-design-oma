@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Químicos OMA - Soluciones avanzadas y de clase mundial para el control de plagas y enfermedades en cultivos y flores."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Químicos OMA - Soluciones Avanzadas" />
+    <meta
+      property="og:description"
+      content="Sitio web de Químicos OMA, una empresa líder en soluciones agrícolas para el control de plagas y enfermedades."
+    />
+    <meta property="og:image" content="ruta/a/imagen.png" />
+    <meta property="og:url" content="http://www.quimicosoma.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Químicos OMA - Soluciones de Clase Mundial</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
+
+  <body>
+    <!-- Cabecera y Navegación -->
+    <header id="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/media/oma.png" alt="Químicos OMA Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Alternar navegación"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio"> Inicio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#productos"> Productos </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#documentacion"> Documentación </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#noticias"> Noticias </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#representantes"> Representantes </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto"> Contacto </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenido Principal -->
+    <main>
+      <!-- Sección Hero con fondo interactivo -->
+      <section id="inicio" class="hero">
+        <div class="hero-content text-center">
+          <h1 class="display-4 fw-bold">Cultiva tu pasión, cuida tu legado</h1>
+          <p class="fs-5 my-3">
+            En Químicos OMA, sabemos que tus cultivos son parte de tu familia.
+            Te acompañamos en cada etapa, honrando la tradición y el amor por la
+            tierra.
+          </p>
+          <a href="#productos" class="btn-cta btn btn-lg"
+            >Descubre lo auténtico</a
+          >
+        </div>
+      </section>
+
+      <!-- Sección de Productos -->
+      <section id="productos" class="productos py-5">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-4" data-aos="fade-up">
+            Nuestros Productos
+          </h2>
+
+          <!-- Featured Products Row -->
+          <div class="row g-4" data-aos="fade-up" data-aos-delay="200">
+            <!-- Product 1: CIROMEX 1 LT -->
+            <div class="col-md-4">
+              <div class="product-card p-4 text-center">
+                <!-- Product Image (replace path) -->
+                <img
+                  src="/media/ciromex.png"
+                  alt="CIROMEX 1 LT"
+                  class="img-fluid mb-3"
+                />
+                <!-- Product Name -->
+                <h3 class="fw-bold">CIROMEX 1 LT</h3>
+                <!-- Three-Word Tagline -->
+                <p class="small">Insecticida uso agrícola</p>
+                <!-- Button triggers modal with full Ficha Técnica -->
+                <button
+                  class="btn btn-sm btn-doc mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ciromexModal"
+                >
+                  Ver Ficha Técnica
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 2: Example -->
+            <div class="col-md-4">
+              <div class="product-card p-4 text-center">
+                <img src="" alt="Producto 2" class="img-fluid mb-3" />
+                <h3 class="fw-bold">Producto 2</h3>
+                <p class="small">Tu aliado perfecto</p>
+                <button class="btn btn-sm btn-doc mt-3">
+                  Ver Ficha Técnica
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 3: Example -->
+            <div class="col-md-4">
+              <div class="product-card p-4 text-center">
+                <img
+                  src="path/to/placeholder3.jpg"
+                  alt="Producto 3"
+                  class="img-fluid mb-3"
+                />
+                <h3 class="fw-bold">Producto 3</h3>
+                <p class="small">Protección total siempre</p>
+                <button class="btn btn-sm btn-doc mt-3">
+                  Ver Ficha Técnica
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Full Catalog Button -->
+          <div class="text-center mt-5">
+            <a href="catalogo.html" class="btn btn-lg btn-cta">
+              Ver Catálogo Completo
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bootstrap Modal for CIROMEX 1 LT -->
+      <div
+        class="modal fade"
+        id="ciromexModal"
+        tabindex="-1"
+        aria-labelledby="ciromexModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="ciromexModalLabel">
+                CIROMEX 1 LT - Ficha Técnica
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <!-- Modal Body with the full text -->
+            <div class="modal-body" style="white-space: pre-line">
+              <strong>CIROMEX 75 WP Ultima actualización: 09/02/2022</strong>
+              __________________________________________________________________________________
+              Insecticida de uso agrícola Titular: QUÍMICOS OMA S.A. Tipo de
+              formulación: Polvo mojable WP Ingrediente activo: Ciromazina
+              Concentración: 750 g/K Ingredientes aditivos: c.s.p. 1 Kilo Grupo
+              químico: Triazina MODO DE ACCIÓN: Larvicida altamente sistémico
+              que actúa por contacto. MECANISMO DE ACCIÓN: Regulador del
+              crecimiento de los insectos. Interfiere en el proceso de la muda,
+              la pupación normal y la posterior formación del adulto; en
+              conjunto, interrumpe el ciclo de desarrollo de las larvas.
+              RECOMENDACIONES DE USO Consulte con un Ingeniero Agrónomo Cultivo
+              Blanco biológico Dosis P.R. P.C Crisantemo Minador (Liryomiza
+              trifolii) 0.4 cc/L – 480 g/ha 4 horas N.A. P.R.: Periodo de
+              Reentrada (Reingreso) P.C.: Periodo de Carencia (… resto del texto
+              completo …) FITOTOXICIDAD: No se ha presentado fitotoxicidad…
+              COMPATIBILIDAD: Aunque es compatible con la mayoría de los
+              agroquímicos… OBSERVACIONES: Lea la etiqueta antes de usar el
+              producto. EMERGENCIAS TOXICOLÓGICAS 24 HORAS CISPROQUIM
+              018000916012 Registro Nacional ICA No. PL0005062023 Formulado,
+              Distribuido y Comercializado por: QUIMICOS OMA S.A. Pbx: 8985179 –
+              E. Mail: servicioalcliente@quimicosoma.com Cota (Cundinamarca),
+              Colombia www.quimicosoma.com
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección de Noticias -->
+      <!-- Sección Noticias y Actualizaciones -->
+      <section id="noticias" class="noticias py-5">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-4" data-aos="fade-up">
+            Noticias y Actualizaciones
+          </h2>
+
+          <!-- Tarjeta Principal para Tendencias Mercado Flores -->
+          <div
+            class="row align-items-center g-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <!-- Columna de Imagen/Carousel -->
+            <div class="col-md-6">
+              <!-- Aquí puedes poner una imagen grande o un carrusel de imágenes -->
+              <div
+                id="floresCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="/media/sliderN1.jpg"
+                      class="d-block w-100"
+                      alt="Flores de exportación"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/media/sliderN2.jpg"
+                      class="d-block w-100"
+                      alt="Plantas"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/media/sliderN3.jpg"
+                      class="d-block w-100"
+                      alt="Plantas"
+                    />
+                  </div>
+                  <!-- Agrega más .carousel-item si deseas -->
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#floresCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#floresCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Columna de Contenido -->
+            <div class="col-md-6">
+              <div class="card p-3 shadow">
+                <div class="card-body">
+                  <h3 class="card-title fw-bold mb-3">
+                    Tendencias Actuales en el Mercado de Flores de Exportación
+                  </h3>
+                  <p class="card-text">
+                    La industria de flores de exportación se encuentra en un
+                    momento de transformación constante. Por un lado, los
+                    mercados internacionales demandan mayor trazabilidad y
+                    prácticas responsables...
+                    <!-- Podrías poner aquí un fragmento breve, 
+                   y abrir un modal para ver TODO el texto. -->
+                  </p>
+
+                  <!-- Botón para mostrar texto completo en un modal -->
+                  <button
+                    class="btn btn-sm btn-news mt-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#tendenciasFloresModal"
+                  >
+                    Leer Artículo Completo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal con todo el contenido -->
+          <div
+            class="modal fade"
+            id="tendenciasFloresModal"
+            tabindex="-1"
+            aria-labelledby="tendenciasFloresLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fw-bold" id="tendenciasFloresLabel">
+                    Tendencias Actuales en el Mercado de Flores de Exportación
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                  ></button>
+                </div>
+                <div class="modal-body" style="white-space: pre-line">
+                  <h6><strong>Panorama Global</strong></h6>
+                  <p>
+                    CRECIENTE preferencia por flores de origen sustentable...
+                  </p>
+
+                  <h6>
+                    <strong
+                      >Nuevas Soluciones para la Protección de Cultivos</strong
+                    >
+                  </h6>
+                  <p>
+                    Formulaciones dirigidas a plagas y enfermedades
+                    específicas...
+                  </p>
+
+                  <h6><strong>Competitividad del Productor Local</strong></h6>
+                  <p>
+                    Ajustes en sistemas de riego, fertilización y manejo
+                    integrado de plagas...
+                  </p>
+
+                  <h6><strong>Oportunidades y Desafíos</strong></h6>
+                  <p>
+                    Por un lado, existe un panorama prometedor en mercados que
+                    exigen...
+                  </p>
+
+                  <hr />
+                  <p>
+                    <strong>Justificación:</strong><br />
+                    Este artículo refrenda el compromiso de Químicos OMA en
+                    ofrecer...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aquí podrías añadir más artículos o cards de noticias -->
+        </div>
+      </section>
+
+      <!-- Sección de Representantes / Nosotros -->
+      <section id="representantes" class="representantes py-5">
+        <div class="container">
+          <!-- Título y subtítulo -->
+          <div class="text-center mb-4" data-aos="fade-up">
+            <h2 class="fw-bold">Distribución Geográfica</h2>
+            <p class="lead">
+              Conoce nuestras sedes y cobertura en todo el país, junto a
+              nuestros expertos locales.
+            </p>
+          </div>
+
+          <!-- Tarjeta de Mapa -->
+          <div
+            class="row align-items-start g-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <!-- Columna Izquierda (Información / Leyenda) -->
+            <div class="col-md-4">
+              <div class="card p-3 h-100 shadow">
+                <div class="card-body">
+                  <h4 class="card-title mb-3 fw-bold">Nuestra Cobertura</h4>
+                  <p class="card-text">
+                    Operamos en múltiples regiones, asegurando asistencia
+                    técnica y suministro oportuno de productos para la
+                    protección de cultivos. Explora el mapa para ubicar tu zona
+                    y contactar a nuestro representante más cercano.
+                  </p>
+                  <!-- Ejemplo de leyenda / marcadores -->
+                  <div class="map-legend mt-4">
+                    <p class="fw-bold">Leyenda:</p>
+                    <ul class="list-unstyled">
+                      <li>
+                        <span
+                          class="legend-marker"
+                          style="background: #2e7d32"
+                        ></span>
+                        Representantes OMA
+                      </li>
+                      <li>
+                        <span
+                          class="legend-marker"
+                          style="background: #84b64c"
+                        ></span>
+                        Sedes principales
+                      </li>
+                      <!-- Ajusta según tu codificación de marcadores Leaflet -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Columna Derecha (Mapa) -->
+            <div class="col-md-8">
+              <div class="card shadow">
+                <div class="card-body p-0">
+                  <div
+                    class="map-wrapper"
+                    style="height: 500px; position: relative"
+                  >
+                    <div
+                      id="map"
+                      aria-label="Mapa de representantes"
+                      style="height: 100%; width: 100%"
+                    >
+                      <!-- Leaflet se monta aquí -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Contacto -->
+      <section id="contacto" class="contacto py-5">
+        <div class="container">
+          <!-- Título y Descripción -->
+          <div class="text-center mb-4" data-aos="fade-up">
+            <h2 class="fw-bold">¿Necesitas ayuda? Contáctanos</h2>
+            <p class="lead text-muted">
+              Estamos aquí para brindarte asesoría especializada y responder
+              todas tus preguntas.
+            </p>
+          </div>
+
+          <!-- Tarjeta del Formulario -->
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div
+                class="card p-4 shadow-lg"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="card-body">
+                  <h4 class="text-center mb-4 fw-bold">Envíanos un mensaje</h4>
+
+                  <form action="#" method="post" novalidate>
+                    <!-- Nombre -->
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label fw-bold"
+                        >Nombre</label
+                      >
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <i class="fas fa-user"></i>
+                        </span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="nombre"
+                          name="nombre"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                      <label for="email" class="form-label fw-bold"
+                        >Correo Electrónico</label
+                      >
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          name="email"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Teléfono -->
+                    <div class="mb-3">
+                      <label for="telefono" class="form-label fw-bold"
+                        >Teléfono (Opcional)</label
+                      >
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <i class="fas fa-phone"></i>
+                        </span>
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="telefono"
+                          name="telefono"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div class="mb-3">
+                      <label for="mensaje" class="form-label fw-bold"
+                        >Mensaje</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <!-- Botón de Enviar -->
+                    <button type="submit" class="btn-submit btn btn-lg w-100">
+                      <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Información de Contacto Adicional -->
+          <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+            <p class="fw-bold">También puedes escribirnos directamente a:</p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:servicioalcliente@quimicosoma.com"
+                >servicioalcliente@quimicosoma.com</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-phone"></i>
+              Teléfono: 601-8985180
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Pie de Página -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-about">
+          <a href="#" class="footer-about__logo">
+            <img src="/media/oma.png" alt="Químicos OMA Logo" />
+            <span>Químicos OMA</span>
+          </a>
+          <p class="footer-about__text">
+            Más de 25 años brindando soluciones innovadoras para el cuidado y
+            protección de cultivos.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-links">
+          <h5>Enlaces</h5>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#documentacion">Documentación</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-contact">
+          <h5>Contáctanos</h5>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span>Cota, Cundinamarca - Colombia</span>
+            </li>
+            <li>
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <a href="tel:6018985180">601-8985180</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:servicioalcliente@quimicosoma.com"
+                >servicioalcliente@quimicosoma.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-social">
+          <h5>Síguenos</h5>
+          <div class="social-icons">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="social-icon"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="social-icon"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="social-icon"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 Químicos OMA. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Inclusión de Scripts externos -->
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Script principal (archivo externo: script.js) -->
+    <script src="script.js"></script>
+  </body>
+</html>

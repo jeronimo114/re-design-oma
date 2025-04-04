@@ -1,0 +1,23 @@
+// main.scss
+
+// 1) Abstracts
+@use "abstracts/variables" as vars;
+@use "abstracts/mixins" as mix;
+
+// 2) Base
+@use "base/reset";
+@use "base/typography";
+
+// 3) Vendors (Bootstrap overrides, etc.)
+@use "vendors/bootstrap-overrides";
+
+// 4) Layout
+@use "layout/header";
+@use "layout/hero";
+@use "layout/sections";
+@use "layout/footer";
+@use "layout/catalogo";
+@use "layout/representantes";
+@use "layout/contacto";
+
+@use "components/products";
