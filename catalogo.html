@@ -675,7 +675,12 @@
         </div>
       </div>
     </main>
-
+<!-- Product Grid -->
+<div
+  class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+  id="productGrid"
+>
+</div>
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
@@ -764,68 +769,13 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom script -->
+    <script src="script.js"></script>
     <script>
       // Initialize tooltips
       const tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
       tooltips.forEach((t) => new bootstrap.Tooltip(t));
 
-      // --- Helper: parse query‑string parameters ---
-      function getQueryParams() {
-        const params = {};
-        window.location.search
-          .substring(1)
-          .split("&")
-          .forEach((pair) => {
-            if (!pair) return;
-            const [k, v] = pair.split("=");
-            if (k) params[decodeURIComponent(k)] = decodeURIComponent(v || "");
-          });
-        return params;
-      }
-      // --------------------------------------------
-
-      // Crop-problem relationships
-      const cropProblems = {
-        papa: [
-          "Gota",
-          "Tizón Tardío",
-          "Polilla Guatemalteca",
-          "Marchitez Bacteriana",
-        ],
-        rosa: ["Mildeo", "Ácaros", "Trips", "Mancha Negra"],
-        clavel: ["Fusarium", "Botritis", "Nemátodos", "Virus del Bronceado"],
-        pompon: ["Oídio", "Mosca Blanca", "Minador de Hoja", "Royas"],
-        crisantemo: ["Pythium", "Mancha Foliar", "Pulgones", "Tuta Absoluta"],
-        hortensia: [
-          "Clorosis",
-          "Podredumbre Radicular",
-          "Cochinillas",
-          "Antracnosis",
-        ],
-        arroz: [
-          "Pyricularia",
-          "Helminthosporium",
-          "Chinche del Arroz",
-          "Malezas",
-        ],
-        tomate: ["Tuta Absoluta", "Mosca Blanca", "Virus del Mosaico", "Oídio"],
-        cebolla: ["Trips", "Botritis", "Mildiu", "Podredumbre Blanca"],
-        frijol: ["Antracnosis", "Mosca Blanca", "Roya", "Mustia Hilachosa"],
-        fresa: ["Ácaro Ciclamen", "Botritis", "Oídio", "Mancha Angular"],
-        aguacate: [
-          "Trips",
-          "Ácaro Cristalino",
-          "Antracnosis",
-          "Podredumbre Radicular",
-        ],
-        maiz: [
-          "Gusano Cogollero",
-          "Mancha de Asfalto",
-          "Tizón Norteño",
-          "Pulgones",
-        ],
-        arveja: ["Oídio", "Mildiu", "Trips", "Virus del Enanismo"],
-      };
 
       // Dynamic problem filter (guarded)
       const cropFilterEl = document.getElementById("cropFilter");

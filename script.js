@@ -1,3 +1,50 @@
+// Helper: parse query‑string parameters
+function getQueryParams() {
+  const params = {};
+  window.location.search
+    .substring(1)
+    .split("&")
+    .forEach((pair) => {
+      if (!pair) return;
+      const [k, v] = pair.split("=");
+      if (k) params[decodeURIComponent(k)] = decodeURIComponent(v || "");
+    });
+  return params;
+}
+
+// Crop-problem relationships
+const cropProblems = {
+  papa: [
+    "Gota",
+    "Tizón Tardío",
+    "Polilla Guatemalteca",
+    "Marchitez Bacteriana",
+  ],
+  rosa: ["Mildeo", "Ácaros", "Trips", "Mancha Negra"],
+  clavel: ["Fusarium", "Botritis", "Nemátodos", "Virus del Bronceado"],
+  pompon: ["Oídio", "Mosca Blanca", "Minador de Hoja", "Royas"],
+  crisantemo: ["Pythium", "Mancha Foliar", "Pulgones", "Tuta Absoluta"],
+  hortensia: [
+    "Clorosis",
+    "Podredumbre Radicular",
+    "Cochinillas",
+    "Antracnosis",
+  ],
+  arroz: ["Pyricularia", "Helminthosporium", "Chinche del Arroz", "Malezas"],
+  tomate: ["Tuta Absoluta", "Mosca Blanca", "Virus del Mosaico", "Oídio"],
+  cebolla: ["Trips", "Botritis", "Mildiu", "Podredumbre Blanca"],
+  frijol: ["Antracnosis", "Mosca Blanca", "Roya", "Mustia Hilachosa"],
+  fresa: ["Ácaro Ciclamen", "Botritis", "Oídio", "Mancha Angular"],
+  aguacate: [
+    "Trips",
+    "Ácaro Cristalino",
+    "Antracnosis",
+    "Podredumbre Radicular",
+  ],
+  maiz: ["Gusano Cogollero", "Mancha de Asfalto", "Tizón Norteño", "Pulgones"],
+  arveja: ["Oídio", "Mildiu", "Trips", "Virus del Enanismo"],
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   /**
    * 1) Inicialización de AOS (Animate On Scroll)
@@ -377,6 +424,11 @@ document.querySelectorAll(".btn-cultivo").forEach((btn) => {
   });
 });
 function filterProducts() {
+  console.log("[DEBUG] filterProducts called with:", {
+    crop: document.getElementById("cropFilter")?.value,
+    problem: document.getElementById("problemFilter")?.value,
+    search: document.getElementById("searchInput")?.value,
+  });
   const cropSel = document.getElementById("cropFilter").value;
   const probSel = document.getElementById("problemFilter").value;
   const searchText = document.getElementById("searchInput").value.toLowerCase();
