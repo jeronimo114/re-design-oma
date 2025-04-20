@@ -363,7 +363,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const probEl = document.getElementById("problemFilter");
   const searchEl = document.getElementById("searchInput");
 });
-
+// Dentro de tu DOMContentLoaded, justo después de los listeners protegidos:
+document.querySelectorAll(".btn-cultivo").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const cultivo = btn.dataset.cultivo;
+    const cropSel = document.getElementById("cropFilter");
+    if (!cropSel) return;
+    cropSel.value = cultivo;
+    // repuebla la lista de Problemas
+    cropSel.dispatchEvent(new Event("change"));
+    // y aplica el filtrado
+    filterProducts();
+  });
+});
 function filterProducts() {
   const cropSel = document.getElementById("cropFilter").value;
   const probSel = document.getElementById("problemFilter").value;

@@ -419,10 +419,9 @@
       </div>
     </section>
     <!-- ✱ END CATEGORÍAS DE PRODUCTO -->
-    <!-- ✱ OPEN ✱ <div class="filter-header sticky-top py-3">
+    <div class="filter-header sticky-top py-3">
       <div class="container">
         <div class="row g-3 align-items-center">
-
           <div class="col-lg-4">
             <div class="dropdown">
               <button
@@ -456,7 +455,6 @@
             </div>
           </div>
 
-
           <div class="col-lg-4">
             <div class="dropdown">
               <button
@@ -467,7 +465,6 @@
               </button>
               <div class="dropdown-menu p-3 dropdown-menu-xl">
                 <div class="row row-cols-3 g-3">
-
                   <div class="col mb-3">
                     <button class="btn btn-cultivo w-100" data-cultivo="rosa">
                       <i class="fas fa-rose text-danger"></i>
@@ -504,7 +501,6 @@
                       <span class="d-block mt-2 small">Hortensia</span>
                     </button>
                   </div>
-
 
                   <div class="col mb-3">
                     <button class="btn btn-cultivo w-100" data-cultivo="papa">
@@ -571,7 +567,6 @@
             </div>
           </div>
 
-
           <div class="col-lg-4">
             <div class="input-group">
               <span class="input-group-text bg-primary text-white">
@@ -587,7 +582,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- Contenido Principal -->
     <main class="catalogo py-5">
@@ -886,7 +881,7 @@
           if (el) el.addEventListener("input", filterProducts);
         });
 
-      // Apply any ?cultivo= or ?search= parameters from the URL
+      /*// Apply any ?cultivo= or ?search= parameters from the URL
       const query = getQueryParams();
 
       if (query.cultivo) {
@@ -905,70 +900,4 @@
 
       // Initial filter
       filterProducts();
-
-      // products-loader.js
-      fetch("products.json")
-        .then((response) => response.json())
-        .then((data) => {
-          const container = document.getElementById("products-container");
-
-          data.products.forEach((product) => {
-            container.innerHTML += `
-        <div class="product-card" 
-             data-category="${product.category.toLowerCase()}" 
-             data-subcategory="${product.subcategory
-               .toLowerCase()
-               .replace(/ /g, "-")}">
-          
-          <div class="product-header">
-            <img src="images/products/${product.category.toLowerCase()}/${
-              product.id
-            }.jpg" 
-                 alt="${product.name}" 
-                 loading="lazy">
-            <span class="ica-badge">${product.targets[0].ica}</span>
-          </div>
-          
-          <div class="product-body">
-            <h3>${product.name}</h3>
-            <p class="ingredient">${product.active_ingredient}</p>
-            
-            <div class="targets">
-              ${product.targets
-                .map(
-                  (target) => `
-                <div class="target">
-                  <span class="crop">${target.crop}</span>
-                  <span class="pest">${target.pest}</span>
-                  <span class="dose">${target.dose}</span>
-                </div>
-              `
-                )
-                .join("")}
-            </div>
-            
-            ${
-              product.toxicity
-                ? `
-            <div class="toxicity-alert">
-              <i class="fas fa-exclamation-triangle"></i>
-              Categoría Toxicológica ${product.toxicity}
-            </div>`
-                : ""
-            }
-          </div>
-        </div>
-      `;
-          });
-
-          // Add safety notice
-          container.innerHTML += `
-      <div class="safety-notice">
-        <h4><i class="fas fa-skull-crossbones"></i> ADVERTENCIA</h4>
-        <p>${data.safety_notice}</p>
-      </div>
-    `;
-        });
-    </script>
-  </body>
-</html>
+*/
