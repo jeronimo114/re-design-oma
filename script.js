@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener("DOMContentLoaded", () => {
   /**
    * 1) Inicialización de AOS (Animate On Scroll)
@@ -277,4 +275,113 @@ document.addEventListener("DOMContentLoaded", () => {
   } catch (error) {
     console.error("Error al inicializar el fondo animado con Three.js:", error);
   }
+
+  /* -------------------------------------------------------------
+   * 7) Catálogo de productos (carga y render)
+   * ----------------------------------------------------------- */
+  fetch("products.json")
+    .then((r) => r.json())
+    .then(({ products, safety_notice }) => {
+      const grid = document.getElementById("productGrid");
+      if (!grid) {
+        console.warn("[Catálogo] No se encontró #productGrid en el DOM.");
+        return;
+      }
+      grid.innerHTML = ""; // vacía cards estáticas
+
+      products.forEach((p) => {
+        const cultivos = [
+          ...new Set(p.targets.map((t) => t.crop.toLowerCase())),
+        ];
+        const problemas = [
+          ...new Set(
+            p.targets.map((t) => t.pest.toLowerCase().replace(/ /g, "-"))
+          ),
+        ];
+
+        grid.insertAdjacentHTML(
+          "beforeend",
+          `
+          <div class="col"
+               data-cultivos="${cultivos.join(",")}"
+               data-problemas="${problemas.join(",")}"
+               data-categoria="${p.category.toLowerCase()}">
+            <div class="product-card h-100 p-3">
+              <div class="position-relative mb-3">
+                <img src="/media/man.jpg" class="img-fluid rounded" alt="${
+                  p.name
+                }" loading="lazy">
+                <span class="position-absolute top-0 end-0 translate-middle badge bg-primary">${
+                  p.ica
+                }</span>
+              </div>
+              <h5 class="fw-bold text-primary">${p.name}</h5>
+              <p class="small text-muted">${p.active_ingredient}</p>
+              <p class="small mb-2"><strong>${p.category}</strong> • ${
+            p.formulation
+          }</p>
+              <button class="btn btn-doc w-100 disabled-opa-50">Ficha Técnica (próx.)</button>
+            </div>
+          </div>`
+        );
+      });
+
+      // Aviso de seguridad
+      grid.insertAdjacentHTML(
+        "beforeend",
+        `
+        <div class="col-12">
+          <div class="alert alert-danger">
+            <i class="fas fa-skull-crossbones me-2"></i>${safety_notice}
+          </div>
+        </div>`
+      );
+
+      // Recalcula contadores en Home (si existen)
+      if (document.querySelectorAll("#categorias .cat-card").length) {
+        const counters = {
+          herbicida: 0,
+          fungicida: 0,
+          insecticida: 0,
+          "fertilizante foliar": 0,
+        };
+        products.forEach((p) => counters[p.category.toLowerCase()]++);
+        document.querySelectorAll("#categorias .cat-card").forEach((card) => {
+          const cat = new URL(card.href).searchParams.get("categoria");
+          const span = card.querySelector(".cat-count");
+          if (span) span.textContent = counters[cat] + " productos";
+        });
+      }
+
+      // Primer filtrado
+      filterProducts();
+    })
+    .catch((err) => console.error("Error cargando products.json:", err));
+
+  /* Listeners protegidos para los filtros */
+  const cropEl = document.getElementById("cropFilter");
+  const probEl = document.getElementById("problemFilter");
+  const searchEl = document.getElementById("searchInput");
 });
+
+function filterProducts() {
+  const cropSel = document.getElementById("cropFilter").value;
+  const probSel = document.getElementById("problemFilter").value;
+  const searchText = document.getElementById("searchInput").value.toLowerCase();
+  const catParam = getQueryParams().categoria || "";
+
+  document.querySelectorAll("#productGrid .col").forEach((card) => {
+    const crops = card.dataset.cultivos.split(",");
+    const probs = card.dataset.problemas.split(",");
+    const cat = card.dataset.categoria;
+
+    const okCrop = !cropSel || crops.includes(cropSel);
+    const okProb = !probSel || probs.includes(probSel);
+    const okCat = !catParam || cat === catParam;
+    const okSearch =
+      !searchText || card.textContent.toLowerCase().includes(searchText);
+
+    card.style.display =
+      okCrop && okProb && okCat && okSearch ? "block" : "none";
+  });
+}

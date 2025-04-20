@@ -314,13 +314,115 @@
         </div>
       </nav>
     </header>
+    <!-- ✱ BEGIN CATEGORÍAS DE PRODUCTO -->
+    <section id="categorias" class="categorias py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">Categorías de Producto</h2>
 
-    <!-- Filtros Sticky -->
-    <div class="filter-header sticky-top py-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <!-- Herbicidas -->
+          <div class="col">
+            <a
+              href="catalogo.html?categoria=herbicida"
+              class="cat-card d-block position-relative overflow-hidden rounded"
+            >
+              <img
+                src="/media/man.jpg"
+                class="w-100 h-100 object-fit-cover"
+                alt="Herbicidas"
+                loading="lazy"
+              />
+              <div
+                class="cat-overlay position-absolute top-0 start-0 w-100 h-100"
+              ></div>
+              <div
+                class="cat-content position-absolute top-50 start-50 translate-middle text-center text-white"
+              >
+                <h5 class="fw-bold mb-1">Herbicidas</h5>
+                <span class="cat-count small"></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Fungicidas -->
+          <div class="col">
+            <a
+              href="catalogo.html?categoria=fungicida"
+              class="cat-card d-block position-relative overflow-hidden rounded"
+            >
+              <img
+                src="/media/man.jpg"
+                class="w-100 h-100 object-fit-cover"
+                alt="Fungicidas"
+                loading="lazy"
+              />
+              <div
+                class="cat-overlay position-absolute top-0 start-0 w-100 h-100"
+              ></div>
+              <div
+                class="cat-content position-absolute top-50 start-50 translate-middle text-center text-white"
+              >
+                <h5 class="fw-bold mb-1">Fungicidas</h5>
+                <span class="cat-count small"></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Insecticidas -->
+          <div class="col">
+            <a
+              href="catalogo.html?categoria=insecticida"
+              class="cat-card d-block position-relative overflow-hidden rounded"
+            >
+              <img
+                src="/media/man.jpg"
+                class="w-100 h-100 object-fit-cover"
+                alt="Insecticidas"
+                loading="lazy"
+              />
+              <div
+                class="cat-overlay position-absolute top-0 start-0 w-100 h-100"
+              ></div>
+              <div
+                class="cat-content position-absolute top-50 start-50 translate-middle text-center text-white"
+              >
+                <h5 class="fw-bold mb-1">Insecticidas</h5>
+                <span class="cat-count small"></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Fertilizantes Foliares -->
+          <div class="col">
+            <a
+              href="catalogo.html?categoria=fertilizante-foliar"
+              class="cat-card d-block position-relative overflow-hidden rounded"
+            >
+              <img
+                src="/media/man.jpg"
+                class="w-100 h-100 object-fit-cover"
+                alt="Fertilizantes Foliares"
+                loading="lazy"
+              />
+              <div
+                class="cat-overlay position-absolute top-0 start-0 w-100 h-100"
+              ></div>
+              <div
+                class="cat-content position-absolute top-50 start-50 translate-middle text-center text-white"
+              >
+                <h5 class="fw-bold mb-1">Fertilizantes Foliares</h5>
+                <span class="cat-count small"></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ✱ END CATEGORÍAS DE PRODUCTO -->
+    <!-- ✱ OPEN ✱ <div class="filter-header sticky-top py-3">
       <div class="container">
         <div class="row g-3 align-items-center">
-          <!-- Filtro Problema -->
-          <!-- Update the Problem Filter Section -->
+
           <div class="col-lg-4">
             <div class="dropdown">
               <button
@@ -354,7 +456,7 @@
             </div>
           </div>
 
-          <!-- Soluciones por Cultivo Section -->
+
           <div class="col-lg-4">
             <div class="dropdown">
               <button
@@ -365,7 +467,7 @@
               </button>
               <div class="dropdown-menu p-3 dropdown-menu-xl">
                 <div class="row row-cols-3 g-3">
-                  <!-- Flores -->
+
                   <div class="col mb-3">
                     <button class="btn btn-cultivo w-100" data-cultivo="rosa">
                       <i class="fas fa-rose text-danger"></i>
@@ -403,7 +505,7 @@
                     </button>
                   </div>
 
-                  <!-- Cultivos Básicos -->
+
                   <div class="col mb-3">
                     <button class="btn btn-cultivo w-100" data-cultivo="papa">
                       <i class="fas fa-seedling text-success"></i>
@@ -469,7 +571,7 @@
             </div>
           </div>
 
-          <!-- Buscador -->
+
           <div class="col-lg-4">
             <div class="input-group">
               <span class="input-group-text bg-primary text-white">
@@ -485,7 +587,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Contenido Principal -->
     <main class="catalogo py-5">
@@ -730,10 +832,10 @@
         arveja: ["Oídio", "Mildiu", "Trips", "Virus del Enanismo"],
       };
 
-      // Dynamic problem filter
-      document
-        .getElementById("cropFilter")
-        .addEventListener("change", function () {
+      // Dynamic problem filter (guarded)
+      const cropFilterEl = document.getElementById("cropFilter");
+      if (cropFilterEl) {
+        cropFilterEl.addEventListener("change", function () {
           const problemFilter = document.getElementById("problemFilter");
           problemFilter.innerHTML =
             '<option value="">Seleccionar Problema</option>';
@@ -749,6 +851,7 @@
             problemFilter.disabled = true;
           }
         });
+      }
 
       // Filter function
       function filterProducts() {
@@ -776,23 +879,28 @@
         });
       }
 
-      // Event listeners
+      // Event listeners (guarded)
       document
         .querySelectorAll("#cropFilter, #problemFilter, #searchInput")
-        .forEach((el) => el.addEventListener("input", filterProducts));
+        .forEach((el) => {
+          if (el) el.addEventListener("input", filterProducts);
+        });
 
       // Apply any ?cultivo= or ?search= parameters from the URL
       const query = getQueryParams();
 
       if (query.cultivo) {
         const cropSel = document.getElementById("cropFilter");
-        cropSel.value = query.cultivo.toLowerCase();
-        // Trigger population of problem list
-        cropSel.dispatchEvent(new Event("change"));
+        if (cropSel) {
+          cropSel.value = query.cultivo.toLowerCase();
+          // Trigger population of problem list
+          cropSel.dispatchEvent(new Event("change"));
+        }
       }
 
       if (query.search) {
-        document.getElementById("searchInput").value = query.search;
+        const searchEl = document.getElementById("searchInput");
+        if (searchEl) searchEl.value = query.search;
       }
 
       // Initial filter

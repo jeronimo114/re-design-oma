@@ -4,119 +4,119 @@
       "id": "anker-500-sc",
       "name": "ANKER 500 SC",
       "formulation": "SC",
-      "concentration": "250+250 g/L",
+      "concentration": "250+250",
       "ica": "PL0003802023",
       "toxicity": "II",
       "category": "Fungicida",
-      "active_ingredient": "Iprodion + Pyrimethanil",
+      "active_ingredient": "IPRODION + PIRIMETHANYL",
       "targets": [
         {
           "crop": "Clavel",
           "pest": "Botrytis cinerea",
-          "dose": "1,5 mL/L",
-          "action": "Fungicida"
+          "dose": "  1,5 mL/L",
+          "action": "Botrytis"
         },
         {
           "crop": "Pompon",
           "pest": "Botrytis cinerea",
           "dose": "1,5 mL/L",
-          "action": "Fungicida"
+          "action": "Botrytis"
         },
         {
           "crop": "Rosas",
           "pest": "Botrytis cinerea",
           "dose": "1,5 mL/L",
-          "action": "Fungicida"
+          "action": "Botrytis"
         },
         {
           "crop": "Rosas",
-          "pest": "Mildeo polvoso",
+          "pest": "Sphaerotheca pannosa",
           "dose": "1,5 mL/L",
-          "action": "Fungicida"
+          "action": "Mildeo polvoso"
         }
       ]
     },
     {
-      "id": "athrin-100-ec",
+      "id": "athrin-brio-gqa-100-ec",
       "name": "ATHRIN BRIO GQA 100 EC",
       "formulation": "EC",
-      "concentration": "100 g/L",
+      "concentration": 100,
       "ica": "PL0017682023",
       "toxicity": "II",
       "category": "Insecticida",
-      "active_ingredient": "Lambdacialotrina",
+      "active_ingredient": "LAMBDACIHALOTRINA ",
       "targets": [
         {
           "crop": "Algodón",
           "pest": "Spodoptera frugiperda",
-          "dose": "100 mL/ha",
-          "action": "Insecticida"
+          "dose": "100 ml/ha",
+          "action": "Cogollero"
         },
         {
           "crop": "Arroz",
           "pest": "Spodoptera frugiperda",
-          "dose": "90‑100 mL/200 L",
-          "action": "Insecticida"
+          "dose": "90 a 100 ml/200L",
+          "action": "Cogollero"
         },
         {
           "crop": "Clavel",
           "pest": "Tetranychus cinnabarinus",
-          "dose": "0,30 mL/L",
-          "action": "Insecticida"
+          "dose": "0,30 ml/L",
+          "action": "Acaros"
         },
         {
-          "crop": "Frijol",
+          "crop": "Frijol  ",
           "pest": "Trialeurodes vaporariorum",
-          "dose": "60‑90 mL/200 L",
-          "action": "Insecticida"
+          "dose": "60 - 90 ml/200L",
+          "action": "Mosca blanca"
         },
         {
           "crop": "Maiz",
           "pest": "Spodoptera frugiperda",
-          "dose": "60‑90 mL/200 L ó 180‑270 mL/ha",
-          "action": "Insecticida"
+          "dose": "60-90 ml/200L ó 180-270 ml/ha",
+          "action": "Cogollero"
         },
         {
           "crop": "Papa",
           "pest": "Epitrix sp",
-          "dose": "50 mL/200 L ó 100 mL/ha",
-          "action": "Insecticida"
+          "dose": "50/200L de agua ó 100/ha",
+          "action": "Pulguilla"
         },
         {
           "crop": "Papa",
           "pest": "Premnotrypes vorax",
-          "dose": "120 mL/200 L",
-          "action": "Insecticida"
+          "dose": "120 ml/200L",
+          "action": "Gusano blanco"
         },
         {
           "crop": "Papa",
           "pest": "Tecia solanivora",
-          "dose": "120 mL/200 L ó 360 mL/ha",
-          "action": "Insecticida"
+          "dose": "120/200L de agua  ó 360ml/ha",
+          "action": "Polilla guatemalteca"
         },
         {
           "crop": "Pastos",
           "pest": "Collaria scenica",
-          "dose": "50 mL/200 L",
-          "action": "Insecticida"
+          "dose": "50 ml / 200L ",
+          "action": "Chinche"
         },
         {
           "crop": "Pompon",
-          "pest": "Liriomyza trifolii",
-          "dose": "0,3 mL/L",
-          "action": "Insecticida"
+          "pest": "Lyriomiza trifoli",
+          "dose": "0,3 ml / L",
+          "action": "Minador"
         },
         {
           "crop": "Rosas",
           "pest": "Tetranychus sp.",
-          "dose": "0,25 mL/L",
-          "action": "Insecticida"
+          "dose": "0,25 ml/L",
+          "action": "Acaros"
         },
         {
           "crop": "Tomate",
           "pest": "Agrotis ipsilon",
-          "dose": "60‑90 mL/200 L ó 180‑270 mL/ha",
-          "action": "Insecticida"
+          "dose": "60 a 90/200L ó 180 a 270/ha",
+          "action": "Agrotis"
         }
       ]
     },
@@ -124,32 +124,1268 @@
       "id": "brabus-100-me",
       "name": "BRABUS 100 ME",
       "formulation": "ME",
-      "concentration": "50+50 g/L",
+      "concentration": "50 + 50",
       "ica": "PL0019472023",
       "toxicity": "III",
       "category": "Fungicida",
-      "active_ingredient": "Difenoconazol + Validamicina",
+      "active_ingredient": "DIFENOCONAZOL + VALIDAMICINA",
       "targets": [
         {
           "crop": "Arroz",
           "pest": "Rhizoctonia solani",
-          "dose": "1 L/ha",
-          "action": "Fungicida"
+          "dose": "1L/Ha",
+          "action": "Añublo de la vaina"
         },
         {
           "crop": "Arroz",
-          "pest": "Manchado de grano (Helmintosporium y otros)",
-          "dose": "1‑1,25 L/ha",
-          "action": "Fungicida"
+          "pest": "Helmintosporium, Cercospora, Sarocladiu, Curvularia, Ophiobolus",
+          "dose": "1 - 1,25 L/Ha",
+          "action": "Manchado de grano"
         },
         {
           "crop": "Papa",
           "pest": "Rhizoctonia solani",
-          "dose": "1,2 L/ha",
-          "action": "Fungicida"
+          "dose": "1.2 L/ha",
+          "action": "Rhizoctonia"
+        }
+      ]
+    },
+    {
+      "id": "cacique-420-sc",
+      "name": "CACIQUE 420 SC",
+      "formulation": "SC",
+      "concentration": "400+20",
+      "ica": "PL0001272023",
+      "toxicity": "II",
+      "category": "Fungicida",
+      "active_ingredient": "ISOPROTIOLANO + KASUGAMICINA",
+      "targets": [
+        {
+          "crop": "Arroz",
+          "pest": "Pyricularia oryzae",
+          "dose": "1.5 L/ha",
+          "action": "Piricularia"
+        }
+      ]
+    },
+    {
+      "id": "catombe-brio-gqa-50-sc",
+      "name": "CATOMBE BRIO GQA 50 SC",
+      "formulation": "SC",
+      "concentration": 50,
+      "ica": "PL0007512023",
+      "toxicity": "III",
+      "category": "Insecticida",
+      "active_ingredient": "ABAMECTINA",
+      "targets": [
+        {
+          "crop": "Cebolla",
+          "pest": "Liriomyza huidobrensis",
+          "dose": "150 - 200 ml/200 L                                                                                                                                                                                                                       ",
+          "action": "Minador"
+        },
+        {
+          "crop": "Fresa",
+          "pest": "Tetranychus urticae",
+          "dose": "150 - 200 ml/200 L                                                                                                                                                                                                                       ",
+          "action": "Acaros"
+        },
+        {
+          "crop": "Melon",
+          "pest": "Tetranychus sp",
+          "dose": "240 ml/200 L",
+          "action": "Acaros"
+        },
+        {
+          "crop": "Crisantemo",
+          "pest": "Liriomyza huidobrensis",
+          "dose": "0.10 – 0.15 ml/L                                                                                                                                                                                                                       ",
+          "action": "Minador"
+        },
+        {
+          "crop": "Clavel",
+          "pest": "Tetranychus cinnabarinus",
+          "dose": "0.10 – 0.15 ml/L    ",
+          "action": "Acaros"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Tetranychus urticae",
+          "dose": "0.10 – 0.15 ml/L    ",
+          "action": "Acaros"
+        }
+      ]
+    },
+    {
+      "id": "catombe-forte-5-5-ec",
+      "name": "CATOMBE FORTE 5,5% EC",
+      "formulation": "EC",
+      "concentration": "35 + 20",
+      "ica": "PL0001262023",
+      "toxicity": "III",
+      "category": "Insectivida  - acaricida",
+      "active_ingredient": "ABAMECTINA + FENAZAQUIN",
+      "targets": [
+        {
+          "crop": "Cebolla",
+          "pest": "Liriomyza huidobrensis",
+          "dose": "300 a 500 cc/Ha",
+          "action": "Minador"
+        },
+        {
+          "crop": "Clavel",
+          "pest": "Tetranychus cinnabarinus",
+          "dose": "  0,3 cc/L",
+          "action": "Acaros"
+        },
+        {
+          "crop": "Fresa",
+          "pest": "Tetranychus urticae",
+          "dose": "300 cc/Ha",
+          "action": "Acaros"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Tetranychus urticae",
+          "dose": "0,3 a 0,4 cc/L",
+          "action": "Acaros"
+        },
+        {
+          "crop": "Papaya",
+          "pest": "Polyphagotarsonemus latus",
+          "dose": "0,4 a 0,5 cc/L o\n260 a 325 cc/Ha",
+          "action": "Acaros"
+        }
+      ]
+    },
+    {
+      "id": "cazza-100-me",
+      "name": "CAZZA 100 ME",
+      "formulation": "ME",
+      "concentration": 100,
+      "ica": "PL0005692023",
+      "toxicity": "III",
+      "category": "Herbicida",
+      "active_ingredient": "PROPANIL",
+      "targets": [
+        {
+          "crop": "Arroz",
+          "pest": "Malezas",
+          "dose": "2 L/ha",
+          "action": "POSTEMERGENTE"
+        }
+      ]
+    },
+    {
+      "id": "ciromex-75-wp",
+      "name": "CIROMEX 75 WP",
+      "formulation": "WP",
+      "concentration": 750,
+      "ica": "PL0005062023",
+      "toxicity": "III",
+      "category": "Insecticida",
+      "active_ingredient": "CIROMAZINA",
+      "targets": [
+        {
+          "crop": "Crisantemo",
+          "pest": "Liryomiza huidobrensis ",
+          "dose": "0.4 g/L",
+          "action": "Minador"
+        }
+      ]
+    },
+    {
+      "id": "ciromex-brio-gqa-400-sc",
+      "name": "CIROMEX BRIO GQA 400 SC",
+      "formulation": "SC",
+      "concentration": 400,
+      "ica": "PL0005732023",
+      "toxicity": "III",
+      "category": "Insecticida",
+      "active_ingredient": "CIROMAZINA",
+      "targets": [
+        {
+          "crop": "Arveja",
+          "pest": "Melanagromiza lini",
+          "dose": "60 /200 l o 180 ml/ha",
+          "action": "Minador"
+        },
+        {
+          "crop": "Crisantemo",
+          "pest": "Liryomiza trifolii",
+          "dose": "0.3 – 0.4 ml/l  agua                                                                                                                                                                           ",
+          "action": "Minador"
+        },
+        {
+          "crop": "Frijol  ",
+          "pest": "Liryomiza spp",
+          "dose": "50 ml/200 l ó 150 ml/ha",
+          "action": "Minador"
+        },
+        {
+          "crop": "Melon",
+          "pest": "Liryomiza spp",
+          "dose": "40 - 50 ml / 200 L",
+          "action": "Minador"
+        },
+        {
+          "crop": "Papa",
+          "pest": "Liriomyza quadrata",
+          "dose": "60 – 80 ml/ 200 l \nó 180 – 240 ml / ha.                                                                                                                                                                                               ",
+          "action": "Tostón"
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Liryomiza spp",
+          "dose": "60- 80 ml/200 L\n 180 - 240 ml / ha",
+          "action": "Minador"
+        }
+      ]
+    },
+    {
+      "id": "coraza-480-sc",
+      "name": "CORAZA 480 SC",
+      "formulation": "SC",
+      "concentration": 480,
+      "ica": "PL0003232022",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "CAPTAN",
+      "targets": [
+        {
+          "crop": "Clavel",
+          "pest": "Botrytis cinerea",
+          "dose": " 2.5 ml/l agua                                                                                                                                                                                                                                ",
+          "action": "\nBotrytis\n"
+        },
+        {
+          "crop": "Crisantemo",
+          "pest": "Botrytis cinerea",
+          "dose": "2.5 ml/l agua                                                                                                                    ",
+          "action": "\nBotrytis\n"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Botrytis cinerea",
+          "dose": " 2.5 ml/l agua                                                                                                                                                                                                                                  ",
+          "action": "\nBotrytis\n"
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Alternaria solani",
+          "dose": "1.5 l/ha",
+          "action": "Alternaria"
+        }
+      ]
+    },
+    {
+      "id": "deminak-45-ec",
+      "name": "DEMINAK 45 EC",
+      "formulation": "EC",
+      "concentration": 450,
+      "ica": "PL0004602023",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "PROCHLORAZ",
+      "targets": [
+        {
+          "crop": "Clavel",
+          "pest": "Botrytis cinerea",
+          "dose": "0.8 ml/l de agua",
+          "action": "\nBotrytis\n"
+        },
+        {
+          "crop": "Pompon",
+          "pest": "Botrytis cinerea",
+          "dose": "0.8 ml/l de agua",
+          "action": "\nBotrytis\n"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Botrytis cinerea",
+          "dose": "0.8 ml/l de agua",
+          "action": "\nBotrytis\n"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Sphaerotheca pannosa",
+          "dose": "0.8 ml/l de agua",
+          "action": "Mildeo polvoso"
+        },
+        {
+          "crop": "Arroz",
+          "pest": "Helmintosporium, Cercospora, Sarocladium, Drechslera",
+          "dose": "300 ml /ha",
+          "action": "Manchado de grano"
+        },
+        {
+          "crop": "Fresa",
+          "pest": "Botrytis cinerea",
+          "dose": "300 ml / 200 l de agua",
+          "action": "\nBotrytis\n"
+        },
+        {
+          "crop": "Granadilla",
+          "pest": "Botrytis cinerea",
+          "dose": "300 ml / 200 l de agua",
+          "action": "\nBotrytis\n"
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Botrytis cinerea",
+          "dose": "300 ml / 200 l de agua",
+          "action": "\nBotrytis\n"
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Alternaria solani",
+          "dose": "250 ml / 200 l de agua",
+          "action": "Alternaria"
+        },
+        {
+          "crop": "Cucurbitaceas",
+          "pest": "Erysiphe cichoracearum",
+          "dose": "240 - 300 mL/200L",
+          "action": "Mildeo polvoso"
+        }
+      ]
+    },
+    {
+      "id": "difón-brio-160-sc",
+      "name": "DIFÓN BRIO 160 SC",
+      "formulation": "SC",
+      "concentration": 160,
+      "ica": "PL0017092023",
+      "toxicity": "II",
+      "category": "Insectivida  - acaricida",
+      "active_ingredient": "TETRADIFON",
+      "targets": [
+        {
+          "crop": "Clavel",
+          "pest": "Tetranychus cinnabarinus",
+          "dose": "0.8cc/ L de agua o 960cc/ha",
+          "action": "Acaros"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Tetranychus urticae",
+          "dose": "0.8cc/ L de agua o 960cc/ha",
+          "action": "Acaros"
+        }
+      ]
+    },
+    {
+      "id": "estocada-90-sp",
+      "name": "ESTOCADA 90 SP",
+      "formulation": "SP",
+      "concentration": 900,
+      "ica": "PL0001192023",
+      "toxicity": 2,
+      "category": "Insecticida",
+      "active_ingredient": "METOMIL",
+      "targets": [
+        {
+          "crop": "Arroz",
+          "pest": "Spodoptera frugiperda",
+          "dose": "150 g/ha",
+          "action": "Cogollero"
+        },
+        {
+          "crop": "Clavel",
+          "pest": "Frankliniella occidentalis",
+          "dose": "0,5g/L",
+          "action": "Trips "
+        },
+        {
+          "crop": "Papa",
+          "pest": "Epitrix sp",
+          "dose": "66 g/200 L",
+          "action": "Pulguilla"
+        },
+        {
+          "crop": "Pompon",
+          "pest": "Frankliniella occidentalis",
+          "dose": "0.6 g/L",
+          "action": "Trips "
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Frankliniella occidentalis",
+          "dose": "0,5 a 0,6g/L",
+          "action": "Trips "
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Liryomiza spp",
+          "dose": "66 g/200 L",
+          "action": "Minador"
+        }
+      ]
+    },
+    {
+      "id": "faro-40-me",
+      "name": "FARO 40 ME",
+      "formulation": "ME",
+      "concentration": 40,
+      "ica": "PL0003252022",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "BUPIRIMATE",
+      "targets": [
+        {
+          "crop": "Rosas",
+          "pest": "Sphaeroteca pannosa",
+          "dose": "  \n\n1.5 cc/L o 1800 cc/Ha",
+          "action": "Mildeo polvoso"
+        }
+      ]
+    },
+    {
+      "id": "format-70-wp",
+      "name": "FORMAT 70 WP",
+      "formulation": "WP",
+      "concentration": 700,
+      "ica": "PL0009122023",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "PROPINEB",
+      "targets": [
+        {
+          "crop": "Clavel",
+          "pest": "Heterosporium echinulatum",
+          "dose": "1 - 2 g/L",
+          "action": "Mancha anillada"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Peronospora sparsa",
+          "dose": " 2.5 g/L",
+          "action": "Mildeo velloso"
+        },
+        {
+          "crop": "Papa",
+          "pest": "Phytophthora infestans",
+          "dose": "1.5 - 2.5 Kg/ha",
+          "action": "Gota"
+        }
+      ]
+    },
+    {
+      "id": "fosetal-80-wp",
+      "name": "FOSETAL 80 WP",
+      "formulation": "WP",
+      "concentration": 800,
+      "ica": "PL0002572023",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "FOSETIL ALUMINIO",
+      "targets": [
+        {
+          "crop": "Papa",
+          "pest": "Phytophthora infestans",
+          "dose": " 1.87 Kg/ha",
+          "action": "Gota"
+        },
+        {
+          "crop": "Tomate De Arbol",
+          "pest": "Phytophthora infestans",
+          "dose": " 3.5 g /L ",
+          "action": "Gota"
+        },
+        {
+          "crop": "Piña",
+          "pest": "Phytophthora parasítica",
+          "dose": "2.0 Kg/ha",
+          "action": "Pudrición de corona"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "\nPeronospora sparsa\n",
+          "dose": "2.40 Kg / ha\n2 g/L \n(1200 Litros de agua/ha)\n",
+          "action": "Mildeo Velloso"
+        }
+      ]
+    },
+    {
+      "id": "fulminator-600-ec",
+      "name": "FULMINATOR 600 EC",
+      "formulation": "EC",
+      "concentration": "500 + 100 ",
+      "ica": "PL0006602023",
+      "toxicity": 3,
+      "category": "Insecticida",
+      "active_ingredient": "PROFENOFOS + CIPERMETRINA",
+      "targets": [
+        {
+          "crop": "Arroz",
+          "pest": "Spodoptera frugiperda",
+          "dose": "150 ml/200 l",
+          "action": "Spodoptera"
+        },
+        {
+          "crop": "Frijol  ",
+          "pest": "Frankliniella occidentalis",
+          "dose": "150 ml/200 l",
+          "action": "Trips "
+        },
+        {
+          "crop": "Papa",
+          "pest": "Liriomyza quadrata",
+          "dose": "120 ml/200 l",
+          "action": "Tostón"
+        },
+        {
+          "crop": "Papa",
+          "pest": "Tecia solanivora",
+          "dose": "120 ml/200 l",
+          "action": "Polilla guatemalteca"
+        },
+        {
+          "crop": "Papa",
+          "pest": "Premnotrypes vorax",
+          "dose": "120 ml/200 l",
+          "action": "Gusano blanco"
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Neulocinodes elegantalis",
+          "dose": "120 ml/200 l",
+          "action": "Barrenador del fruto"
+        }
+      ]
+    },
+    {
+      "id": "heroe-100-me",
+      "name": "HEROE 100 ME",
+      "formulation": "ME",
+      "concentration": 100,
+      "ica": "PL0005712023",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "PIRIMETHANYL",
+      "targets": [
+        {
+          "crop": "Banano",
+          "pest": "Mycosphaerella fijiensis",
+          "dose": "0,75 L/Ha",
+          "action": "Sigatoka Negra "
+        }
+      ]
+    },
+    {
+      "id": "kazugal-20-sl",
+      "name": "KAZUGAL 20 SL",
+      "formulation": "SL",
+      "concentration": 20,
+      "ica": "PL0005702023",
+      "toxicity": "II",
+      "category": "Fungicida",
+      "active_ingredient": "KASUGAMICINA",
+      "targets": [
+        {
+          "crop": "Arroz",
+          "pest": "Pyricularia oryzae",
+          "dose": "1.5 L/ha",
+          "action": "Piricularia"
+        },
+        {
+          "crop": "Cebolla",
+          "pest": "Pseudomonas gladioli pv allicola, Erwinia carotovora y Pseudomonas cepacia Burk",
+          "dose": "0.18 L/ha",
+          "action": "Enfermedades bacterianas"
+        }
+      ]
+    },
+    {
+      "id": "linap-9-me",
+      "name": "LINAP 9 ME",
+      "formulation": "ME",
+      "concentration": 90,
+      "ica": "PL0001932023",
+      "toxicity": "III",
+      "category": "Herbicida",
+      "active_ingredient": "PENDIMETALINA",
+      "targets": [
+        {
+          "crop": "Arroz",
+          "pest": "Malezas",
+          "dose": "1,5 L/ha",
+          "action": "PRE -  POST"
+        }
+      ]
+    },
+    {
+      "id": "lyon-60-me",
+      "name": "LYON 60 ME",
+      "formulation": "ME",
+      "concentration": 60,
+      "ica": "PL0018502023",
+      "toxicity": "II",
+      "category": "Herbicida",
+      "active_ingredient": "OXADIAZON",
+      "targets": [
+        {
+          "crop": "Arroz",
+          "pest": "Malezas",
+          "dose": "1-1,5 L/ha",
+          "action": "PRE -  POST"
+        }
+      ]
+    },
+    {
+      "id": "mitipyr-240-sc",
+      "name": "MITIPYR 240 SC",
+      "formulation": "SC",
+      "concentration": 240,
+      "ica": "PL0005492023",
+      "toxicity": "II",
+      "category": "Insectivida  - acaricida",
+      "active_ingredient": "CHLORFENAPYR",
+      "targets": [
+        {
+          "crop": "Clavel",
+          "pest": "Acaros (Tetranychus sp.)",
+          "dose": "0.3 – 0.4 ml / l                                                                                                                                                                                                                           ",
+          "action": "Acaros"
+        },
+        {
+          "crop": "Clavel",
+          "pest": "Frankliniella occidentalis",
+          "dose": "0.3 – 0.4 ml / l                                                                                                                                                                                                                           ",
+          "action": "Trips "
+        },
+        {
+          "crop": "Frijol  ",
+          "pest": "Trips (Thrips palmi)",
+          "dose": "0.4 – 0.5 ml / l                                                                                                                                                                                                                              ",
+          "action": "Trips "
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Acaros (Tetranychus urticae)",
+          "dose": "0.3 – 0.4 ml / l                                                                                                                                                                                                                           ",
+          "action": "Acaros"
+        },
+        {
+          "crop": "Pompon",
+          "pest": "Acaros (Tetranychus sp.)",
+          "dose": "0.4 – 0.6 ml / l                                                                                                                                                                                                                             ",
+          "action": "Acaros"
+        },
+        {
+          "crop": "Pompon",
+          "pest": "Minador (Liriomyza sp.)",
+          "dose": "0.4 – 0.6 ml / l                                                                                                                                                                                                                              ",
+          "action": "Minador"
+        },
+        {
+          "crop": "Pompon",
+          "pest": "Frankliniella occidentalis",
+          "dose": "0.4 – 0.6 ml / l                                                                                                                                                                                                                           ",
+          "action": "Trips "
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Cogollero (Tuta absoluta)",
+          "dose": "0.5 – 0.6 ml / l                                                                                                                                                                                                                             ",
+          "action": "Cogollero"
+        }
+      ]
+    },
+    {
+      "id": "patrulla-70-me",
+      "name": "PATRULLA 70 ME",
+      "formulation": "ME",
+      "concentration": "40 + 30",
+      "ica": "PL0003902022",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "DIFENOCONAZOL+KRESOXIM METIL",
+      "targets": [
+        {
+          "crop": "Arroz",
+          "pest": "Helmintosporium, Cercospora, Sarocladium",
+          "dose": "0,75 L/Ha",
+          "action": "Manchado de grano"
+        },
+        {
+          "crop": "Arveja",
+          "pest": "Ascochyta pisi",
+          "dose": "0,75 L/Ha",
+          "action": "Ascoquita"
+        },
+        {
+          "crop": "Banano",
+          "pest": "Mycosphaerella fijiensis",
+          "dose": "1 L/Ha",
+          "action": "Sigatoka Negra "
+        },
+        {
+          "crop": "Cebolla",
+          "pest": "Alternaria porri",
+          "dose": "0,75 L/Ha",
+          "action": "Alternaria"
+        },
+        {
+          "crop": "Frijol  ",
+          "pest": "Colletotrichum lindemuthianum",
+          "dose": "0,75 L/Ha",
+          "action": "Antracnosis"
+        },
+        {
+          "crop": "Pompon-Crisantemo",
+          "pest": "Puccinia horiana ",
+          "dose": "1.25 cc/L",
+          "action": "Roya blanca"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Sphaerotheca pannosa",
+          "dose": "1 - 1,25 cc/L",
+          "action": "Mildeo polvoso"
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Alternaria solani",
+          "dose": "0,75 L/Ha",
+          "action": "Alternaria"
+        },
+        {
+          "crop": "Tomate De Arbol",
+          "pest": "Colletotrichum gloesporioides",
+          "dose": "0,75  - 1 L/Ha",
+          "action": "Antracnosis"
+        }
+      ]
+    },
+    {
+      "id": "prodion-500-sc",
+      "name": "PRODION 500 SC",
+      "formulation": "SC",
+      "concentration": 500,
+      "ica": "PL0017082023",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "IPRODIONE",
+      "targets": [
+        {
+          "crop": "Clavel",
+          "pest": "Botrytis cinerea",
+          "dose": "1.0 cc/L",
+          "action": "\nBotrytis\n"
+        },
+        {
+          "crop": "Pompon",
+          "pest": "Botrytis cinerea",
+          "dose": "1.0 cc/L ",
+          "action": "\nBotrytis\n"
+        },
+        {
+          "crop": "Arroz",
+          "pest": "Helminthosporium spp. Dreshclera spp., Sarocladium spp., Cercospora spp",
+          "dose": "600 cc/ha",
+          "action": "Manchado de grano"
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Botrytis cinerea",
+          "dose": "600 cc/ha",
+          "action": "\nBotrytis\n"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Botrytis cinerea",
+          "dose": "1,0 a 1,5 cc/L",
+          "action": "\nBotrytis\n"
+        }
+      ]
+    },
+    {
+      "id": "reten-6-me",
+      "name": "RETEN 6 ME",
+      "formulation": "ME",
+      "concentration": "40 + 20",
+      "ica": "PL0003282022",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "DODEMORPH + PROCHLORAZ",
+      "targets": [
+        {
+          "crop": "Rosas",
+          "pest": "Sphaerotheca pannosa",
+          "dose": "2,5 - 3 cc/L",
+          "action": "Mildeo polvoso"
+        },
+        {
+          "crop": "Uva",
+          "pest": "Uncinula necator",
+          "dose": "1 cc/L o 0,4 L/ha",
+          "action": "Mildeo polvoso"
+        }
+      ]
+    },
+    {
+      "id": "sideral-70-sl",
+      "name": "SIDERAL 70 SL",
+      "formulation": "SL",
+      "concentration": 700,
+      "ica": "PL0003142022",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "PROPAMOCARB HCL",
+      "targets": [
+        {
+          "crop": "Cebolla",
+          "pest": "Peronospora destructor",
+          "dose": "500 ml / 200 L",
+          "action": "Mildeo velloso"
+        },
+        {
+          "crop": "Papa",
+          "pest": "Phytophthora infestans",
+          "dose": "500 ml / 200 L",
+          "action": "Gota"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Peronospora sparsa",
+          "dose": "1,5 ml/l agua  ",
+          "action": "Mildeo velloso"
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Phytophthora infestans",
+          "dose": "500 ml / 200 L",
+          "action": "Gota"
+        },
+        {
+          "crop": "Aguacate",
+          "pest": "Phythopthora cinnamomi",
+          "dose": "5 mL/L",
+          "action": "Pudrición de Raíz"
+        }
+      ]
+    },
+    {
+      "id": "skel-250-ec",
+      "name": "SKEL 250 EC",
+      "formulation": "EC",
+      "concentration": 250,
+      "ica": "PL0003062022",
+      "toxicity": "II",
+      "category": "Fungicida",
+      "active_ingredient": "DIFENOCONAZOL",
+      "targets": [
+        {
+          "crop": "Cebolla",
+          "pest": "Alternaria porri",
+          "dose": "100 ml /200 l",
+          "action": "Alternaria"
+        },
+        {
+          "crop": "Clavel",
+          "pest": "Heterosporium echinulatum",
+          "dose": "0,6 ml / l ",
+          "action": "Mancha anillada"
+        },
+        {
+          "crop": "Frijol  ",
+          "pest": "Coletotrichum lindemuthianum",
+          "dose": "166 ml/200L",
+          "action": "Antracnosis"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Sphaerotheca pannosa",
+          "dose": "0,6 ml / l ",
+          "action": "Mildeo polvoso"
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Alternaria solani",
+          "dose": "100 ml /200 l ",
+          "action": "Tizon temprano"
+        }
+      ]
+    },
+    {
+      "id": "skyp-5-sc",
+      "name": "SKYP 5 SC",
+      "formulation": "SC",
+      "concentration": 50,
+      "ica": "PL0005742023",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "HEXACONAZOL",
+      "targets": [
+        {
+          "crop": "Clavel",
+          "pest": "Cladosporium echinulatum",
+          "dose": "1.5 - 2.0 ml / l                                                                                                                                                                                           ",
+          "action": "Mancha anillada"
+        },
+        {
+          "crop": "Crisantemo",
+          "pest": "Puccinia horiana ",
+          "dose": "1 ml / l  ",
+          "action": "Roya blanca"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Sphaerotheca pannosa",
+          "dose": "0.8 ml/l                                                                                                                                                                                                                                                ",
+          "action": "Mildeo polvoso"
+        },
+        {
+          "crop": "Mora",
+          "pest": "Oidium sp",
+          "dose": "300 - 350 cc/ 200 L",
+          "action": "Mildeo polvoso"
+        },
+        {
+          "crop": "Frijol  ",
+          "pest": "Uromyces phaseoli",
+          "dose": "300 cc/ 200 L",
+          "action": "Roya"
+        },
+        {
+          "crop": "Café",
+          "pest": "Hemileia vastatrix",
+          "dose": "1 L/ha",
+          "action": "Roya"
+        }
+      ]
+    },
+    {
+      "id": "spax-80-me",
+      "name": "SPAX 80 ME",
+      "formulation": "ME",
+      "concentration": "35 + 45",
+      "ica": "PL0002562023",
+      "toxicity": "II",
+      "category": "Fungicida",
+      "active_ingredient": "DIFENOCONAZOL + PROCHLORAZ",
+      "targets": [
+        {
+          "crop": "Arroz",
+          "pest": "Rhizoctonia solani",
+          "dose": "0,6 L/ha",
+          "action": "Añublo de la vaina"
+        },
+        {
+          "crop": "Arroz",
+          "pest": "",
+          "dose": "0,6 L/ha",
+          "action": "Manchado de grano"
+        },
+        {
+          "crop": "Clavel",
+          "pest": "Botrytis cinerea",
+          "dose": "0,75cc/ha",
+          "action": "Botrytis"
+        },
+        {
+          "crop": "Pompon",
+          "pest": "Botrytis cinerea",
+          "dose": "0,75cc/ha",
+          "action": "Botrytis"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Botrytis cinerea",
+          "dose": "1,0 cc/L",
+          "action": "Botrytis"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Sphaeroteca pannosa",
+          "dose": "1,0 cc/L",
+          "action": "Mildeo polvoso"
+        },
+        {
+          "crop": "Banano",
+          "pest": "Mycosphaerella fijiensis",
+          "dose": "0,7 L/ha",
+          "action": "Sigatoka Negra "
+        }
+      ]
+    },
+    {
+      "id": "stopper-80-me",
+      "name": "STOPPER 80 ME",
+      "formulation": "ME",
+      "concentration": "40 + 40",
+      "ica": "PL0002682024",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "HEXACONAZOL + PROPICONAZOL",
+      "targets": [
+        {
+          "crop": "Banano",
+          "pest": "Mycosphaerella fijiensis",
+          "dose": "750 - 1000 cc/ha",
+          "action": "Sigatoka Negra "
+        },
+        {
+          "crop": "Tomate De Arbol",
+          "pest": "Oidium sp",
+          "dose": "300 - 400 cc/200L",
+          "action": "Mildeo polvoso"
+        },
+        {
+          "crop": "Café",
+          "pest": "Hemileia vastatrix",
+          "dose": "1 L/ha",
+          "action": "Roya"
+        },
+        {
+          "crop": "Melon",
+          "pest": "Erysiphe cichoracearum",
+          "dose": "5 cc/L o 1L/ha",
+          "action": "\nOidium\n"
+        },
+        {
+          "crop": "Mora",
+          "pest": "Oidium sp",
+          "dose": "300 - 400 cc/200L",
+          "action": "Mildeo polvoso"
+        }
+      ]
+    },
+    {
+      "id": "tumbador-250-sc",
+      "name": "TUMBADOR 250 SC",
+      "formulation": "SC",
+      "concentration": "50 + 200",
+      "ica": "PL0001662023",
+      "toxicity": "II",
+      "category": "Insecticida",
+      "active_ingredient": "LAMBDACIHALOTRINA + CIROMAZINA",
+      "targets": [
+        {
+          "crop": "Arveja",
+          "pest": "Lyriomiza trifolii",
+          "dose": "150 cc/200L o 450 cc/ha",
+          "action": "Minador"
+        },
+        {
+          "crop": "Cebolla",
+          "pest": "Lyriomiza huidobrensis",
+          "dose": "250 cc/200L o 750 cc/ha",
+          "action": "Minador"
+        },
+        {
+          "crop": "Frijol  ",
+          "pest": "Lyriomiza huidobrensis",
+          "dose": "150 cc/200L o 450 cc/ha",
+          "action": "Minador"
+        },
+        {
+          "crop": "Melon",
+          "pest": "Lyriomiza trifolii",
+          "dose": "120 cc/200L",
+          "action": "Minador"
+        },
+        {
+          "crop": "Papa",
+          "pest": "Lyriomiza cuadrata",
+          "dose": "150 cc/200L o 450 cc/ha",
+          "action": "Minador"
+        },
+        {
+          "crop": "Pompon",
+          "pest": "Lyriomiza trifolii",
+          "dose": "0.75cc/L o 900 cc/ha",
+          "action": "Minador"
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Lyriomiza trifolii",
+          "dose": "150 cc/200L o 450 cc/ha",
+          "action": "Minador"
+        }
+      ]
+    },
+    {
+      "id": "valiente-100-me",
+      "name": "VALIENTE 100 ME",
+      "formulation": "ME",
+      "concentration": 100,
+      "ica": "PL0003292022",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "TRIDEMORPH",
+      "targets": [
+        {
+          "crop": "Banano",
+          "pest": "Mycosphaerella fijiensis",
+          "dose": "0,5 L/ha",
+          "action": "Sigatoka Negra "
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Sphaerotheca pannosa",
+          "dose": "1.0 - 1.2 cc/L",
+          "action": "Mildeo polvoso"
+        },
+        {
+          "crop": "Pompon-Crisantemo",
+          "pest": "Puccinia horiana ",
+          "dose": "0.5 cc/L",
+          "action": "Roya blanca"
+        }
+      ]
+    },
+    {
+      "id": "zafiro-425-me",
+      "name": "ZAFIRO 425 ME",
+      "formulation": "ME",
+      "concentration": "350 + 75",
+      "ica": "PL0003232023",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "PROPAMOCARB HCL + METALAXIL",
+      "targets": [
+        {
+          "crop": "Cebolla",
+          "pest": "Peronospora destructor",
+          "dose": "400 - 500 cc/200L (1.2-1.5 L/ha)",
+          "action": "Mildeo velloso"
+        },
+        {
+          "crop": "Papa",
+          "pest": "Phytophthora infestans",
+          "dose": "400 cc/200L (1.2 L/ha)",
+          "action": "Gota"
+        },
+        {
+          "crop": "Piña",
+          "pest": "Phytophthora parasitica",
+          "dose": "1L/Ha",
+          "action": "Podredumbre del corazón"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Peronospora sparsa",
+          "dose": "0,6 cc/L",
+          "action": "Mildeo velloso"
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Phytophthora infestans",
+          "dose": "500 cc/200L (1.5 L/ha)",
+          "action": "Gota"
+        },
+        {
+          "crop": "Uva",
+          "pest": "Plasmophara viticola",
+          "dose": "1.5 cc/L ó 0.6 L/ha",
+          "action": "Mildeo velloso"
+        }
+      ]
+    },
+    {
+      "id": "zoom-650-sc",
+      "name": "ZOOM 650 SC",
+      "formulation": "SC",
+      "concentration": "300 + 350",
+      "ica": "PL0003072022",
+      "toxicity": "II",
+      "category": "Fungicida",
+      "active_ingredient": "DIMETHOMORPH  + PROPAMOCARB HCL",
+      "targets": [
+        {
+          "crop": "Papa",
+          "pest": "Phytophtora infestans",
+          "dose": "400 ml/200L ",
+          "action": "Gota"
+        },
+        {
+          "crop": "Piña",
+          "pest": "Phytophtora parisitica",
+          "dose": "3 cc/L ",
+          "action": "Pudrición del corazon"
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Phytophtora infestans",
+          "dose": "400 ml/200L",
+          "action": "Tizón tardío"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Peronospora sparsa",
+          "dose": "1.25cc/L ",
+          "action": "Mildeo velloso"
+        },
+        {
+          "crop": "Cebolla",
+          "pest": "Peronospora destructor",
+          "dose": "400 ml/200L ",
+          "action": "Mildeo velloso"
+        },
+        {
+          "crop": "Uva",
+          "pest": "Plasmophara viticola",
+          "dose": "1.5 cc/L o 0,6 L/ha",
+          "action": "Mildeo velloso"
+        }
+      ]
+    },
+    {
+      "id": "arranque-sc",
+      "name": "ARRANQUE SC",
+      "formulation": "SC",
+      "concentration": "SC 7-17-12-1(S)",
+      "ica": 9753,
+      "toxicity": "",
+      "category": "Fertilizante foliar",
+      "active_ingredient": "NPK con AA",
+      "targets": [
+        {
+          "crop": "Todos",
+          "pest": "",
+          "dose": "1,5 L/ha",
+          "action": "Fertilizante Foliar "
+        }
+      ]
+    },
+    {
+      "id": "avance-sc-",
+      "name": "AVANCE SC",
+      "formulation": "SC",
+      "concentration": "0-22-28-2(MgO)-2(S)",
+      "ica": 9719,
+      "toxicity": "",
+      "category": "Fertilizante foliar",
+      "active_ingredient": "NPK",
+      "targets": [
+        {
+          "crop": "Todos",
+          "pest": "",
+          "dose": "1,0 L/ha",
+          "action": "Fertilizante Foliar "
+        }
+      ]
+    },
+    {
+      "id": "fixer-sc",
+      "name": "FIXER SC",
+      "formulation": "SC",
+      "concentration": "6-0-3-10 (CaO)-1(S)",
+      "ica": 10397,
+      "toxicity": "",
+      "category": "Fertilizante foliar",
+      "active_ingredient": "NK",
+      "targets": [
+        {
+          "crop": "Todos",
+          "pest": "",
+          "dose": "1,5 L/ha",
+          "action": "Fertilizante Foliar "
         }
       ]
     }
   ],
-  "safety_notice": "Utilice estos productos solo bajo recomendación de un ingeniero agrónomo certificado y siga la etiqueta."
+  "safety_notice": "Utilice los productos únicamente bajo recomendación de un ingeniero agrónomo certificado y siga la etiqueta."
 }
