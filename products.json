@@ -1,0 +1,155 @@
+{
+  "products": [
+    {
+      "id": "anker-500-sc",
+      "name": "ANKER 500 SC",
+      "formulation": "SC",
+      "concentration": "250+250 g/L",
+      "ica": "PL0003802023",
+      "toxicity": "II",
+      "category": "Fungicida",
+      "active_ingredient": "Iprodion + Pyrimethanil",
+      "targets": [
+        {
+          "crop": "Clavel",
+          "pest": "Botrytis cinerea",
+          "dose": "1,5 mL/L",
+          "action": "Fungicida"
+        },
+        {
+          "crop": "Pompon",
+          "pest": "Botrytis cinerea",
+          "dose": "1,5 mL/L",
+          "action": "Fungicida"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Botrytis cinerea",
+          "dose": "1,5 mL/L",
+          "action": "Fungicida"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Mildeo polvoso",
+          "dose": "1,5 mL/L",
+          "action": "Fungicida"
+        }
+      ]
+    },
+    {
+      "id": "athrin-100-ec",
+      "name": "ATHRIN BRIO GQA 100 EC",
+      "formulation": "EC",
+      "concentration": "100 g/L",
+      "ica": "PL0017682023",
+      "toxicity": "II",
+      "category": "Insecticida",
+      "active_ingredient": "Lambdacialotrina",
+      "targets": [
+        {
+          "crop": "Algodón",
+          "pest": "Spodoptera frugiperda",
+          "dose": "100 mL/ha",
+          "action": "Insecticida"
+        },
+        {
+          "crop": "Arroz",
+          "pest": "Spodoptera frugiperda",
+          "dose": "90‑100 mL/200 L",
+          "action": "Insecticida"
+        },
+        {
+          "crop": "Clavel",
+          "pest": "Tetranychus cinnabarinus",
+          "dose": "0,30 mL/L",
+          "action": "Insecticida"
+        },
+        {
+          "crop": "Frijol",
+          "pest": "Trialeurodes vaporariorum",
+          "dose": "60‑90 mL/200 L",
+          "action": "Insecticida"
+        },
+        {
+          "crop": "Maiz",
+          "pest": "Spodoptera frugiperda",
+          "dose": "60‑90 mL/200 L ó 180‑270 mL/ha",
+          "action": "Insecticida"
+        },
+        {
+          "crop": "Papa",
+          "pest": "Epitrix sp",
+          "dose": "50 mL/200 L ó 100 mL/ha",
+          "action": "Insecticida"
+        },
+        {
+          "crop": "Papa",
+          "pest": "Premnotrypes vorax",
+          "dose": "120 mL/200 L",
+          "action": "Insecticida"
+        },
+        {
+          "crop": "Papa",
+          "pest": "Tecia solanivora",
+          "dose": "120 mL/200 L ó 360 mL/ha",
+          "action": "Insecticida"
+        },
+        {
+          "crop": "Pastos",
+          "pest": "Collaria scenica",
+          "dose": "50 mL/200 L",
+          "action": "Insecticida"
+        },
+        {
+          "crop": "Pompon",
+          "pest": "Liriomyza trifolii",
+          "dose": "0,3 mL/L",
+          "action": "Insecticida"
+        },
+        {
+          "crop": "Rosas",
+          "pest": "Tetranychus sp.",
+          "dose": "0,25 mL/L",
+          "action": "Insecticida"
+        },
+        {
+          "crop": "Tomate",
+          "pest": "Agrotis ipsilon",
+          "dose": "60‑90 mL/200 L ó 180‑270 mL/ha",
+          "action": "Insecticida"
+        }
+      ]
+    },
+    {
+      "id": "brabus-100-me",
+      "name": "BRABUS 100 ME",
+      "formulation": "ME",
+      "concentration": "50+50 g/L",
+      "ica": "PL0019472023",
+      "toxicity": "III",
+      "category": "Fungicida",
+      "active_ingredient": "Difenoconazol + Validamicina",
+      "targets": [
+        {
+          "crop": "Arroz",
+          "pest": "Rhizoctonia solani",
+          "dose": "1 L/ha",
+          "action": "Fungicida"
+        },
+        {
+          "crop": "Arroz",
+          "pest": "Manchado de grano (Helmintosporium y otros)",
+          "dose": "1‑1,25 L/ha",
+          "action": "Fungicida"
+        },
+        {
+          "crop": "Papa",
+          "pest": "Rhizoctonia solani",
+          "dose": "1,2 L/ha",
+          "action": "Fungicida"
+        }
+      ]
+    }
+  ],
+  "safety_notice": "Utilice estos productos solo bajo recomendación de un ingeniero agrónomo certificado y siga la etiqueta."
+}
