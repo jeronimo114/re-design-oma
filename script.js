@@ -367,7 +367,15 @@ document.addEventListener("DOMContentLoaded", () => {
               <p class="small mb-2"><strong>${p.category}</strong> • ${
             p.formulation
           }</p>
-              <button class="btn btn-doc w-100 disabled-opa-50">Ficha Técnica (próx.)</button>
+              <button class="btn btn-doc w-100 mb-2" data-bs-toggle="modal" data-bs-target="#productModal">
+  <i class="fas fa-file-alt me-2"></i>Ficha Técnica
+</button>
+<button class="btn btn-doc w-100 mb-2" data-bs-toggle="modal" data-bs-target="#productModalEmergency">
+  <i class="fas fa-file-alt me-2"></i>Tarjeta de Emergencia
+</button>
+<button class="btn btn-doc w-100" data-bs-toggle="modal" data-bs-target="#productModalSafety">
+  <i class="fas fa-file-alt me-2"></i>Hoja de Seguridad
+</button>
             </div>
           </div>`
         );
