@@ -417,6 +417,43 @@ document.addEventListener("DOMContentLoaded", () => {
   const cropEl = document.getElementById("cropFilter");
   const probEl = document.getElementById("problemFilter");
   const searchEl = document.getElementById("searchInput");
+
+  // Category cards visual selection
+  const categoryCards = document.querySelectorAll("#categorias .cat-card");
+  const urlParams = getQueryParams();
+  const initialCat = urlParams.categoria;
+
+  categoryCards.forEach((card) => {
+    const cardUrl = new URL(card.href, window.location.origin);
+    const cardCat = cardUrl.searchParams.get("categoria");
+
+    // Highlight if matches URL on load
+    if (initialCat && cardCat === initialCat) {
+      card.classList.add("active");
+      categoryCards.forEach((c) => {
+        if (c !== card) c.classList.add("inactive");
+      });
+    }
+
+    card.addEventListener("click", (e) => {
+      e.preventDefault();
+      // update URL param without reload
+      window.history.replaceState(null, "", "?categoria=" + cardCat);
+      // apply active/inactive classes
+      categoryCards.forEach((c) => {
+        c.classList.remove("active", "inactive");
+      });
+      card.classList.add("active");
+      categoryCards.forEach((c) => {
+        if (c !== card) c.classList.add("inactive");
+      });
+      // trigger filtering
+      filterProducts();
+      document
+        .getElementById("catalogo")
+        .scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
 });
 // Dentro de tu DOMContentLoaded, justo después de los listeners protegidos:
 document.querySelectorAll(".btn-cultivo").forEach((btn) => {
