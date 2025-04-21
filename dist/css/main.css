@@ -474,6 +474,9 @@ section:nth-of-type(4) {
 .catalogo h3 {
   color: #2e7d32;
 }
+.catalogo .row > .col {
+  display: flex;
+}
 .catalogo .product-card {
   background: #ffffff;
   border-radius: 0.5rem;
@@ -482,12 +485,15 @@ section:nth-of-type(4) {
   transition: transform 0.3s ease;
   cursor: pointer;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100% !important;
 }
 .catalogo .product-card:hover {
   transform: translateY(-4px);
 }
 .catalogo .product-card img {
-  width: 100%;
+  width: 250px;
   border-radius: 0.3rem;
 }
 .catalogo .product-card .product-name {
@@ -507,6 +513,7 @@ section:nth-of-type(4) {
   border-radius: 0.3rem;
   padding: 0.5rem 1rem;
   transition: background 0.3s ease;
+  margin-top: auto;
 }
 .catalogo .product-card .btn-doc:hover, .catalogo .product-card .btn-doc:focus {
   background: #84b64c;

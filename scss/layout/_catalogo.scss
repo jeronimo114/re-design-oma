@@ -11,6 +11,13 @@
     color: vars.$color-principal;
   }
 
+  // Make columns flex containers so cards can stretch
+  .row {
+    > .col {
+      display: flex;
+    }
+  }
+
   // Tarjetas de producto (estilo similar al anterior)
   .product-card {
     background: vars.$color-blanco;
@@ -20,13 +27,16 @@
     transition: transform 0.3s ease;
     cursor: pointer;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100% !important;
 
     &:hover {
       transform: translateY(-4px);
     }
 
     img {
-      width: 100%;
+      width: 250px;
       border-radius: 0.3rem;
     }
 
@@ -49,6 +59,7 @@
       border-radius: 0.3rem;
       padding: 0.5rem 1rem;
       transition: background 0.3s ease;
+      margin-top: auto;
 
       &:hover,
       &:focus {

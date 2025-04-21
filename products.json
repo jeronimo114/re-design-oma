@@ -34,7 +34,8 @@
           "dose": "1,5 mL/L",
           "action": "Mildeo polvoso"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/anker-500-sc.png"
     },
     {
       "id": "athrin-brio-gqa-100-ec",
@@ -118,7 +119,8 @@
           "dose": "60 a 90/200L ó 180 a 270/ha",
           "action": "Agrotis"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/athrin-brio-gqa-100-ec.png"
     },
     {
       "id": "brabus-100-me",
@@ -166,7 +168,8 @@
           "dose": "1.5 L/ha",
           "action": "Piricularia"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/cacique-420-sc.jpg"
     },
     {
       "id": "catombe-brio-gqa-50-sc",
@@ -256,7 +259,8 @@
           "dose": "0,4 a 0,5 cc/L o\n260 a 325 cc/Ha",
           "action": "Acaros"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/catombe-forte-5-5-ec.png"
     },
     {
       "id": "cazza-100-me",
@@ -340,7 +344,8 @@
           "dose": "60- 80 ml/200 L\n 180 - 240 ml / ha",
           "action": "Minador"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/ciromex-brio-gqa-400-sc.png"
     },
     {
       "id": "coraza-480-sc",
@@ -376,7 +381,8 @@
           "dose": "1.5 l/ha",
           "action": "Alternaria"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/coraza-480-sc.jpg"
     },
     {
       "id": "deminak-45-ec",
@@ -448,7 +454,8 @@
           "dose": "240 - 300 mL/200L",
           "action": "Mildeo polvoso"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/deminak-45-ec.jpg"
     },
     {
       "id": "difón-brio-160-sc",
@@ -520,7 +527,8 @@
           "dose": "66 g/200 L",
           "action": "Minador"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/estocada-90-sp.jpg"
     },
     {
       "id": "faro-40-me",
@@ -568,7 +576,8 @@
           "dose": "1.5 - 2.5 Kg/ha",
           "action": "Gota"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/format-70-wp.jpg"
     },
     {
       "id": "fosetal-80-wp",
@@ -604,7 +613,8 @@
           "dose": "2.40 Kg / ha\n2 g/L \n(1200 Litros de agua/ha)\n",
           "action": "Mildeo Velloso"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/fosetal-80-wp.jpg"
     },
     {
       "id": "fulminator-600-ec",
@@ -652,7 +662,8 @@
           "dose": "120 ml/200 l",
           "action": "Barrenador del fruto"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/fulminator-600-ec.png"
     },
     {
       "id": "heroe-100-me",
@@ -790,7 +801,8 @@
           "dose": "0.5 – 0.6 ml / l                                                                                                                                                                                                                             ",
           "action": "Cogollero"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/mitipyr-240-sc.png"
     },
     {
       "id": "patrulla-70-me",
@@ -856,7 +868,8 @@
           "dose": "0,75  - 1 L/Ha",
           "action": "Antracnosis"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/patrulla-70-me.png"
     },
     {
       "id": "prodion-500-sc",
@@ -898,7 +911,8 @@
           "dose": "1,0 a 1,5 cc/L",
           "action": "\nBotrytis\n"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/prodion-500-sc.jpg"
     },
     {
       "id": "reten-6-me",
@@ -964,7 +978,8 @@
           "dose": "5 mL/L",
           "action": "Pudrición de Raíz"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/sideral-70-sl.jpg"
     },
     {
       "id": "skel-250-ec",
@@ -1006,7 +1021,8 @@
           "dose": "100 ml /200 l ",
           "action": "Tizon temprano"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/skel-250-ec.jpg"
     },
     {
       "id": "skyp-5-sc",
@@ -1054,7 +1070,8 @@
           "dose": "1 L/ha",
           "action": "Roya"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/skyp-5-sc.jpg"
     },
     {
       "id": "spax-80-me",
@@ -1108,7 +1125,8 @@
           "dose": "0,7 L/ha",
           "action": "Sigatoka Negra "
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/spax-80-me.png"
     },
     {
       "id": "stopper-80-me",
@@ -1204,7 +1222,8 @@
           "dose": "150 cc/200L o 450 cc/ha",
           "action": "Minador"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/tumbador-250-sc.png"
     },
     {
       "id": "valiente-100-me",
@@ -1282,7 +1301,8 @@
           "dose": "1.5 cc/L ó 0.6 L/ha",
           "action": "Mildeo velloso"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/zafiro-425-me.png"
     },
     {
       "id": "zoom-650-sc",
@@ -1330,7 +1350,8 @@
           "dose": "1.5 cc/L o 0,6 L/ha",
           "action": "Mildeo velloso"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/zoom-650-sc.png"
     },
     {
       "id": "arranque-sc",

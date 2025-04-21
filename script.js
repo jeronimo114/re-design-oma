@@ -355,9 +355,9 @@ document.addEventListener("DOMContentLoaded", () => {
                data-categoria="${p.category.toLowerCase()}">
             <div class="product-card h-100 p-3">
               <div class="position-relative mb-3">
-                <img src="/media/man.jpg" class="img-fluid rounded" alt="${
-                  p.name
-                }" loading="lazy">
+                <img src="${p.image_url}" class="img-fluid rounded" alt="${
+            p.name
+          }" loading="lazy">
                 <span class="position-absolute top-0 end-0 translate-middle badge bg-primary">${
                   p.ica
                 }</span>
