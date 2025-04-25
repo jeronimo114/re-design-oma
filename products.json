@@ -263,24 +263,6 @@
       "image_url": "/media/Productos/Catalogo/catombe-forte-5-5-ec.png"
     },
     {
-      "id": "cazza-100-me",
-      "name": "CAZZA 100 ME",
-      "formulation": "ME",
-      "concentration": 100,
-      "ica": "PL0005692023",
-      "toxicity": "III",
-      "category": "Herbicida",
-      "active_ingredient": "PROPANIL",
-      "targets": [
-        {
-          "crop": "Arroz",
-          "pest": "Malezas",
-          "dose": "2 L/ha",
-          "action": "POSTEMERGENTE"
-        }
-      ]
-    },
-    {
       "id": "ciromex-75-wp",
       "name": "CIROMEX 75 WP",
       "formulation": "WP",
@@ -1128,48 +1110,7 @@
       ],
       "image_url": "/media/Productos/Catalogo/spax-80-me.png"
     },
-    {
-      "id": "stopper-80-me",
-      "name": "STOPPER 80 ME",
-      "formulation": "ME",
-      "concentration": "40 + 40",
-      "ica": "PL0002682024",
-      "toxicity": "III",
-      "category": "Fungicida",
-      "active_ingredient": "HEXACONAZOL + PROPICONAZOL",
-      "targets": [
-        {
-          "crop": "Banano",
-          "pest": "Mycosphaerella fijiensis",
-          "dose": "750 - 1000 cc/ha",
-          "action": "Sigatoka Negra "
-        },
-        {
-          "crop": "Tomate De Arbol",
-          "pest": "Oidium sp",
-          "dose": "300 - 400 cc/200L",
-          "action": "Mildeo polvoso"
-        },
-        {
-          "crop": "Café",
-          "pest": "Hemileia vastatrix",
-          "dose": "1 L/ha",
-          "action": "Roya"
-        },
-        {
-          "crop": "Melon",
-          "pest": "Erysiphe cichoracearum",
-          "dose": "5 cc/L o 1L/ha",
-          "action": "\nOidium\n"
-        },
-        {
-          "crop": "Mora",
-          "pest": "Oidium sp",
-          "dose": "300 - 400 cc/200L",
-          "action": "Mildeo polvoso"
-        }
-      ]
-    },
+
     {
       "id": "tumbador-250-sc",
       "name": "TUMBADOR 250 SC",

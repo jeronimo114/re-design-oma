@@ -46,6 +46,8 @@ const cropProblems = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Detect if we are on the catálogo page
+  const isCatalogoPage = window.location.pathname.includes("catalogo");
   /**
    * 1) Inicialización de AOS (Animate On Scroll)
    */
@@ -423,37 +425,39 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlParams = getQueryParams();
   const initialCat = urlParams.categoria;
 
-  categoryCards.forEach((card) => {
-    const cardUrl = new URL(card.href, window.location.origin);
-    const cardCat = cardUrl.searchParams.get("categoria");
+  if (isCatalogoPage) {
+    categoryCards.forEach((card) => {
+      const cardUrl = new URL(card.href, window.location.origin);
+      const cardCat = cardUrl.searchParams.get("categoria");
 
-    // Highlight if matches URL on load
-    if (initialCat && cardCat === initialCat) {
-      card.classList.add("active");
-      categoryCards.forEach((c) => {
-        if (c !== card) c.classList.add("inactive");
-      });
-    }
+      // Highlight if matches URL on load
+      if (initialCat && cardCat === initialCat) {
+        card.classList.add("active");
+        categoryCards.forEach((c) => {
+          if (c !== card) c.classList.add("inactive");
+        });
+      }
 
-    card.addEventListener("click", (e) => {
-      e.preventDefault();
-      // update URL param without reload
-      window.history.replaceState(null, "", "?categoria=" + cardCat);
-      // apply active/inactive classes
-      categoryCards.forEach((c) => {
-        c.classList.remove("active", "inactive");
+      card.addEventListener("click", (e) => {
+        e.preventDefault();
+        // update URL param without reload
+        window.history.replaceState(null, "", "?categoria=" + cardCat);
+        // apply active/inactive classes
+        categoryCards.forEach((c) => {
+          c.classList.remove("active", "inactive");
+        });
+        card.classList.add("active");
+        categoryCards.forEach((c) => {
+          if (c !== card) c.classList.add("inactive");
+        });
+        // trigger filtering
+        filterProducts();
+        document
+          .getElementById("catalogo")
+          .scrollIntoView({ behavior: "smooth", block: "start" });
       });
-      card.classList.add("active");
-      categoryCards.forEach((c) => {
-        if (c !== card) c.classList.add("inactive");
-      });
-      // trigger filtering
-      filterProducts();
-      document
-        .getElementById("catalogo")
-        .scrollIntoView({ behavior: "smooth", block: "start" });
     });
-  });
+  }
 });
 // Dentro de tu DOMContentLoaded, justo después de los listeners protegidos:
 document.querySelectorAll(".btn-cultivo").forEach((btn) => {
