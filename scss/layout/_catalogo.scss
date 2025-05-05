@@ -22,47 +22,57 @@
   .product-card {
     background: vars.$color-blanco;
     border-radius: 0.5rem;
-    @include mix.box-shadow(0, 2px, 8px, rgba(0, 0, 0, 0.1));
-    padding: 1.5rem;
+    @include mix.box-shadow(0, 4px, 14px, rgba(0, 0, 0, 0.06));
+    padding: 0;
     transition: transform 0.3s ease;
     cursor: pointer;
     text-align: center;
     display: flex;
     flex-direction: column;
     height: 100% !important;
+    overflow: hidden;
 
     &:hover {
       transform: translateY(-4px);
     }
 
-    img {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-    }
-
-    // Wrapper to keep a fixed image area, even if the img fails to load
-    .position-relative {
-      height: 230px; // unified height for all product images
+    // Image wrapper keeps aspect ratio and fills card width
+    .img-wrapper {
+      width: 100%;
+      padding-top: 130%; // ≈4:5 aspect ratio
+      background: #f5f6f8;
+      position: relative;
+      border-bottom: 1px solid #e3e6e8;
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
-      background: #f8f9fa; // subtle gray background as placeholder
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
 
-    .product-name {
-      font-size: 1.25rem;
-      color: vars.$color-principal;
-      margin: 0.5rem 0;
-    }
+    .card-body {
+      padding: 1rem 1rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
 
-    .product-desc {
-      font-size: 0.9rem;
-      color: #555;
-      margin-bottom: 0.5rem;
+      h5 {
+        font-size: 1.05rem;
+        color: vars.$color-principal;
+        margin: 0.75rem 0 0.25rem;
+      }
+
+      p {
+        margin-bottom: 0.25rem;
+      }
     }
 
     .btn-doc {
@@ -72,7 +82,7 @@
       border-radius: 0.3rem;
       padding: 0.5rem 1rem;
       transition: background 0.3s ease;
-      margin-top: auto;
+      margin-top: 0.75rem;
       margin-bottom: 0;
 
       &:hover,
@@ -81,13 +91,23 @@
       }
     }
   }
-
-  // Ensure equal column widths and reduced gap for product grid
+  // Reemplaza el bloque .equal-cols existente por este
   .equal-cols {
+    /* Centra las columnas dentro del row */
+    justify-content: center !important;
+    gap: 1.5rem !important; // espacio horizontal y vertical
+
     > .col {
-      flex: 0 0 calc(33.333% - 1rem); // adjust for 1rem horizontal gap (g-3)
-      max-width: calc(33.333% - 1rem);
+      flex: 0 0 320px; // ancho fijo y consistente (≈3 cards en desktop)
+      max-width: 320px;
+      margin-bottom: 1.5rem; // refuerzo para móviles
     }
+  }
+
+  /* Opcional: mejora de sombra y radio */
+  .product-card {
+    border-radius: 0.75rem;
+    @include mix.box-shadow(0, 8px, 30px, rgba(0, 0, 0, 0.05));
   }
 
   // Panel de filtros minimalista

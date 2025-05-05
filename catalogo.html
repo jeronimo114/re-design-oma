@@ -505,12 +505,35 @@
         const qs = new URLSearchParams(window.location.search);
         const paramCategoria = (qs.get("categoria") || "").toLowerCase();
         const paramCultivo = (qs.get("cultivo") || "").toLowerCase();
+        console.log(
+          "[DEBUG] Initial params → categoria:",
+          paramCategoria,
+          "cultivo:",
+          paramCultivo
+        );
         // Mapa de slug → texto legible para título
         const categoryTitles = {
           herbicida: "Herbicidas",
           fungicida: "Fungicidas",
           insecticida: "Insecticidas",
           "fertilizante-foliar": "Fertilizantes Foliares",
+        };
+
+        const cultivoTitles = {
+          papa: "Papa",
+          tomate: "Tomate",
+          maiz: "Maíz",
+          arroz: "Arroz",
+          cebolla: "Cebolla",
+          frijol: "Frijol",
+          fresa: "Fresa",
+          aguacate: "Aguacate",
+          arveja: "Arveja",
+          rosa: "Rosa",
+          clavel: "Clavel",
+          pompon: "Pompon",
+          crisantemo: "Crisantemo",
+          hortensia: "Hortensia",
         };
 
         /* 1) Sincronizar UI con los parámetros */
@@ -529,11 +552,76 @@
                 }
               });
           }
-          /* Cambia el título si hay categoría seleccionada */
+          /* Cambia el título si hay categoría o cultivo seleccionados */
           const titleEl = document.querySelector("#catalogo h1");
-          if (titleEl && paramCategoria && categoryTitles[paramCategoria]) {
-            titleEl.textContent = categoryTitles[paramCategoria];
+          if (titleEl) {
+            if (paramCategoria && categoryTitles[paramCategoria]) {
+              titleEl.textContent = categoryTitles[paramCategoria];
+            } else if (paramCultivo && cultivoTitles[paramCultivo]) {
+              titleEl.textContent = cultivoTitles[paramCultivo];
+            }
           }
+          console.log(
+            "[DEBUG] Title after initial set:",
+            titleEl ? titleEl.textContent : "NO TITLE"
+          );
+
+          /* Cambia el título al hacer clic en las categorías del navbar */
+          document
+            .querySelectorAll('nav a[href*="?categoria="]')
+            .forEach((link) => {
+              link.addEventListener("click", (e) => {
+                e.preventDefault(); // evita el salto instantáneo
+
+                const slug = new URL(
+                  link.href,
+                  window.location.origin
+                ).searchParams
+                  .get("categoria")
+                  .toLowerCase();
+
+                console.log("[DEBUG] Navbar category clicked → slug:", slug);
+
+                if (titleEl && categoryTitles[slug]) {
+                  titleEl.textContent = categoryTitles[slug];
+                  console.log(
+                    "[DEBUG] Title updated to:",
+                    categoryTitles[slug]
+                  );
+                } else {
+                  console.log("[DEBUG] Title NOT updated (slug no match)");
+                }
+
+                // Navega a la URL seleccionada (forces reload con el slug correcto)
+                window.location.href = link.href;
+              });
+            });
+
+          // Cambia título al hacer clic en enlaces de cultivo
+          document
+            .querySelectorAll('nav a[href*="?cultivo="]')
+            .forEach((link) => {
+              link.addEventListener("click", (e) => {
+                e.preventDefault();
+                const slug = new URL(
+                  link.href,
+                  window.location.origin
+                ).searchParams
+                  .get("cultivo")
+                  .toLowerCase();
+
+                console.log("[DEBUG] Navbar cultivo clicked → slug:", slug);
+
+                if (titleEl && cultivoTitles[slug]) {
+                  titleEl.textContent = cultivoTitles[slug];
+                  console.log("[DEBUG] Title updated to:", cultivoTitles[slug]);
+                } else {
+                  console.log("[DEBUG] Title NOT updated (cultivo no match)");
+                }
+
+                window.location.href = link.href;
+              });
+            });
         });
 
         /* 2) Carga de productos y render según filtro */
@@ -568,29 +656,39 @@
                 "beforeend",
                 `
        <div class="col" data-categoria="${p.category.toLowerCase()}">
-         <div class="product-card h-100 p-3">
-           <div class="position-relative mb-3">
+         <div class="product-card h-100">
+           <div class="img-wrapper">
              <img src="${p.image_url}" class="img-fluid rounded" alt="${
                   p.name
                 }" loading="lazy">
            </div>
-           <h5 class="fw-bold text-primary">${p.name}</h5>
-           <p class="small text-muted">${p.active_ingredient}</p>
-           <p class="small mb-2"><strong>${p.category}</strong> • ${
+           <div class="card-body">
+             <h5 class="fw-bold text-primary">${p.name}</h5>
+             <p class="small text-muted">${p.active_ingredient}</p>
+             <p class="small mb-2"><strong>${p.category}</strong> • ${
                   p.formulation
                 }</p>
-           <button class="btn btn-doc w-100 mb-2">
-             <i class="fas fa-file-alt me-2"></i>Ficha Técnica
-           </button>
-           <button class="btn btn-doc w-100 mb-2">
-             <i class="fas fa-file-alt me-2"></i>Tarjeta de Emergencia
-           </button>
-           <button class="btn btn-doc w-100">
-             <i class="fas fa-file-alt me-2"></i>Hoja de Seguridad
-           </button>
+             <button class="btn btn-doc w-100 mb-2">
+               <i class="fas fa-file-alt me-2"></i>Ficha Técnica
+             </button>
+             <button class="btn btn-doc w-100 mb-2">
+               <i class="fas fa-file-alt me-2"></i>Tarjeta de Emergencia
+             </button>
+             <button class="btn btn-doc w-100">
+               <i class="fas fa-file-alt me-2"></i>Hoja de Seguridad
+             </button>
+           </div>
          </div>
        </div>
        `
+              );
+              /* DEBUG: log rendered products */
+              // (executed once per product shown)
+              console.log(
+                "[DEBUG] Rendered product:",
+                p.name,
+                "category:",
+                p.category
               );
             });
 
