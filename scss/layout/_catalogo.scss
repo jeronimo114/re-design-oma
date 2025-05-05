@@ -262,3 +262,33 @@
     }
   }
 }
+
+/* ---------- MODAL DE PRODUCTO ---------- */
+.modal-product {
+  border: none;
+  border-radius: 0.75rem;
+
+  .modal-body {
+    color: #333;
+  }
+
+  &__image {
+    background-size: cover;
+    background-position: center;
+    min-height: 320px;
+    background-color: #eef0f2;
+  }
+
+  h2 {
+    color: vars.$color-principal;
+    font-size: 1.5rem;
+  }
+
+  .btn-doc {
+    background: vars.$color-principal;
+    &:hover,
+    &:focus {
+      background: vars.$color-secundario;
+    }
+  }
+}

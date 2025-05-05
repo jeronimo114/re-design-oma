@@ -3,39 +3,47 @@
     {
       "id": "anker-500-sc",
       "name": "ANKER 500 SC",
-      "formulation": "SC",
-      "concentration": "250+250",
-      "ica": "PL0003802023",
-      "toxicity": "II",
       "category": "Fungicida",
-      "active_ingredient": "IPRODION + PIRIMETHANYL",
-      "targets": [
+      "image_url": "media/productos/Catalogo/ANKER.png",
+      "reg_ica": "PL0003802023",
+      "formulation": "Suspensión concentrada",
+      "chemical_group": "Dicarboximidas + Anilino‑pirimidinas",
+      "tox_category": "II",
+      "presentations": ["1 L", "250 mL"],
+      "mode_of_action": "Fungicida sistémico traslaminar de acción preventiva y curativa.",
+      "mechanism": "Impide la germinación de esporas ... Inhibe la actividad enzimática.",
+      "composition": [
+        { "ai": "Iprodione", "pct": "" },
+        { "ai": "Pyrimethanil", "pct": "" }
+      ],
+      "warnings": "Todos los productos químicos de uso agrícola ...",
+      "uses": [
         {
           "crop": "Clavel",
-          "pest": "Botrytis cinerea",
-          "dose": "  1,5 mL/L",
-          "action": "Botrytis"
+          "target": "Botrytis cinerea",
+          "dose": "1.5 mL/L",
+          "pc": "N.A.",
+          "pr": "24 h"
         },
         {
-          "crop": "Pompon",
-          "pest": "Botrytis cinerea",
-          "dose": "1,5 mL/L",
-          "action": "Botrytis"
+          "crop": "Pompón",
+          "target": "Botrytis cinerea",
+          "dose": "1.5 mL/L",
+          "pc": "N.A.",
+          "pr": "24 h"
         },
         {
-          "crop": "Rosas",
-          "pest": "Botrytis cinerea",
-          "dose": "1,5 mL/L",
-          "action": "Botrytis"
-        },
-        {
-          "crop": "Rosas",
-          "pest": "Sphaerotheca pannosa",
-          "dose": "1,5 mL/L",
-          "action": "Mildeo polvoso"
+          "crop": "Rosa",
+          "target": "Botrytis cinerea",
+          "dose": "1.5 mL/L",
+          "pc": "N.A.",
+          "pr": "24 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/anker-500-sc.png"
+
+      "ficha_pdf": "docs/ANKER_Ficha.pdf",
+      "tarjeta_pdf": "docs/ANKER_Tarjeta.pdf",
+      "hoja_pdf": "docs/ANKER_Hoja.pdf"
     },
     {
       "id": "athrin-brio-gqa-100-ec",

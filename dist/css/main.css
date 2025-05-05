@@ -694,6 +694,31 @@ section:nth-of-type(4) {
   opacity: 0.7;
 }
 
+/* ---------- MODAL DE PRODUCTO ---------- */
+.modal-product {
+  border: none;
+  border-radius: 0.75rem;
+}
+.modal-product .modal-body {
+  color: #333;
+}
+.modal-product__image {
+  background-size: cover;
+  background-position: center;
+  min-height: 320px;
+  background-color: #eef0f2;
+}
+.modal-product h2 {
+  color: #2e7d32;
+  font-size: 1.5rem;
+}
+.modal-product .btn-doc {
+  background: #2e7d32;
+}
+.modal-product .btn-doc:hover, .modal-product .btn-doc:focus {
+  background: #84b64c;
+}
+
 .representantes .card {
   border: none;
   border-radius: 0.5rem;
