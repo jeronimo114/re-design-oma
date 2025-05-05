@@ -288,273 +288,109 @@
     </header>
     <!-- ✱ BEGIN CATEGORÍAS DE PRODUCTO -->
     <section id="categorias" class="categorias py-5 bg-light">
-        <div class="container">
-          <h2 class="text-center fw-bold mb-4">Categorías de Producto</h2>
-
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-            <!-- Herbicidas -->
-            <div class="col">
-              <a
-                href="catalogo.html?categoria=herbicida"
-                class="cat-card d-block position-relative overflow-hidden rounded"
-              >
-                <img
-                  src="/media/imagen-tractor1.png"
-                  class="w-100 h-100 object-fit-cover"
-                  alt="Herbicidas"
-                  loading="lazy"
-                />
-                <div
-                  class="cat-overlay position-absolute top-0 start-0 w-100 h-100"
-                ></div>
-                <div
-                  class="cat-content position-absolute top-50 start-50 translate-middle text-center text-white"
-                >
-                  <h5 class="fw-bold mb-1">Herbicidas</h5>
-                  <span class="cat-count small"></span>
-                </div>
-              </a>
-            </div>
-
-            <!-- Fungicidas -->
-            <div class="col">
-              <a
-                href="catalogo.html?categoria=fungicida"
-                class="cat-card d-block position-relative overflow-hidden rounded"
-              >
-                <img
-                  src="/media/imagen-plantas2.png"
-                  class="w-100 h-100 object-fit-cover"
-                  alt="Fungicidas"
-                  loading="lazy"
-                />
-                <div
-                  class="cat-overlay position-absolute top-0 start-0 w-100 h-100"
-                ></div>
-                <div
-                  class="cat-content position-absolute top-50 start-50 translate-middle text-center text-white"
-                >
-                  <h5 class="fw-bold mb-1">Fungicidas</h5>
-                  <span class="cat-count small"></span>
-                </div>
-              </a>
-            </div>
-
-            <!-- Insecticidas -->
-            <div class="col">
-              <a
-                href="catalogo.html?categoria=insecticida"
-                class="cat-card d-block position-relative overflow-hidden rounded"
-              >
-                <img
-                  src="/media/imagen-insecticidas3.png"
-                  class="w-100 h-100 object-fit-cover"
-                  alt="Insecticidas"
-                  loading="lazy"
-                />
-                <div
-                  class="cat-overlay position-absolute top-0 start-0 w-100 h-100"
-                ></div>
-                <div
-                  class="cat-content position-absolute top-50 start-50 translate-middle text-center text-white"
-                >
-                  <h5 class="fw-bold mb-1">Insecticidas</h5>
-                  <span class="cat-count small"></span>
-                </div>
-              </a>
-            </div>
-
-            <!-- Fertilizantes Foliares -->
-            <div class="col">
-              <a
-                href="catalogo.html?categoria=fertilizante-foliar"
-                class="cat-card d-block position-relative overflow-hidden rounded"
-              >
-                <img
-                  src="/media/imagen-fertilizantes4.png"
-                  class="w-100 h-100 object-fit-cover"
-                  alt="Fertilizantes Foliares"
-                  loading="lazy"
-                />
-                <div
-                  class="cat-overlay position-absolute top-0 start-0 w-100 h-100"
-                ></div>
-                <div
-                  class="cat-content position-absolute top-50 start-50 translate-middle text-center text-white"
-                >
-                  <h5 class="fw-bold mb-1">Fertilizantes Foliares</h5>
-                  <span class="cat-count small"></span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    <!-- ✱ END CATEGORÍAS DE PRODUCTO -->
-    <div class="filter-header sticky-top py-3">
       <div class="container">
-        <div class="row g-3 align-items-center">
-          <div class="col-lg-4">
-            <div class="dropdown">
-              <button
-                class="btn btn-outline-primary dropdown-toggle w-100 text-start"
-                data-bs-toggle="dropdown"
-              >
-                <i class="fas fa-bug me-2"></i>Problema por Cultivo
-              </button>
-              <div class="dropdown-menu p-3" style="min-width: 300px">
-                <select class="form-select mb-2" id="cropFilter">
-                  <option value="">Seleccionar Cultivo</option>
-                  <option value="papa">Papa</option>
-                  <option value="rosa">Rosa</option>
-                  <option value="clavel">Clavel</option>
-                  <option value="pompon">Pompon</option>
-                  <option value="crisantemo">Crisantemo</option>
-                  <option value="hortensia">Hortensia</option>
-                  <option value="arroz">Arroz</option>
-                  <option value="tomate">Tomate</option>
-                  <option value="cebolla">Cebolla</option>
-                  <option value="frijol">Frijol</option>
-                  <option value="fresa">Fresa</option>
-                  <option value="aguacate">Aguacate</option>
-                  <option value="maiz">Maíz</option>
-                  <option value="arveja">Arveja</option>
-                </select>
-                <select class="form-select" id="problemFilter" disabled>
-                  <option value="">Seleccionar Problema</option>
-                </select>
-              </div>
-            </div>
-          </div>
+        <h2 class="text-center fw-bold mb-4">Categorías de Producto</h2>
 
-          <div class="col-lg-4">
-            <div class="dropdown">
-              <button
-                class="btn btn-outline-primary dropdown-toggle w-100 text-start"
-                data-bs-toggle="dropdown"
-              >
-                <i class="fas fa-spa me-2"></i>Soluciones por Cultivo
-              </button>
-              <div class="dropdown-menu p-3 dropdown-menu-xl">
-                <div class="row row-cols-3 g-3">
-                  <div class="col mb-3">
-                    <button class="btn btn-cultivo w-100" data-cultivo="rosa">
-                      <i class="fas fa-rose text-danger"></i>
-                      <span class="d-block mt-2 small">Rosa</span>
-                    </button>
-                  </div>
-                  <div class="col mb-3">
-                    <button class="btn btn-cultivo w-100" data-cultivo="clavel">
-                      <i class="fas fa-spa text-pink"></i>
-                      <span class="d-block mt-2 small">Clavel</span>
-                    </button>
-                  </div>
-                  <div class="col mb-3">
-                    <button class="btn btn-cultivo w-100" data-cultivo="pompon">
-                      <i class="fas fa-circle-nodes text-purple"></i>
-                      <span class="d-block mt-2 small">Pompon</span>
-                    </button>
-                  </div>
-                  <div class="col mb-3">
-                    <button
-                      class="btn btn-cultivo w-100"
-                      data-cultivo="crisantemo"
-                    >
-                      <i class="fas fa-sun text-warning"></i>
-                      <span class="d-block mt-2 small">Crisantemo</span>
-                    </button>
-                  </div>
-                  <div class="col mb-3">
-                    <button
-                      class="btn btn-cultivo w-100"
-                      data-cultivo="hortensia"
-                    >
-                      <i class="fas fa-snowflake text-info"></i>
-                      <span class="d-block mt-2 small">Hortensia</span>
-                    </button>
-                  </div>
-
-                  <div class="col mb-3">
-                    <button class="btn btn-cultivo w-100" data-cultivo="papa">
-                      <i class="fas fa-seedling text-success"></i>
-                      <span class="d-block mt-2 small">Papa</span>
-                    </button>
-                  </div>
-                  <div class="col mb-3">
-                    <button class="btn btn-cultivo w-100" data-cultivo="arroz">
-                      <i class="fas fa-wheat-awn text-warning"></i>
-                      <span class="d-block mt-2 small">Arroz</span>
-                    </button>
-                  </div>
-                  <div class="col mb-3">
-                    <button class="btn btn-cultivo w-100" data-cultivo="tomate">
-                      <i class="fas fa-apple-whole text-danger"></i>
-                      <span class="d-block mt-2 small">Tomate</span>
-                    </button>
-                  </div>
-                  <div class="col mb-3">
-                    <button
-                      class="btn btn-cultivo w-100"
-                      data-cultivo="cebolla"
-                    >
-                      <i class="fas fa-layer-group text-secondary"></i>
-                      <span class="d-block mt-2 small">Cebolla</span>
-                    </button>
-                  </div>
-                  <div class="col mb-3">
-                    <button class="btn btn-cultivo w-100" data-cultivo="frijol">
-                      <i class="fas fa-ellipsis text-brown"></i>
-                      <span class="d-block mt-2 small">Frijol</span>
-                    </button>
-                  </div>
-                  <div class="col mb-3">
-                    <button class="btn btn-cultivo w-100" data-cultivo="fresa">
-                      <i class="fas fa-berry text-danger"></i>
-                      <span class="d-block mt-2 small">Fresa</span>
-                    </button>
-                  </div>
-                  <div class="col mb-3">
-                    <button
-                      class="btn btn-cultivo w-100"
-                      data-cultivo="aguacate"
-                    >
-                      <i class="fas fa-avocado text-success"></i>
-                      <span class="d-block mt-2 small">Aguacate</span>
-                    </button>
-                  </div>
-                  <div class="col mb-3">
-                    <button class="btn btn-cultivo w-100" data-cultivo="maiz">
-                      <i class="fas fa-corn text-warning"></i>
-                      <span class="d-block mt-2 small">Maíz</span>
-                    </button>
-                  </div>
-                  <div class="col mb-3">
-                    <button class="btn btn-cultivo w-100" data-cultivo="arveja">
-                      <i class="fas fa-peapod text-success"></i>
-                      <span class="d-block mt-2 small">Arveja</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="input-group">
-              <span class="input-group-text bg-primary text-white">
-                <i class="fas fa-search"></i>
-              </span>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Buscar producto..."
-                id="searchInput"
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <!-- Herbicidas -->
+          <div class="col">
+            <a
+              href="catalogo.html?categoria=herbicida"
+              class="cat-card d-block position-relative overflow-hidden rounded"
+            >
+              <img
+                src="/media/imagen-tractor1.png"
+                class="w-100 h-100 object-fit-cover"
+                alt="Herbicidas"
+                loading="lazy"
               />
-            </div>
+              <div
+                class="cat-overlay position-absolute top-0 start-0 w-100 h-100"
+              ></div>
+              <div
+                class="cat-content position-absolute top-50 start-50 translate-middle text-center text-white"
+              >
+                <h5 class="fw-bold mb-1">Herbicidas</h5>
+                <span class="cat-count small"></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Fungicidas -->
+          <div class="col">
+            <a
+              href="catalogo.html?categoria=fungicida"
+              class="cat-card d-block position-relative overflow-hidden rounded"
+            >
+              <img
+                src="/media/imagen-plantas2.png"
+                class="w-100 h-100 object-fit-cover"
+                alt="Fungicidas"
+                loading="lazy"
+              />
+              <div
+                class="cat-overlay position-absolute top-0 start-0 w-100 h-100"
+              ></div>
+              <div
+                class="cat-content position-absolute top-50 start-50 translate-middle text-center text-white"
+              >
+                <h5 class="fw-bold mb-1">Fungicidas</h5>
+                <span class="cat-count small"></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Insecticidas -->
+          <div class="col">
+            <a
+              href="catalogo.html?categoria=insecticida"
+              class="cat-card d-block position-relative overflow-hidden rounded"
+            >
+              <img
+                src="/media/imagen-insecticidas3.png"
+                class="w-100 h-100 object-fit-cover"
+                alt="Insecticidas"
+                loading="lazy"
+              />
+              <div
+                class="cat-overlay position-absolute top-0 start-0 w-100 h-100"
+              ></div>
+              <div
+                class="cat-content position-absolute top-50 start-50 translate-middle text-center text-white"
+              >
+                <h5 class="fw-bold mb-1">Insecticidas</h5>
+                <span class="cat-count small"></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Fertilizantes Foliares -->
+          <div class="col">
+            <a
+              href="catalogo.html?categoria=fertilizante-foliar"
+              class="cat-card d-block position-relative overflow-hidden rounded"
+            >
+              <img
+                src="/media/imagen-fertilizantes4.png"
+                class="w-100 h-100 object-fit-cover"
+                alt="Fertilizantes Foliares"
+                loading="lazy"
+              />
+              <div
+                class="cat-overlay position-absolute top-0 start-0 w-100 h-100"
+              ></div>
+              <div
+                class="cat-content position-absolute top-50 start-50 translate-middle text-center text-white"
+              >
+                <h5 class="fw-bold mb-1">Fertilizantes Foliares</h5>
+                <span class="cat-count small"></span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- ✱ END CATEGORÍAS DE PRODUCTO -->
 
     <!-- Contenido Principal -->
     <main id="catalogo" class="catalogo py-5">
@@ -567,92 +403,12 @@
 
         <!-- Product Grid -->
         <div
-          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 equal-cols"
           id="productGrid"
-        >
-          <!-- Producto Ejemplo -->
-          <div
-            class="col"
-            data-cultivos="papa"
-            data-problemas="gota"
-            data-categoria="insecticida"
-          >
-            <div class="product-card h-100 p-3">
-              <div class="position-relative">
-                <img
-                  src="/media/Productos/Catalogo/ciromex-brio.png"
-                  class="img-fluid rounded mb-3"
-                  alt="CIROMEX"
-                />
-
-                <!-- Badges -->
-                <div
-                  class="position-absolute top-0 end-0 mt-2 me-2 d-flex gap-1"
-                >
-                  <span
-                    class="product-badge rounded-pill"
-                    data-bs-toggle="tooltip"
-                    title="Registrado para Papa"
-                  >
-                    <i class="fas fa-seedling"></i>
-                  </span>
-                  <span
-                    class="product-badge rounded-pill"
-                    data-bs-toggle="tooltip"
-                    title="Combate Gota"
-                  >
-                    <i class="fas fa-biohazard"></i>
-                  </span>
-                </div>
-              </div>
-
-              <h5 class="fw-bold mb-2 text-primary">CIROMEX</h5>
-              <p class="text-muted small mb-3">
-                Insecticida agrícola de amplio espectro
-              </p>
-
-              <!-- Términos Glosario -->
-              <div class="mb-3">
-                <span class="glossary-term" data-term="gota">Gota</span>,
-                <span class="glossary-term" data-term="tizon"
-                  >Tizón Tardío</span
-                >
-              </div>
-
-              <button
-                class="btn btn-doc w-100"
-                data-bs-toggle="modal"
-                data-bs-target="#productModal"
-              >
-                <i class="fas fa-file-alt me-2"></i>Ficha Técnica
-              </button>
-              <button
-                class="btn btn-doc w-100"
-                data-bs-toggle="modal"
-                data-bs-target="#productModal"
-              >
-                <i class="fas fa-file-alt me-2"></i>Tarjeta de Emergencia
-              </button>
-              <button
-                class="btn btn-doc w-100"
-                data-bs-toggle="modal"
-                data-bs-target="#productModal"
-              >
-                <i class="fas fa-file-alt me-2"></i>Ficha datos de Seguridad
-              </button>
-            </div>
-          </div>
-
-          <!-- Más productos -->
-        </div>
+        ></div>
       </div>
     </main>
-<!-- Product Grid -->
-<div
-  class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
-  id="productGrid"
->
-</div>
+    <!-- Product Grid -->
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
@@ -742,84 +498,123 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom script -->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <script>
-      // Initialize tooltips
-      const tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-      tooltips.forEach((t) => new bootstrap.Tooltip(t));
+      /* ---------- Catálogo OMA – Filtro simple (categoría OR cultivo) ---------- */
+      (function () {
+        const qs = new URLSearchParams(window.location.search);
+        const paramCategoria = (qs.get("categoria") || "").toLowerCase();
+        const paramCultivo = (qs.get("cultivo") || "").toLowerCase();
+        // Mapa de slug → texto legible para título
+        const categoryTitles = {
+          herbicida: "Herbicidas",
+          fungicida: "Fungicidas",
+          insecticida: "Insecticidas",
+          "fertilizante-foliar": "Fertilizantes Foliares",
+        };
 
-
-      // Dynamic problem filter (guarded)
-      const cropFilterEl = document.getElementById("cropFilter");
-      if (cropFilterEl) {
-        cropFilterEl.addEventListener("change", function () {
-          const problemFilter = document.getElementById("problemFilter");
-          problemFilter.innerHTML =
-            '<option value="">Seleccionar Problema</option>';
-
-          if (this.value && cropProblems[this.value]) {
-            problemFilter.disabled = false;
-            cropProblems[this.value].forEach((p) => {
-              problemFilter.innerHTML += `<option value="${p
-                .toLowerCase()
-                .replace(/ /g, "-")}">${p}</option>`;
-            });
-          } else {
-            problemFilter.disabled = true;
+        /* 1) Sincronizar UI con los parámetros */
+        document.addEventListener("DOMContentLoaded", () => {
+          /* Resalta la categoría activa */
+          if (paramCategoria) {
+            document
+              .querySelectorAll("#categorias .cat-card")
+              .forEach((card) => {
+                const cat = new URL(
+                  card.href,
+                  window.location.origin
+                ).searchParams.get("categoria");
+                if (cat === paramCategoria) {
+                  card.classList.add("active");
+                }
+              });
+          }
+          /* Cambia el título si hay categoría seleccionada */
+          const titleEl = document.querySelector("#catalogo h1");
+          if (titleEl && paramCategoria && categoryTitles[paramCategoria]) {
+            titleEl.textContent = categoryTitles[paramCategoria];
           }
         });
-      }
 
-      // Filter function
-      function filterProducts() {
-        const crop = document.getElementById("cropFilter").value;
-        const problem = document
-          .getElementById("problemFilter")
-          .value.toLowerCase()
-          .replace(/ /g, "-");
-        const search = document
-          .getElementById("searchInput")
-          .value.toLowerCase();
+        /* 2) Carga de productos y render según filtro */
+        fetch("products.json")
+          .then((r) => r.json())
+          .then(({ products }) => {
+            // Conteo total de productos por categoría (independiente del filtro)
+            const totalCounts = {};
+            products.forEach((p) => {
+              const slug = p.category.toLowerCase().replace(/\s+/g, "-");
+              totalCounts[slug] = (totalCounts[slug] || 0) + 1;
+            });
 
-        document.querySelectorAll("#productGrid .col").forEach((product) => {
-          const productCrops = product.dataset.cultivos.split(",");
-          const productProblems = product.dataset.problemas.split(",");
+            const grid = document.getElementById("productGrid");
+            if (!grid) return;
+            grid.innerHTML = "";
 
-          const matchesCrop = !crop || productCrops.includes(crop);
-          const matchesProblem = !problem || productProblems.includes(problem);
-          const matchesSearch = product.textContent
-            .toLowerCase()
-            .includes(search);
+            products.forEach((p) => {
+              const cultivos = [
+                ...new Set(p.targets.map((t) => t.crop.toLowerCase())),
+              ];
+              const catSlug = p.category.toLowerCase().replace(/\s+/g, "-");
 
-          product.style.display =
-            matchesCrop && matchesProblem && matchesSearch ? "block" : "none";
-        });
-      }
+              const show =
+                (!paramCategoria && !paramCultivo) ||
+                (paramCategoria && catSlug === paramCategoria) ||
+                (paramCultivo && cultivos.includes(paramCultivo));
 
-      // Event listeners (guarded)
-      document
-        .querySelectorAll("#cropFilter, #problemFilter, #searchInput")
-        .forEach((el) => {
-          if (el) el.addEventListener("input", filterProducts);
-        });
+              if (!show) return;
 
-      /*// Apply any ?cultivo= or ?search= parameters from the URL
-      const query = getQueryParams();
+              grid.insertAdjacentHTML(
+                "beforeend",
+                `
+       <div class="col" data-categoria="${p.category.toLowerCase()}">
+         <div class="product-card h-100 p-3">
+           <div class="position-relative mb-3">
+             <img src="${p.image_url}" class="img-fluid rounded" alt="${
+                  p.name
+                }" loading="lazy">
+           </div>
+           <h5 class="fw-bold text-primary">${p.name}</h5>
+           <p class="small text-muted">${p.active_ingredient}</p>
+           <p class="small mb-2"><strong>${p.category}</strong> • ${
+                  p.formulation
+                }</p>
+           <button class="btn btn-doc w-100 mb-2">
+             <i class="fas fa-file-alt me-2"></i>Ficha Técnica
+           </button>
+           <button class="btn btn-doc w-100 mb-2">
+             <i class="fas fa-file-alt me-2"></i>Tarjeta de Emergencia
+           </button>
+           <button class="btn btn-doc w-100">
+             <i class="fas fa-file-alt me-2"></i>Hoja de Seguridad
+           </button>
+         </div>
+       </div>
+       `
+              );
+            });
 
-      if (query.cultivo) {
-        const cropSel = document.getElementById("cropFilter");
-        if (cropSel) {
-          cropSel.value = query.cultivo.toLowerCase();
-          // Trigger population of problem list
-          cropSel.dispatchEvent(new Event("change"));
-        }
-      }
+            document
+              .querySelectorAll("#categorias .cat-card")
+              .forEach((card) => {
+                const cat = new URL(
+                  card.href,
+                  window.location.origin
+                ).searchParams.get("categoria");
+                const span = card.querySelector(".cat-count");
+                if (span)
+                  span.textContent = (totalCounts[cat] || 0) + " productos";
+              });
 
-      if (query.search) {
-        const searchEl = document.getElementById("searchInput");
-        if (searchEl) searchEl.value = query.search;
-      }
-
-      // Initial filter
-      filterProducts();
-*/
+            if (!grid.children.length) {
+              grid.innerHTML =
+                '<div class="col-12"><div class="alert alert-warning">No hay productos para este filtro.</div></div>';
+            }
+          })
+          .catch((err) =>
+            console.error("[Catálogo] Error cargando productos:", err)
+          );
+      })();
+    </script>
+  </body>
+</html>

@@ -36,8 +36,21 @@
     }
 
     img {
-      width: 250px;
-      border-radius: 0.3rem;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+
+    // Wrapper to keep a fixed image area, even if the img fails to load
+    .position-relative {
+      height: 230px; // unified height for all product images
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: #f8f9fa; // subtle gray background as placeholder
     }
 
     .product-name {
@@ -60,11 +73,20 @@
       padding: 0.5rem 1rem;
       transition: background 0.3s ease;
       margin-top: auto;
+      margin-bottom: 0;
 
       &:hover,
       &:focus {
         background: vars.$color-secundario;
       }
+    }
+  }
+
+  // Ensure equal column widths and reduced gap for product grid
+  .equal-cols {
+    > .col {
+      flex: 0 0 calc(33.333% - 1rem); // adjust for 1rem horizontal gap (g-3)
+      max-width: calc(33.333% - 1rem);
     }
   }
 
@@ -197,9 +219,6 @@
   .btn-cultivo i {
     font-size: 1.25rem;
   }
-}
-.btn-doc {
-  margin-top: 1rem;
 }
 
 .cat-card {
