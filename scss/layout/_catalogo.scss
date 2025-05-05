@@ -292,3 +292,68 @@
     }
   }
 }
+
+/* Hero image prominence */
+.modal-product .hero-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f5f6f8;
+  padding: 2rem;
+}
+
+.modal-product .hero-img img {
+  max-height: 380px;
+  max-width: 100%;
+  width: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease;
+}
+
+.modal-product .hero-img img:hover {
+  transform: scale(1.03);
+}
+
+.modal-product .hero-img .badge {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.4px;
+}
+/* Bigger modal: 80% viewport width */
+.modal-80 {
+  max-width: 80vw;
+}
+
+/* CTA buttons spacing */
+.modal-product .btn-success {
+  background: #25d366; // WhatsApp green
+  &:hover {
+    background: darken(#25d366, 5%);
+  }
+}
+
+/* ---------- Modal mobile tweaks ---------- */
+@media (max-width: 767.98px) {
+  /* Use almost full‑width on phones and recenters modal */
+  .modal-dialog.modal-80 {
+    max-width: 95vw;
+    margin: 0 auto;
+  }
+
+  /* Stack image on top and make it more prominent */
+  .modal-product .row {
+    flex-direction: column;
+  }
+
+  .modal-product__image {
+    order: -1; // show image first
+    min-height: 300px; // taller hero
+    border-bottom: 3px solid vars.$color-principal;
+  }
+
+  /* Reduce padding on body for better fit */
+  .modal-product .modal-body {
+    padding: 1rem;
+  }
+}

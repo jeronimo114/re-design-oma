@@ -416,7 +416,7 @@
       aria-labelledby="productModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered modal-80">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title fw-bold" id="productModalLabel">Producto</h5>
@@ -429,7 +429,7 @@
           </div>
           <div class="modal-body">
             <div class="row g-4">
-              <div class="col-md-4 text-center">
+              <div class="col-md-6 text-center hero-img">
                 <img
                   id="modalImg"
                   src=""
@@ -444,7 +444,7 @@
                   <span class="badge bg-info" id="modalAI"></span>
                 </div>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-6">
                 <h4 id="modalName" class="fw-bold mb-1"></h4>
                 <p id="modalDesc" class="mb-2 small text-muted"></p>
                 <!-- Accordion with full technical details -->
@@ -593,6 +593,41 @@
                   </div>
                 </div>
                 <!-- End Accordion -->
+                <!-- Call‑to‑Action Buttons -->
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <a
+                    id="modalFichaPdf"
+                    class="btn btn-doc flex-fill"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fas fa-file-pdf me-2"></i> Ficha Técnica
+                  </a>
+                  <a
+                    id="modalTarjetaPdf"
+                    class="btn btn-doc flex-fill"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fas fa-file-alt me-2"></i> Tarjeta de Emergencia
+                  </a>
+                  <a
+                    id="modalHojaPdf"
+                    class="btn btn-doc flex-fill"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fas fa-file-medical me-2"></i> Hoja de Seguridad
+                  </a>
+                  <a
+                    id="modalWhats"
+                    class="btn btn-success flex-fill"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fab fa-whatsapp me-2"></i> WhatsApp Asesor
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -983,6 +1018,20 @@
               // usos y dosis
               document.getElementById("modalUsesTable").innerHTML =
                 buildUsesTable(prod.uses);
+
+              // pdf links
+              document.getElementById("modalFichaPdf").href = prod.ficha_pdf;
+              document.getElementById("modalTarjetaPdf").href =
+                prod.tarjeta_pdf;
+              document.getElementById("modalHojaPdf").href = prod.hoja_pdf;
+
+              // whatsapp CTA
+              const text = encodeURIComponent(
+                `Hola, quiero más información sobre ${prod.name}`
+              );
+              document.getElementById(
+                "modalWhats"
+              ).href = `https://wa.me/573001234567?text=${text}`;
 
               modal.show();
             }
