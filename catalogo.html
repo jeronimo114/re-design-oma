@@ -272,6 +272,16 @@
               <li class="nav-item">
                 <a class="nav-link" href="index.html#contacto">Contacto</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="catalogo.html"
+                  >Todos los productos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="#" id="clearFilters"
+                  >Borrar filtros</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -392,6 +402,30 @@
           sistema de filtrado inteligente
         </p>
 
+        <!-- Search bar -->
+        <div class="row mb-4">
+          <div class="col-md-6 mx-auto">
+            <div class="input-group shadow-sm">
+              <span class="input-group-text bg-white">
+                <i class="fas fa-search"></i>
+              </span>
+              <input
+                type="search"
+                id="productSearch"
+                class="form-control"
+                placeholder="Buscar productos..."
+                aria-label="Buscar productos"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="clearSearch"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+        </div>
         <!-- Product Grid -->
         <div
           class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 equal-cols"
@@ -724,50 +758,48 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom script -->
     <script>
-      /* ---------- Catálogo OMA – Filtro simple (categoría OR cultivo) ---------- */
-      // Helper: render usos table for modal
+      /* ---------- Catálogo OMA – Filtro + búsqueda ---------- */
       function buildUsesTable(arr) {
         return `
-        <div class="table-responsive">
-          <table class="table table-sm align-middle">
-            <thead class="table-light">
-              <tr><th>Cultivo</th><th>Blanco</th><th>Dosis</th><th>P.C.</th><th>P.R.</th></tr>
-            </thead>
-            <tbody>
-              ${arr
-                .map(
-                  (u) => `<tr>
-                      <td>${u.crop}</td>
-                      <td>${u.target}</td>
-                      <td>${u.dose}</td>
-                      <td>${u.pc}</td>
-                      <td>${u.pr}</td>
-                    </tr>`
-                )
-                .join("")}
-            </tbody>
-          </table>
-        </div>`;
+          <div class="table-responsive">
+            <table class="table table-sm align-middle">
+              <thead class="table-light">
+                <tr><th>Cultivo</th><th>Blanco</th><th>Dosis</th><th>P.C.</th><th>P.R.</th></tr>
+              </thead>
+              <tbody>
+                ${arr
+                  .map(
+                    (u) => `<tr>
+                        <td>${u.crop}</td>
+                        <td>${u.target}</td>
+                        <td>${u.dose}</td>
+                        <td>${u.pc}</td>
+                        <td>${u.pr}</td>
+                      </tr>`
+                  )
+                  .join("")}
+              </tbody>
+            </table>
+          </div>`;
       }
 
       (function () {
         const qs = new URLSearchParams(window.location.search);
         const paramCategoria = (qs.get("categoria") || "").toLowerCase();
         const paramCultivo = (qs.get("cultivo") || "").toLowerCase();
-        console.log(
-          "[DEBUG] Initial params → categoria:",
-          paramCategoria,
-          "cultivo:",
-          paramCultivo
-        );
-        // Mapa de slug → texto legible para título
+
+        const titleEl = document.querySelector("#catalogo h1");
+        const grid = document.getElementById("productGrid");
+        const searchInput = document.getElementById("productSearch");
+        const clearSearchBtn = document.getElementById("clearSearch");
+        const clearFiltersLink = document.getElementById("clearFilters");
+
         const categoryTitles = {
           herbicida: "Herbicidas",
           fungicida: "Fungicidas",
           insecticida: "Insecticidas",
           "fertilizante-foliar": "Fertilizantes Foliares",
         };
-
         const cultivoTitles = {
           papa: "Papa",
           tomate: "Tomate",
@@ -785,250 +817,166 @@
           hortensia: "Hortensia",
         };
 
-        /* 1) Sincronizar UI con los parámetros */
-        document.addEventListener("DOMContentLoaded", () => {
-          /* Resalta la categoría activa */
-          if (paramCategoria) {
-            document
-              .querySelectorAll("#categorias .cat-card")
-              .forEach((card) => {
-                const cat = new URL(
-                  card.href,
-                  window.location.origin
-                ).searchParams.get("categoria");
-                if (cat === paramCategoria) {
-                  card.classList.add("active");
-                }
-              });
+        if (clearFiltersLink) {
+          clearFiltersLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.location.href = "catalogo.html";
+          });
+        }
+
+        let allProducts = [];
+        let visibleProducts = [];
+
+        function renderProducts(list) {
+          if (!grid) return;
+          grid.innerHTML = "";
+
+          list.forEach((p) => {
+            grid.insertAdjacentHTML(
+              "beforeend",
+              `
+          <div class="col">
+            <div class="product-card h-100">
+              <div class="img-wrapper">
+                <img src="${p.image_url}" class="img-fluid rounded" alt="${
+                p.name
+              }" loading="lazy">
+              </div>
+              <div class="card-body">
+                <h5 class="fw-bold text-primary">${p.name}</h5>
+                <p class="small text-muted">${p.active_ingredient || ""}</p>
+                <p class="small mb-2"><strong>${p.category}</strong> • ${
+                p.formulation
+              }</p>
+              </div>
+            </div>
+          </div>`
+            );
+            grid.lastElementChild
+              .querySelector(".product-card")
+              .addEventListener("click", () => openProductModal(p));
+          });
+
+          if (!list.length) {
+            grid.innerHTML =
+              '<div class="col-12"><div class="alert alert-warning">No hay productos que coincidan con la búsqueda o filtros.</div></div>';
           }
-          /* Cambia el título si hay categoría o cultivo seleccionados */
-          const titleEl = document.querySelector("#catalogo h1");
-          if (titleEl) {
-            if (paramCategoria && categoryTitles[paramCategoria]) {
-              titleEl.textContent = categoryTitles[paramCategoria];
-            } else if (paramCultivo && cultivoTitles[paramCultivo]) {
-              titleEl.textContent = cultivoTitles[paramCultivo];
-            }
-          }
-          console.log(
-            "[DEBUG] Title after initial set:",
-            titleEl ? titleEl.textContent : "NO TITLE"
+        }
+
+        const modal = new bootstrap.Modal(
+          document.getElementById("productModal")
+        );
+        function openProductModal(prod) {
+          document.getElementById("modalImg").src = prod.image_url;
+          document.getElementById("modalImg").alt = prod.name;
+          document.getElementById("modalCategory").textContent = prod.category;
+          document.getElementById("modalAI").textContent =
+            prod.active_ingredient || "";
+          document.getElementById("modalName").textContent = prod.name;
+          document.getElementById("modalDesc").textContent =
+            prod.description || "";
+
+          document.getElementById("modalCompList").innerHTML = (
+            prod.composition || []
+          )
+            .map(
+              (c) =>
+                `<li>${c.ai || c.nutrient} ${c.pct || c.amount_g_L || ""}</li>`
+            )
+            .join("");
+
+          document.getElementById("modalFormulationText").textContent =
+            prod.formulation || "";
+          document.getElementById("modalPresentations").textContent = (
+            prod.presentations || []
+          ).join(", ");
+          document.getElementById("modalChemicalGroup").textContent =
+            prod.chemical_group || "";
+
+          document.getElementById("modalMode").textContent =
+            prod.mode_of_action || "";
+          document.getElementById("modalMechanism").textContent =
+            prod.mechanism || "";
+
+          document.getElementById("modalWarnings").textContent =
+            prod.warnings || "";
+
+          document.getElementById("modalUsesTable").innerHTML = buildUsesTable(
+            prod.uses || []
           );
 
-          /* Cambia el título al hacer clic en las categorías del navbar */
-          document
-            .querySelectorAll('nav a[href*="?categoria="]')
-            .forEach((link) => {
-              link.addEventListener("click", (e) => {
-                e.preventDefault(); // evita el salto instantáneo
+          document.getElementById("modalFichaPdf").href = prod.ficha_pdf || "#";
+          document.getElementById("modalTarjetaPdf").href =
+            prod.tarjeta_pdf || "#";
+          document.getElementById("modalHojaPdf").href = prod.hoja_pdf || "#";
 
-                const slug = new URL(
-                  link.href,
-                  window.location.origin
-                ).searchParams
-                  .get("categoria")
-                  .toLowerCase();
+          const text = encodeURIComponent(
+            `Hola, quiero más información sobre ${prod.name}`
+          );
+          document.getElementById(
+            "modalWhats"
+          ).href = `https://wa.me/573001234567?text=${text}`;
 
-                console.log("[DEBUG] Navbar category clicked → slug:", slug);
+          modal.show();
+        }
 
-                if (titleEl && categoryTitles[slug]) {
-                  titleEl.textContent = categoryTitles[slug];
-                  console.log(
-                    "[DEBUG] Title updated to:",
-                    categoryTitles[slug]
-                  );
-                } else {
-                  console.log("[DEBUG] Title NOT updated (slug no match)");
-                }
-
-                // Navega a la URL seleccionada (forces reload con el slug correcto)
-                window.location.href = link.href;
-              });
-            });
-
-          // Cambia título al hacer clic en enlaces de cultivo
-          document
-            .querySelectorAll('nav a[href*="?cultivo="]')
-            .forEach((link) => {
-              link.addEventListener("click", (e) => {
-                e.preventDefault();
-                const slug = new URL(
-                  link.href,
-                  window.location.origin
-                ).searchParams
-                  .get("cultivo")
-                  .toLowerCase();
-
-                console.log("[DEBUG] Navbar cultivo clicked → slug:", slug);
-
-                if (titleEl && cultivoTitles[slug]) {
-                  titleEl.textContent = cultivoTitles[slug];
-                  console.log("[DEBUG] Title updated to:", cultivoTitles[slug]);
-                } else {
-                  console.log("[DEBUG] Title NOT updated (cultivo no match)");
-                }
-
-                window.location.href = link.href;
-              });
-            });
-        });
-
-        /* 2) Carga de productos y render según filtro */
         fetch("products.json")
           .then((r) => r.json())
           .then(({ products }) => {
-            // Conteo total de productos por categoría (independiente del filtro)
-            const totalCounts = {};
-            products.forEach((p) => {
-              const slug = p.category.toLowerCase().replace(/\s+/g, "-");
-              totalCounts[slug] = (totalCounts[slug] || 0) + 1;
+            allProducts = products;
+
+            visibleProducts = allProducts.filter((p) => {
+              const catSlug = (p.category || "")
+                .toLowerCase()
+                .replace(/\\s+/g, "-");
+              const cultivos = (p.targets || []).map((t) =>
+                (t.crop || "").toLowerCase()
+              );
+              const matchCategoria = paramCategoria
+                ? catSlug === paramCategoria
+                : true;
+              const matchCultivo = paramCultivo
+                ? cultivos.includes(paramCultivo)
+                : true;
+              return matchCategoria && matchCultivo;
             });
 
-            const grid = document.getElementById("productGrid");
-            if (!grid) return;
-            grid.innerHTML = "";
-
-            products.forEach((p, idx) => {
-              const cultivos = p.targets
-                ? [
-                    ...new Set(
-                      p.targets.map((t) => (t.crop || "").toLowerCase())
-                    ),
-                  ]
-                : [];
-              const catSlug = p.category.toLowerCase().replace(/\s+/g, "-");
-
-              const show =
-                (!paramCategoria && !paramCultivo) ||
-                (paramCategoria && catSlug === paramCategoria) ||
-                (paramCultivo && cultivos.includes(paramCultivo));
-
-              if (!show) return;
-
-              grid.insertAdjacentHTML(
-                "beforeend",
-                `
-       <div class="col" data-categoria="${p.category.toLowerCase()}">
-         <div class="product-card h-100" data-idx="${idx}">
-           <div class="img-wrapper">
-             <img src="${p.image_url}" class="img-fluid rounded" alt="${
-                  p.name
-                }" loading="lazy">
-           </div>
-           <div class="card-body">
-             <h5 class="fw-bold text-primary">${p.name}</h5>
-             <p class="small text-muted">${p.active_ingredient}</p>
-             <p class="small mb-2"><strong>${p.category}</strong> • ${
-                  p.formulation
-                }</p>
-             <button class="btn btn-doc w-100 mb-2 btn-ficha">
-               <i class="fas fa-file-alt me-2"></i>Ficha Técnica
-             </button>
-             <button class="btn btn-doc w-100 mb-2">
-               <i class="fas fa-file-alt me-2"></i>Tarjeta de Emergencia
-             </button>
-             <button class="btn btn-doc w-100">
-               <i class="fas fa-file-alt me-2"></i>Hoja de Seguridad
-             </button>
-           </div>
-         </div>
-       </div>
-       `
-              );
-              // make entire card clickable
-              grid.lastElementChild
-                .querySelector(".product-card")
-                .addEventListener("click", () => openProductModal(p));
-              /* DEBUG: log rendered products */
-              // (executed once per product shown)
-              console.log(
-                "[DEBUG] Rendered product:",
-                p.name,
-                "category:",
-                p.category
-              );
-            });
-
-            document
-              .querySelectorAll("#categorias .cat-card")
-              .forEach((card) => {
-                const cat = new URL(
-                  card.href,
-                  window.location.origin
-                ).searchParams.get("categoria");
-                const span = card.querySelector(".cat-count");
-                if (span)
-                  span.textContent = (totalCounts[cat] || 0) + " productos";
-              });
-
-            if (!grid.children.length) {
-              grid.innerHTML =
-                '<div class="col-12"><div class="alert alert-warning">No hay productos para este filtro.</div></div>';
+            if (titleEl) {
+              if (paramCategoria && categoryTitles[paramCategoria]) {
+                titleEl.textContent = categoryTitles[paramCategoria];
+              } else if (paramCultivo && cultivoTitles[paramCultivo]) {
+                titleEl.textContent = cultivoTitles[paramCultivo];
+              }
             }
 
-            // Modal logic
-            const modal = new bootstrap.Modal(
-              document.getElementById("productModal")
-            );
-            function openProductModal(prod) {
-              document.getElementById("modalImg").src = prod.image_url;
-              document.getElementById("modalImg").alt = prod.name;
-              document.getElementById("modalCategory").textContent =
-                prod.category;
-              document.getElementById("modalAI").textContent =
-                prod.active_ingredient;
-              document.getElementById("modalName").textContent = prod.name;
-              document.getElementById("modalDesc").textContent =
-                prod.description || "";
-
-              // composición
-              document.getElementById("modalCompList").innerHTML =
-                prod.composition
-                  .map((c) => `<li>${c.ai} ${c.pct}</li>`)
-                  .join("");
-
-              // presentación & grupo químico
-              document.getElementById("modalFormulationText").textContent =
-                prod.formulation;
-              document.getElementById("modalPresentations").textContent =
-                prod.presentations.join(", ");
-              document.getElementById("modalChemicalGroup").textContent =
-                prod.chemical_group;
-
-              // modo / mecanismo
-              document.getElementById("modalMode").textContent =
-                prod.mode_of_action;
-              document.getElementById("modalMechanism").textContent =
-                prod.mechanism;
-
-              // advertencias
-              document.getElementById("modalWarnings").textContent =
-                prod.warnings;
-
-              // usos y dosis
-              document.getElementById("modalUsesTable").innerHTML =
-                buildUsesTable(prod.uses);
-
-              // pdf links
-              document.getElementById("modalFichaPdf").href = prod.ficha_pdf;
-              document.getElementById("modalTarjetaPdf").href =
-                prod.tarjeta_pdf;
-              document.getElementById("modalHojaPdf").href = prod.hoja_pdf;
-
-              // whatsapp CTA
-              const text = encodeURIComponent(
-                `Hola, quiero más información sobre ${prod.name}`
-              );
-              document.getElementById(
-                "modalWhats"
-              ).href = `https://wa.me/573001234567?text=${text}`;
-
-              modal.show();
-            }
+            renderProducts(visibleProducts);
           })
           .catch((err) =>
             console.error("[Catálogo] Error cargando productos:", err)
           );
+
+        if (searchInput) {
+          searchInput.addEventListener("input", () => {
+            const q = searchInput.value.toLowerCase().trim();
+            if (!q) {
+              renderProducts(visibleProducts);
+              return;
+            }
+            const filtered = visibleProducts.filter(
+              (p) =>
+                p.name.toLowerCase().includes(q) ||
+                (p.active_ingredient || "").toLowerCase().includes(q)
+            );
+            renderProducts(filtered);
+          });
+        }
+        if (clearSearchBtn) {
+          clearSearchBtn.addEventListener("click", () => {
+            searchInput.value = "";
+            renderProducts(visibleProducts);
+            searchInput.focus();
+          });
+        }
       })();
     </script>
   </body>

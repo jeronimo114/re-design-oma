@@ -46,89 +46,188 @@
       "hoja_pdf": "docs/ANKER_Hoja.pdf"
     },
     {
+      "id": "anker-500-sc",
+      "name": "ANKER 500 SC",
+      "category": "Fungicida",
+      "image_url": "media/productos/Catalogo/1.png",
+      "reg_ica": "PL0003802023",
+      "formulation": "Suspensión concentrada",
+      "chemical_group": "Dicarboximidas + Anilino-pirimidinas",
+      "tox_category": "II",
+      "presentations": ["1 L", "250 mL"],
+      "mode_of_action": "Fungicida sistémico traslaminar de acción preventiva y curativa.",
+      "mechanism": "Impide la germinación de esporas ... Inhibe la actividad enzimática.",
+      "composition": [
+        { "ai": "Iprodione", "pct": "" },
+        { "ai": "Pyrimethanil", "pct": "" }
+      ],
+      "warnings": "Todos los productos químicos de uso agrícola ...",
+      "uses": [
+        {
+          "crop": "Clavel",
+          "target": "Botrytis cinerea",
+          "dose": "1.5 mL/L",
+          "pc": "N.A.",
+          "pr": "24 h"
+        },
+        {
+          "crop": "Pompón",
+          "target": "Botrytis cinerea",
+          "dose": "1.5 mL/L",
+          "pc": "N.A.",
+          "pr": "24 h"
+        },
+        {
+          "crop": "Rosa",
+          "target": "Botrytis cinerea",
+          "dose": "1.5 mL/L",
+          "pc": "N.A.",
+          "pr": "24 h"
+        }
+      ],
+      "ficha_pdf": "docs/ANKER_Ficha.pdf",
+      "tarjeta_pdf": "docs/ANKER_Tarjeta.pdf",
+      "hoja_pdf": "docs/ANKER_Hoja.pdf"
+    },
+    {
       "id": "athrin-brio-gqa-100-ec",
       "name": "ATHRIN BRIO GQA 100 EC",
-      "formulation": "EC",
+      "category": "Insecticida – Acaricida de uso agrícola",
+      "image_url": "/media/Productos/Catalogo/2.png",
+      "reg_ica": "PL0017682023",
+      "formulation": "Concentrado emulsionable (EC)",
+      "chemical_group": "Piretroides",
+      "tox_category": "II",
       "concentration": 100,
-      "ica": "PL0017682023",
-      "toxicity": "II",
-      "category": "Insecticida",
-      "active_ingredient": "LAMBDACIHALOTRINA ",
-      "targets": [
+      "composition": [{ "ai": "Lambda-cihalotrina", "pct": "100" }],
+      "presentations": ["1 L", "4 L", "100 mL", "250 mL"],
+      "mode_of_action": "Contacto e Ingestión",
+      "mechanism": "Actúa sobre el sistema nervioso de los insectos alterando el flujo de iones.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
         {
           "crop": "Algodón",
-          "pest": "Spodoptera frugiperda",
-          "dose": "100 ml/ha",
-          "action": "Cogollero"
+          "target": "Spodoptera frugiperda",
+          "dose": "100 ml/200 L",
+          "pr": "4 h",
+          "pc": "1 día"
         },
         {
           "crop": "Arroz",
-          "pest": "Spodoptera frugiperda",
-          "dose": "90 a 100 ml/200L",
-          "action": "Cogollero"
+          "target": "Spodoptera frugiperda",
+          "dose": "90 – 100 ml/200 L",
+          "pr": "4 h",
+          "pc": "1 día"
         },
         {
           "crop": "Clavel",
-          "pest": "Tetranychus cinnabarinus",
-          "dose": "0,30 ml/L",
-          "action": "Acaros"
+          "target": "Tetranychus cinnabarinus",
+          "dose": "0.30 ml/L",
+          "pr": "4 h",
+          "pc": "N.A."
         },
         {
-          "crop": "Frijol  ",
-          "pest": "Trialeurodes vaporariorum",
-          "dose": "60 - 90 ml/200L",
-          "action": "Mosca blanca"
+          "crop": "Frijol",
+          "target": "Trialeurodes vaporariorum",
+          "dose": "60 – 90 ml/200 L",
+          "pr": "4 h",
+          "pc": "1 día"
         },
         {
-          "crop": "Maiz",
-          "pest": "Spodoptera frugiperda",
-          "dose": "60-90 ml/200L ó 180-270 ml/ha",
-          "action": "Cogollero"
-        },
-        {
-          "crop": "Papa",
-          "pest": "Epitrix sp",
-          "dose": "50/200L de agua ó 100/ha",
-          "action": "Pulguilla"
+          "crop": "Maíz",
+          "target": "Spodoptera frugiperda",
+          "dose": "60 – 90 ml/200 L ó 180 – 270 ml/ha",
+          "pr": "4 h",
+          "pc": "1 día"
         },
         {
           "crop": "Papa",
-          "pest": "Premnotrypes vorax",
-          "dose": "120 ml/200L",
-          "action": "Gusano blanco"
+          "target": "Epitrix sp",
+          "dose": "50 ml/200 L ó 100 ml/ha",
+          "pr": "4 h",
+          "pc": "1 día"
         },
         {
           "crop": "Papa",
-          "pest": "Tecia solanivora",
-          "dose": "120/200L de agua  ó 360ml/ha",
-          "action": "Polilla guatemalteca"
+          "target": "Premnotrypes vorax",
+          "dose": "120 ml/200 L",
+          "pr": "4 h",
+          "pc": "1 día"
         },
         {
-          "crop": "Pastos",
-          "pest": "Collaria scenica",
-          "dose": "50 ml / 200L ",
-          "action": "Chinche"
+          "crop": "Papa",
+          "target": "Tecia solanivora",
+          "dose": "120 ml/200 L ó 360 ml/ha",
+          "pr": "4 h",
+          "pc": "1 día"
         },
         {
-          "crop": "Pompon",
-          "pest": "Lyriomiza trifoli",
-          "dose": "0,3 ml / L",
-          "action": "Minador"
+          "crop": "Pastos kikuyo",
+          "target": "Collaria scenica",
+          "dose": "50 ml/200 L",
+          "pr": "24 h*",
+          "pc": "N.A."
         },
         {
-          "crop": "Rosas",
-          "pest": "Tetranychus sp.",
-          "dose": "0,25 ml/L",
-          "action": "Acaros"
+          "crop": "Pompón",
+          "target": "Lyriomiza trifoli",
+          "dose": "0.3 ml/L",
+          "pr": "4 h",
+          "pc": "N.A."
+        },
+        {
+          "crop": "Rosa",
+          "target": "Tetranychus urticae",
+          "dose": "0.25 ml/L",
+          "pr": "4 h",
+          "pc": "N.A."
         },
         {
           "crop": "Tomate",
-          "pest": "Agrotis ipsilon",
-          "dose": "60 a 90/200L ó 180 a 270/ha",
-          "action": "Agrotis"
+          "target": "Agrotis ipsilon",
+          "dose": "60 – 90 ml/200 L ó 180 – 270 ml/ha",
+          "pr": "4 h",
+          "pc": "1 día"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/2.png"
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
+      "ficha_pdf": "docs/ATHRINBRIO_Ficha.pdf",
+      "tarjeta_pdf": "docs/ATHRINBRIO_Tarjeta.pdf",
+      "hoja_pdf": "docs/ATHRINBRIO_Hoja.pdf"
+    },
+    {
+      "id": "avance-mycros-sc",
+      "name": "AVANCE MYCROS SC",
+      "category": "Fertilizante complejo PK para aplicación foliar",
+      "reg_ica": "ICA 9719",
+      "formulation": "Suspensión concentrada (SC)",
+      "composition": [
+        { "nutrient": "Fósforo asimilable (P2O5)", "amount_g_L": 317 },
+        { "nutrient": "Potasio soluble en agua (K2O)", "amount_g_L": 410 },
+        { "nutrient": "Magnesio total (MgO)", "amount_g_L": 25 },
+        { "nutrient": "Boro total (B)", "amount_g_L": 2 },
+        { "nutrient": "Cobre total (Cu)", "amount_g_L": 0.5 },
+        { "nutrient": "Manganeso total (Mn)", "amount_g_L": 0.5 },
+        { "nutrient": "Zinc total (Zn)", "amount_g_L": 5 },
+        { "nutrient": "Azufre total (S)", "amount_g_L": 24 }
+      ],
+      "pH_10pct": 1.85,
+      "density_g_cc_20C": 1.433,
+      "conductivity_dS_m_1_100": 13.1,
+      "warnings": "Este fertilizante es un complemento y no un sustituto de la fertilización edáfica.",
+      "instructions": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
+        {
+          "crop": "Fresa (Fragaria vesca)",
+          "use": "Fertilizante foliar",
+          "dose": "1.0 L/ha"
+        }
+      ],
+      "application_frequency": "Realice dos aplicaciones con frecuencia semanal siguiendo las recomendaciones de un Ingeniero Agrónomo, teniendo en cuenta la demanda nutricional del cultivo, su estado fenológico, la intensidad de las deficiencias y la relación costo-beneficio.",
+      "preparation": "Coloque primero parte del volumen de agua, agregue el producto, mezcle bien y luego complete con agua. Agite antes y durante la aplicación. No guarde mezcla para uso posterior.",
+      "compatibility": "No presenta fitotoxicidad en dosis recomendadas. Evite mezclas con fungicidas o insecticidas.",
+      "presentations": ["1 L", "4 L"]
     },
     {
       "id": "cacique-420-sc",
