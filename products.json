@@ -46,50 +46,6 @@
       "hoja_pdf": "docs/ANKER_Hoja.pdf"
     },
     {
-      "id": "anker-500-sc",
-      "name": "ANKER 500 SC",
-      "category": "Fungicida",
-      "image_url": "media/productos/Catalogo/1.png",
-      "reg_ica": "PL0003802023",
-      "formulation": "Suspensión concentrada",
-      "chemical_group": "Dicarboximidas + Anilino-pirimidinas",
-      "tox_category": "II",
-      "presentations": ["1 L", "250 mL"],
-      "mode_of_action": "Fungicida sistémico traslaminar de acción preventiva y curativa.",
-      "mechanism": "Impide la germinación de esporas ... Inhibe la actividad enzimática.",
-      "composition": [
-        { "ai": "Iprodione", "pct": "" },
-        { "ai": "Pyrimethanil", "pct": "" }
-      ],
-      "warnings": "Todos los productos químicos de uso agrícola ...",
-      "uses": [
-        {
-          "crop": "Clavel",
-          "target": "Botrytis cinerea",
-          "dose": "1.5 mL/L",
-          "pc": "N.A.",
-          "pr": "24 h"
-        },
-        {
-          "crop": "Pompón",
-          "target": "Botrytis cinerea",
-          "dose": "1.5 mL/L",
-          "pc": "N.A.",
-          "pr": "24 h"
-        },
-        {
-          "crop": "Rosa",
-          "target": "Botrytis cinerea",
-          "dose": "1.5 mL/L",
-          "pc": "N.A.",
-          "pr": "24 h"
-        }
-      ],
-      "ficha_pdf": "docs/ANKER_Ficha.pdf",
-      "tarjeta_pdf": "docs/ANKER_Tarjeta.pdf",
-      "hoja_pdf": "docs/ANKER_Hoja.pdf"
-    },
-    {
       "id": "athrin-brio-gqa-100-ec",
       "name": "ATHRIN BRIO GQA 100 EC",
       "category": "Insecticida – Acaricida de uso agrícola",
@@ -197,6 +153,53 @@
       "hoja_pdf": "docs/ATHRINBRIO_Hoja.pdf"
     },
     {
+      "id": "brabus-100-me",
+      "name": "BRABUS 100 ME",
+      "category": "Fungicida",
+      "image_url": "/media/Productos/Catalogo/31.png",
+      "reg_ica": "PL0019472023",
+      "formulation": "Microemulsión (ME)",
+      "chemical_group": "Triazol + Antibiótico",
+      "tox_category": "III",
+      "concentration": 100,
+      "composition": [
+        { "ai": "Difenoconazol", "pct": "" },
+        { "ai": "Validamicina", "pct": "" }
+      ],
+      "presentations": ["1 L", "4 L", "20 L"],
+      "mode_of_action": "Preventivo y curativo; absorbido por las partes verdes de la planta y resistente al lavado por lluvia.",
+      "mechanism": "Difenoconazol inhibe la biosíntesis del ergosterol; Validamicina inhibe la trehalasa y presenta efecto antibiótico.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
+        {
+          "crop": "Papa",
+          "target": "Rhizoctonia solani",
+          "dose": "1.2 L/ha",
+          "pc": "15 días",
+          "pr": "48 h"
+        },
+        {
+          "crop": "Arroz",
+          "target": "Rhizoctonia solani (Añublo de la vaina)",
+          "dose": "1 L/ha",
+          "pc": "15 días",
+          "pr": "48 h"
+        },
+        {
+          "crop": "Arroz",
+          "target": "Complejo manchado de grano (Helmintosporium spp., Curvularia lunata, Cercospora oryzae, Sarocladium sp., Ophiobolus aryzinus)",
+          "dose": "1 – 1.25 L/ha",
+          "pc": "15 días",
+          "pr": "48 h"
+        }
+      ],
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
+      "ficha_pdf": "docs/BRABUS_Ficha.pdf",
+      "tarjeta_pdf": "docs/BRABUS_Tarjeta.pdf",
+      "hoja_pdf": "docs/BRABUS_Hoja.pdf"
+    },
+    {
       "id": "cacique-420-sc",
       "name": "CACIQUE 420 SC",
       "category": "Fungicida de uso agrícola",
@@ -227,55 +230,6 @@
       "ficha_pdf": "docs/CACIQUE_Ficha.pdf",
       "tarjeta_pdf": "docs/CACIQUE_Tarjeta.pdf",
       "hoja_pdf": "docs/CACIQUE_Hoja.pdf"
-    },
-    {
-      "id": "catombe-brio-gqa-50-sc",
-      "name": "CATOMBE BRIO GQA 50 SC",
-      "formulation": "SC",
-      "concentration": 50,
-      "ica": "PL0007512023",
-      "toxicity": "III",
-      "category": "Insecticida",
-      "active_ingredient": "ABAMECTINA",
-      "targets": [
-        {
-          "crop": "Cebolla",
-          "pest": "Liriomyza huidobrensis",
-          "dose": "150 - 200 ml/200 L                                                                                                                                                                                                                       ",
-          "action": "Minador"
-        },
-        {
-          "crop": "Fresa",
-          "pest": "Tetranychus urticae",
-          "dose": "150 - 200 ml/200 L                                                                                                                                                                                                                       ",
-          "action": "Acaros"
-        },
-        {
-          "crop": "Melon",
-          "pest": "Tetranychus sp",
-          "dose": "240 ml/200 L",
-          "action": "Acaros"
-        },
-        {
-          "crop": "Crisantemo",
-          "pest": "Liriomyza huidobrensis",
-          "dose": "0.10 – 0.15 ml/L                                                                                                                                                                                                                       ",
-          "action": "Minador"
-        },
-        {
-          "crop": "Clavel",
-          "pest": "Tetranychus cinnabarinus",
-          "dose": "0.10 – 0.15 ml/L    ",
-          "action": "Acaros"
-        },
-        {
-          "crop": "Rosas",
-          "pest": "Tetranychus urticae",
-          "dose": "0.10 – 0.15 ml/L    ",
-          "action": "Acaros"
-        }
-      ],
-      "image_url": "/media/Productos/Catalogo/4.png"
     },
     {
       "id": "catombe-brio-gqa-50-sc",
@@ -341,6 +295,67 @@
       "ficha_pdf": "docs/CATOMBE_BRIO_Ficha.pdf",
       "tarjeta_pdf": "docs/CATOMBE_BRIO_Tarjeta.pdf",
       "hoja_pdf": "docs/CATOMBE_BRIO_Hoja.pdf"
+    },
+    {
+      "id": "catombe-forte-55-ec",
+      "name": "CATOMBE FORTE 5.5% EC",
+      "category": "Insecticida – Acaricida",
+      "image_url": "/media/Productos/Catalogo/5.png",
+      "reg_ica": "PL0001262023",
+      "formulation": "Concentrado emulsionable (EC)",
+      "chemical_group": "Glicósido-lactonas macrocíclicas + Quinazolinas",
+      "tox_category": "III",
+      "concentration": "5.5 % (EC)",
+      "composition": [
+        { "ai": "Abamectina", "pct": "" },
+        { "ai": "Fenazaquin", "pct": "" }
+      ],
+      "presentations": ["1 L", "100 mL"],
+      "mode_of_action": "Contacto e Ingestión",
+      "mechanism": "La Abamectina estimula la liberación de GABA e inhibe la transmisión nerviosa. El Fenazaquin inhibe la respiración mitocondrial.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
+        {
+          "crop": "Cebolla (bulbo)",
+          "target": "Liriomyza huidobrensis",
+          "dose": "300 – 500 cc/ha",
+          "pc": "3 días",
+          "pr": "4 h"
+        },
+        {
+          "crop": "Clavel",
+          "target": "Tetranychus cinnabarinus",
+          "dose": "0.3 cc/L",
+          "pc": "N.A.",
+          "pr": "4 h"
+        },
+        {
+          "crop": "Fresa",
+          "target": "Tetranychus urticae",
+          "dose": "300 cc/ha",
+          "pc": "7 días",
+          "pr": "4 h"
+        },
+        {
+          "crop": "Papaya",
+          "target": "Polyphagotarsonemus latus",
+          "dose": "0.4 – 0.5 cc/L ó 260 – 325 cc/ha",
+          "pc": "7 días",
+          "pr": "4 h"
+        },
+        {
+          "crop": "Rosas",
+          "target": "Tetranychus urticae",
+          "dose": "0.3 – 0.4 cc/L",
+          "pc": "N.A.",
+          "pr": "4 h"
+        }
+      ],
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
+      "ficha_pdf": "docs/CATOMBEFORTE_Ficha.pdf",
+      "tarjeta_pdf": "docs/CATOMBEFORTE_Tarjeta.pdf",
+      "hoja_pdf": "docs/CATOMBEFORTE_Hoja.pdf"
     },
     {
       "id": "ciromex-brio-gqa-400-sc",
