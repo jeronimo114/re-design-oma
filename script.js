@@ -498,3 +498,18 @@ function filterProducts() {
       okCrop && okProb && okCat && okSearch ? "block" : "none";
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  new Swiper(".hero-swiper", {
+    loop: true,
+    effect: "fade", // transición suave
+    speed: 800,
+    autoplay: {
+      delay: 4000, // 4,5 s entre slides
+      disableOnInteraction: false,
+    },
+    fadeEffect: { crossFade: true },
+    allowTouchMove: false, // sin swipe manual (opcional)
+    // No declaramos navigation ni pagination, así que no aparecen controles
+  });
+});

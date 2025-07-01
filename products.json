@@ -4,7 +4,7 @@
       "id": "anker-500-sc",
       "name": "ANKER 500 SC",
       "category": "Fungicida",
-      "image_url": "media/productos/Catalogo/ANKER.png",
+      "image_url": "media/productos/Catalogo/1.png",
       "reg_ica": "PL0003802023",
       "formulation": "Suspensión concentrada",
       "chemical_group": "Dicarboximidas + Anilino‑pirimidinas",
@@ -128,37 +128,7 @@
           "action": "Agrotis"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/athrin-brio-gqa-100-ec.png"
-    },
-    {
-      "id": "brabus-100-me",
-      "name": "BRABUS 100 ME",
-      "formulation": "ME",
-      "concentration": "50 + 50",
-      "ica": "PL0019472023",
-      "toxicity": "III",
-      "category": "Fungicida",
-      "active_ingredient": "DIFENOCONAZOL + VALIDAMICINA",
-      "targets": [
-        {
-          "crop": "Arroz",
-          "pest": "Rhizoctonia solani",
-          "dose": "1L/Ha",
-          "action": "Añublo de la vaina"
-        },
-        {
-          "crop": "Arroz",
-          "pest": "Helmintosporium, Cercospora, Sarocladiu, Curvularia, Ophiobolus",
-          "dose": "1 - 1,25 L/Ha",
-          "action": "Manchado de grano"
-        },
-        {
-          "crop": "Papa",
-          "pest": "Rhizoctonia solani",
-          "dose": "1.2 L/ha",
-          "action": "Rhizoctonia"
-        }
-      ]
+      "image_url": "/media/Productos/Catalogo/2.png"
     },
     {
       "id": "cacique-420-sc",
@@ -177,7 +147,7 @@
           "action": "Piricularia"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/cacique-420-sc.jpg"
+      "image_url": "/media/Productos/Catalogo/3.png"
     },
     {
       "id": "catombe-brio-gqa-50-sc",
@@ -225,7 +195,8 @@
           "dose": "0.10 – 0.15 ml/L    ",
           "action": "Acaros"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/4.png"
     },
     {
       "id": "catombe-forte-5-5-ec",
@@ -268,25 +239,7 @@
           "action": "Acaros"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/catombe-forte-5-5-ec.png"
-    },
-    {
-      "id": "ciromex-75-wp",
-      "name": "CIROMEX 75 WP",
-      "formulation": "WP",
-      "concentration": 750,
-      "ica": "PL0005062023",
-      "toxicity": "III",
-      "category": "Insecticida",
-      "active_ingredient": "CIROMAZINA",
-      "targets": [
-        {
-          "crop": "Crisantemo",
-          "pest": "Liryomiza huidobrensis ",
-          "dose": "0.4 g/L",
-          "action": "Minador"
-        }
-      ]
+      "image_url": "/media/Productos/Catalogo/5.png"
     },
     {
       "id": "ciromex-brio-gqa-400-sc",
@@ -335,7 +288,7 @@
           "action": "Minador"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/ciromex-brio-gqa-400-sc.png"
+      "image_url": "/media/Productos/Catalogo/6.png"
     },
     {
       "id": "coraza-480-sc",
@@ -372,7 +325,7 @@
           "action": "Alternaria"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/coraza-480-sc.jpg"
+      "image_url": "/media/Productos/Catalogo/7.png"
     },
     {
       "id": "deminak-45-ec",
@@ -445,7 +398,7 @@
           "action": "Mildeo polvoso"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/deminak-45-ec.jpg"
+      "image_url": "/media/Productos/Catalogo/8.png"
     },
     {
       "id": "difón-brio-160-sc",
@@ -469,7 +422,8 @@
           "dose": "0.8cc/ L de agua o 960cc/ha",
           "action": "Acaros"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/9.png"
     },
     {
       "id": "estocada-90-sp",
@@ -518,7 +472,7 @@
           "action": "Minador"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/estocada-90-sp.jpg"
+      "image_url": "/media/Productos/Catalogo/10.png"
     },
     {
       "id": "faro-40-me",
@@ -536,7 +490,8 @@
           "dose": "  \n\n1.5 cc/L o 1800 cc/Ha",
           "action": "Mildeo polvoso"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/11.png"
     },
     {
       "id": "format-70-wp",
@@ -567,7 +522,7 @@
           "action": "Gota"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/format-70-wp.jpg"
+      "image_url": "/media/Productos/Catalogo/12.png"
     },
     {
       "id": "fosetal-80-wp",
@@ -604,7 +559,7 @@
           "action": "Mildeo Velloso"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/fosetal-80-wp.jpg"
+      "image_url": "/media/Productos/Catalogo/13.png"
     },
     {
       "id": "fulminator-600-ec",
@@ -653,25 +608,7 @@
           "action": "Barrenador del fruto"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/fulminator-600-ec.png"
-    },
-    {
-      "id": "heroe-100-me",
-      "name": "HEROE 100 ME",
-      "formulation": "ME",
-      "concentration": 100,
-      "ica": "PL0005712023",
-      "toxicity": "III",
-      "category": "Fungicida",
-      "active_ingredient": "PIRIMETHANYL",
-      "targets": [
-        {
-          "crop": "Banano",
-          "pest": "Mycosphaerella fijiensis",
-          "dose": "0,75 L/Ha",
-          "action": "Sigatoka Negra "
-        }
-      ]
+      "image_url": "/media/Productos/Catalogo/14.png"
     },
     {
       "id": "kazugal-20-sl",
@@ -695,7 +632,8 @@
           "dose": "0.18 L/ha",
           "action": "Enfermedades bacterianas"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/15.png"
     },
     {
       "id": "linap-9-me",
@@ -713,7 +651,8 @@
           "dose": "1,5 L/ha",
           "action": "PRE -  POST"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/16.png"
     },
     {
       "id": "lyon-60-me",
@@ -731,7 +670,8 @@
           "dose": "1-1,5 L/ha",
           "action": "PRE -  POST"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/17.png"
     },
     {
       "id": "mitipyr-240-sc",
@@ -792,7 +732,7 @@
           "action": "Cogollero"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/mitipyr-240-sc.png"
+      "image_url": "/media/Productos/Catalogo/18.png"
     },
     {
       "id": "patrulla-70-me",
@@ -835,7 +775,13 @@
           "action": "Antracnosis"
         },
         {
-          "crop": "Pompon-Crisantemo",
+          "crop": "Pompon",
+          "pest": "Puccinia horiana ",
+          "dose": "1.25 cc/L",
+          "action": "Roya blanca"
+        },
+        {
+          "crop": "Crisantemo",
           "pest": "Puccinia horiana ",
           "dose": "1.25 cc/L",
           "action": "Roya blanca"
@@ -859,7 +805,7 @@
           "action": "Antracnosis"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/patrulla-70-me.png"
+      "image_url": "/media/Productos/Catalogo/19.png"
     },
     {
       "id": "prodion-500-sc",
@@ -902,7 +848,7 @@
           "action": "\nBotrytis\n"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/prodion-500-sc.jpg"
+      "image_url": "/media/Productos/Catalogo/20.png"
     },
     {
       "id": "reten-6-me",
@@ -926,7 +872,8 @@
           "dose": "1 cc/L o 0,4 L/ha",
           "action": "Mildeo polvoso"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/21.png"
     },
     {
       "id": "sideral-70-sl",
@@ -969,7 +916,7 @@
           "action": "Pudrición de Raíz"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/sideral-70-sl.jpg"
+      "image_url": "/media/Productos/Catalogo/22.png"
     },
     {
       "id": "skel-250-ec",
@@ -1012,7 +959,7 @@
           "action": "Tizon temprano"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/skel-250-ec.jpg"
+      "image_url": "/media/Productos/Catalogo/23.png"
     },
     {
       "id": "skyp-5-sc",
@@ -1061,7 +1008,7 @@
           "action": "Roya"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/skyp-5-sc.jpg"
+      "image_url": "/media/Productos/Catalogo/24.png"
     },
     {
       "id": "spax-80-me",
@@ -1116,7 +1063,7 @@
           "action": "Sigatoka Negra "
         }
       ],
-      "image_url": "/media/Productos/Catalogo/spax-80-me.png"
+      "image_url": "/media/Productos/Catalogo/25.png"
     },
 
     {
@@ -1172,7 +1119,7 @@
           "action": "Minador"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/tumbador-250-sc.png"
+      "image_url": "/media/Productos/Catalogo/26.png"
     },
     {
       "id": "valiente-100-me",
@@ -1197,12 +1144,19 @@
           "action": "Mildeo polvoso"
         },
         {
-          "crop": "Pompon-Crisantemo",
+          "crop": "Pompon",
+          "pest": "Puccinia horiana ",
+          "dose": "0.5 cc/L",
+          "action": "Roya blanca"
+        },
+        {
+          "crop": "Crisantemo",
           "pest": "Puccinia horiana ",
           "dose": "0.5 cc/L",
           "action": "Roya blanca"
         }
-      ]
+      ],
+      "image_url": "/media/Productos/Catalogo/27.png"
     },
     {
       "id": "zafiro-425-me",
@@ -1251,7 +1205,7 @@
           "action": "Mildeo velloso"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/zafiro-425-me.png"
+      "image_url": "/media/Productos/Catalogo/28.png"
     },
     {
       "id": "zoom-650-sc",
@@ -1300,7 +1254,7 @@
           "action": "Mildeo velloso"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/zoom-650-sc.png"
+      "image_url": "/media/Productos/Catalogo/29.png"
     },
     {
       "id": "arranque-sc",

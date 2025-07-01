@@ -225,17 +225,6 @@
                         <small class="d-block">Crisantemo</small>
                       </a>
                     </div>
-                    <div class="col">
-                      <a
-                        href="catalogo.html?cultivo=hortensia"
-                        class="btn btn-light w-100 text-center"
-                      >
-                        <svg width="20" height="20" class="mb-1">
-                          <circle cx="10" cy="10" r="8" />
-                        </svg>
-                        <small class="d-block">Hortensia</small>
-                      </a>
-                    </div>
                   </div>
                 </div>
               </li>
@@ -264,17 +253,47 @@
     <!-- Contenido Principal -->
     <main>
       <!-- Sección Hero con fondo interactivo -->
-      <section id="inicio" class="hero">
-        <div class="hero-content text-center">
-          <h1 class="display-4 fw-bold">Cultiva tu pasión, cuida tu legado</h1>
-          <p class="fs-5 my-3">
-            En Químicos OMA, sabemos que tus cultivos son parte de tu familia.
-            Te acompañamos en cada etapa, honrando la tradición y el amor por la
-            tierra.
-          </p>
-          <a href="#productos" class="btn-cta btn btn-lg"
-            >Descubre lo auténtico</a
-          >
+      <section id="inicio" class="hero p-0">
+        <div class="swiper hero-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div
+              class="swiper-slide"
+              style="background-image: url('/media/sliderN1.jpg')"
+            >
+              <div class="hero-content text-center">
+                <h1 class="display-4 fw-bold">
+                  Cultiva tu pasión, cuida tu legado
+                </h1>
+                <p class="fs-5 my-3">
+                  En Químicos OMA te acompañamos en cada etapa.
+                </p>
+                <a href="#productos" class="btn-cta btn btn-lg"
+                  >Descubre lo auténtico</a
+                >
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div
+              class="swiper-slide"
+              style="background-image: url('/media/sliderN2.jpg')"
+            >
+              <div class="hero-content text-center">
+                <!-- …mismo contenido u otro… -->
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div
+              class="swiper-slide"
+              style="background-image: url('/media/sliderN3.jpg')"
+            >
+              <div class="hero-content text-center">
+                <!-- … -->
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- ✱ BEGIN CATEGORÍAS DE PRODUCTO -->
@@ -886,7 +905,6 @@
           <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#productos">Productos</a></li>
-            <li><a href="#documentacion">Documentación</a></li>
             <li><a href="#noticias">Noticias</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
