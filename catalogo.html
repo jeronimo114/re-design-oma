@@ -461,9 +461,6 @@
                   alt=""
                   class="w-100 h-100 object-fit-cover"
                 />
-                <div class="mb-2">
-                  <span class="badge bg-info" id="modalAI"></span>
-                </div>
               </div>
               <div class="col-md-6">
                 <h4 id="modalName" class="fw-bold mb-1"></h4>
@@ -870,8 +867,6 @@
           document.getElementById("modalImg").src = prod.image_url;
           document.getElementById("modalImg").alt = prod.name;
           document.getElementById("modalCategory").textContent = prod.category;
-          document.getElementById("modalAI").textContent =
-            prod.active_ingredient || "";
           document.getElementById("modalName").textContent = prod.name;
           document.getElementById("modalDesc").textContent =
             prod.description || "";

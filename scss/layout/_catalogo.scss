@@ -31,15 +31,21 @@
     flex-direction: column;
     height: 100% !important;
     overflow: hidden;
+    /* Force consistent width and a bit taller height (not square) */
+    width: 100%;
+    max-width: 320px; // matches equal‑cols width
+    height: 380px; // ligeramente más alta para evitar recorte vertical
+    /* aspect ratio intentionally disabled to allow taller card */
 
     &:hover {
       transform: translateY(-4px);
     }
 
-    // Image wrapper keeps aspect ratio and fills card width
+    // Image wrapper uses fixed height, no aspect-ratio hack
     .img-wrapper {
+      flex: 0 0 70%; // image takes ~70% of card height
       width: 100%;
-      padding-top: 130%; // ≈4:5 aspect ratio
+      height: 70%;
       background: #f5f6f8;
       position: relative;
       border-bottom: 1px solid #e3e6e8;
@@ -48,16 +54,15 @@
       justify-content: center;
 
       img {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover; // fill entire area, cropping if necessary
       }
     }
 
     .card-body {
+      flex: 1 0 35%; // body occupies remaining ~35%
+      width: 100%;
       padding: 1rem 1rem 1.25rem;
       display: flex;
       flex-direction: column;
@@ -101,6 +106,7 @@
       flex: 0 0 320px; // ancho fijo y consistente (≈3 cards en desktop)
       max-width: 320px;
       margin-bottom: 1.5rem; // refuerzo para móviles
+      height: 380px; // keep column height consistent with card
     }
   }
 
@@ -305,16 +311,17 @@
   height: 100%;
 }
 
+// Hero image in modal: prominent and disables zoom on hover
 .modal-product .hero-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
   transition: transform 0.3s ease;
-}
-
-.modal-product .hero-img img:hover {
-  transform: scale(1.03);
+  // Disable hover zoom effect
+  &:hover {
+    transform: none;
+  }
 }
 
 .modal-product .hero-img .badge {
