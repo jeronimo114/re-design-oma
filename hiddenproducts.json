@@ -9,21 +9,12 @@
       "formulation": "Suspensión concentrada",
       "chemical_group": "Dicarboximidas + Anilino‑pirimidinas",
       "tox_category": "II",
-      "presentations": [
-        "1 L",
-        "250 mL"
-      ],
+      "presentations": ["1 L", "250 mL"],
       "mode_of_action": "Fungicida sistémico traslaminar de acción preventiva y curativa.",
       "mechanism": "Impide la germinación de esporas ... Inhibe la actividad enzimática.",
       "composition": [
-        {
-          "ai": "Iprodione",
-          "pct": ""
-        },
-        {
-          "ai": "Pyrimethanil",
-          "pct": ""
-        }
+        { "ai": "Iprodione", "pct": "" },
+        { "ai": "Pyrimethanil", "pct": "" }
       ],
       "warnings": "Todos los productos químicos de uso agrícola ...",
       "uses": [
@@ -49,6 +40,7 @@
           "pr": "24 h"
         }
       ],
+
       "ficha_pdf": "docs/ANKER_Ficha.pdf",
       "tarjeta_pdf": "docs/ANKER_Tarjeta.pdf",
       "hoja_pdf": "docs/ANKER_Hoja.pdf"
@@ -63,18 +55,8 @@
       "chemical_group": "Piretroides",
       "tox_category": "II",
       "concentration": 100,
-      "composition": [
-        {
-          "ai": "Lambda-cihalotrina",
-          "pct": "100"
-        }
-      ],
-      "presentations": [
-        "1 L",
-        "4 L",
-        "100 mL",
-        "250 mL"
-      ],
+      "composition": [{ "ai": "Lambda-cihalotrina", "pct": "100" }],
+      "presentations": ["1 L", "4 L", "100 mL", "250 mL"],
       "mode_of_action": "Contacto e Ingestión",
       "mechanism": "Actúa sobre el sistema nervioso de los insectos alterando el flujo de iones.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -181,20 +163,10 @@
       "tox_category": "III",
       "concentration": 100,
       "composition": [
-        {
-          "ai": "Difenoconazol",
-          "pct": ""
-        },
-        {
-          "ai": "Validamicina",
-          "pct": ""
-        }
+        { "ai": "Difenoconazol", "pct": "" },
+        { "ai": "Validamicina", "pct": "" }
       ],
-      "presentations": [
-        "1 L",
-        "4 L",
-        "20 L"
-      ],
+      "presentations": ["1 L", "4 L", "20 L"],
       "mode_of_action": "Preventivo y curativo; absorbido por las partes verdes de la planta y resistente al lavado por lluvia.",
       "mechanism": "Difenoconazol inhibe la biosíntesis del ergosterol; Validamicina inhibe la trehalasa y presenta efecto antibiótico.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -237,20 +209,10 @@
       "chemical_group": "Ditiolanos + Antibiótico",
       "tox_category": "II",
       "composition": [
-        {
-          "ai": "Isoprothiolane",
-          "pct": ""
-        },
-        {
-          "ai": "Kasugamycin",
-          "pct": ""
-        }
+        { "ai": "Isoprothiolane", "pct": "" },
+        { "ai": "Kasugamycin", "pct": "" }
       ],
-      "presentations": [
-        "20 L",
-        "4 L",
-        "1 L"
-      ],
+      "presentations": ["20 L", "4 L", "1 L"],
       "mode_of_action": "Preventivo-curativo",
       "mechanism": "Isoprothiolane se incorpora por vía radicular y foliar, mientras que la Kasugamicina evita la germinación de esporas e impide la penetración del micelio.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -279,16 +241,8 @@
       "chemical_group": "Glicósido-lactonas macrocíclicas",
       "tox_category": "III",
       "concentration": 50,
-      "composition": [
-        {
-          "ai": "Abamectina",
-          "pct": ""
-        }
-      ],
-      "presentations": [
-        "1 L",
-        "100 mL"
-      ],
+      "composition": [{ "ai": "Abamectina", "pct": "" }],
+      "presentations": ["1 L", "100 mL"],
       "mode_of_action": "Contacto e ingestión",
       "mechanism": "Actúa sobre el sistema nervioso – estimula la liberación de GABA e inhibe la transmisión de impulsos nerviosos, causando parálisis y muerte de insectos y ácaros.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -353,19 +307,10 @@
       "tox_category": "III",
       "concentration": "5.5 % (EC)",
       "composition": [
-        {
-          "ai": "Abamectina",
-          "pct": ""
-        },
-        {
-          "ai": "Fenazaquin",
-          "pct": ""
-        }
+        { "ai": "Abamectina", "pct": "" },
+        { "ai": "Fenazaquin", "pct": "" }
       ],
-      "presentations": [
-        "1 L",
-        "100 mL"
-      ],
+      "presentations": ["1 L", "100 mL"],
       "mode_of_action": "Contacto e Ingestión",
       "mechanism": "La Abamectina estimula la liberación de GABA e inhibe la transmisión nerviosa. El Fenazaquin inhibe la respiración mitocondrial.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -422,17 +367,8 @@
       "chemical_group": "Triazinas",
       "tox_category": "III",
       "concentration": 400,
-      "composition": [
-        {
-          "ai": "Ciromazina",
-          "pct": ""
-        }
-      ],
-      "presentations": [
-        "1 L",
-        "200 mL",
-        "100 mL"
-      ],
+      "composition": [{ "ai": "Ciromazina", "pct": "" }],
+      "presentations": ["1 L", "200 mL", "100 mL"],
       "mode_of_action": "Ingestión",
       "mechanism": "Regulador del crecimiento larval: interfiere en la muda, la pupación y la formación del adulto, interrumpiendo el ciclo de desarrollo.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -496,15 +432,8 @@
       "chemical_group": "Dicarboxamidas",
       "tox_category": "III",
       "concentration": 480,
-      "composition": [
-        {
-          "ai": "Captan",
-          "pct": ""
-        }
-      ],
-      "presentations": [
-        "1 L"
-      ],
+      "composition": [{ "ai": "Captan", "pct": "" }],
+      "presentations": ["1 L"],
       "mode_of_action": "Protectante de amplio espectro",
       "mechanism": "Inhibe la respiración celular de las esporas patógenas.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -554,16 +483,8 @@
       "chemical_group": "Imidazoles",
       "tox_category": "III",
       "concentration": 450,
-      "composition": [
-        {
-          "ai": "Prochloraz",
-          "pct": ""
-        }
-      ],
-      "presentations": [
-        "1 L",
-        "100 mL"
-      ],
+      "composition": [{ "ai": "Prochloraz", "pct": "" }],
+      "presentations": ["1 L", "100 mL"],
       "mode_of_action": "Preventivo-curativo",
       "mechanism": "Inhibe la síntesis de triglicéridos, evita la germinación de esporas y bloquea el crecimiento miceliar.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -655,15 +576,8 @@
       "chemical_group": "Hidrocarburos clorados",
       "tox_category": "II",
       "concentration": 160,
-      "composition": [
-        {
-          "ai": "Tetradifon",
-          "pct": "160 g/L"
-        }
-      ],
-      "presentations": [
-        "1 L"
-      ],
+      "composition": [{ "ai": "Tetradifon", "pct": "160 g/L" }],
+      "presentations": ["1 L"],
       "mode_of_action": "Actividad de contacto sobre huevos y estados inmaduros.",
       "mechanism": "Inhibe la fosforilación oxidativa.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -699,16 +613,8 @@
       "chemical_group": "Carbamatos",
       "tox_category": "Ib",
       "concentration": 900,
-      "composition": [
-        {
-          "ai": "Methomyl",
-          "pct": "900 g/kg"
-        }
-      ],
-      "presentations": [
-        "1 kg",
-        "60 g"
-      ],
+      "composition": [{ "ai": "Methomyl", "pct": "900 g/kg" }],
+      "presentations": ["1 kg", "60 g"],
       "mode_of_action": "Contacto, ingestión y sistémico",
       "mechanism": "Inhibe la colinesterasa en la sinapsis nerviosa.",
       "warnings": "Venta sólo por prescripción de un Ingeniero Agrónomo. CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -772,16 +678,8 @@
       "chemical_group": "Pyrimidinol",
       "tox_category": "III",
       "concentration": 40,
-      "composition": [
-        {
-          "ai": "Bupirimato",
-          "pct": "40 g/L"
-        }
-      ],
-      "presentations": [
-        "1 L",
-        "4 L"
-      ],
+      "composition": [{ "ai": "Bupirimato", "pct": "40 g/L" }],
+      "presentations": ["1 L", "4 L"],
       "mode_of_action": "Sistémico, traslaminar y fumigante. Acción preventiva y curativa.",
       "mechanism": "Translocado vía xilema, inhibe la adenosina-deaminasa (ADA-asa) y evita la formación de haustorios.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -810,15 +708,8 @@
       "chemical_group": "Ditiocarbamatos",
       "tox_category": "III",
       "concentration": 700,
-      "composition": [
-        {
-          "ai": "Propineb",
-          "pct": "700 g/kg"
-        }
-      ],
-      "presentations": [
-        "400 g"
-      ],
+      "composition": [{ "ai": "Propineb", "pct": "700 g/kg" }],
+      "presentations": ["400 g"],
       "mode_of_action": "Preventivo y protectante sobre amplia gama de hongos.",
       "mechanism": "Inhibe la germinación, mata las estructuras de reproducción e inactiva la deshidrogenasa pirúvica en la respiración fúngica.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -861,16 +752,8 @@
       "chemical_group": "Fosfonato (Organofosfato)",
       "tox_category": "III",
       "concentration": 800,
-      "composition": [
-        {
-          "ai": "Fosetil aluminio",
-          "pct": "800 g/kg"
-        }
-      ],
-      "presentations": [
-        "1 kg",
-        "330 g"
-      ],
+      "composition": [{ "ai": "Fosetil aluminio", "pct": "800 g/kg" }],
+      "presentations": ["1 kg", "330 g"],
       "mode_of_action": "Altamente sistémico, con acción preventiva y curativa.",
       "mechanism": "Inhibe la germinación de oosporas, bloquea la penetración y estimula la formación de fitoalexinas.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -921,21 +804,10 @@
       "tox_category": "III",
       "concentration": "500 g/L + 100 g/L",
       "composition": [
-        {
-          "ai": "Profenofos",
-          "pct": "500 g/L"
-        },
-        {
-          "ai": "Cipermetrina",
-          "pct": "100 g/L"
-        }
+        { "ai": "Profenofos", "pct": "500 g/L" },
+        { "ai": "Cipermetrina", "pct": "100 g/L" }
       ],
-      "presentations": [
-        "1 L",
-        "4 L",
-        "250 mL",
-        "100 mL"
-      ],
+      "presentations": ["1 L", "4 L", "250 mL", "100 mL"],
       "mode_of_action": "Contacto e ingestión; efecto translaminar de amplio espectro.",
       "mechanism": "Inhibidor de la acetilcolinesterasa; provoca desbalance electroquímico en el axón.",
       "warnings": "Venta solo por prescripción de un Ingeniero Agrónomo. CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -1005,10 +877,7 @@
           "action": "Enfermedades bacterianas"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/15.png",
-      "ficha_pdf": "docs/KAZUGAL_Ficha.pdf",
-      "tarjeta_pdf": "docs/KAZUGAL_Tarjeta.pdf",
-      "hoja_pdf": "docs/KAZUGAL_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/15.png"
     },
     {
       "id": "linap-9-me",
@@ -1027,10 +896,7 @@
           "action": "PRE -  POST"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/16.png",
-      "ficha_pdf": "docs/LINAP_Ficha.pdf",
-      "tarjeta_pdf": "docs/LINAP_Tarjeta.pdf",
-      "hoja_pdf": "docs/LINAP_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/16.png"
     },
     {
       "id": "lyon-60-me",
@@ -1049,10 +915,7 @@
           "action": "PRE -  POST"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/17.png",
-      "ficha_pdf": "docs/LYON_Ficha.pdf",
-      "tarjeta_pdf": "docs/LYON_Tarjeta.pdf",
-      "hoja_pdf": "docs/LYON_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/17.png"
     },
     {
       "id": "mitipyr-240-sc",
@@ -1113,10 +976,7 @@
           "action": "Cogollero"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/18.png",
-      "ficha_pdf": "docs/MITIPYR_Ficha.pdf",
-      "tarjeta_pdf": "docs/MITIPYR_Tarjeta.pdf",
-      "hoja_pdf": "docs/MITIPYR_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/18.png"
     },
     {
       "id": "patrulla-70-me",
@@ -1189,10 +1049,7 @@
           "action": "Antracnosis"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/19.png",
-      "ficha_pdf": "docs/PATRULLA_Ficha.pdf",
-      "tarjeta_pdf": "docs/PATRULLA_Tarjeta.pdf",
-      "hoja_pdf": "docs/PATRULLA_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/19.png"
     },
     {
       "id": "prodion-500-sc",
@@ -1235,10 +1092,7 @@
           "action": "\nBotrytis\n"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/20.png",
-      "ficha_pdf": "docs/PRODION_Ficha.pdf",
-      "tarjeta_pdf": "docs/PRODION_Tarjeta.pdf",
-      "hoja_pdf": "docs/PRODION_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/20.png"
     },
     {
       "id": "reten-6-me",
@@ -1263,10 +1117,7 @@
           "action": "Mildeo polvoso"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/21.png",
-      "ficha_pdf": "docs/RETEN_Ficha.pdf",
-      "tarjeta_pdf": "docs/RETEN_Tarjeta.pdf",
-      "hoja_pdf": "docs/RETEN_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/21.png"
     },
     {
       "id": "sideral-70-sl",
@@ -1309,10 +1160,7 @@
           "action": "Pudrición de Raíz"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/22.png",
-      "ficha_pdf": "docs/SIDERAL_Ficha.pdf",
-      "tarjeta_pdf": "docs/SIDERAL_Tarjeta.pdf",
-      "hoja_pdf": "docs/SIDERAL_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/22.png"
     },
     {
       "id": "skel-250-ec",
@@ -1355,10 +1203,7 @@
           "action": "Tizon temprano"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/23.png",
-      "ficha_pdf": "docs/SKEL_Ficha.pdf",
-      "tarjeta_pdf": "docs/SKEL_Tarjeta.pdf",
-      "hoja_pdf": "docs/SKEL_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/23.png"
     },
     {
       "id": "skyp-5-sc",
@@ -1407,10 +1252,7 @@
           "action": "Roya"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/24.png",
-      "ficha_pdf": "docs/SKYP_Ficha.pdf",
-      "tarjeta_pdf": "docs/SKYP_Tarjeta.pdf",
-      "hoja_pdf": "docs/SKYP_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/24.png"
     },
     {
       "id": "spax-80-me",
@@ -1465,11 +1307,9 @@
           "action": "Sigatoka Negra "
         }
       ],
-      "image_url": "/media/Productos/Catalogo/25.png",
-      "ficha_pdf": "docs/SPAX_Ficha.pdf",
-      "tarjeta_pdf": "docs/SPAX_Tarjeta.pdf",
-      "hoja_pdf": "docs/SPAX_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/25.png"
     },
+
     {
       "id": "tumbador-250-sc",
       "name": "TUMBADOR 250 SC",
@@ -1523,10 +1363,7 @@
           "action": "Minador"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/26.png",
-      "ficha_pdf": "docs/TUMBADOR_Ficha.pdf",
-      "tarjeta_pdf": "docs/TUMBADOR_Tarjeta.pdf",
-      "hoja_pdf": "docs/TUMBADOR_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/26.png"
     },
     {
       "id": "valiente-100-me",
@@ -1563,10 +1400,7 @@
           "action": "Roya blanca"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/27.png",
-      "ficha_pdf": "docs/VALIENTE_Ficha.pdf",
-      "tarjeta_pdf": "docs/VALIENTE_Tarjeta.pdf",
-      "hoja_pdf": "docs/VALIENTE_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/27.png"
     },
     {
       "id": "zafiro-425-me",
@@ -1615,10 +1449,7 @@
           "action": "Mildeo velloso"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/28.png",
-      "ficha_pdf": "docs/ZAFIRO_Ficha.pdf",
-      "tarjeta_pdf": "docs/ZAFIRO_Tarjeta.pdf",
-      "hoja_pdf": "docs/ZAFIRO_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/28.png"
     },
     {
       "id": "zoom-650-sc",
@@ -1667,10 +1498,7 @@
           "action": "Mildeo velloso"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/29.png",
-      "ficha_pdf": "docs/ZOOM_Ficha.pdf",
-      "tarjeta_pdf": "docs/ZOOM_Tarjeta.pdf",
-      "hoja_pdf": "docs/ZOOM_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/29.png"
     },
     {
       "id": "arranque-sc",
@@ -1689,10 +1517,7 @@
           "action": "Fertilizante Foliar "
         }
       ],
-      "image_url": "/media/Productos/Catalogo/30.png",
-      "ficha_pdf": "docs/ARRANQUE_Ficha.pdf",
-      "tarjeta_pdf": "docs/ARRANQUE_Tarjeta.pdf",
-      "hoja_pdf": "docs/ARRANQUE_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/30.png"
     },
     {
       "id": "avance-sc",
@@ -1711,10 +1536,7 @@
           "action": "Fertilizante Foliar "
         }
       ],
-      "image_url": "/media/Productos/Catalogo/31.png",
-      "ficha_pdf": "docs/AVANCE_Ficha.pdf",
-      "tarjeta_pdf": "docs/AVANCE_Tarjeta.pdf",
-      "hoja_pdf": "docs/AVANCE_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/31.png"
     },
     {
       "id": "fixer-sc",
@@ -1733,10 +1555,7 @@
           "action": "Fertilizante Foliar "
         }
       ],
-      "image_url": "/media/Productos/Catalogo/32.png",
-      "ficha_pdf": "docs/FIXER_Ficha.pdf",
-      "tarjeta_pdf": "docs/FIXER_Tarjeta.pdf",
-      "hoja_pdf": "docs/FIXER_Hoja.pdf"
+      "image_url": "/media/Productos/Catalogo/32.png"
     }
   ],
   "safety_notice": "Utilice los productos únicamente bajo recomendación de un ingeniero agrónomo certificado y siga la etiqueta."
