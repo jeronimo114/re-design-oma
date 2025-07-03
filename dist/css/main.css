@@ -467,6 +467,9 @@ section:nth-of-type(4) {
 .catalogo {
   background-color: #f8f9fa;
   padding: 4rem 0;
+  /* Ajuste responsive: en tablets (md) quepan 3 */
+  /* En pantallas pequeñas (sm) dos columnas */
+  /* Una columna en xs */
   /* Opcional: mejora de sombra y radio */
 }
 .catalogo h1,
@@ -491,17 +494,17 @@ section:nth-of-type(4) {
   overflow: hidden;
   /* Force consistent width and a bit taller height (not square) */
   width: 100%;
-  max-width: 320px;
-  height: 380px;
+  /* max-width: 320px; // matches equal‑cols width -- REMOVED, now column controls width */
+  height: 420px;
   /* aspect ratio intentionally disabled to allow taller card */
 }
 .catalogo .product-card:hover {
   transform: translateY(-4px);
 }
 .catalogo .product-card .img-wrapper {
-  flex: 0 0 70%;
+  flex: 0 0 72%;
   width: 100%;
-  height: 70%;
+  height: 72%;
   background: #f5f6f8;
   position: relative;
   border-bottom: 1px solid #e3e6e8;
@@ -546,15 +549,33 @@ section:nth-of-type(4) {
   background: #84b64c;
 }
 .catalogo .equal-cols {
-  /* Centra las columnas dentro del row */
+  /* Centra las columnas y define el espacio */
   justify-content: center !important;
   gap: 1.5rem !important;
 }
 .catalogo .equal-cols > .col {
-  flex: 0 0 320px;
-  max-width: 320px;
+  flex: 0 0 calc(25% - 1.5rem);
+  max-width: calc(25% - 1.5rem);
   margin-bottom: 1.5rem;
-  height: 380px;
+  height: 420px;
+}
+@media (max-width: 991.98px) {
+  .catalogo .equal-cols > .col {
+    flex: 0 0 calc(33.333% - 1.5rem);
+    max-width: calc(33.333% - 1.5rem);
+  }
+}
+@media (max-width: 767.98px) {
+  .catalogo .equal-cols > .col {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+@media (max-width: 575.98px) {
+  .catalogo .equal-cols > .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 .catalogo .product-card {
   border-radius: 0.75rem;

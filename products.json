@@ -3,7 +3,7 @@
     {
       "id": "anker-500-sc",
       "name": "ANKER 500 SC",
-      "category": "Fungicida",
+      "category": "fungicida",
       "image_url": "media/productos/Catalogo/1.png",
       "reg_ica": "PL0003802023",
       "formulation": "Suspensión concentrada",
@@ -48,7 +48,7 @@
     {
       "id": "athrin-brio-gqa-100-ec",
       "name": "ATHRIN BRIO GQA 100 EC",
-      "category": "Insecticida – Acaricida de uso agrícola",
+      "category": "insecticida",
       "image_url": "/media/Productos/Catalogo/2.png",
       "reg_ica": "PL0017682023",
       "formulation": "Concentrado emulsionable (EC)",
@@ -202,7 +202,7 @@
     {
       "id": "cacique-420-sc",
       "name": "CACIQUE 420 SC",
-      "category": "Fungicida de uso agrícola",
+      "category": "fungicida",
       "image_url": "/media/Productos/Catalogo/3.png",
       "reg_ica": "PL0001272023",
       "formulation": "Suspensión concentrada (SC)",
@@ -234,7 +234,7 @@
     {
       "id": "catombe-brio-gqa-50-sc",
       "name": "CATOMBE BRIO GQA 50 SC",
-      "category": "Insecticida – Acaricida de uso agrícola",
+      "category": "insecticida",
       "image_url": "/media/Productos/Catalogo/4.png",
       "reg_ica": "PL0007512023",
       "formulation": "Suspensión concentrada (SC)",
@@ -299,7 +299,7 @@
     {
       "id": "catombe-forte-55-ec",
       "name": "CATOMBE FORTE 5.5% EC",
-      "category": "Insecticida – Acaricida",
+      "category": "insecticida",
       "image_url": "/media/Productos/Catalogo/5.png",
       "reg_ica": "PL0001262023",
       "formulation": "Concentrado emulsionable (EC)",
@@ -360,7 +360,7 @@
     {
       "id": "ciromex-brio-gqa-400-sc",
       "name": "CIROMEX BRIO GQA 400 SC",
-      "category": "Insecticida de uso agrícola",
+      "category": "insecticida",
       "image_url": "/media/Productos/Catalogo/6.png",
       "reg_ica": "PL0005732023",
       "formulation": "Suspensión concentrada (SC)",
@@ -425,7 +425,7 @@
     {
       "id": "coraza-480-sc",
       "name": "CORAZA 480 SC",
-      "category": "Fungicida de uso agrícola",
+      "category": "fungicida",
       "image_url": "/media/Productos/Catalogo/7.png",
       "reg_ica": "PL0003232022",
       "formulation": "Suspensión concentrada (SC)",
@@ -476,7 +476,7 @@
     {
       "id": "deminak-45-ec",
       "name": "DEMINAK 45 EC",
-      "category": "Fungicida de uso agrícola",
+      "category": "fungicida",
       "image_url": "/media/Productos/Catalogo/8.png",
       "reg_ica": "PL0004602023",
       "formulation": "Concentrado emulsionable (EC)",
@@ -606,7 +606,7 @@
     {
       "id": "estocada-90-sp",
       "name": "ESTOCADA 90 SP",
-      "category": "Insecticida de uso agrícola",
+      "category": "insecticida",
       "image_url": "/media/Productos/Catalogo/10.png",
       "reg_ica": "PL0001192023",
       "formulation": "Polvo soluble (SP)",
@@ -671,7 +671,7 @@
     {
       "id": "faro-40-me",
       "name": "FARO 40 ME",
-      "category": "Fungicida de uso agrícola",
+      "category": "fungicida",
       "image_url": "/media/Productos/Catalogo/11.png",
       "reg_ica": "PL0003252022",
       "formulation": "Microemulsión (ME)",
@@ -701,7 +701,7 @@
     {
       "id": "format-70-wp",
       "name": "FORMAT 70 WP",
-      "category": "Fungicida de uso agrícola",
+      "category": "fungicida",
       "image_url": "/media/Productos/Catalogo/12.png",
       "reg_ica": "PL0009122023",
       "formulation": "Polvo mojable (WP)",
@@ -745,7 +745,7 @@
     {
       "id": "fosetal-80-wp",
       "name": "FOSETAL 80 WP",
-      "category": "Fungicida de uso agrícola",
+      "category": "fungicida",
       "image_url": "/media/Productos/Catalogo/13.png",
       "reg_ica": "PL0002572023",
       "formulation": "Polvo mojable (WP)",
@@ -796,7 +796,7 @@
     {
       "id": "fulminator-600-ec",
       "name": "FULMINATOR 600 EC",
-      "category": "Insecticida de uso agrícola",
+      "category": "insecticida",
       "image_url": "/media/Productos/Catalogo/14.png",
       "reg_ica": "PL0006602023",
       "formulation": "Concentrado emulsionable (EC)",
@@ -861,7 +861,7 @@
       "concentration": 20,
       "ica": "PL0005702023",
       "toxicity": "II",
-      "category": "Fungicida",
+      "category": "fungicida",
       "active_ingredient": "KASUGAMICINA",
       "targets": [
         {
@@ -924,7 +924,7 @@
       "concentration": 240,
       "ica": "PL0005492023",
       "toxicity": "II",
-      "category": "Insectivida  - acaricida",
+      "category": "insecticida",
       "active_ingredient": "CHLORFENAPYR",
       "targets": [
         {
@@ -985,7 +985,7 @@
       "concentration": "40 + 30",
       "ica": "PL0003902022",
       "toxicity": "III",
-      "category": "Fungicida",
+      "category": "fungicida",
       "active_ingredient": "DIFENOCONAZOL+KRESOXIM METIL",
       "targets": [
         {
@@ -1058,7 +1058,7 @@
       "concentration": 500,
       "ica": "PL0017082023",
       "toxicity": "III",
-      "category": "Fungicida",
+      "category": "fungicida",
       "active_ingredient": "IPRODIONE",
       "targets": [
         {
@@ -1101,7 +1101,7 @@
       "concentration": "40 + 20",
       "ica": "PL0003282022",
       "toxicity": "III",
-      "category": "Fungicida",
+      "category": "fungicida",
       "active_ingredient": "DODEMORPH + PROCHLORAZ",
       "targets": [
         {
@@ -1126,7 +1126,7 @@
       "concentration": 700,
       "ica": "PL0003142022",
       "toxicity": "III",
-      "category": "Fungicida",
+      "category": "fungicida",
       "active_ingredient": "PROPAMOCARB HCL",
       "targets": [
         {
@@ -1169,7 +1169,7 @@
       "concentration": 250,
       "ica": "PL0003062022",
       "toxicity": "II",
-      "category": "Fungicida",
+      "category": "fungicida",
       "active_ingredient": "DIFENOCONAZOL",
       "targets": [
         {
@@ -1212,7 +1212,7 @@
       "concentration": 50,
       "ica": "PL0005742023",
       "toxicity": "III",
-      "category": "Fungicida",
+      "category": "fungicida",
       "active_ingredient": "HEXACONAZOL",
       "targets": [
         {
@@ -1261,7 +1261,7 @@
       "concentration": "35 + 45",
       "ica": "PL0002562023",
       "toxicity": "II",
-      "category": "Fungicida",
+      "category": "fungicida",
       "active_ingredient": "DIFENOCONAZOL + PROCHLORAZ",
       "targets": [
         {
@@ -1317,7 +1317,7 @@
       "concentration": "50 + 200",
       "ica": "PL0001662023",
       "toxicity": "II",
-      "category": "Insecticida",
+      "category": "insecticida",
       "active_ingredient": "LAMBDACIHALOTRINA + CIROMAZINA",
       "targets": [
         {
@@ -1372,7 +1372,7 @@
       "concentration": 100,
       "ica": "PL0003292022",
       "toxicity": "III",
-      "category": "Fungicida",
+      "category": "fungicida",
       "active_ingredient": "TRIDEMORPH",
       "targets": [
         {
@@ -1409,7 +1409,7 @@
       "concentration": "350 + 75",
       "ica": "PL0003232023",
       "toxicity": "III",
-      "category": "Fungicida",
+      "category": "fungicida",
       "active_ingredient": "PROPAMOCARB HCL + METALAXIL",
       "targets": [
         {
@@ -1458,7 +1458,7 @@
       "concentration": "300 + 350",
       "ica": "PL0003072022",
       "toxicity": "II",
-      "category": "Fungicida",
+      "category": "fungicida",
       "active_ingredient": "DIMETHOMORPH  + PROPAMOCARB HCL",
       "targets": [
         {

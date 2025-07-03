@@ -255,6 +255,26 @@ document.addEventListener("DOMContentLoaded", () => {
           lng: -75.58,
           reps: ["Wilson Calderín - Cel. 312-6032541"],
         },
+        {
+          region: "REPÚBLICA DOMINICANA",
+          lat: 19.4,
+          lng: -70.4,
+          reps: [
+            "AGROTEL S.R.L. - Tel. +1 809-276-3016",
+            "Autop. Ramón Cáceres 10, 41000",
+            "Web: agrotel.com.do",
+          ],
+        },
+        {
+          region: "PANAMÁ – CHIRIQUÍ",
+          lat: 8.43,
+          lng: -82.43,
+          reps: [
+            "El Rancherito S.A. - Tel. 722-2811 / 722-2712",
+            "Coquito, David – Chiriquí",
+            "E-mail: administracion@elrancheritopanama.com",
+          ],
+        },
       ];
 
       // Agregamos un marcador con popup por cada región

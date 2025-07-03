@@ -33,8 +33,8 @@
     overflow: hidden;
     /* Force consistent width and a bit taller height (not square) */
     width: 100%;
-    max-width: 320px; // matches equal‑cols width
-    height: 380px; // ligeramente más alta para evitar recorte vertical
+    /* max-width: 320px; // matches equal‑cols width -- REMOVED, now column controls width */
+    height: 420px; // un poco más alta
     /* aspect ratio intentionally disabled to allow taller card */
 
     &:hover {
@@ -43,9 +43,9 @@
 
     // Image wrapper uses fixed height, no aspect-ratio hack
     .img-wrapper {
-      flex: 0 0 70%; // image takes ~70% of card height
+      flex: 0 0 72%; // image takes ~72% of card height
       width: 100%;
-      height: 70%;
+      height: 72%;
       background: #f5f6f8;
       position: relative;
       border-bottom: 1px solid #e3e6e8;
@@ -96,17 +96,41 @@
       }
     }
   }
-  // Reemplaza el bloque .equal-cols existente por este
+  // Nuevo bloque .equal-cols y media queries responsivas
   .equal-cols {
-    /* Centra las columnas dentro del row */
+    /* Centra las columnas y define el espacio */
     justify-content: center !important;
     gap: 1.5rem !important; // espacio horizontal y vertical
 
     > .col {
-      flex: 0 0 320px; // ancho fijo y consistente (≈3 cards en desktop)
-      max-width: 320px;
-      margin-bottom: 1.5rem; // refuerzo para móviles
-      height: 380px; // keep column height consistent with card
+      flex: 0 0 calc(25% - 1.5rem); // 4 columnas en desktop
+      max-width: calc(25% - 1.5rem);
+      margin-bottom: 1.5rem;
+      height: 420px; // altura consistente con la tarjeta
+    }
+  }
+
+  /* Ajuste responsive: en tablets (md) quepan 3 */
+  @media (max-width: 991.98px) {
+    .equal-cols > .col {
+      flex: 0 0 calc(33.333% - 1.5rem);
+      max-width: calc(33.333% - 1.5rem);
+    }
+  }
+
+  /* En pantallas pequeñas (sm) dos columnas */
+  @media (max-width: 767.98px) {
+    .equal-cols > .col {
+      flex: 0 0 calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+    }
+  }
+
+  /* Una columna en xs */
+  @media (max-width: 575.98px) {
+    .equal-cols > .col {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
 
