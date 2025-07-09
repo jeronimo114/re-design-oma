@@ -22,7 +22,7 @@
           "pct": ""
         }
       ],
-      "warnings": "Todos los productos químicos de uso agrícola ...",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Clavel",
@@ -54,7 +54,7 @@
       "id": "athrin-brio-gqa-100-ec",
       "name": "ATHRIN BRIO GQA 100 EC",
       "category": "insecticida",
-      "image_url": "/media/Productos/Catalogo/anker.png",
+      "image_url": "/media/Productos/Catalogo/athrin.png",
       "reg_ica": "PL0017682023",
       "formulation": "Concentrado emulsionable (EC)",
       "chemical_group": "Piretroides",
@@ -69,7 +69,7 @@
       "presentations": ["1 L", "4 L", "100 mL", "250 mL"],
       "mode_of_action": "Contacto e Ingestión",
       "mechanism": "Actúa sobre el sistema nervioso de los insectos alterando el flujo de iones.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Algodón",
@@ -185,7 +185,7 @@
       "presentations": ["1 L", "4 L", "20 L"],
       "mode_of_action": "Preventivo y curativo; absorbido por las partes verdes de la planta y resistente al lavado por lluvia.",
       "mechanism": "Difenoconazol inhibe la biosíntesis del ergosterol; Validamicina inhibe la trehalasa y presenta efecto antibiótico.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Papa",
@@ -237,7 +237,7 @@
       "presentations": ["20 L", "4 L", "1 L"],
       "mode_of_action": "Preventivo-curativo",
       "mechanism": "Isoprothiolane se incorpora por vía radicular y foliar, mientras que la Kasugamicina evita la germinación de esporas e impide la penetración del micelio.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Arroz (Oryza sativa L.)",
@@ -272,7 +272,7 @@
       "presentations": ["1 L", "100 mL"],
       "mode_of_action": "Contacto e ingestión",
       "mechanism": "Actúa sobre el sistema nervioso – estimula la liberación de GABA e inhibe la transmisión de impulsos nerviosos, causando parálisis y muerte de insectos y ácaros.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Cebolla",
@@ -346,7 +346,7 @@
       "presentations": ["1 L", "100 mL"],
       "mode_of_action": "Contacto e Ingestión",
       "mechanism": "La Abamectina estimula la liberación de GABA e inhibe la transmisión nerviosa. El Fenazaquin inhibe la respiración mitocondrial.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Cebolla (bulbo)",
@@ -409,7 +409,7 @@
       "presentations": ["1 L", "200 mL", "100 mL"],
       "mode_of_action": "Ingestión",
       "mechanism": "Regulador del crecimiento larval: interfiere en la muda, la pupación y la formación del adulto, interrumpiendo el ciclo de desarrollo.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Arveja",
@@ -479,7 +479,7 @@
       "presentations": ["1 L"],
       "mode_of_action": "Protectante de amplio espectro",
       "mechanism": "Inhibe la respiración celular de las esporas patógenas.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Clavel",
@@ -535,7 +535,7 @@
       "presentations": ["1 L", "100 mL"],
       "mode_of_action": "Preventivo-curativo",
       "mechanism": "Inhibe la síntesis de triglicéridos, evita la germinación de esporas y bloquea el crecimiento miceliar.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Arroz",
@@ -633,7 +633,7 @@
       "presentations": ["1 L"],
       "mode_of_action": "Actividad de contacto sobre huevos y estados inmaduros.",
       "mechanism": "Inhibe la fosforilación oxidativa.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Clavel",
@@ -675,7 +675,7 @@
       "presentations": ["1 kg", "60 g"],
       "mode_of_action": "Contacto, ingestión y sistémico",
       "mechanism": "Inhibe la colinesterasa en la sinapsis nerviosa.",
-      "warnings": "Venta sólo por prescripción de un Ingeniero Agrónomo. CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Venta sólo por prescripción de un Ingeniero Agrónomo. Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Arroz",
@@ -745,7 +745,7 @@
       "presentations": ["1 L", "4 L"],
       "mode_of_action": "Sistémico, traslaminar y fumigante. Acción preventiva y curativa.",
       "mechanism": "Translocado vía xilema, inhibe la adenosina-deaminasa (ADA-asa) y evita la formación de haustorios.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Rosas",
@@ -780,7 +780,7 @@
       "presentations": ["400 g"],
       "mode_of_action": "Preventivo y protectante sobre amplia gama de hongos.",
       "mechanism": "Inhibe la germinación, mata las estructuras de reproducción e inactiva la deshidrogenasa pirúvica en la respiración fúngica.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Clavel",
@@ -829,7 +829,7 @@
       "presentations": ["1 kg", "330 g"],
       "mode_of_action": "Altamente sistémico, con acción preventiva y curativa.",
       "mechanism": "Inhibe la germinación de oosporas, bloquea la penetración y estimula la formación de fitoalexinas.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Papa",
@@ -889,7 +889,7 @@
       "presentations": ["1 L", "4 L", "250 mL", "100 mL"],
       "mode_of_action": "Contacto e ingestión; efecto translaminar de amplio espectro.",
       "mechanism": "Inhibidor de la acetilcolinesterasa; provoca desbalance electroquímico en el axón.",
-      "warnings": "Venta solo por prescripción de un Ingeniero Agrónomo. CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Venta solo por prescripción de un Ingeniero Agrónomo. Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Frijol",
@@ -947,7 +947,7 @@
       "presentations": ["1 L"],
       "mode_of_action": "Fungicida sistémico con actividad preventiva y curativa.",
       "mechanism": "Evita la germinación de esporas, impide la penetración del micelio y controla el crecimiento de hifas. Además, bloquea la síntesis de proteínas bacterianas y fúngicas al inhibir la incorporación de aminoácidos en los ribosomas.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Arroz",
@@ -984,7 +984,7 @@
       "presentations": ["20 L", "4 L"],
       "mode_of_action": "Herbicida selectivo de rápida absorción por raíces y hojas.",
       "mechanism": "Inhibe la división celular durante la mitosis al bloquear la formación de microtúbulos, lo que provoca la muerte de plántulas en pre- o pos-emergencia.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Arroz",
@@ -1014,7 +1014,7 @@
       "presentations": ["20 L", "4 L"],
       "mode_of_action": "Herbicida selectivo con acción sistémica y de contacto.",
       "mechanism": "Inhibe la protoporfirinógeno-9-oxidasa, provocando daños en las membranas celulares. La selectividad se basa en baja penetración y factores anatómicos de la planta.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Arroz",
@@ -1051,7 +1051,7 @@
       "presentations": ["1 L", "100 mL"],
       "mode_of_action": "Insecticida con acción por contacto, ingestión y efecto translaminar.",
       "mechanism": "Inhibe el proceso energético de la fosforilación oxidativa, causando parálisis y muerte de insectos y ácaros.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Clavel",
@@ -1133,7 +1133,7 @@
       "presentations": ["1 L", "4 L", "20 L", "200 mL"],
       "mode_of_action": "Fungicida con efecto preventivo y curativo.",
       "mechanism": "Difenoconazol inhibe la biosíntesis del ergosterol (desmetilación C-14) deteniendo el desarrollo fúngico. Kresoxim-methyl bloquea la respiración mitocondrial al inhibir el complejo citocromo bc₁, afectando micelio, esporulación y germinación de esporas.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Arroz",
@@ -1219,7 +1219,7 @@
       "presentations": ["1 L", "100 mL"],
       "mode_of_action": "Fungicida de contacto y protectante, de amplio espectro.",
       "mechanism": "Impide la germinación de esporas y el crecimiento del micelio; inhibe la síntesis de ARN.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Arroz",
@@ -1280,7 +1280,7 @@
       "presentations": ["1 L", "4 L"],
       "mode_of_action": "Fungicida de rápida penetración con efecto preventivo y curativo.",
       "mechanism": "Inhibe la biosíntesis del ergosterol en tres puntos: Prochloraz actúa al inicio de la ruta, Dodemorph en etapas media y final, bloqueando el desarrollo del hongo.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Rosas",
@@ -1317,7 +1317,7 @@
       "presentations": ["1 L", "4 L", "20 L"],
       "mode_of_action": "Fungicida sistémico con actividad preventiva y curativa contra hongos Oomycetos en suelo, raíces y follaje.",
       "mechanism": "Inhibe el crecimiento y desarrollo de las oosporas e interfiere en la biosíntesis de la membrana del hongo.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Aguacate",
@@ -1375,7 +1375,7 @@
       "presentations": ["20 L", "1 L", "250 mL", "100 mL"],
       "mode_of_action": "Fungicida sistémico con acción preventiva y curativa de amplio espectro.",
       "mechanism": "Inhibe la biosíntesis del ergosterol en la membrana celular del hongo, bloqueando el desarrollo de micelio y la aparición de síntomas.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Cebolla (bulbo)",
@@ -1433,7 +1433,7 @@
       "presentations": ["1 L", "250 mL"],
       "mode_of_action": "Fungicida sistémico de amplio espectro con acción preventiva y curativa.",
       "mechanism": "Inhibe la biosíntesis del ergosterol (desmetilación de esteroides), alterando la membrana celular del hongo. Posee acción translaminar y rápida penetración, difundiéndose vía xilema.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Café",
@@ -1501,7 +1501,7 @@
       "presentations": ["20 L", "4 L", "1 L", "300 mL"],
       "mode_of_action": "Fungicida de rápida penetración con acción preventiva y curativa.",
       "mechanism": "Difenoconazol inhibe la biosíntesis del ergosterol; Prochloraz bloquea la síntesis de triglicéridos, impidiendo la germinación de esporas y el crecimiento miceliar.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Arroz",
@@ -1576,7 +1576,7 @@
       "presentations": ["1 L", "100 mL"],
       "mode_of_action": "Insecticida de rápida acción por contacto e ingestión, con efecto de choque sobre un amplio espectro de plagas y larvas minadoras.",
       "mechanism": "Afecta el sistema nervioso central en la presinapsis generando un desbalance electroquímico que bloquea la transmisión del impulso; además interfiere en el desarrollo larvario con alta especificidad para minadores.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Arveja",
@@ -1648,7 +1648,7 @@
       "presentations": ["1 L"],
       "mode_of_action": "Fungicida sistémico de contacto, absorbido por raíces y hojas, con acción preventiva, curativa y erradicante.",
       "mechanism": "Inhibe la síntesis de ergosterol bloqueando la isomerización Δ8→Δ7 y la reducción esteroide vía esterol-Δ14-reductasa, alterando la membrana celular del hongo.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Banano",
@@ -1702,7 +1702,7 @@
       "presentations": ["20 L", "4 L", "1 L", "400 mL"],
       "mode_of_action": "Fungicida sistémico de rápida acción con efecto preventivo, curativo y erradicante frente a Oomycetes.",
       "mechanism": "Reduce el crecimiento y desarrollo de las esporas, altera la síntesis bioquímica de la membrana e inhibe la síntesis de aminoácidos del hongo.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Cebolla (bulbo)",
@@ -1770,7 +1770,7 @@
       "presentations": ["20 L", "4 L", "1 L", "200 mL"],
       "mode_of_action": "Fungicida sistémico con actividad preventiva y curativa, excelente acción antiesporulante frente a Oomycetes.",
       "mechanism": "Inhibe la formación de la pared celular y la síntesis de ARN, deteniendo el desarrollo del hongo.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Cebolla (bulbo)",
@@ -1841,7 +1841,8 @@
       "image_url": "/media/Productos/Catalogo/arranque.png",
       "ficha_pdf": "docs/ARRANQUE_Ficha.pdf",
       "tarjeta_pdf": "docs/ARRANQUE_Tarjeta.pdf",
-      "hoja_pdf": "docs/ARRANQUE_Hoja.pdf"
+      "hoja_pdf": "docs/ARRANQUE_Hoja.pdf",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad."
     },
     {
       "id": "avance-sc",
@@ -1887,7 +1888,7 @@
       "presentations": ["1 L"],
       "mode_of_action": "Fertilizante foliar complejo que aporta N, K, Ca, S y micronutrientes de rápida absorción.",
       "mechanism": "Reabastece nutrientes esenciales vía aplicación foliar, corrigiendo deficiencias y mejorando el llenado y la calidad del cultivo.",
-      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Fresa (Fragaria vesca)",
