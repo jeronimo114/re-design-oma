@@ -414,180 +414,7 @@ document.addEventListener("DOMContentLoaded", () => {
   } catch (error) {
     console.error("Error al inicializar el fondo animado con Three.js:", error);
   }
-
-  /* -------------------------------------------------------------
-   * 7) Catálogo de productos (carga y render)
-   * ----------------------------------------------------------- */
-  fetch("products.json")
-    .then((r) => r.json())
-    .then(({ products, safety_notice }) => {
-      const grid = document.getElementById("productGrid");
-      if (!grid) {
-        console.warn("[Catálogo] No se encontró #productGrid en el DOM.");
-        return;
-      }
-      grid.innerHTML = ""; // vacía cards estáticas
-
-      products.forEach((p) => {
-        const cultivos = [
-          ...new Set(p.targets.map((t) => t.crop.toLowerCase())),
-        ];
-        const problemas = [
-          ...new Set(
-            p.targets.map((t) => t.pest.toLowerCase().replace(/ /g, "-"))
-          ),
-        ];
-
-        grid.insertAdjacentHTML(
-          "beforeend",
-          `
-          <div class="col"
-               data-cultivos="${cultivos.join(",")}"
-               data-problemas="${problemas.join(",")}"
-               data-categoria="${p.category.toLowerCase()}">
-            <div class="product-card h-100 p-3">
-              <div class="position-relative mb-3">
-                <img src="${p.image_url}" class="img-fluid rounded" alt="${
-            p.name
-          }" loading="lazy">
-                <span class="position-absolute top-0 end-0 translate-middle badge bg-primary">${
-                  p.ica
-                }</span>
-              </div>
-              <h5 class="fw-bold text-primary">${p.name}</h5>
-              <p class="small text-muted">${p.active_ingredient}</p>
-              <p class="small mb-2"><strong>${p.category}</strong> • ${
-            p.formulation
-          }</p>
-              <button class="btn btn-doc w-100 mb-2" data-bs-toggle="modal" data-bs-target="#productModal">
-  <i class="fas fa-file-alt me-2"></i>Ficha Técnica
-</button>
-<button class="btn btn-doc w-100 mb-2" data-bs-toggle="modal" data-bs-target="#productModalEmergency">
-  <i class="fas fa-file-alt me-2"></i>Tarjeta de Emergencia
-</button>
-<button class="btn btn-doc w-100" data-bs-toggle="modal" data-bs-target="#productModalSafety">
-  <i class="fas fa-file-alt me-2"></i>Hoja de Seguridad
-</button>
-            </div>
-          </div>`
-        );
-      });
-
-      // Aviso de seguridad
-      grid.insertAdjacentHTML(
-        "beforeend",
-        `
-        <div class="col-12">
-          <div class="alert alert-danger">
-            <i class="fas fa-skull-crossbones me-2"></i>${safety_notice}
-          </div>
-        </div>`
-      );
-
-      // Recalcula contadores en Home (si existen)
-      if (document.querySelectorAll("#categorias .cat-card").length) {
-        const counters = {
-          herbicida: 0,
-          fungicida: 0,
-          insecticida: 0,
-          "fertilizante foliar": 0,
-        };
-        products.forEach((p) => counters[p.category.toLowerCase()]++);
-        document.querySelectorAll("#categorias .cat-card").forEach((card) => {
-          const cat = new URL(card.href).searchParams.get("categoria");
-          const span = card.querySelector(".cat-count");
-          if (span) span.textContent = counters[cat] + " productos";
-        });
-      }
-
-      // Primer filtrado
-      filterProducts();
-    })
-    .catch((err) => console.error("Error cargando products.json:", err));
-
-  /* Listeners protegidos para los filtros */
-  const cropEl = document.getElementById("cropFilter");
-  const probEl = document.getElementById("problemFilter");
-  const searchEl = document.getElementById("searchInput");
-
-  // Category cards visual selection
-  const categoryCards = document.querySelectorAll("#categorias .cat-card");
-  const urlParams = getQueryParams();
-  const initialCat = urlParams.categoria;
-
-  if (isCatalogoPage) {
-    categoryCards.forEach((card) => {
-      const cardUrl = new URL(card.href, window.location.origin);
-      const cardCat = cardUrl.searchParams.get("categoria");
-
-      // Highlight if matches URL on load
-      if (initialCat && cardCat === initialCat) {
-        card.classList.add("active");
-        categoryCards.forEach((c) => {
-          if (c !== card) c.classList.add("inactive");
-        });
-      }
-
-      card.addEventListener("click", (e) => {
-        e.preventDefault();
-        // update URL param without reload
-        window.history.replaceState(null, "", "?categoria=" + cardCat);
-        // apply active/inactive classes
-        categoryCards.forEach((c) => {
-          c.classList.remove("active", "inactive");
-        });
-        card.classList.add("active");
-        categoryCards.forEach((c) => {
-          if (c !== card) c.classList.add("inactive");
-        });
-        // trigger filtering
-        filterProducts();
-        document
-          .getElementById("catalogo")
-          .scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    });
-  }
 });
-// Dentro de tu DOMContentLoaded, justo después de los listeners protegidos:
-document.querySelectorAll(".btn-cultivo").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const cultivo = btn.dataset.cultivo;
-    const cropSel = document.getElementById("cropFilter");
-    if (!cropSel) return;
-    cropSel.value = cultivo;
-    // repuebla la lista de Problemas
-    cropSel.dispatchEvent(new Event("change"));
-    // y aplica el filtrado
-    filterProducts();
-  });
-});
-function filterProducts() {
-  console.log("[DEBUG] filterProducts called with:", {
-    crop: document.getElementById("cropFilter")?.value,
-    problem: document.getElementById("problemFilter")?.value,
-    search: document.getElementById("searchInput")?.value,
-  });
-  const cropSel = document.getElementById("cropFilter").value;
-  const probSel = document.getElementById("problemFilter").value;
-  const searchText = document.getElementById("searchInput").value.toLowerCase();
-  const catParam = getQueryParams().categoria || "";
-
-  document.querySelectorAll("#productGrid .col").forEach((card) => {
-    const crops = card.dataset.cultivos.split(",");
-    const probs = card.dataset.problemas.split(",");
-    const cat = card.dataset.categoria;
-
-    const okCrop = !cropSel || crops.includes(cropSel);
-    const okProb = !probSel || probs.includes(probSel);
-    const okCat = !catParam || cat === catParam;
-    const okSearch =
-      !searchText || card.textContent.toLowerCase().includes(searchText);
-
-    card.style.display =
-      okCrop && okProb && okCat && okSearch ? "block" : "none";
-  });
-}
 
 document.addEventListener("DOMContentLoaded", () => {
   new Swiper(".hero-swiper", {
@@ -603,3 +430,215 @@ document.addEventListener("DOMContentLoaded", () => {
     // No declaramos navigation ni pagination, así que no aparecen controles
   });
 });
+
+/* ---------- Catálogo OMA – Filtro + búsqueda ---------- */
+function buildUsesTable(arr) {
+  return `
+    <div class="table-responsive">
+      <table class="table table-sm align-middle">
+        <thead class="table-light">
+          <tr><th>Cultivo</th><th>Blanco</th><th>Dosis</th><th>P.C.</th><th>P.R.</th></tr>
+        </thead>
+        <tbody>
+          ${arr
+            .map(
+              (u) => `<tr>
+                  <td>${u.crop}</td>
+                  <td>${u.target}</td>
+                  <td>${u.dose}</td>
+                  <td>${u.pc}</td>
+                  <td>${u.pr}</td>
+                </tr>`
+            )
+            .join("")}
+        </tbody>
+      </table>
+    </div>`;
+}
+
+(function () {
+  const qs = new URLSearchParams(window.location.search);
+  const paramCategoria = (qs.get("categoria") || "").toLowerCase();
+  const paramCultivo = (qs.get("cultivo") || "").toLowerCase();
+
+  // Ocultar “Categorías” cuando se navega por cultivo
+  const categoriasSection = document.getElementById("categorias");
+  if (categoriasSection) {
+    categoriasSection.style.display = paramCultivo ? "none" : "";
+  }
+
+  const titleEl = document.querySelector("#catalogo h1");
+  const grid = document.getElementById("productGrid");
+  const searchInput = document.getElementById("productSearch");
+  const clearSearchBtn = document.getElementById("clearSearch");
+  const clearFilters = document.getElementById("clearFilters");
+
+  const categoryTitles = {
+    herbicida: "Herbicidas",
+    fungicida: "Fungicidas",
+    insecticida: "Insecticidas",
+    "fertilizante-foliar": "Fertilizantes Foliares",
+  };
+  const cultivoTitles = {
+    papa: "Papa",
+    tomate: "Tomate",
+    maiz: "Maíz",
+    arroz: "Arroz",
+    cebolla: "Cebolla",
+    frijol: "Frijol",
+    fresa: "Fresa",
+    aguacate: "Aguacate",
+    arveja: "Arveja",
+    rosa: "Rosa",
+    clavel: "Clavel",
+    pompon: "Pompon",
+    crisantemo: "Crisantemo",
+    hortensia: "Hortensia",
+  };
+
+  if (clearFilters) {
+    clearFilters.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.location.href = "catalogo.html";
+    });
+  }
+
+  let allProducts = [];
+  let visibleProducts = [];
+
+  function renderProducts(list) {
+    if (!grid) return;
+    grid.innerHTML = "";
+
+    list.forEach((p) => {
+      grid.insertAdjacentHTML(
+        "beforeend",
+        `
+      <div class="col">
+        <div class="product-card h-100">
+          <div class="img-wrapper">
+            <img src="${p.image_url}" class="img-fluid rounded" alt="${
+          p.name
+        }" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h5 class="fw-bold text-primary">${p.name}</h5>
+            <p class="small text-muted">${p.active_ingredient || ""}</p>
+            <p class="small mb-2"><strong>${p.category}</strong> • ${
+          p.formulation
+        }</p>
+          </div>
+        </div>
+      </div>`
+      );
+      grid.lastElementChild
+        .querySelector(".product-card")
+        .addEventListener("click", () => openProductModal(p));
+    });
+
+    if (!list.length) {
+      grid.innerHTML =
+        '<div class="col-12"><div class="alert alert-warning">No hay productos que coincidan con la búsqueda o filtros.</div></div>';
+    }
+  }
+
+  const modal = document.getElementById("productModal")
+    ? new bootstrap.Modal(document.getElementById("productModal"))
+    : null;
+
+  function openProductModal(prod) {
+    if (!modal) return;
+    document.getElementById("modalImg").src = prod.image_url;
+    document.getElementById("modalImg").alt = prod.name;
+    document.getElementById("modalCategory").textContent = prod.category;
+    document.getElementById("modalName").textContent = prod.name;
+    document.getElementById("modalDesc").textContent = prod.description || "";
+
+    document.getElementById("modalCompList").innerHTML = (
+      prod.composition || []
+    )
+      .map(
+        (c) => `<li>${c.ai || c.nutrient} ${c.pct || c.amount_g_L || ""}</li>`
+      )
+      .join("");
+
+    document.getElementById("modalFormulationText").textContent =
+      prod.formulation || "";
+    document.getElementById("modalPresentations").textContent = (
+      prod.presentations || []
+    ).join(", ");
+    document.getElementById("modalChemicalGroup").textContent =
+      prod.chemical_group || "";
+
+    document.getElementById("modalMode").textContent =
+      prod.mode_of_action || "";
+    document.getElementById("modalMechanism").textContent =
+      prod.mechanism || "";
+
+    document.getElementById("modalWarnings").textContent = prod.warnings || "";
+
+    document.getElementById("modalUsesTable").innerHTML = buildUsesTable(
+      prod.uses || []
+    );
+
+    document.getElementById("modalFichaPdf").href = prod.ficha_pdf || "#";
+    document.getElementById("modalTarjetaPdf").href = prod.tarjeta_pdf || "#";
+    document.getElementById("modalHojaPdf").href = prod.hoja_pdf || "#";
+
+    modal.show();
+  }
+
+  fetch("products.json")
+    .then((r) => r.json())
+    .then(({ products }) => {
+      allProducts = products;
+
+      visibleProducts = allProducts.filter((p) => {
+        const catSlug = (p.category || "").toLowerCase().replace(/\s+/g, "-");
+        const cultivos = (p.targets || []).map((t) =>
+          (t.crop || "").toLowerCase()
+        );
+        const matchCategoria = paramCategoria
+          ? catSlug === paramCategoria
+          : true;
+        const matchCultivo = paramCultivo
+          ? cultivos.includes(paramCultivo)
+          : true;
+        return matchCategoria && matchCultivo;
+      });
+
+      if (titleEl) {
+        if (paramCategoria && categoryTitles[paramCategoria]) {
+          titleEl.textContent = categoryTitles[paramCategoria];
+        } else if (paramCultivo && cultivoTitles[paramCultivo]) {
+          titleEl.textContent = cultivoTitles[paramCultivo];
+        }
+      }
+
+      renderProducts(visibleProducts);
+    })
+    .catch((err) => console.error("[Catálogo] Error cargando productos:", err));
+
+  if (searchInput) {
+    searchInput.addEventListener("input", () => {
+      const q = searchInput.value.toLowerCase().trim();
+      if (!q) {
+        renderProducts(visibleProducts);
+        return;
+      }
+      const filtered = visibleProducts.filter(
+        (p) =>
+          p.name.toLowerCase().includes(q) ||
+          (p.active_ingredient || "").toLowerCase().includes(q)
+      );
+      renderProducts(filtered);
+    });
+  }
+  if (clearSearchBtn) {
+    clearSearchBtn.addEventListener("click", () => {
+      searchInput.value = "";
+      renderProducts(visibleProducts);
+      searchInput.focus();
+    });
+  }
+})();
