@@ -144,6 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Array de representantes con coordenadas aproximadas
       const representantes = [
         {
+          country: "Colombia",
           region: "ANTIOQUIA FLORES",
           lat: 5.9,
           lng: -75.8,
@@ -153,6 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
         },
         {
+          country: "Colombia",
           region: "ANTIOQUIA PAPA – HORTALIZAS",
           lat: 6.2,
           lng: -75.39,
@@ -162,6 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
         },
         {
+          country: "Colombia",
           region: "CUNDINAMARCA FLORES",
           lat: 4.91,
           lng: -74.06,
@@ -171,6 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
         },
         {
+          country: "Colombia",
           region: "CUNDINAMARCA PAPA – HORTALIZAS",
           lat: 5.03,
           lng: -73.99,
@@ -181,6 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
         },
         {
+          country: "Colombia",
           region: "BOYACÁ",
           lat: 5.57,
           lng: -73.36,
@@ -190,6 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
         },
         {
+          country: "Colombia",
           region: "NARIÑO",
           lat: 1.21,
           lng: -77.28,
@@ -199,6 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
         },
         {
+          country: "Colombia",
           region: "SANTANDER",
           lat: 7.13,
           lng: -73.13,
@@ -208,12 +215,14 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
         },
         {
+          country: "Colombia",
           region: "VALLE DEL CAUCA",
           lat: 3.45,
           lng: -76.53,
           reps: ["Cesar Augusto Rivas - Cel. 314-3566836"],
         },
         {
+          country: "Colombia",
           region: "NORTE DE SANTANDER",
           lat: 7.91,
           lng: -72.5,
@@ -223,6 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
         },
         {
+          country: "Colombia",
           region: "META – CASANARE",
           lat: 4.1,
           lng: -73.64,
@@ -232,6 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
         },
         {
+          country: "Colombia",
           region: "TOLIMA",
           lat: 4.14,
           lng: -75.24,
@@ -241,6 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
         },
         {
+          country: "Colombia",
           region: "HUILA",
           lat: 2.93,
           lng: -75.28,
@@ -250,12 +262,14 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
         },
         {
+          country: "Colombia",
           region: "CÓRDOBA – COSTA CARIBE",
           lat: 8.04,
           lng: -75.58,
           reps: ["Wilson Calderín - Cel. 312-6032541"],
         },
         {
+          country: "República Dominicana",
           region: "REPÚBLICA DOMINICANA",
           lat: 19.4,
           lng: -70.4,
@@ -266,6 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
         },
         {
+          country: "Panamá",
           region: "PANAMÁ – CHIRIQUÍ",
           lat: 8.43,
           lng: -82.43,
@@ -277,14 +292,69 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       ];
 
+      const markers = [];
+
       // Agregamos un marcador con popup por cada región
       representantes.forEach((rep) => {
         const marker = L.marker([rep.lat, rep.lng]).addTo(map);
+        marker._country = rep.country; // guarda país en el propio marker
+        markers.push(marker); // almacena referencia global
         let popupHTML = `<strong>${rep.region}</strong><br/>`;
         rep.reps.forEach((r) => {
           popupHTML += `${r}<br/>`;
         });
         marker.bindPopup(popupHTML);
+      });
+      /* ---------- Cobertura por país: poblar listas y filtrar mapa ---------- */
+      function populateCountryLists() {
+        const lists = {
+          Colombia: document.getElementById("listCol"),
+          Panamá: document.getElementById("listPan"),
+          "República Dominicana": document.getElementById("listRD"),
+        };
+        representantes.forEach((rep) => {
+          const li = document.createElement("li");
+          li.className = "mb-3";
+          li.innerHTML = `<strong>${rep.region}</strong><br>${rep.reps.join(
+            "<br>"
+          )}`;
+          if (lists[rep.country]) lists[rep.country].appendChild(li);
+        });
+      }
+
+      function filterMarkers(country) {
+        if (!country) {
+          markers.forEach((m) => map.addLayer(m));
+          return;
+        }
+
+        const bounds = [];
+        markers.forEach((m) => {
+          if (m._country === country) {
+            map.addLayer(m);
+            bounds.push(m.getLatLng());
+          } else {
+            map.removeLayer(m);
+          }
+        });
+
+        if (bounds.length) {
+          map.fitBounds(bounds, { padding: [40, 40] });
+        }
+      }
+
+      /* Ejecuta una vez cargado el mapa */
+      populateCountryLists();
+
+      /* Maneja la expansión/colapso de las tarjetas de país */
+      document.querySelectorAll(".country-collapse").forEach((col) => {
+        col.addEventListener("show.bs.collapse", () => {
+          filterMarkers(col.dataset.country);
+        });
+        col.addEventListener("hide.bs.collapse", () => {
+          // al cerrar, mostramos todos nuevamente
+          filterMarkers(null);
+        });
       });
 
       // Ajusta el mapa al cambiar tamaño de ventana

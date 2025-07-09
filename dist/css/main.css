@@ -861,6 +861,12 @@ section:nth-of-type(4) {
   width: 100%;
 }
 
+/* Limita la altura y agrega scroll a las listas por país */
+#countryAccordion .accordion-body {
+  max-height: 260px; /* Ajusta este valor si quieres más o menos alto */
+  overflow-y: auto; /* Aparece la barra vertical cuando se excede la altura */
+}
+
 .contacto {
   background: #f7f7f7;
   padding: 4rem 0;
