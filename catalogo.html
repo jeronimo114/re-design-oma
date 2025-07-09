@@ -757,6 +757,12 @@
         const paramCategoria = (qs.get("categoria") || "").toLowerCase();
         const paramCultivo = (qs.get("cultivo") || "").toLowerCase();
 
+        // Ocultar la sección de filtros de categorías cuando se llega por cultivo
+        const categoriasSection = document.getElementById("categorias");
+        if (categoriasSection) {
+          categoriasSection.style.display = paramCultivo ? "none" : "";
+        }
+
         const titleEl = document.querySelector("#catalogo h1");
         const grid = document.getElementById("productGrid");
         const searchInput = document.getElementById("productSearch");

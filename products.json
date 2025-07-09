@@ -9,10 +9,7 @@
       "formulation": "Suspensión concentrada",
       "chemical_group": "Dicarboximidas + Anilino‑pirimidinas",
       "tox_category": "II",
-      "presentations": [
-        "1 L",
-        "250 mL"
-      ],
+      "presentations": ["1 L", "250 mL"],
       "mode_of_action": "Fungicida sistémico traslaminar de acción preventiva y curativa.",
       "mechanism": "Impide la germinación de esporas ... Inhibe la actividad enzimática.",
       "composition": [
@@ -69,12 +66,7 @@
           "pct": "100"
         }
       ],
-      "presentations": [
-        "1 L",
-        "4 L",
-        "100 mL",
-        "250 mL"
-      ],
+      "presentations": ["1 L", "4 L", "100 mL", "250 mL"],
       "mode_of_action": "Contacto e Ingestión",
       "mechanism": "Actúa sobre el sistema nervioso de los insectos alterando el flujo de iones.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -190,11 +182,7 @@
           "pct": ""
         }
       ],
-      "presentations": [
-        "1 L",
-        "4 L",
-        "20 L"
-      ],
+      "presentations": ["1 L", "4 L", "20 L"],
       "mode_of_action": "Preventivo y curativo; absorbido por las partes verdes de la planta y resistente al lavado por lluvia.",
       "mechanism": "Difenoconazol inhibe la biosíntesis del ergosterol; Validamicina inhibe la trehalasa y presenta efecto antibiótico.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -246,11 +234,7 @@
           "pct": ""
         }
       ],
-      "presentations": [
-        "20 L",
-        "4 L",
-        "1 L"
-      ],
+      "presentations": ["20 L", "4 L", "1 L"],
       "mode_of_action": "Preventivo-curativo",
       "mechanism": "Isoprothiolane se incorpora por vía radicular y foliar, mientras que la Kasugamicina evita la germinación de esporas e impide la penetración del micelio.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -285,10 +269,7 @@
           "pct": ""
         }
       ],
-      "presentations": [
-        "1 L",
-        "100 mL"
-      ],
+      "presentations": ["1 L", "100 mL"],
       "mode_of_action": "Contacto e ingestión",
       "mechanism": "Actúa sobre el sistema nervioso – estimula la liberación de GABA e inhibe la transmisión de impulsos nerviosos, causando parálisis y muerte de insectos y ácaros.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -362,10 +343,7 @@
           "pct": ""
         }
       ],
-      "presentations": [
-        "1 L",
-        "100 mL"
-      ],
+      "presentations": ["1 L", "100 mL"],
       "mode_of_action": "Contacto e Ingestión",
       "mechanism": "La Abamectina estimula la liberación de GABA e inhibe la transmisión nerviosa. El Fenazaquin inhibe la respiración mitocondrial.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -428,11 +406,7 @@
           "pct": ""
         }
       ],
-      "presentations": [
-        "1 L",
-        "200 mL",
-        "100 mL"
-      ],
+      "presentations": ["1 L", "200 mL", "100 mL"],
       "mode_of_action": "Ingestión",
       "mechanism": "Regulador del crecimiento larval: interfiere en la muda, la pupación y la formación del adulto, interrumpiendo el ciclo de desarrollo.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -502,9 +476,7 @@
           "pct": ""
         }
       ],
-      "presentations": [
-        "1 L"
-      ],
+      "presentations": ["1 L"],
       "mode_of_action": "Protectante de amplio espectro",
       "mechanism": "Inhibe la respiración celular de las esporas patógenas.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -560,10 +532,7 @@
           "pct": ""
         }
       ],
-      "presentations": [
-        "1 L",
-        "100 mL"
-      ],
+      "presentations": ["1 L", "100 mL"],
       "mode_of_action": "Preventivo-curativo",
       "mechanism": "Inhibe la síntesis de triglicéridos, evita la germinación de esporas y bloquea el crecimiento miceliar.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -661,9 +630,7 @@
           "pct": "160 g/L"
         }
       ],
-      "presentations": [
-        "1 L"
-      ],
+      "presentations": ["1 L"],
       "mode_of_action": "Actividad de contacto sobre huevos y estados inmaduros.",
       "mechanism": "Inhibe la fosforilación oxidativa.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -705,10 +672,7 @@
           "pct": "900 g/kg"
         }
       ],
-      "presentations": [
-        "1 kg",
-        "60 g"
-      ],
+      "presentations": ["1 kg", "60 g"],
       "mode_of_action": "Contacto, ingestión y sistémico",
       "mechanism": "Inhibe la colinesterasa en la sinapsis nerviosa.",
       "warnings": "Venta sólo por prescripción de un Ingeniero Agrónomo. CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -778,10 +742,7 @@
           "pct": "40 g/L"
         }
       ],
-      "presentations": [
-        "1 L",
-        "4 L"
-      ],
+      "presentations": ["1 L", "4 L"],
       "mode_of_action": "Sistémico, traslaminar y fumigante. Acción preventiva y curativa.",
       "mechanism": "Translocado vía xilema, inhibe la adenosina-deaminasa (ADA-asa) y evita la formación de haustorios.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -816,9 +777,7 @@
           "pct": "700 g/kg"
         }
       ],
-      "presentations": [
-        "400 g"
-      ],
+      "presentations": ["400 g"],
       "mode_of_action": "Preventivo y protectante sobre amplia gama de hongos.",
       "mechanism": "Inhibe la germinación, mata las estructuras de reproducción e inactiva la deshidrogenasa pirúvica en la respiración fúngica.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -867,10 +826,7 @@
           "pct": "800 g/kg"
         }
       ],
-      "presentations": [
-        "1 kg",
-        "330 g"
-      ],
+      "presentations": ["1 kg", "330 g"],
       "mode_of_action": "Altamente sistémico, con acción preventiva y curativa.",
       "mechanism": "Inhibe la germinación de oosporas, bloquea la penetración y estimula la formación de fitoalexinas.",
       "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -930,12 +886,7 @@
           "pct": "100 g/L"
         }
       ],
-      "presentations": [
-        "1 L",
-        "4 L",
-        "250 mL",
-        "100 mL"
-      ],
+      "presentations": ["1 L", "4 L", "250 mL", "100 mL"],
       "mode_of_action": "Contacto e ingestión; efecto translaminar de amplio espectro.",
       "mechanism": "Inhibidor de la acetilcolinesterasa; provoca desbalance electroquímico en el axón.",
       "warnings": "Venta solo por prescripción de un Ingeniero Agrónomo. CONSULTE CON UN INGENIERO AGRÓNOMO",
@@ -985,27 +936,36 @@
     {
       "id": "kazugal-20-sl",
       "name": "KAZUGAL 20 SL",
-      "formulation": "SL",
-      "concentration": 20,
-      "ica": "PL0005702023",
-      "toxicity": "II",
       "category": "fungicida",
-      "active_ingredient": "KASUGAMICINA",
-      "targets": [
+      "image_url": "/media/Productos/Catalogo/15.png",
+      "reg_ica": "PL0005702023",
+      "formulation": "Concentrado soluble (SL)",
+      "chemical_group": "Antibiótico hexapiranosil",
+      "tox_category": "II",
+      "concentration": 20,
+      "composition": [{ "ai": "Kasugamicina", "pct": "" }],
+      "presentations": ["1 L"],
+      "mode_of_action": "Fungicida sistémico con actividad preventiva y curativa.",
+      "mechanism": "Evita la germinación de esporas, impide la penetración del micelio y controla el crecimiento de hifas. Además, bloquea la síntesis de proteínas bacterianas y fúngicas al inhibir la incorporación de aminoácidos en los ribosomas.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
         {
           "crop": "Arroz",
-          "pest": "Pyricularia oryzae",
+          "target": "Pyricularia oryzae",
           "dose": "1.5 L/ha",
-          "action": "Piricularia"
+          "pc": "14 días",
+          "pr": "4 h"
         },
         {
-          "crop": "Cebolla",
-          "pest": "Pseudomonas gladioli pv allicola, Erwinia carotovora y Pseudomonas cepacia Burk",
+          "crop": "Cebolla (bulbo)",
+          "target": "Pseudomonas gladioli pv. allicola, Erwinia carotovora, Pseudomonas cepacia",
           "dose": "0.18 L/ha",
-          "action": "Enfermedades bacterianas"
+          "pc": "1 día",
+          "pr": "4 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/15.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/KAZUGAL_Ficha.pdf",
       "tarjeta_pdf": "docs/KAZUGAL_Tarjeta.pdf",
       "hoja_pdf": "docs/KAZUGAL_Hoja.pdf"
@@ -1013,21 +973,29 @@
     {
       "id": "linap-9-me",
       "name": "LINAP 9 ME",
-      "formulation": "ME",
+      "category": "herbicida",
+      "image_url": "/media/Productos/Catalogo/16.png",
+      "reg_ica": "PL0001932023",
+      "formulation": "Microemulsión (ME)",
+      "chemical_group": "Dinitroanilinas",
+      "tox_category": "III",
       "concentration": 90,
-      "ica": "PL0001932023",
-      "toxicity": "III",
-      "category": "Herbicida",
-      "active_ingredient": "PENDIMETALINA",
-      "targets": [
+      "composition": [{ "ai": "Pendimetalina", "pct": "" }],
+      "presentations": ["20 L", "4 L"],
+      "mode_of_action": "Herbicida selectivo de rápida absorción por raíces y hojas.",
+      "mechanism": "Inhibe la división celular durante la mitosis al bloquear la formación de microtúbulos, lo que provoca la muerte de plántulas en pre- o pos-emergencia.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
         {
           "crop": "Arroz",
-          "pest": "Malezas",
-          "dose": "1,5 L/ha",
-          "action": "PRE -  POST"
+          "target": "Malezas (pre y pos-emergencia) — Echinochloa colona, Ischaemum rugosum, Rottboellia cochinchinensis, Digitaria sanguinalis, Eleusine indica, Leptochloa filiformis, Paspalum pilosum",
+          "dose": "1.5 L/ha",
+          "pc": "8–10 días",
+          "pr": "0 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/16.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/LINAP_Ficha.pdf",
       "tarjeta_pdf": "docs/LINAP_Tarjeta.pdf",
       "hoja_pdf": "docs/LINAP_Hoja.pdf"
@@ -1035,21 +1003,36 @@
     {
       "id": "lyon-60-me",
       "name": "LYON 60 ME",
-      "formulation": "ME",
+      "category": "herbicida",
+      "image_url": "/media/Productos/Catalogo/17.png",
+      "reg_ica": "PL0018502023",
+      "formulation": "Microemulsión (ME)",
+      "chemical_group": "Oxadiazoles",
+      "tox_category": "II",
       "concentration": 60,
-      "ica": "PL0018502023",
-      "toxicity": "II",
-      "category": "Herbicida",
-      "active_ingredient": "OXADIAZON",
-      "targets": [
+      "composition": [{ "ai": "Oxadiazon", "pct": "" }],
+      "presentations": ["20 L", "4 L"],
+      "mode_of_action": "Herbicida selectivo con acción sistémica y de contacto.",
+      "mechanism": "Inhibe la protoporfirinógeno-9-oxidasa, provocando daños en las membranas celulares. La selectividad se basa en baja penetración y factores anatómicos de la planta.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
         {
           "crop": "Arroz",
-          "pest": "Malezas",
-          "dose": "1-1,5 L/ha",
-          "action": "PRE -  POST"
+          "target": "Malezas de hoja ancha (Desmodium tortuosum, Mimosa pudica, Portulaca oleracea)",
+          "dose": "1.0 L/ha (pre-emergencia, 3 días antes de la siembra)",
+          "pc": "N.A.",
+          "pr": "0 h"
+        },
+        {
+          "crop": "Arroz",
+          "target": "Gramíneas (Ischaemum rugosum, Rottboellia exaltata, Leptochloa filiformis, Echinochloa colonum, Digitaria sanguinalis, Paspalum pilosum, Eleusine indica)",
+          "dose": "1.5 L/ha (pos-emergencia, 4–8 días después de la germinación)",
+          "pc": "N.A.",
+          "pr": "0 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/17.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/LYON_Ficha.pdf",
       "tarjeta_pdf": "docs/LYON_Tarjeta.pdf",
       "hoja_pdf": "docs/LYON_Hoja.pdf"
@@ -1057,63 +1040,78 @@
     {
       "id": "mitipyr-240-sc",
       "name": "MITIPYR 240 SC",
-      "formulation": "SC",
+      "category": "insecticida – acaricida",
+      "image_url": "/media/Productos/Catalogo/18.png",
+      "reg_ica": "PL0005492023",
+      "formulation": "Suspensión concentrada (SC)",
+      "chemical_group": "Pirroles",
+      "tox_category": "II",
       "concentration": 240,
-      "ica": "PL0005492023",
-      "toxicity": "II",
-      "category": "insecticida",
-      "active_ingredient": "CHLORFENAPYR",
-      "targets": [
+      "composition": [{ "ai": "Chlorfenapyr", "pct": "" }],
+      "presentations": ["1 L", "100 mL"],
+      "mode_of_action": "Insecticida con acción por contacto, ingestión y efecto translaminar.",
+      "mechanism": "Inhibe el proceso energético de la fosforilación oxidativa, causando parálisis y muerte de insectos y ácaros.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
         {
           "crop": "Clavel",
-          "pest": "Acaros (Tetranychus sp.)",
-          "dose": "0.3 – 0.4 ml / l                                                                                                                                                                                                                           ",
-          "action": "Acaros"
+          "target": "Tetranychus cinnabarinus (ácaros)",
+          "dose": "0.3–0.4 mL/L",
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
           "crop": "Clavel",
-          "pest": "Frankliniella occidentalis",
-          "dose": "0.3 – 0.4 ml / l                                                                                                                                                                                                                           ",
-          "action": "Trips "
-        },
-        {
-          "crop": "Frijol  ",
-          "pest": "Trips (Thrips palmi)",
-          "dose": "0.4 – 0.5 ml / l                                                                                                                                                                                                                              ",
-          "action": "Trips "
+          "target": "Frankliniella occidentalis (trips)",
+          "dose": "0.3–0.4 mL/L",
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
           "crop": "Rosas",
-          "pest": "Acaros (Tetranychus urticae)",
-          "dose": "0.3 – 0.4 ml / l                                                                                                                                                                                                                           ",
-          "action": "Acaros"
+          "target": "Tetranychus urticae (ácaros)",
+          "dose": "0.3–0.4 mL/L",
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
           "crop": "Pompon",
-          "pest": "Acaros (Tetranychus sp.)",
-          "dose": "0.4 – 0.6 ml / l                                                                                                                                                                                                                             ",
-          "action": "Acaros"
+          "target": "Tetranychus sp. (ácaros)",
+          "dose": "0.4–0.6 mL/L",
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
           "crop": "Pompon",
-          "pest": "Minador (Liriomyza sp.)",
-          "dose": "0.4 – 0.6 ml / l                                                                                                                                                                                                                              ",
-          "action": "Minador"
+          "target": "Frankliniella occidentalis (trips)",
+          "dose": "0.4–0.6 mL/L",
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
           "crop": "Pompon",
-          "pest": "Frankliniella occidentalis",
-          "dose": "0.4 – 0.6 ml / l                                                                                                                                                                                                                           ",
-          "action": "Trips "
+          "target": "Liriomyza sp. (minador)",
+          "dose": "0.4–0.6 mL/L",
+          "pc": "N.A.",
+          "pr": "4 h"
+        },
+        {
+          "crop": "Frijol",
+          "target": "Thrips palmi (trips)",
+          "dose": "0.4–0.5 mL/L",
+          "pc": "7 días",
+          "pr": "4 h"
         },
         {
           "crop": "Tomate",
-          "pest": "Cogollero (Tuta absoluta)",
-          "dose": "0.5 – 0.6 ml / l                                                                                                                                                                                                                             ",
-          "action": "Cogollero"
+          "target": "Tuta absoluta (gusano cogollero)",
+          "dose": "0.5–0.6 mL/L",
+          "pc": "7 días",
+          "pr": "4 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/18.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/MITIPYR_Ficha.pdf",
       "tarjeta_pdf": "docs/MITIPYR_Tarjeta.pdf",
       "hoja_pdf": "docs/MITIPYR_Hoja.pdf"
@@ -1121,75 +1119,88 @@
     {
       "id": "patrulla-70-me",
       "name": "PATRULLA 70 ME",
-      "formulation": "ME",
-      "concentration": "40 + 30",
-      "ica": "PL0003902022",
-      "toxicity": "III",
       "category": "fungicida",
-      "active_ingredient": "DIFENOCONAZOL+KRESOXIM METIL",
-      "targets": [
+      "image_url": "/media/Productos/Catalogo/19.png",
+      "reg_ica": "PL0003902022",
+      "formulation": "Microemulsión (ME)",
+      "chemical_group": "Triazol + Estrobilurinas",
+      "tox_category": "III",
+      "concentration": "40 g/L + 30 g/L",
+      "composition": [
+        { "ai": "Difenoconazol", "pct": "40 g/L" },
+        { "ai": "Kresoxim-methyl", "pct": "30 g/L" }
+      ],
+      "presentations": ["1 L", "4 L", "20 L", "200 mL"],
+      "mode_of_action": "Fungicida con efecto preventivo y curativo.",
+      "mechanism": "Difenoconazol inhibe la biosíntesis del ergosterol (desmetilación C-14) deteniendo el desarrollo fúngico. Kresoxim-methyl bloquea la respiración mitocondrial al inhibir el complejo citocromo bc₁, afectando micelio, esporulación y germinación de esporas.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
         {
           "crop": "Arroz",
-          "pest": "Helmintosporium, Cercospora, Sarocladium",
-          "dose": "0,75 L/Ha",
-          "action": "Manchado de grano"
+          "target": "Complejo manchado de grano (Helminthosporium spp., Curvularia lunata, Cercospora oryzae, Sarocladium oryzae, Ophiobolus oryzinus)",
+          "dose": "0.75 L/ha",
+          "pc": "10 días",
+          "pr": "4 h"
         },
         {
           "crop": "Arveja",
-          "pest": "Ascochyta pisi",
-          "dose": "0,75 L/Ha",
-          "action": "Ascoquita"
+          "target": "Ascochyta pisi",
+          "dose": "0.75 L/ha",
+          "pc": "14 días",
+          "pr": "4 h"
         },
         {
           "crop": "Banano",
-          "pest": "Mycosphaerella fijiensis",
-          "dose": "1 L/Ha",
-          "action": "Sigatoka Negra "
+          "target": "Mycosphaerella fijiensis (Sigatoka negra)",
+          "dose": "1 L/ha",
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
           "crop": "Cebolla",
-          "pest": "Alternaria porri",
-          "dose": "0,75 L/Ha",
-          "action": "Alternaria"
+          "target": "Alternaria porri",
+          "dose": "0.75 L/ha",
+          "pc": "7 días",
+          "pr": "4 h"
         },
         {
-          "crop": "Frijol  ",
-          "pest": "Colletotrichum lindemuthianum",
-          "dose": "0,75 L/Ha",
-          "action": "Antracnosis"
+          "crop": "Frijol",
+          "target": "Colletotrichum lindemuthianum (Antracnosis)",
+          "dose": "0.75 L/ha",
+          "pc": "14 días",
+          "pr": "4 h"
         },
         {
-          "crop": "Pompon",
-          "pest": "Puccinia horiana ",
+          "crop": "Pompon / Crisantemo",
+          "target": "Puccinia horiana (Roya blanca)",
           "dose": "1.25 cc/L",
-          "action": "Roya blanca"
-        },
-        {
-          "crop": "Crisantemo",
-          "pest": "Puccinia horiana ",
-          "dose": "1.25 cc/L",
-          "action": "Roya blanca"
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
           "crop": "Rosas",
-          "pest": "Sphaerotheca pannosa",
-          "dose": "1 - 1,25 cc/L",
-          "action": "Mildeo polvoso"
+          "target": "Sphaerotheca pannosa (Mildeo polvoso)",
+          "dose": "1.0 – 1.25 cc/L",
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
           "crop": "Tomate",
-          "pest": "Alternaria solani",
-          "dose": "0,75 L/Ha",
-          "action": "Alternaria"
+          "target": "Alternaria solani",
+          "dose": "0.75 L/ha",
+          "pc": "7 días",
+          "pr": "4 h"
         },
         {
-          "crop": "Tomate De Arbol",
-          "pest": "Colletotrichum gloesporioides",
-          "dose": "0,75  - 1 L/Ha",
-          "action": "Antracnosis"
+          "crop": "Tomate de árbol",
+          "target": "Colletotrichum gloeosporioides (Antracnosis)",
+          "dose": "0.75 – 1.0 L/ha",
+          "pc": "21 días",
+          "pr": "4 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/19.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/PATRULLA_Ficha.pdf",
       "tarjeta_pdf": "docs/PATRULLA_Tarjeta.pdf",
       "hoja_pdf": "docs/PATRULLA_Hoja.pdf"
@@ -1197,45 +1208,57 @@
     {
       "id": "prodion-500-sc",
       "name": "PRODION 500 SC",
-      "formulation": "SC",
-      "concentration": 500,
-      "ica": "PL0017082023",
-      "toxicity": "III",
       "category": "fungicida",
-      "active_ingredient": "IPRODIONE",
-      "targets": [
+      "image_url": "/media/Productos/Catalogo/20.png",
+      "reg_ica": "PL0017082023",
+      "formulation": "Suspensión concentrada (SC)",
+      "chemical_group": "Dicarboximida",
+      "tox_category": "III",
+      "concentration": 500,
+      "composition": [{ "ai": "Iprodione", "pct": "500 g/L" }],
+      "presentations": ["1 L", "100 mL"],
+      "mode_of_action": "Fungicida de contacto y protectante, de amplio espectro.",
+      "mechanism": "Impide la germinación de esporas y el crecimiento del micelio; inhibe la síntesis de ARN.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
+        {
+          "crop": "Arroz",
+          "target": "Manchado de grano (Helminthosporium spp., Drechslera spp., Sarocladium spp., Cercospora spp.)",
+          "dose": "600 cc/ha",
+          "pc": "14 días",
+          "pr": "24 h"
+        },
         {
           "crop": "Clavel",
-          "pest": "Botrytis cinerea",
+          "target": "Botrytis cinerea (moho gris)",
           "dose": "1.0 cc/L",
-          "action": "\nBotrytis\n"
+          "pc": "N.A.",
+          "pr": "24 h"
         },
         {
           "crop": "Pompon",
-          "pest": "Botrytis cinerea",
-          "dose": "1.0 cc/L ",
-          "action": "\nBotrytis\n"
-        },
-        {
-          "crop": "Arroz",
-          "pest": "Helminthosporium spp. Dreshclera spp., Sarocladium spp., Cercospora spp",
-          "dose": "600 cc/ha",
-          "action": "Manchado de grano"
-        },
-        {
-          "crop": "Tomate",
-          "pest": "Botrytis cinerea",
-          "dose": "600 cc/ha",
-          "action": "\nBotrytis\n"
+          "target": "Botrytis cinerea (moho gris)",
+          "dose": "1.0 cc/L",
+          "pc": "N.A.",
+          "pr": "24 h"
         },
         {
           "crop": "Rosas",
-          "pest": "Botrytis cinerea",
-          "dose": "1,0 a 1,5 cc/L",
-          "action": "\nBotrytis\n"
+          "target": "Botrytis cinerea (moho gris)",
+          "dose": "1.0 – 1.5 cc/L",
+          "pc": "N.A.",
+          "pr": "24 h"
+        },
+        {
+          "crop": "Tomate",
+          "target": "Botrytis cinerea",
+          "dose": "200 cc/200 L (600 cc/ha)",
+          "pc": "14 días",
+          "pr": "24 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/20.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/PRODION_Ficha.pdf",
       "tarjeta_pdf": "docs/PRODION_Tarjeta.pdf",
       "hoja_pdf": "docs/PRODION_Hoja.pdf"
@@ -1243,27 +1266,39 @@
     {
       "id": "reten-6-me",
       "name": "RETEN 6 ME",
-      "formulation": "ME",
-      "concentration": "40 + 20",
-      "ica": "PL0003282022",
-      "toxicity": "III",
       "category": "fungicida",
-      "active_ingredient": "DODEMORPH + PROCHLORAZ",
-      "targets": [
+      "image_url": "/media/Productos/Catalogo/21.png",
+      "reg_ica": "PL0003282022",
+      "formulation": "Microemulsión (ME)",
+      "chemical_group": "Morfolina + Imidazol",
+      "tox_category": "III",
+      "concentration": "40 g/L + 20 g/L",
+      "composition": [
+        { "ai": "Dodemorph acetate", "pct": "40 g/L" },
+        { "ai": "Prochloraz", "pct": "20 g/L" }
+      ],
+      "presentations": ["1 L", "4 L"],
+      "mode_of_action": "Fungicida de rápida penetración con efecto preventivo y curativo.",
+      "mechanism": "Inhibe la biosíntesis del ergosterol en tres puntos: Prochloraz actúa al inicio de la ruta, Dodemorph en etapas media y final, bloqueando el desarrollo del hongo.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
         {
           "crop": "Rosas",
-          "pest": "Sphaerotheca pannosa",
-          "dose": "2,5 - 3 cc/L",
-          "action": "Mildeo polvoso"
+          "target": "Sphaerotheca pannosa (mildeo polvoso)",
+          "dose": "2.5 – 3.0 cc/L (3 – 3.6 L/ha)",
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
           "crop": "Uva",
-          "pest": "Uncinula necator",
-          "dose": "1 cc/L o 0,4 L/ha",
-          "action": "Mildeo polvoso"
+          "target": "Uncinula necator (mildeo polvoso)",
+          "dose": "1 cc/L (0.4 L/ha)",
+          "pc": "2 días",
+          "pr": "4 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/21.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/RETEN_Ficha.pdf",
       "tarjeta_pdf": "docs/RETEN_Tarjeta.pdf",
       "hoja_pdf": "docs/RETEN_Hoja.pdf"
@@ -1271,45 +1306,57 @@
     {
       "id": "sideral-70-sl",
       "name": "SIDERAL 70 SL",
-      "formulation": "SL",
-      "concentration": 700,
-      "ica": "PL0003142022",
-      "toxicity": "III",
       "category": "fungicida",
-      "active_ingredient": "PROPAMOCARB HCL",
-      "targets": [
+      "image_url": "/media/Productos/Catalogo/22.png",
+      "reg_ica": "PL0003142022",
+      "formulation": "Concentrado soluble (SL)",
+      "chemical_group": "Carbamatos",
+      "tox_category": "III",
+      "concentration": 700,
+      "composition": [{ "ai": "Propamocarb HCl", "pct": "700 g/L" }],
+      "presentations": ["1 L", "4 L", "20 L"],
+      "mode_of_action": "Fungicida sistémico con actividad preventiva y curativa contra hongos Oomycetos en suelo, raíces y follaje.",
+      "mechanism": "Inhibe el crecimiento y desarrollo de las oosporas e interfiere en la biosíntesis de la membrana del hongo.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
         {
-          "crop": "Cebolla",
-          "pest": "Peronospora destructor",
-          "dose": "500 ml / 200 L",
-          "action": "Mildeo velloso"
+          "crop": "Aguacate",
+          "target": "Phytophthora cinnamomi (pudrición de raíz)",
+          "dose": "5 mL/L",
+          "pc": "0 días",
+          "pr": "4 h"
+        },
+        {
+          "crop": "Cebolla (bulbo)",
+          "target": "Peronospora destructor (mildeo velloso)",
+          "dose": "500 mL/200 L",
+          "pc": "14 días",
+          "pr": "4 h"
         },
         {
           "crop": "Papa",
-          "pest": "Phytophthora infestans",
-          "dose": "500 ml / 200 L",
-          "action": "Gota"
+          "target": "Phytophthora infestans (gota o tizón tardío)",
+          "dose": "500 mL/200 L",
+          "pc": "14 días",
+          "pr": "4 h"
         },
         {
           "crop": "Rosas",
-          "pest": "Peronospora sparsa",
-          "dose": "1,5 ml/l agua  ",
-          "action": "Mildeo velloso"
+          "target": "Peronospora sparsa (mildeo velloso)",
+          "dose": "1.5 mL/L",
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
           "crop": "Tomate",
-          "pest": "Phytophthora infestans",
-          "dose": "500 ml / 200 L",
-          "action": "Gota"
-        },
-        {
-          "crop": "Aguacate",
-          "pest": "Phythopthora cinnamomi",
-          "dose": "5 mL/L",
-          "action": "Pudrición de Raíz"
+          "target": "Phytophthora infestans (gota o tizón tardío)",
+          "dose": "500 mL/200 L",
+          "pc": "14 días",
+          "pr": "4 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/22.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/SIDERAL_Ficha.pdf",
       "tarjeta_pdf": "docs/SIDERAL_Tarjeta.pdf",
       "hoja_pdf": "docs/SIDERAL_Hoja.pdf"
@@ -1317,45 +1364,57 @@
     {
       "id": "skel-250-ec",
       "name": "SKEL 250 EC",
-      "formulation": "EC",
-      "concentration": 250,
-      "ica": "PL0003062022",
-      "toxicity": "II",
       "category": "fungicida",
-      "active_ingredient": "DIFENOCONAZOL",
-      "targets": [
+      "image_url": "/media/Productos/Catalogo/23.png",
+      "reg_ica": "PL0003062022",
+      "formulation": "Concentrado emulsionable (EC)",
+      "chemical_group": "Triazoles",
+      "tox_category": "II",
+      "concentration": 250,
+      "composition": [{ "ai": "Difenoconazol", "pct": "250 g/L" }],
+      "presentations": ["20 L", "1 L", "250 mL", "100 mL"],
+      "mode_of_action": "Fungicida sistémico con acción preventiva y curativa de amplio espectro.",
+      "mechanism": "Inhibe la biosíntesis del ergosterol en la membrana celular del hongo, bloqueando el desarrollo de micelio y la aparición de síntomas.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
         {
-          "crop": "Cebolla",
-          "pest": "Alternaria porri",
-          "dose": "100 ml /200 l",
-          "action": "Alternaria"
+          "crop": "Cebolla (bulbo)",
+          "target": "Alternaria porri (mancha púrpura)",
+          "dose": "100 mL/200 L",
+          "pc": "7–14 días",
+          "pr": "4 h"
         },
         {
           "crop": "Clavel",
-          "pest": "Heterosporium echinulatum",
-          "dose": "0,6 ml / l ",
-          "action": "Mancha anillada"
+          "target": "Cladosporium echinulatum (mancha anillada)",
+          "dose": "0.6 mL/L",
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
-          "crop": "Frijol  ",
-          "pest": "Coletotrichum lindemuthianum",
-          "dose": "166 ml/200L",
-          "action": "Antracnosis"
+          "crop": "Frijol",
+          "target": "Colletotrichum lindemuthianum (antracnosis)",
+          "dose": "166 mL/200 L",
+          "pc": "14 días",
+          "pr": "4 h"
         },
         {
           "crop": "Rosas",
-          "pest": "Sphaerotheca pannosa",
-          "dose": "0,6 ml / l ",
-          "action": "Mildeo polvoso"
+          "target": "Sphaerotheca pannosa (mildeo polvoso)",
+          "dose": "0.6 mL/L",
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
           "crop": "Tomate",
-          "pest": "Alternaria solani",
-          "dose": "100 ml /200 l ",
-          "action": "Tizon temprano"
+          "target": "Alternaria solani (tizón temprano)",
+          "dose": "100 mL/200 L",
+          "pc": "7 días",
+          "pr": "4 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/23.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/SKEL_Ficha.pdf",
       "tarjeta_pdf": "docs/SKEL_Tarjeta.pdf",
       "hoja_pdf": "docs/SKEL_Hoja.pdf"
@@ -1363,51 +1422,64 @@
     {
       "id": "skyp-5-sc",
       "name": "SKYP 5 SC",
-      "formulation": "SC",
-      "concentration": 50,
-      "ica": "PL0005742023",
-      "toxicity": "III",
       "category": "fungicida",
-      "active_ingredient": "HEXACONAZOL",
-      "targets": [
+      "image_url": "/media/Productos/Catalogo/24.png",
+      "reg_ica": "PL0005742023",
+      "formulation": "Suspensión concentrada (SC)",
+      "chemical_group": "Triazoles",
+      "tox_category": "III",
+      "concentration": 50,
+      "composition": [{ "ai": "Hexaconazol", "pct": "50 g/L" }],
+      "presentations": ["1 L", "250 mL"],
+      "mode_of_action": "Fungicida sistémico de amplio espectro con acción preventiva y curativa.",
+      "mechanism": "Inhibe la biosíntesis del ergosterol (desmetilación de esteroides), alterando la membrana celular del hongo. Posee acción translaminar y rápida penetración, difundiéndose vía xilema.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
+        {
+          "crop": "Café",
+          "target": "Hemileia vastatrix (roya)",
+          "dose": "1 L/ha",
+          "pc": "15 días",
+          "pr": "4 h"
+        },
         {
           "crop": "Clavel",
-          "pest": "Cladosporium echinulatum",
-          "dose": "1.5 - 2.0 ml / l                                                                                                                                                                                           ",
-          "action": "Mancha anillada"
+          "target": "Cladosporium echinulatum (mancha anillada)",
+          "dose": "1.5 – 2.0 cc/L",
+          "pc": "N.A.",
+          "pr": "12 h"
         },
         {
           "crop": "Crisantemo",
-          "pest": "Puccinia horiana ",
-          "dose": "1 ml / l  ",
-          "action": "Roya blanca"
+          "target": "Puccinia horiana (roya blanca)",
+          "dose": "1 cc/L",
+          "pc": "N.A.",
+          "pr": "15 h"
         },
         {
-          "crop": "Rosas",
-          "pest": "Sphaerotheca pannosa",
-          "dose": "0.8 ml/l                                                                                                                                                                                                                                                ",
-          "action": "Mildeo polvoso"
+          "crop": "Frijol",
+          "target": "Uromyces phaseoli (roya)",
+          "dose": "300 cc/200 L",
+          "pc": "15 días",
+          "pr": "4 h"
         },
         {
           "crop": "Mora",
-          "pest": "Oidium sp",
-          "dose": "300 - 350 cc/ 200 L",
-          "action": "Mildeo polvoso"
+          "target": "Oidium sp. (mildeo polvoso)",
+          "dose": "300 – 350 cc/200 L",
+          "pc": "15 días",
+          "pr": "4 h"
         },
         {
-          "crop": "Frijol  ",
-          "pest": "Uromyces phaseoli",
-          "dose": "300 cc/ 200 L",
-          "action": "Roya"
-        },
-        {
-          "crop": "Café",
-          "pest": "Hemileia vastatrix",
-          "dose": "1 L/ha",
-          "action": "Roya"
+          "crop": "Rosas",
+          "target": "Sphaerotheca pannosa (mildeo polvoso)",
+          "dose": "0.8 cc/L",
+          "pc": "N.A.",
+          "pr": "12 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/24.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/SKYP_Ficha.pdf",
       "tarjeta_pdf": "docs/SKYP_Tarjeta.pdf",
       "hoja_pdf": "docs/SKYP_Hoja.pdf"
@@ -1415,57 +1487,74 @@
     {
       "id": "spax-80-me",
       "name": "SPAX 80 ME",
-      "formulation": "ME",
-      "concentration": "35 + 45",
-      "ica": "PL0002562023",
-      "toxicity": "II",
       "category": "fungicida",
-      "active_ingredient": "DIFENOCONAZOL + PROCHLORAZ",
-      "targets": [
+      "image_url": "/media/Productos/Catalogo/25.png",
+      "reg_ica": "PL0002562023",
+      "formulation": "Microemulsión (ME)",
+      "chemical_group": "Triazol + Imidazol",
+      "tox_category": "II",
+      "concentration": "35 g/L + 45 g/L",
+      "composition": [
+        { "ai": "Difenoconazol", "pct": "35 g/L" },
+        { "ai": "Prochloraz", "pct": "45 g/L" }
+      ],
+      "presentations": ["20 L", "4 L", "1 L", "300 mL"],
+      "mode_of_action": "Fungicida de rápida penetración con acción preventiva y curativa.",
+      "mechanism": "Difenoconazol inhibe la biosíntesis del ergosterol; Prochloraz bloquea la síntesis de triglicéridos, impidiendo la germinación de esporas y el crecimiento miceliar.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
         {
           "crop": "Arroz",
-          "pest": "Rhizoctonia solani",
-          "dose": "0,6 L/ha",
-          "action": "Añublo de la vaina"
+          "target": "Rhizoctonia solani (añublo de la vaina)",
+          "dose": "0.6 L/ha",
+          "pc": "15 días",
+          "pr": "4 h"
         },
         {
           "crop": "Arroz",
-          "pest": "",
-          "dose": "0,6 L/ha",
-          "action": "Manchado de grano"
-        },
-        {
-          "crop": "Clavel",
-          "pest": "Botrytis cinerea",
-          "dose": "0,75cc/ha",
-          "action": "Botrytis"
-        },
-        {
-          "crop": "Pompon",
-          "pest": "Botrytis cinerea",
-          "dose": "0,75cc/ha",
-          "action": "Botrytis"
-        },
-        {
-          "crop": "Rosas",
-          "pest": "Botrytis cinerea",
-          "dose": "1,0 cc/L",
-          "action": "Botrytis"
-        },
-        {
-          "crop": "Rosas",
-          "pest": "Sphaeroteca pannosa",
-          "dose": "1,0 cc/L",
-          "action": "Mildeo polvoso"
+          "target": "Complejo manchado del grano",
+          "dose": "0.6 L/ha",
+          "pc": "15 días",
+          "pr": "4 h"
         },
         {
           "crop": "Banano",
-          "pest": "Mycosphaerella fijiensis",
-          "dose": "0,7 L/ha",
-          "action": "Sigatoka Negra "
+          "target": "Mycosphaerella fijiensis (sigatoka negra)",
+          "dose": "0.7 L/ha",
+          "pc": "1 día",
+          "pr": "4 h"
+        },
+        {
+          "crop": "Clavel",
+          "target": "Botrytis cinerea (moho gris)",
+          "dose": "0.75 cc/L",
+          "pc": "N.A.",
+          "pr": "4 h"
+        },
+        {
+          "crop": "Pompon",
+          "target": "Botrytis cinerea (moho gris)",
+          "dose": "0.75 cc/L",
+          "pc": "N.A.",
+          "pr": "4 h"
+        },
+        {
+          "crop": "Rosas",
+          "target": "Botrytis cinerea (moho gris)",
+          "dose": "1.0 cc/L",
+          "pc": "N.A.",
+          "pr": "4 h"
+        },
+        {
+          "crop": "Rosas",
+          "target": "Sphaerotheca pannosa (mildeo polvoso)",
+          "dose": "1.0 cc/L",
+          "pc": "N.A.",
+          "pr": "4 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/25.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/SPAX_Ficha.pdf",
       "tarjeta_pdf": "docs/SPAX_Tarjeta.pdf",
       "hoja_pdf": "docs/SPAX_Hoja.pdf"
@@ -1473,57 +1562,74 @@
     {
       "id": "tumbador-250-sc",
       "name": "TUMBADOR 250 SC",
-      "formulation": "SC",
-      "concentration": "50 + 200",
-      "ica": "PL0001662023",
-      "toxicity": "II",
       "category": "insecticida",
-      "active_ingredient": "LAMBDACIHALOTRINA + CIROMAZINA",
-      "targets": [
+      "image_url": "/media/Productos/Catalogo/26.png",
+      "reg_ica": "PL0001662023",
+      "formulation": "Suspensión concentrada (SC)",
+      "chemical_group": "Piretroide + Triazina",
+      "tox_category": "II",
+      "concentration": "50 g/L + 200 g/L",
+      "composition": [
+        { "ai": "Lambda-cihalotrina", "pct": "50 g/L" },
+        { "ai": "Ciromazina", "pct": "200 g/L" }
+      ],
+      "presentations": ["1 L", "100 mL"],
+      "mode_of_action": "Insecticida de rápida acción por contacto e ingestión, con efecto de choque sobre un amplio espectro de plagas y larvas minadoras.",
+      "mechanism": "Afecta el sistema nervioso central en la presinapsis generando un desbalance electroquímico que bloquea la transmisión del impulso; además interfiere en el desarrollo larvario con alta especificidad para minadores.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
         {
           "crop": "Arveja",
-          "pest": "Lyriomiza trifolii",
-          "dose": "150 cc/200L o 450 cc/ha",
-          "action": "Minador"
+          "target": "Lyriomyza trifolii (minador del tallo)",
+          "dose": "150 cc/200 L ó 450 cc/ha",
+          "pc": "15 días",
+          "pr": "4 h"
         },
         {
-          "crop": "Cebolla",
-          "pest": "Lyriomiza huidobrensis",
-          "dose": "250 cc/200L o 750 cc/ha",
-          "action": "Minador"
+          "crop": "Cebolla (bulbo)",
+          "target": "Lyriomyza huidobrensis (minador)",
+          "dose": "250 cc/200 L ó 750 cc/ha",
+          "pc": "14 días",
+          "pr": "4 h"
         },
         {
-          "crop": "Frijol  ",
-          "pest": "Lyriomiza huidobrensis",
-          "dose": "150 cc/200L o 450 cc/ha",
-          "action": "Minador"
+          "crop": "Frijol",
+          "target": "Lyriomyza huidobrensis (minador)",
+          "dose": "150 cc/200 L ó 450 cc/ha",
+          "pc": "15 días",
+          "pr": "4 h"
         },
         {
-          "crop": "Melon",
-          "pest": "Lyriomiza trifolii",
-          "dose": "120 cc/200L",
-          "action": "Minador"
+          "crop": "Melón",
+          "target": "Lyriomyza trifolii (minador)",
+          "dose": "120 cc/200 L",
+          "pc": "3 días",
+          "pr": "4 h"
         },
         {
           "crop": "Papa",
-          "pest": "Lyriomiza cuadrata",
-          "dose": "150 cc/200L o 450 cc/ha",
-          "action": "Minador"
+          "target": "Lyriomyza quadrata (minador)",
+          "dose": "150 cc/200 L ó 450 cc/ha",
+          "pc": "14 días",
+          "pr": "4 h"
         },
         {
-          "crop": "Pompon",
-          "pest": "Lyriomiza trifolii",
-          "dose": "0.75cc/L o 900 cc/ha",
-          "action": "Minador"
+          "crop": "Pompón",
+          "target": "Lyriomyza trifolii (minador)",
+          "dose": "0.75 cc/L ó 900 cc/ha",
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
           "crop": "Tomate",
-          "pest": "Lyriomiza trifolii",
-          "dose": "150 cc/200L o 450 cc/ha",
-          "action": "Minador"
+          "target": "Lyriomyza trifolii (minador)",
+          "dose": "150 cc/200 L ó 450 cc/ha",
+          "pc": "5 días",
+          "pr": "4 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/26.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/TUMBADOR_Ficha.pdf",
       "tarjeta_pdf": "docs/TUMBADOR_Tarjeta.pdf",
       "hoja_pdf": "docs/TUMBADOR_Hoja.pdf"
@@ -1531,39 +1637,50 @@
     {
       "id": "valiente-100-me",
       "name": "VALIENTE 100 ME",
-      "formulation": "ME",
-      "concentration": 100,
-      "ica": "PL0003292022",
-      "toxicity": "III",
       "category": "fungicida",
-      "active_ingredient": "TRIDEMORPH",
-      "targets": [
+      "image_url": "/media/Productos/Catalogo/27.png",
+      "reg_ica": "PL0003292022",
+      "formulation": "Microemulsión (ME)",
+      "chemical_group": "Derivado de la morfolina",
+      "tox_category": "III",
+      "concentration": 100,
+      "composition": [{ "ai": "Tridemorph", "pct": "100 g/L" }],
+      "presentations": ["1 L"],
+      "mode_of_action": "Fungicida sistémico de contacto, absorbido por raíces y hojas, con acción preventiva, curativa y erradicante.",
+      "mechanism": "Inhibe la síntesis de ergosterol bloqueando la isomerización Δ8→Δ7 y la reducción esteroide vía esterol-Δ14-reductasa, alterando la membrana celular del hongo.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
         {
           "crop": "Banano",
-          "pest": "Mycosphaerella fijiensis",
-          "dose": "0,5 L/ha",
-          "action": "Sigatoka Negra "
+          "target": "Mycosphaerella fijiensis (sigatoka negra)",
+          "dose": "0.5 L/ha",
+          "pc": "0 días",
+          "pr": "24 h"
         },
         {
           "crop": "Rosas",
-          "pest": "Sphaerotheca pannosa",
-          "dose": "1.0 - 1.2 cc/L",
-          "action": "Mildeo polvoso"
+          "target": "Sphaerotheca pannosa (mildeo polvoso)",
+          "dose": "1.0 – 1.2 cc/L",
+          "pc": "N.A.",
+          "pr": "24 h"
         },
         {
           "crop": "Pompon",
-          "pest": "Puccinia horiana ",
+          "target": "Puccinia horiana (roya blanca)",
           "dose": "0.5 cc/L",
-          "action": "Roya blanca"
+          "pc": "N.A.",
+          "pr": "24 h"
         },
         {
           "crop": "Crisantemo",
-          "pest": "Puccinia horiana ",
+          "target": "Puccinia horiana (roya blanca)",
           "dose": "0.5 cc/L",
-          "action": "Roya blanca"
+          "pc": "N.A.",
+          "pr": "24 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/27.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/VALIENTE_Ficha.pdf",
       "tarjeta_pdf": "docs/VALIENTE_Tarjeta.pdf",
       "hoja_pdf": "docs/VALIENTE_Hoja.pdf"
@@ -1571,51 +1688,67 @@
     {
       "id": "zafiro-425-me",
       "name": "ZAFIRO 425 ME",
-      "formulation": "ME",
-      "concentration": "350 + 75",
-      "ica": "PL0003232023",
-      "toxicity": "III",
       "category": "fungicida",
-      "active_ingredient": "PROPAMOCARB HCL + METALAXIL",
-      "targets": [
+      "image_url": "/media/Productos/Catalogo/28.png",
+      "reg_ica": "PL0003232023",
+      "formulation": "Microemulsión (ME)",
+      "chemical_group": "Carbamato + Fenilamida",
+      "tox_category": "III",
+      "concentration": "350 g/L + 75 g/L",
+      "composition": [
+        { "ai": "Propamocarb HCl", "pct": "350 g/L" },
+        { "ai": "Metalaxil", "pct": "75 g/L" }
+      ],
+      "presentations": ["20 L", "4 L", "1 L", "400 mL"],
+      "mode_of_action": "Fungicida sistémico de rápida acción con efecto preventivo, curativo y erradicante frente a Oomycetes.",
+      "mechanism": "Reduce el crecimiento y desarrollo de las esporas, altera la síntesis bioquímica de la membrana e inhibe la síntesis de aminoácidos del hongo.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
         {
-          "crop": "Cebolla",
-          "pest": "Peronospora destructor",
-          "dose": "400 - 500 cc/200L (1.2-1.5 L/ha)",
-          "action": "Mildeo velloso"
+          "crop": "Cebolla (bulbo)",
+          "target": "Peronospora destructor (mildeo velloso)",
+          "dose": "400–500 cc/200 L",
+          "pc": "14 días",
+          "pr": "4 h"
         },
         {
           "crop": "Papa",
-          "pest": "Phytophthora infestans",
-          "dose": "400 cc/200L (1.2 L/ha)",
-          "action": "Gota"
+          "target": "Phytophthora infestans (gota / tizón tardío)",
+          "dose": "1.2 L/ha",
+          "pc": "14 días",
+          "pr": "4 h"
         },
         {
           "crop": "Piña",
-          "pest": "Phytophthora parasitica",
-          "dose": "1L/Ha",
-          "action": "Podredumbre del corazón"
+          "target": "Phytophthora parasitica (podredumbre del corazón)",
+          "dose": "1 L/ha",
+          "pc": "14 días",
+          "pr": "4 h"
         },
         {
           "crop": "Rosas",
-          "pest": "Peronospora sparsa",
-          "dose": "0,6 cc/L",
-          "action": "Mildeo velloso"
+          "target": "Peronospora sparsa (mildeo velloso)",
+          "dose": "0.6 cc/L",
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
           "crop": "Tomate",
-          "pest": "Phytophthora infestans",
-          "dose": "500 cc/200L (1.5 L/ha)",
-          "action": "Gota"
+          "target": "Phytophthora infestans (gota / tizón tardío)",
+          "dose": "500 cc/200 L (1.5 L/ha)",
+          "pc": "14 días",
+          "pr": "4 h"
         },
         {
           "crop": "Uva",
-          "pest": "Plasmophara viticola",
-          "dose": "1.5 cc/L ó 0.6 L/ha",
-          "action": "Mildeo velloso"
+          "target": "Plasmopara viticola (mildeo velloso)",
+          "dose": "0.6 L/ha (1.5 cc/L)",
+          "pc": "14 días",
+          "pr": "4 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/28.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/ZAFIRO_Ficha.pdf",
       "tarjeta_pdf": "docs/ZAFIRO_Tarjeta.pdf",
       "hoja_pdf": "docs/ZAFIRO_Hoja.pdf"
@@ -1623,51 +1756,67 @@
     {
       "id": "zoom-650-sc",
       "name": "ZOOM 650 SC",
-      "formulation": "SC",
-      "concentration": "300 + 350",
-      "ica": "PL0003072022",
-      "toxicity": "II",
       "category": "fungicida",
-      "active_ingredient": "DIMETHOMORPH  + PROPAMOCARB HCL",
-      "targets": [
+      "image_url": "/media/Productos/Catalogo/29.png",
+      "reg_ica": "PL0003072022",
+      "formulation": "Suspensión concentrada (SC)",
+      "chemical_group": "Carbamato + Morfolina",
+      "tox_category": "II",
+      "concentration": "300 g/L + 350 g/L",
+      "composition": [
+        { "ai": "Dimethomorph", "pct": "300 g/L" },
+        { "ai": "Propamocarb HCl", "pct": "350 g/L" }
+      ],
+      "presentations": ["20 L", "4 L", "1 L", "200 mL"],
+      "mode_of_action": "Fungicida sistémico con actividad preventiva y curativa, excelente acción antiesporulante frente a Oomycetes.",
+      "mechanism": "Inhibe la formación de la pared celular y la síntesis de ARN, deteniendo el desarrollo del hongo.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
+        {
+          "crop": "Cebolla (bulbo)",
+          "target": "Peronospora destructor (mildeo velloso)",
+          "dose": "400 cc/200 L",
+          "pc": "7 días",
+          "pr": "4 h"
+        },
         {
           "crop": "Papa",
-          "pest": "Phytophtora infestans",
-          "dose": "400 ml/200L ",
-          "action": "Gota"
+          "target": "Phytophthora infestans (gota / tizón tardío)",
+          "dose": "400 cc/200 L",
+          "pc": "7 días",
+          "pr": "4 h"
         },
         {
           "crop": "Piña",
-          "pest": "Phytophtora parisitica",
-          "dose": "3 cc/L ",
-          "action": "Pudrición del corazon"
-        },
-        {
-          "crop": "Tomate",
-          "pest": "Phytophtora infestans",
-          "dose": "400 ml/200L",
-          "action": "Tizón tardío"
+          "target": "Phytophthora parasitica (podredumbre del corazón)",
+          "dose": "3 cc/L",
+          "pc": "90 días",
+          "pr": "24 h"
         },
         {
           "crop": "Rosas",
-          "pest": "Peronospora sparsa",
-          "dose": "1.25cc/L ",
-          "action": "Mildeo velloso"
+          "target": "Peronospora sparsa (mildeo velloso)",
+          "dose": "1.25 cc/L",
+          "pc": "N.A.",
+          "pr": "4 h"
         },
         {
-          "crop": "Cebolla",
-          "pest": "Peronospora destructor",
-          "dose": "400 ml/200L ",
-          "action": "Mildeo velloso"
+          "crop": "Tomate",
+          "target": "Phytophthora infestans (gota / tizón tardío)",
+          "dose": "400 cc/200 L",
+          "pc": "7 días",
+          "pr": "4 h"
         },
         {
           "crop": "Uva",
-          "pest": "Plasmophara viticola",
-          "dose": "1.5 cc/L o 0,6 L/ha",
-          "action": "Mildeo velloso"
+          "target": "Plasmopara viticola (mildeo velloso)",
+          "dose": "1.5 cc/L ó 0.6 L/ha",
+          "pc": "7 días",
+          "pr": "4 h"
         }
       ],
-      "image_url": "/media/Productos/Catalogo/29.png",
+      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
+      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
       "ficha_pdf": "docs/ZOOM_Ficha.pdf",
       "tarjeta_pdf": "docs/ZOOM_Tarjeta.pdf",
       "hoja_pdf": "docs/ZOOM_Hoja.pdf"
@@ -1719,21 +1868,44 @@
     {
       "id": "fixer-sc",
       "name": "FIXER SC",
-      "formulation": "SC",
-      "concentration": "6-0-3-10 (CaO)-1(S)",
-      "ica": 10397,
-      "toxicity": "",
       "category": "fertilizante-foliar",
-      "active_ingredient": "NK",
-      "targets": [
+      "image_url": "/media/Productos/Catalogo/32.png",
+      "reg_ica": "10397",
+      "formulation": "Suspensión concentrada (SC)",
+      "chemical_group": "Complejo NPK-Ca-S con micronutrientes",
+      "tox_category": "",
+      "concentration": "6-0-3-10(CaO)-1(S)",
+      "composition": [
+        { "nutrient": "Nitrógeno total (N)", "g_L": 90 },
+        { "nutrient": "Nitrógeno nítrico (N-NO3)", "g_L": 90 },
+        { "nutrient": "Potasio soluble en agua (K2O)", "g_L": 50 },
+        { "nutrient": "Calcio total (CaO)", "g_L": 150 },
+        { "nutrient": "Azufre total (S)", "g_L": 14 },
+        { "nutrient": "Zinc total (Zn)", "g_L": 11 },
+        { "nutrient": "Boro total (B)", "g_L": 22 }
+      ],
+      "presentations": ["1 L"],
+      "mode_of_action": "Fertilizante foliar complejo que aporta N, K, Ca, S y micronutrientes de rápida absorción.",
+      "mechanism": "Reabastece nutrientes esenciales vía aplicación foliar, corrigiendo deficiencias y mejorando el llenado y la calidad del cultivo.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
         {
-          "crop": "Todos",
-          "pest": "",
-          "dose": "1,5 L/ha",
-          "action": "Fertilizante Foliar "
+          "crop": "Fresa (Fragaria vesca)",
+          "target": "Aplicación nutricional",
+          "dose": "1.5 L/ha",
+          "notes": "Tres aplicaciones cada tercer día en etapa productiva",
+          "pc": "N.A.",
+          "pr": "N.A."
+        },
+        {
+          "crop": "Maíz (Zea mays)",
+          "target": "Aplicación nutricional",
+          "dose": "1.5 L/ha",
+          "notes": "Una aplicación entre el comienzo y la maduración del grano",
+          "pc": "N.A.",
+          "pr": "N.A."
         }
       ],
-      "image_url": "/media/Productos/Catalogo/32.png",
       "ficha_pdf": "docs/FIXER_Ficha.pdf",
       "tarjeta_pdf": "docs/FIXER_Tarjeta.pdf",
       "hoja_pdf": "docs/FIXER_Hoja.pdf"
