@@ -615,6 +615,23 @@ function buildUsesTable(arr) {
         }
       }
 
+      /* Recalcula y muestra el número de productos por categoría */
+      const categoryCards = document.querySelectorAll("#categorias .cat-card");
+      if (categoryCards.length) {
+        const counters = {};
+        products.forEach((p) => {
+          const slug = (p.category || "").toLowerCase().replace(/\s+/g, "-");
+          counters[slug] = (counters[slug] || 0) + 1;
+        });
+        categoryCards.forEach((card) => {
+          const cat = new URL(
+            card.href,
+            window.location.origin
+          ).searchParams.get("categoria");
+          const span = card.querySelector(".cat-count");
+          if (span) span.textContent = `${counters[cat] || 0} productos`;
+        });
+      }
       renderProducts(visibleProducts);
     })
     .catch((err) => console.error("[Catálogo] Error cargando productos:", err));
