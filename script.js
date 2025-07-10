@@ -458,13 +458,13 @@ function buildUsesTable(arr) {
 
 (function () {
   const qs = new URLSearchParams(window.location.search);
-  const paramCategoria = (qs.get("categoria") || "").toLowerCase();
-  const paramCultivo = (qs.get("cultivo") || "").toLowerCase();
+  let currentCategoria = (qs.get("categoria") || "").toLowerCase();
+  let currentCultivo = (qs.get("cultivo") || "").toLowerCase();
 
   // Ocultar “Categorías” cuando se navega por cultivo
   const categoriasSection = document.getElementById("categorias");
   if (categoriasSection) {
-    categoriasSection.style.display = paramCultivo ? "none" : "";
+    categoriasSection.style.display = currentCultivo ? "none" : "";
   }
 
   const titleEl = document.querySelector("#catalogo h1");
@@ -472,6 +472,16 @@ function buildUsesTable(arr) {
   const searchInput = document.getElementById("productSearch");
   const clearSearchBtn = document.getElementById("clearSearch");
   const clearFilters = document.getElementById("clearFilters");
+
+  // Contenedor del sub‑filtro (lo creamos si no existe en el HTML)
+  let subfilterContainer = document.getElementById("subfilter");
+  if (!subfilterContainer && titleEl) {
+    subfilterContainer = document.createElement("div");
+    subfilterContainer.id = "subfilter";
+    subfilterContainer.className = "d-flex flex-wrap gap-2 mb-4";
+    subfilterContainer.style.display = "none";
+    titleEl.insertAdjacentElement("afterend", subfilterContainer);
+  }
 
   const categoryTitles = {
     herbicida: "Herbicidas",
@@ -496,6 +506,14 @@ function buildUsesTable(arr) {
     hortensia: "Hortensia",
   };
 
+  /* ----- Sub‑filtro por categoría dentro de un cultivo ----- */
+  const subfilterCats = [
+    { slug: "herbicida", label: "Herbicidas" },
+    { slug: "fungicida", label: "Fungicidas" },
+    { slug: "insecticida", label: "Insecticidas" },
+    { slug: "fertilizante-foliar", label: "Fertilizantes Foliares" },
+  ];
+
   if (clearFilters) {
     clearFilters.addEventListener("click", (e) => {
       e.preventDefault();
@@ -505,6 +523,63 @@ function buildUsesTable(arr) {
 
   let allProducts = [];
   let visibleProducts = [];
+
+  /* ----- Dibuja el sub‑filtro por categoría ----- */
+  function renderSubfilter(counts = {}) {
+    if (!subfilterContainer) return;
+
+    // Muestra u oculta según haya cultivo
+    subfilterContainer.style.display = currentCultivo ? "" : "none";
+    if (!currentCultivo) {
+      subfilterContainer.innerHTML = "";
+      return;
+    }
+
+    // Genera botones con contadores
+    subfilterContainer.innerHTML = subfilterCats
+      .filter((c) => counts[c.slug] > 0)
+      .map(
+        (c) => `
+        <button type="button"
+                class="btn btn-outline-primary me-2 mb-2 ${
+                  currentCategoria === c.slug ? "active" : ""
+                }"
+                data-cat="${c.slug}">
+          ${c.label}
+          <span class="badge bg-secondary">${counts[c.slug] || 0}</span>
+        </button>`
+      )
+      .join("");
+
+    // Listeners
+    subfilterContainer.querySelectorAll("button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const newCat = btn.dataset.cat;
+        if (!newCat || newCat === currentCategoria) return;
+
+        currentCategoria = newCat;
+        window.history.replaceState(
+          null,
+          "",
+          `?cultivo=${currentCultivo}&categoria=${currentCategoria}`
+        );
+
+        visibleProducts = allProducts.filter((p) => {
+          const catSlug = (p.category || "").toLowerCase().replace(/\s+/g, "-");
+          const cultivos = (p.uses || []).map((u) =>
+            (u.crop || "").toLowerCase()
+          );
+          return (
+            catSlug === currentCategoria && cultivos.includes(currentCultivo)
+          );
+        });
+
+        if (searchInput) searchInput.value = "";
+        renderProducts(visibleProducts);
+        renderSubfilter(counts); // actualiza botón activo
+      });
+    });
+  }
 
   function renderProducts(list) {
     if (!grid) return;
@@ -595,23 +670,23 @@ function buildUsesTable(arr) {
 
       visibleProducts = allProducts.filter((p) => {
         const catSlug = (p.category || "").toLowerCase().replace(/\s+/g, "-");
-        const cultivos = (p.targets || []).map((t) =>
-          (t.crop || "").toLowerCase()
+        const cultivos = (p.uses || []).map((u) =>
+          (u.crop || "").toLowerCase()
         );
-        const matchCategoria = paramCategoria
-          ? catSlug === paramCategoria
+        const matchCategoria = currentCategoria
+          ? catSlug === currentCategoria
           : true;
-        const matchCultivo = paramCultivo
-          ? cultivos.includes(paramCultivo)
+        const matchCultivo = currentCultivo
+          ? cultivos.includes(currentCultivo)
           : true;
         return matchCategoria && matchCultivo;
       });
 
       if (titleEl) {
-        if (paramCategoria && categoryTitles[paramCategoria]) {
-          titleEl.textContent = categoryTitles[paramCategoria];
-        } else if (paramCultivo && cultivoTitles[paramCultivo]) {
-          titleEl.textContent = cultivoTitles[paramCultivo];
+        if (currentCategoria && categoryTitles[currentCategoria]) {
+          titleEl.textContent = categoryTitles[currentCategoria];
+        } else if (currentCultivo && cultivoTitles[currentCultivo]) {
+          titleEl.textContent = cultivoTitles[currentCultivo];
         }
       }
 
@@ -632,6 +707,22 @@ function buildUsesTable(arr) {
           if (span) span.textContent = `${counters[cat] || 0} productos`;
         });
       }
+
+      /* Conteo por categoría dentro del cultivo activo */
+      const subCounts = {};
+      if (currentCultivo) {
+        products.forEach((p) => {
+          const cultivos = (p.uses || []).map((u) =>
+            (u.crop || "").toLowerCase()
+          );
+          if (cultivos.includes(currentCultivo)) {
+            const slug = (p.category || "").toLowerCase().replace(/\s+/g, "-");
+            subCounts[slug] = (subCounts[slug] || 0) + 1;
+          }
+        });
+      }
+      renderSubfilter(subCounts);
+
       renderProducts(visibleProducts);
     })
     .catch((err) => console.error("[Catálogo] Error cargando productos:", err));
@@ -658,4 +749,64 @@ function buildUsesTable(arr) {
       searchInput.focus();
     });
   }
+  /* ---------- Click dinámico en “Soluciones por Cultivo” ---------- */
+  document
+    .querySelectorAll('a[href*="catalogo.html?cultivo="]')
+    .forEach((link) => {
+      link.addEventListener("click", (e) => {
+        // Sólo interceptamos si ya estamos en la página de catálogo
+        if (!window.location.pathname.includes("catalogo")) return;
+        e.preventDefault();
+        const url = new URL(link.href, window.location.origin);
+        const newCultivo = (
+          url.searchParams.get("cultivo") || ""
+        ).toLowerCase();
+        if (!newCultivo) return;
+
+        // Actualiza estado interno y URL sin recargar
+        currentCultivo = newCultivo;
+        currentCategoria = ""; // al elegir cultivo limpiamos la categoría
+        window.history.replaceState(null, "", `?cultivo=${currentCultivo}`);
+
+        // NEW: If the products JSON hasn’t finished loading yet,
+        // let the fetch() callback handle rendering to avoid flashing an empty grid
+        if (!allProducts.length) {
+          if (searchInput) searchInput.value = "";
+          return;
+        }
+
+        // Oculta sección de categorías y actualiza título
+        if (categoriasSection) categoriasSection.style.display = "none";
+        if (titleEl) {
+          titleEl.textContent =
+            cultivoTitles[currentCultivo] ||
+            currentCultivo.charAt(0).toUpperCase() + currentCultivo.slice(1);
+        }
+
+        // Recalcula productos visibles
+        visibleProducts = allProducts.filter((p) => {
+          const cultivos = (p.uses || []).map((u) =>
+            (u.crop || "").toLowerCase()
+          );
+          return cultivos.includes(currentCultivo);
+        });
+
+        // Re‑genera conteos y refresca sub‑filtro
+        const newCounts = {};
+        allProducts.forEach((p) => {
+          const cultivos = (p.uses || []).map((u) =>
+            (u.crop || "").toLowerCase()
+          );
+          if (cultivos.includes(currentCultivo)) {
+            const slug = (p.category || "").toLowerCase().replace(/\s+/g, "-");
+            newCounts[slug] = (newCounts[slug] || 0) + 1;
+          }
+        });
+        renderSubfilter(newCounts);
+
+        // Limpia búsqueda y pinta resultados
+        if (searchInput) searchInput.value = "";
+        renderProducts(visibleProducts);
+      });
+    });
 })();
