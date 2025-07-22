@@ -37,9 +37,10 @@
     color: vars.$color-blanco; /* o #fff */
 
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    max-width: 60%;
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
 
       @include mix.respond-to(sm) {
