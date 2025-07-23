@@ -1836,6 +1836,12 @@
           "pest": "",
           "dose": "1,5 L/ha",
           "action": "Fertilizante Foliar "
+        },
+        {
+          "crop": "Fresa",
+          "pest": "",
+          "dose": "1,5 L/ha",
+          "action": "Fertilizante Foliar "
         }
       ],
       "image_url": "/media/Productos/Catalogo/arranque.png",
@@ -1846,25 +1852,26 @@
     },
     {
       "id": "avance-sc",
-      "name": "AVANCE SC",
+      "name": "AVANCE MYCROS SC",
       "formulation": "SC",
-      "concentration": "0-22-28-2(MgO)-2(S)",
+      "concentration": "P2O5 317 g/L; K2O 410 g/L; MgO 25 g/L; B 2 g/L; Cu 0.5 g/L; Mn 0.5 g/L; Zn 5 g/L; S 24 g/L",
       "ica": 9719,
       "toxicity": "",
       "category": "fertilizante-foliar",
-      "active_ingredient": "NPK",
+      "active_ingredient": "PK con micronutrientes (Mg, B, Cu, Mn, Zn, S)",
       "targets": [
         {
-          "crop": "Todos",
+          "crop": "Fresa",
           "pest": "",
-          "dose": "1,0 L/ha",
-          "action": "Fertilizante Foliar "
+          "dose": "1.0 L/ha",
+          "action": "Fertilizante foliar"
         }
       ],
       "image_url": "/media/Productos/Catalogo/avance.png",
       "ficha_pdf": "docs/AVANCE_Ficha.pdf",
       "tarjeta_pdf": "docs/AVANCE_Tarjeta.pdf",
-      "hoja_pdf": "docs/AVANCE_Hoja.pdf"
+      "hoja_pdf": "docs/AVANCE_Hoja.pdf",
+      "warnings": "AVANCE MYCROS SC no presenta fitotoxicidad en las dosis y cultivos de las recomendaciones de uso, evite mezclas con productos para la protección de cultivos (fungicidas y/o insecticidas)."
     },
     {
       "id": "fixer-sc",
@@ -1891,7 +1898,7 @@
       "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
-          "crop": "Fresa (Fragaria vesca)",
+          "crop": "Fresa",
           "target": "Aplicación nutricional",
           "dose": "1.5 L/ha",
           "notes": "Tres aplicaciones cada tercer día en etapa productiva",
@@ -1899,7 +1906,7 @@
           "pr": "N.A."
         },
         {
-          "crop": "Maíz (Zea mays)",
+          "crop": "Maiz",
           "target": "Aplicación nutricional",
           "dose": "1.5 L/ha",
           "notes": "Una aplicación entre el comienzo y la maduración del grano",

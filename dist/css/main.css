@@ -865,6 +865,69 @@ section:nth-of-type(4) {
     flex: 0 0 auto;
   }
 }
+/* ------ Botones de documentos (vertical, modernos) ------ */
+.doc-links {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+}
+
+.doc-btn {
+  --bg: #2e7d32;
+  --bg-hover: #84b64c;
+  --radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: #fff !important;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.18s ease, background 0.2s ease;
+  /* efecto brillo diagonal */
+}
+.doc-btn:hover, .doc-btn:focus {
+  background: var(--bg-hover);
+  transform: translateY(-2px);
+  color: #fff;
+}
+.doc-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 40%);
+  transform: translateX(-100%);
+  transition: transform 0.45s ease;
+}
+.doc-btn:hover::after {
+  transform: translateX(0);
+}
+.doc-btn__icon {
+  font-size: 1.3rem;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.18);
+}
+.doc-btn__text {
+  font-weight: 600;
+  font-size: 1rem;
+  flex: 1;
+}
+
+/* En pantallas grandes puedes ponerlos en 2 columnas si quieres */
+@media (min-width: 992px) {
+  .doc-links {
+    grid-template-columns: 1fr;
+    /* ó: repeat(2, 1fr); si deseas 2 columnas */
+  }
+}
 .representantes .card {
   border: none;
   border-radius: 0.5rem;

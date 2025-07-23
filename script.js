@@ -592,16 +592,11 @@ function buildUsesTable(arr) {
       <div class="col">
         <div class="product-card h-100">
           <div class="img-wrapper">
-            <img src="${p.image_url}" class="img-fluid rounded" alt="${
-          p.name
-        }" loading="lazy">
+            <img src="${p.image_url}" class="img-fluid rounded" alt="${p.name}" loading="lazy">
           </div>
           <div class="card-body">
             <h5 class="fw-bold text-primary">${p.name}</h5>
-            <p class="small text-muted">${p.active_ingredient || ""}</p>
-            <p class="small mb-2"><strong>${p.category}</strong> • ${
-          p.formulation
-        }</p>
+            <p class="small mb-2"><strong>${p.category}</strong></p>
           </div>
         </div>
       </div>`
