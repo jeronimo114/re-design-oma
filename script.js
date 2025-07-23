@@ -101,31 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /**
-   * 4) Swiper - Slider de Noticias
-   */
-  try {
-    new Swiper(".news-swiper", {
-      loop: true,
-      pagination: {
-        el: ".news-swiper .swiper-pagination",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-      },
-      slidesPerView: 1,
-      spaceBetween: 20,
-      breakpoints: {
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      },
-    });
-  } catch (error) {
-    console.error("Error al inicializar el slider de noticias:", error);
-  }
-
-  /**
    * 5) Leaflet - Mapa de Representantes con todos los datos
    *    Mostramos cada región como un marcador en Colombia
    */

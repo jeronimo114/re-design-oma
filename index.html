@@ -381,14 +381,23 @@
       <!-- ✱ END CATEGORÍAS DE PRODUCTO -->
 
       <!-- Sección de Noticias / Artículos -->
-      <section id="noticias" class="noticias py-5">
-        <div class="container">
-          <h2 class="text-center fw-bold mb-4" data-aos="fade-up">
-            Noticias y Artículos
-          </h2>
+      <section id="noticias" class="noticias">
+        <div class="container position-relative">
+          <h2 class="sec-title">Noticias y Artículos</h2>
+          <div class="news-nav" aria-hidden="true">
+            <button class="prev" id="newsPrev" type="button">
+              <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" /></svg>
+            </button>
+            <button class="next" id="newsNext" type="button">
+              <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" /></svg>
+            </button>
+          </div>
 
-          <!-- Grid generado vía JS -->
-          <div id="articlesGrid" class="row g-4"></div>
+          <!-- Grid (lo llena JS) -->
+          <ul
+            id="articlesGrid"
+            class="news-grid row gy-5 list-unstyled m-0 p-0"
+          ></ul>
         </div>
       </section>
 
@@ -749,40 +758,8 @@
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <!-- Script principal (archivo externo: script.js) -->
-    <script src="script.js"></script>
-    <script type="module">
-      import { articulos } from "./articulos.js";
-
-      const grid = document.getElementById("articlesGrid");
-      if (grid) {
-        grid.innerHTML = articulos
-          .map(
-            (a) => `
-          <div class="col-md-4">
-            <article class="card h-100 shadow-sm">
-              <a href="articulos/${a.slug}.html" class="stretched-link">
-                <img src="${a.cover}" class="card-img-top" alt="${
-              a.titulo
-            }" loading="lazy">
-              </a>
-              <div class="card-body">
-                <span class="badge bg-primary mb-2">${a.categoria}</span>
-                <h3 class="h5">${a.titulo}</h3>
-                <p class="small text-muted">${a.extracto}</p>
-              </div>
-              <div class="card-footer small text-muted">
-                ${new Date(a.fecha).toLocaleDateString("es-CO", {
-                  day: "2-digit",
-                  month: "short",
-                  year: "numeric",
-                })} · ${a.lectura}
-              </div>
-            </article>
-          </div>`
-          )
-          .join("");
-      }
-    </script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="news.js"></script>
     <!-- Floating WhatsApp button -->
     <a
       href="https://wa.me/573001234567"
