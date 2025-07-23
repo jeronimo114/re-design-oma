@@ -447,17 +447,20 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered modal-80">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title fw-bold" id="productModalLabel">Producto</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Cerrar"
-            ></button>
+        <div class="modal-content product-modal-card">
+          <button
+            type="button"
+            class="pm-close"
+            data-bs-dismiss="modal"
+            aria-label="Cerrar"
+          ></button>
+
+          <div class="pm-header">
+            <h3 id="modalName" class="pm-title"></h3>
+            <span class="badge bg-secondary" id="modalCategory"></span>
           </div>
-          <div class="modal-body">
+
+          <div class="modal-body pm-body">
             <div class="row g-4">
               <div class="col-md-6 text-center hero-img">
                 <img
@@ -661,10 +664,10 @@
               </div>
             </div>
           </div>
-          <div class="modal-footer">
+          <div class="modal-footer pm-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-light pm-close-cta"
               data-bs-dismiss="modal"
             >
               Cerrar
