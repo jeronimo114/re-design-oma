@@ -139,7 +139,7 @@ section {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
     margin-bottom: 3.2rem;
-    color: #000;
+    color: #2e7d32;
     text-align: center;
     position: relative;
   }
@@ -465,4 +465,70 @@ section {
 
 .drag {
   cursor: grabbing;
+}
+
+/* ====== Compactar sección Noticias ====== */
+.noticias {
+  padding: 4rem 0 3rem; /* menos alto */
+  .sec-title {
+    margin-bottom: 1.75rem; /* más cerca del carrusel */
+    line-height: 1.1;
+  }
+
+  #articlesGrid {
+    gap: 1.4rem; /* junta las cards */
+    padding-bottom: 0.5rem;
+  }
+  #articlesGrid > li {
+    flex: 0 0 clamp(260px, 30vw, 360px); /* un poco más angostas */
+  }
+
+  .news-card {
+    padding: 1.25rem 1.5rem 1rem;
+    border-radius: 18px;
+  }
+  .news-card__media {
+    margin: -1.25rem -1.5rem 1rem; /* reduce espacio superior/imagen */
+    img {
+      aspect-ratio: 3.6/2.6;
+    } /* imagen un pelín más baja */
+  }
+  .news-card__chips {
+    margin-bottom: 0.5rem;
+  }
+  .news-card__title {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+  .news-card__excerpt {
+    font-size: 0.85rem;
+    margin-bottom: 0.9rem;
+  }
+  .news-card__meta {
+    padding-top: 0.7rem;
+    font-size: 0.75rem;
+  }
+
+  /* Botones prev/next más pequeños y pegados */
+  .news-nav button {
+    width: 40px;
+    height: 40px;
+    top: 45%;
+    &.prev {
+      left: -12px;
+    }
+    &.next {
+      right: -12px;
+    }
+  }
+}
+
+/* opcional: cuando la pantalla es muy ancha, acerca aún más */
+@media (min-width: 1400px) {
+  #articlesGrid {
+    gap: 1.2rem;
+  }
+  #articlesGrid > li {
+    flex-basis: 320px;
+  }
 }
