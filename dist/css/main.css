@@ -465,13 +465,16 @@ section:nth-of-type(4) {
   }
 }
 
+/* ============================================================
+   CATÁLOGO
+============================================================ */
 .catalogo {
   background-color: #f8f9fa;
   padding: 4rem 0;
-  /* Ajuste responsive: en tablets (md) quepan 3 */
-  /* En pantallas pequeñas (sm) dos columnas */
-  /* Una columna en xs */
-  /* Opcional: mejora de sombra y radio */
+  /* columnas flex para estirar tarjetas */
+  /* ---------- Tarjeta de producto ---------- */
+  /* ---------- Grid equal-cols ---------- */
+  /* ---------- Panel de filtros ---------- */
 }
 .catalogo h1,
 .catalogo h2,
@@ -483,21 +486,17 @@ section:nth-of-type(4) {
 }
 .catalogo .product-card {
   background: #ffffff;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
   padding: 0;
   transition: transform 0.3s ease;
   cursor: pointer;
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 100% !important;
-  overflow: hidden;
-  /* Force consistent width and a bit taller height (not square) */
   width: 100%;
-  /* max-width: 320px; // matches equal‑cols width -- REMOVED, now column controls width */
-  height: 420px;
-  /* aspect ratio intentionally disabled to allow taller card */
+  height: 420px !important;
+  overflow: hidden;
 }
 .catalogo .product-card:hover {
   transform: translateY(-4px);
@@ -526,7 +525,6 @@ section:nth-of-type(4) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
 }
 .catalogo .product-card .card-body h5 {
   font-size: 1.05rem;
@@ -550,7 +548,6 @@ section:nth-of-type(4) {
   background: #84b64c;
 }
 .catalogo .equal-cols {
-  /* Centra las columnas y define el espacio */
   justify-content: center !important;
   gap: 1.5rem !important;
 }
@@ -576,11 +573,8 @@ section:nth-of-type(4) {
   .catalogo .equal-cols > .col {
     flex: 0 0 100%;
     max-width: 100%;
+    height: auto;
   }
-}
-.catalogo .product-card {
-  border-radius: 0.75rem;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
 }
 .catalogo .filter-panel {
   position: fixed;
@@ -649,7 +643,9 @@ section:nth-of-type(4) {
   font-size: 1rem;
 }
 
-/* Custom Colors */
+/* ============================================================
+   Colores custom / botones cultivo
+============================================================ */
 .text-pink {
   color: #e83e8c;
 }
@@ -662,7 +658,6 @@ section:nth-of-type(4) {
   color: #6f42c1;
 }
 
-/* Cultivo Buttons */
 .btn-cultivo {
   border: 1px solid #dee2e6;
   border-radius: 0.5rem;
@@ -671,19 +666,16 @@ section:nth-of-type(4) {
   background: white;
   color: var(--color-principal);
 }
-
+.btn-cultivo i {
+  font-size: 1.75rem;
+  transition: transform 0.3s ease;
+}
 .btn-cultivo:hover {
   background: var(--color-secundario);
   color: white;
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(46, 125, 50, 0.15);
 }
-
-.btn-cultivo i {
-  font-size: 1.75rem;
-  transition: transform 0.3s ease;
-}
-
 .btn-cultivo:hover i {
   transform: scale(1.1);
 }
@@ -721,7 +713,9 @@ section:nth-of-type(4) {
   opacity: 0.7;
 }
 
-/* ---------- MODAL DE PRODUCTO ---------- */
+/* ============================================================
+   MODAL PRODUCTO
+============================================================ */
 .modal-product {
   border: none;
   border-radius: 0.75rem;
@@ -746,7 +740,6 @@ section:nth-of-type(4) {
   background: #84b64c;
 }
 
-/* Hero image prominence */
 .modal-product .hero-img {
   position: relative;
   overflow: hidden;
@@ -756,7 +749,6 @@ section:nth-of-type(4) {
   background: #f5f6f8;
   height: 100%;
 }
-
 .modal-product .hero-img img {
   width: 100%;
   height: 100%;
@@ -768,19 +760,16 @@ section:nth-of-type(4) {
 .modal-product .hero-img img:hover {
   transform: none;
 }
-
 .modal-product .hero-img .badge {
   margin-top: 0.75rem;
   font-size: 0.9rem;
   letter-spacing: 0.4px;
 }
 
-/* Bigger modal: 80% viewport width */
 .modal-80 {
   max-width: 80vw;
 }
 
-/* CTA buttons spacing */
 .modal-product .btn-success {
   background: #25d366;
 }
@@ -788,14 +777,12 @@ section:nth-of-type(4) {
   background: rgb(33.1955645161, 189.3044354839, 91.5120967742);
 }
 
-/* ---------- Modal mobile tweaks ---------- */
+/* Modal mobile */
 @media (max-width: 767.98px) {
-  /* Use almost full‑width on phones and recenters modal */
   .modal-dialog.modal-80 {
     max-width: 95vw;
     margin: 0 auto;
   }
-  /* Stack image on top and make it more prominent */
   .modal-product .row {
     flex-direction: column;
   }
@@ -804,16 +791,12 @@ section:nth-of-type(4) {
     min-height: 300px;
     border-bottom: 3px solid #2e7d32;
   }
-  /* Reduce padding on body for better fit */
   .modal-product .modal-body {
     padding: 1rem;
   }
 }
 /* ============================================================
-   Floating WhatsApp Button
-   ------------------------------------------------------------
-   Moved from inline <style> in catalogo.html to SCSS so it is
-   available across the whole site via the compiled CSS bundle.
+   WhatsApp Float
 ============================================================ */
 .whatsapp-float {
   position: fixed;
@@ -838,11 +821,10 @@ section:nth-of-type(4) {
   text-decoration: none;
 }
 
-/* ===== FIX: evitar que se corten las imágenes en mobile ===== */
+/* ============================================================
+   FIX imágenes mobile (no cortar)
+============================================================ */
 @media (max-width: 575.98px) {
-  .catalogo .equal-cols > .col {
-    height: auto;
-  }
   .catalogo .product-card {
     height: auto !important;
     overflow: visible;
@@ -865,7 +847,9 @@ section:nth-of-type(4) {
     flex: 0 0 auto;
   }
 }
-/* ------ Botones de documentos (vertical, modernos) ------ */
+/* ============================================================
+   Botones de documentos (vertical, modernos)
+============================================================ */
 .doc-links {
   display: grid;
   grid-template-columns: 1fr;
@@ -887,7 +871,6 @@ section:nth-of-type(4) {
   position: relative;
   overflow: hidden;
   transition: transform 0.18s ease, background 0.2s ease;
-  /* efecto brillo diagonal */
 }
 .doc-btn:hover, .doc-btn:focus {
   background: var(--bg-hover);
@@ -921,11 +904,103 @@ section:nth-of-type(4) {
   flex: 1;
 }
 
-/* En pantallas grandes puedes ponerlos en 2 columnas si quieres */
-@media (min-width: 992px) {
-  .doc-links {
-    grid-template-columns: 1fr;
-    /* ó: repeat(2, 1fr); si deseas 2 columnas */
+/* ============================================================
+   Accordion Moderno con Chevron
+============================================================ */
+.accordion-modern {
+  --acc-accent: #2e7d32;
+  --acc-bg: #f7f9fb;
+  --acc-bg-hover: #eef2f6;
+  --acc-bg-active: rgba(vars.$color-principal, 0.08);
+  --acc-text: #1f2d3d;
+  --acc-radius: 0.9rem;
+  --acc-icon-bg: rgba(vars.$color-principal, 0.12);
+  /* abierto */
+  /* barra de acento activa */
+}
+.accordion-modern .accordion-item {
+  border: none;
+  margin-bottom: 0.9rem;
+  border-radius: var(--acc-radius);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+.accordion-modern .accordion-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: transparent;
+  transition: background 0.25s ease;
+}
+.accordion-modern .accordion-button {
+  background: var(--acc-bg);
+  color: var(--acc-text);
+  padding: 1rem 1.25rem 1rem 1.5rem;
+  font-weight: 600;
+  border: none;
+  box-shadow: none !important;
+  transition: background 0.2s ease, color 0.2s ease;
+  border-radius: 0;
+  /* Chevron personalizado */
+}
+.accordion-modern .accordion-button:hover {
+  background: var(--acc-bg-hover);
+}
+.accordion-modern .accordion-button::after {
+  content: "";
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-left: 0.75rem;
+  flex-shrink: 0;
+  border-radius: 0.55rem;
+  background-color: var(--acc-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f2d3d' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  transform: rotate(0deg);
+  transition: transform 0.25s ease, background-color 0.2s ease, background-image 0.2s ease;
+}
+.accordion-modern .accordion-button:focus-visible {
+  outline: 2px solid var(--acc-accent);
+  outline-offset: 2px;
+}
+.accordion-modern .accordion-button:not(.collapsed) {
+  background: var(--acc-bg-active);
+  color: var(--acc-accent);
+}
+.accordion-modern .accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+  background-color: var(--acc-accent);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+}
+.accordion-modern .accordion-collapse {
+  border: 0;
+  transition: height 0.25s ease;
+}
+.accordion-modern .accordion-body {
+  padding: 1rem 1.5rem 1.35rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  background: #fff;
+}
+.accordion-modern .accordion-button:not(.collapsed) ~ .accordion-collapse .accordion-item::before,
+.accordion-modern .accordion-button:not(.collapsed) .accordion-item::before {
+  background: var(--acc-accent);
+}
+
+@media (max-width: 575.98px) {
+  .accordion-modern .accordion-button {
+    padding: 0.85rem 1rem 0.85rem 1.25rem;
+    font-size: 0.95rem;
+  }
+  .accordion-modern .accordion-body {
+    padding: 0.85rem 1.25rem 1.1rem;
   }
 }
 .representantes .card {

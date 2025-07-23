@@ -1,6 +1,9 @@
 @use "../abstracts/variables" as vars;
 @use "../abstracts/mixins" as mix;
 
+/* ============================================================
+   CATÁLOGO
+============================================================ */
 .catalogo {
   background-color: #f8f9fa;
   padding: 4rem 0;
@@ -11,39 +14,34 @@
     color: vars.$color-principal;
   }
 
-  // Make columns flex containers so cards can stretch
+  /* columnas flex para estirar tarjetas */
   .row {
     > .col {
       display: flex;
     }
   }
 
-  // Tarjetas de producto (estilo similar al anterior)
+  /* ---------- Tarjeta de producto ---------- */
   .product-card {
     background: vars.$color-blanco;
-    border-radius: 0.5rem;
-    @include mix.box-shadow(0, 4px, 14px, rgba(0, 0, 0, 0.06));
+    border-radius: 0.75rem;
+    @include mix.box-shadow(0, 8px, 30px, rgba(0, 0, 0, 0.05));
     padding: 0;
     transition: transform 0.3s ease;
     cursor: pointer;
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 100% !important;
-    overflow: hidden;
-    /* Force consistent width and a bit taller height (not square) */
     width: 100%;
-    /* max-width: 320px; // matches equal‑cols width -- REMOVED, now column controls width */
-    height: 420px; // un poco más alta
-    /* aspect ratio intentionally disabled to allow taller card */
+    height: 420px !important;
+    overflow: hidden;
 
     &:hover {
       transform: translateY(-4px);
     }
 
-    // Image wrapper uses fixed height, no aspect-ratio hack
     .img-wrapper {
-      flex: 0 0 72%; // image takes ~72% of card height
+      flex: 0 0 72%;
       width: 100%;
       height: 72%;
       background: #f5f6f8;
@@ -56,25 +54,23 @@
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover; // fill entire area, cropping if necessary
+        object-fit: cover;
       }
     }
 
     .card-body {
-      flex: 1 0 35%; // body occupies remaining ~35%
+      flex: 1 0 35%;
       width: 100%;
       padding: 1rem 1rem 1.25rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-      flex: 1;
 
       h5 {
         font-size: 1.05rem;
         color: vars.$color-principal;
         margin: 0.75rem 0 0.25rem;
       }
-
       p {
         margin-bottom: 0.25rem;
       }
@@ -96,55 +92,45 @@
       }
     }
   }
-  // Nuevo bloque .equal-cols y media queries responsivas
+
+  /* ---------- Grid equal-cols ---------- */
   .equal-cols {
-    /* Centra las columnas y define el espacio */
     justify-content: center !important;
-    gap: 1.5rem !important; // espacio horizontal y vertical
+    gap: 1.5rem !important;
 
     > .col {
-      flex: 0 0 calc(25% - 1.5rem); // 4 columnas en desktop
+      flex: 0 0 calc(25% - 1.5rem);
       max-width: calc(25% - 1.5rem);
       margin-bottom: 1.5rem;
-      height: 420px; // altura consistente con la tarjeta
+      height: 420px;
     }
   }
 
-  /* Ajuste responsive: en tablets (md) quepan 3 */
   @media (max-width: 991.98px) {
     .equal-cols > .col {
       flex: 0 0 calc(33.333% - 1.5rem);
       max-width: calc(33.333% - 1.5rem);
     }
   }
-
-  /* En pantallas pequeñas (sm) dos columnas */
   @media (max-width: 767.98px) {
     .equal-cols > .col {
       flex: 0 0 calc(50% - 1rem);
       max-width: calc(50% - 1rem);
     }
   }
-
-  /* Una columna en xs */
   @media (max-width: 575.98px) {
     .equal-cols > .col {
       flex: 0 0 100%;
       max-width: 100%;
+      height: auto;
     }
   }
 
-  /* Opcional: mejora de sombra y radio */
-  .product-card {
-    border-radius: 0.75rem;
-    @include mix.box-shadow(0, 8px, 30px, rgba(0, 0, 0, 0.05));
-  }
-
-  // Panel de filtros minimalista
+  /* ---------- Panel de filtros ---------- */
   .filter-panel {
     position: fixed;
     top: 0;
-    right: -260px; // Oculto inicialmente
+    right: -260px;
     width: 260px;
     height: 100%;
     background: vars.$color-blanco;
@@ -188,7 +174,6 @@
     right: 0;
   }
 
-  // Botón para activar/desactivar el panel de filtros
   .filter-toggle {
     position: fixed;
     top: 1rem;
@@ -217,7 +202,9 @@
   }
 }
 
-/* Custom Colors */
+/* ============================================================
+   Colores custom / botones cultivo
+============================================================ */
 .text-pink {
   color: #e83e8c;
 }
@@ -228,7 +215,6 @@
   color: #6f42c1;
 }
 
-/* Cultivo Buttons */
 .btn-cultivo {
   border: 1px solid #dee2e6;
   border-radius: 0.5rem;
@@ -236,22 +222,22 @@
   transition: all 0.3s ease;
   background: white;
   color: var(--color-principal);
-}
 
-.btn-cultivo:hover {
-  background: var(--color-secundario);
-  color: white;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.15);
-}
+  i {
+    font-size: 1.75rem;
+    transition: transform 0.3s ease;
+  }
 
-.btn-cultivo i {
-  font-size: 1.75rem;
-  transition: transform 0.3s ease;
-}
+  &:hover {
+    background: var(--color-secundario);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.15);
 
-.btn-cultivo:hover i {
-  transform: scale(1.1);
+    i {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .dropdown-menu-xl {
@@ -275,25 +261,23 @@
   height: 12rem;
 }
 
-// Category card selected state
-.catalogo {
-  .cat-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.catalogo .cat-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-    &.active {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
-      z-index: 2;
-    }
-
-    &.inactive {
-      transform: scale(0.95);
-      opacity: 0.7;
-    }
+  &.active {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+    z-index: 2;
+  }
+  &.inactive {
+    transform: scale(0.95);
+    opacity: 0.7;
   }
 }
 
-/* ---------- MODAL DE PRODUCTO ---------- */
+/* ============================================================
+   MODAL PRODUCTO
+============================================================ */
 .modal-product {
   border: none;
   border-radius: 0.75rem;
@@ -323,8 +307,6 @@
   }
 }
 
-/* Hero image prominence */
-// Hero image prominence (revised)
 .modal-product .hero-img {
   position: relative;
   overflow: hidden;
@@ -333,69 +315,58 @@
   justify-content: center;
   background: #f5f6f8;
   height: 100%;
-}
 
-// Hero image in modal: prominent and disables zoom on hover
-.modal-product .hero-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
-  transition: transform 0.3s ease;
-  // Disable hover zoom effect
-  &:hover {
-    transform: none;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  .badge {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.4px;
   }
 }
 
-.modal-product .hero-img .badge {
-  margin-top: 0.75rem;
-  font-size: 0.9rem;
-  letter-spacing: 0.4px;
-}
-/* Bigger modal: 80% viewport width */
 .modal-80 {
   max-width: 80vw;
 }
 
-/* CTA buttons spacing */
 .modal-product .btn-success {
-  background: #25d366; // WhatsApp green
+  background: #25d366;
   &:hover {
     background: darken(#25d366, 5%);
   }
 }
 
-/* ---------- Modal mobile tweaks ---------- */
+/* Modal mobile */
 @media (max-width: 767.98px) {
-  /* Use almost full‑width on phones and recenters modal */
   .modal-dialog.modal-80 {
     max-width: 95vw;
     margin: 0 auto;
   }
-
-  /* Stack image on top and make it more prominent */
   .modal-product .row {
     flex-direction: column;
   }
-
   .modal-product__image {
-    order: -1; // show image first
-    min-height: 300px; // taller hero
+    order: -1;
+    min-height: 300px;
     border-bottom: 3px solid vars.$color-principal;
   }
-
-  /* Reduce padding on body for better fit */
   .modal-product .modal-body {
     padding: 1rem;
   }
 }
 
 /* ============================================================
-   Floating WhatsApp Button
-   ------------------------------------------------------------
-   Moved from inline <style> in catalogo.html to SCSS so it is
-   available across the whole site via the compiled CSS bundle.
+   WhatsApp Float
 ============================================================ */
 .whatsapp-float {
   position: fixed;
@@ -421,45 +392,44 @@
   }
 }
 
-/* ===== FIX: evitar que se corten las imágenes en mobile ===== */
+/* ============================================================
+   FIX imágenes mobile (no cortar)
+============================================================ */
 @media (max-width: 575.98px) {
   .catalogo {
-    .equal-cols > .col {
-      height: auto; // dejar que crezca
-    }
-
     .product-card {
-      height: auto !important; // sin altura fija
-      overflow: visible; // no ocultar la parte sobrante
-    }
+      height: auto !important;
+      overflow: visible;
 
-    .product-card .img-wrapper {
-      flex: 0 0 auto; // libera el porcentaje fijo
-      height: auto;
-      aspect-ratio: 4 / 5; // o la relación que prefieras
-      background: #f5f6f8;
-    }
+      .img-wrapper {
+        flex: 0 0 auto;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        background: #f5f6f8;
 
-    .product-card .img-wrapper img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain; // NO recortes, ajusta dentro del contenedor
-      object-position: center;
-    }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
 
-    .product-card .card-body {
-      flex: 0 0 auto; // evita que comprima el texto
+      .card-body {
+        flex: 0 0 auto;
+      }
     }
   }
 }
 
-/* ------ Botones de documentos (vertical, modernos) ------ */
+/* ============================================================
+   Botones de documentos (vertical, modernos)
+============================================================ */
 .doc-links {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.9rem;
 }
-
 .doc-btn {
   --bg: #{vars.$color-principal};
   --bg-hover: #{vars.$color-secundario};
@@ -484,7 +454,6 @@
     color: #fff;
   }
 
-  /* efecto brillo diagonal */
   &::after {
     content: "";
     position: absolute;
@@ -519,10 +488,118 @@
   }
 }
 
-/* En pantallas grandes puedes ponerlos en 2 columnas si quieres */
-@media (min-width: 992px) {
-  .doc-links {
-    grid-template-columns: 1fr;
-    /* ó: repeat(2, 1fr); si deseas 2 columnas */
+/* ============================================================
+   Accordion Moderno con Chevron
+============================================================ */
+.accordion-modern {
+  --acc-accent: #{vars.$color-principal};
+  --acc-bg: #f7f9fb;
+  --acc-bg-hover: #eef2f6;
+  --acc-bg-active: rgba(vars.$color-principal, 0.08);
+  --acc-text: #1f2d3d;
+  --acc-radius: 0.9rem;
+  --acc-icon-bg: rgba(vars.$color-principal, 0.12);
+
+  .accordion-item {
+    border: none;
+    margin-bottom: 0.9rem;
+    border-radius: var(--acc-radius);
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: transparent;
+      transition: background 0.25s ease;
+    }
+  }
+
+  .accordion-button {
+    background: var(--acc-bg);
+    color: var(--acc-text);
+    padding: 1rem 1.25rem 1rem 1.5rem;
+    font-weight: 600;
+    border: none;
+    box-shadow: none !important;
+    transition: background 0.2s ease, color 0.2s ease;
+    border-radius: 0;
+
+    &:hover {
+      background: var(--acc-bg-hover);
+    }
+
+    /* Chevron personalizado */
+    &::after {
+      content: "";
+      width: 1.9rem;
+      height: 1.9rem;
+      margin-left: 0.75rem;
+      flex-shrink: 0;
+      border-radius: 0.55rem;
+      background-color: var(--acc-icon-bg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 14px 14px;
+      background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f2d3d' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+      transform: rotate(0deg);
+      transition: transform 0.25s ease, background-color 0.2s ease,
+        background-image 0.2s ease;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--acc-accent);
+      outline-offset: 2px;
+    }
+  }
+
+  /* abierto */
+  .accordion-button:not(.collapsed) {
+    background: var(--acc-bg-active);
+    color: var(--acc-accent);
+
+    &::after {
+      transform: rotate(180deg);
+      background-color: var(--acc-accent);
+      background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+    }
+  }
+
+  .accordion-collapse {
+    border: 0;
+    transition: height 0.25s ease;
+  }
+
+  .accordion-body {
+    padding: 1rem 1.5rem 1.35rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    background: #fff;
+  }
+
+  /* barra de acento activa */
+  .accordion-button:not(.collapsed) ~ .accordion-collapse,
+  .accordion-button:not(.collapsed) {
+    .accordion-item::before {
+      background: var(--acc-accent);
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .accordion-modern .accordion-button {
+    padding: 0.85rem 1rem 0.85rem 1.25rem;
+    font-size: 0.95rem;
+  }
+  .accordion-modern .accordion-body {
+    padding: 0.85rem 1.25rem 1.1rem;
   }
 }
