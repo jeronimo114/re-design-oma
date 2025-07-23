@@ -1,93 +1,124 @@
 /* ================== CATEGORÍAS DE PRODUCTO ================== */
-.categorias {
-  background: #f5f7f9; // fondo suave
+#categorias {
+  background: #f5f7f9;
+  overflow-x: hidden; // corta cualquier desborde residual
+  position: relative; // para que overflow funcione seguro
+
   h2 {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
     color: #2e7d32;
     margin-bottom: 3rem;
   }
+
+  /* ---------- Grid ---------- */
+  .row {
+    // Neutraliza márgenes negativos de Bootstrap que provocan el scroll lateral
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    --bs-gutter-x: 1rem; // ajusta el gutter; puedes bajarlo a .75rem en xs
+  }
+
+  @media (max-width: 576px) {
+    .row {
+      --bs-gutter-x: 0.75rem;
+    }
+  }
+
+  /* ---------- Card base ---------- */
+  .cat-card {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    aspect-ratio: 16 / 9; // altura consistente
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    will-change: transform;
+    backface-visibility: hidden; // evita glitches en iOS
+  }
+
+  /* Imagen */
+  .cat-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 0.6s ease;
+    display: block; // quita espacios inline que pueden sumar ancho
+    pointer-events: none;
+  }
+
+  /* Overlay con gradient usando ::before */
+  .cat-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(0, 0, 0, 0.45) 60%,
+      rgba(0, 0, 0, 0.65) 100%
+    );
+    opacity: 0.85;
+    transition: opacity 0.35s ease;
+    z-index: 1;
+  }
+
+  /* Contenido centrado */
+  .cat-content {
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+
+    h5 {
+      font-size: clamp(1.15rem, 2vw, 1.6rem);
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+
+    .cat-count {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+  }
+
+  /* Hover / Focus (desktop) */
+  .cat-card:hover,
+  .cat-card:focus-visible {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.14);
+  }
+
+  .cat-card:hover img {
+    transform: scale(1.08);
+  }
+
+  .cat-card:hover::before {
+    opacity: 0.65;
+  }
+
+  /* Accesibilidad teclado */
+  .cat-card:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+    outline-offset: -3px;
+  }
+
+  /* Responsive */
+  @media (max-width: 767.98px) {
+    .cat-card {
+      aspect-ratio: 3 / 2;
+      border-radius: 0.9rem;
+    }
+    .cat-content h5 {
+      font-size: 1.25rem;
+    }
+  }
 }
 
-/* Card base */
-.categorias .cat-card {
-  position: relative;
-  display: block;
-  border-radius: 1rem;
-  overflow: hidden;
-  aspect-ratio: 16 / 9; // altura consistente
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-  will-change: transform;
-}
-
-/* Imagen */
-.categorias .cat-card img {
+/* ---------- Fallback global por si otro bloque rompe ---------- */
+html,
+body {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1);
-  transition: transform 0.6s ease;
-}
-
-/* Overlay con gradient usando ::before (no HTML extra) */
-.categorias .cat-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.15) 0%,
-    rgba(0, 0, 0, 0.45) 60%,
-    rgba(0, 0, 0, 0.65) 100%
-  );
-  opacity: 0.85;
-  transition: opacity 0.35s ease;
-  z-index: 1;
-}
-
-/* Contenido centrado (ya existe .cat-content) */
-.categorias .cat-content {
-  z-index: 2;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
-  h5 {
-    font-size: clamp(1.15rem, 2vw, 1.6rem);
-    font-weight: 700;
-    margin-bottom: 0.35rem;
-  }
-  .cat-count {
-    font-size: 0.95rem;
-    opacity: 0.9;
-  }
-}
-
-/* Hover / Focus */
-.categorias .cat-card:hover,
-.categorias .cat-card:focus-visible {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.14);
-}
-
-.categorias .cat-card:hover img {
-  transform: scale(1.08);
-}
-.categorias .cat-card:hover::before {
-  opacity: 0.65;
-}
-
-/* Accesibilidad al teclado */
-.categorias .cat-card:focus-visible {
-  outline: 3px solid rgba(255, 255, 255, 0.7);
-  outline-offset: -3px;
-}
-
-/* Responsive: apilar y ajustar altura */
-@media (max-width: 767.98px) {
-  .categorias .cat-card {
-    aspect-ratio: 3 / 2;
-    border-radius: 0.9rem;
-  }
-  .categorias .cat-content h5 {
-    font-size: 1.25rem;
-  }
+  overflow-x: hidden; // por si otro componente externo genera el scroll
 }
