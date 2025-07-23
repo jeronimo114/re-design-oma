@@ -420,3 +420,35 @@
     text-decoration: none;
   }
 }
+
+/* ===== FIX: evitar que se corten las imágenes en mobile ===== */
+@media (max-width: 575.98px) {
+  .catalogo {
+    .equal-cols > .col {
+      height: auto; // dejar que crezca
+    }
+
+    .product-card {
+      height: auto !important; // sin altura fija
+      overflow: visible; // no ocultar la parte sobrante
+    }
+
+    .product-card .img-wrapper {
+      flex: 0 0 auto; // libera el porcentaje fijo
+      height: auto;
+      aspect-ratio: 4 / 5; // o la relación que prefieras
+      background: #f5f6f8;
+    }
+
+    .product-card .img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; // NO recortes, ajusta dentro del contenedor
+      object-position: center;
+    }
+
+    .product-card .card-body {
+      flex: 0 0 auto; // evita que comprima el texto
+    }
+  }
+}
