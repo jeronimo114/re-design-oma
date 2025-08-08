@@ -3,9 +3,13 @@
 header {
   background-color: vars.$color-blanco !important;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
+  position: static;
   z-index: 1030;
+
+  @media (max-width: 767.98px) {
+    position: sticky;
+    top: 0;
+  }
 
   .navbar {
     background-color: vars.$color-blanco !important; // High specificity
