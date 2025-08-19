@@ -4,9 +4,22 @@
 /* ============================================================
    CATÁLOGO
 ============================================================ */
+#categorias {
+  margin-top: 72px; /* Match navbar height */
+
+  /* Responsive adjustment for smaller screens */
+  @media (max-width: 768px) {
+    margin-top: 60px;
+  }
+}
+
 .catalogo {
   background-color: #f8f9fa;
-  padding: 4rem 0;
+  padding: calc(72px + 3rem) 0 4rem; /* Navbar height + original padding */
+
+  @media (max-width: 768px) {
+    padding-top: calc(60px + 3rem); /* Adjust for mobile */
+  }
 
   h1,
   h2,
@@ -33,8 +46,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 420px !important;
+    min-height: 420px;
     overflow: hidden;
+    margin-top: 72px; /* Space below fixed navbar */
+
+    @media (max-width: 768px) {
+      margin-top: 60px; /* Adjust for mobile */
+    }
 
     &:hover {
       transform: translateY(-4px);
@@ -102,7 +120,7 @@
       flex: 0 0 calc(25% - 1.5rem);
       max-width: calc(25% - 1.5rem);
       margin-bottom: 1.5rem;
-      height: 420px;
+      min-height: 420px;
     }
   }
 
@@ -281,6 +299,7 @@
 .modal-product {
   border: none;
   border-radius: 0.75rem;
+  margin-top: 65px;
 
   .modal-body {
     color: #333;

@@ -78,14 +78,11 @@ a {
 header {
   background-color: #ffffff !important;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  position: static;
-  z-index: 1030;
-}
-@media (max-width: 767.98px) {
-  header {
-    position: sticky;
-    top: 0;
-  }
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 9999 !important; /* Highest possible z-index */
 }
 header .navbar {
   background-color: #ffffff !important;
@@ -819,13 +816,28 @@ section:nth-of-type(4) {
 /* ============================================================
    CATÁLOGO
 ============================================================ */
+#categorias {
+  margin-top: 72px; /* Match navbar height */
+  /* Responsive adjustment for smaller screens */
+}
+@media (max-width: 768px) {
+  #categorias {
+    margin-top: 60px;
+  }
+}
+
 .catalogo {
   background-color: #f8f9fa;
-  padding: 4rem 0;
+  padding: calc(72px + 3rem) 0 4rem; /* Navbar height + original padding */
   /* columnas flex para estirar tarjetas */
   /* ---------- Tarjeta de producto ---------- */
   /* ---------- Grid equal-cols ---------- */
   /* ---------- Panel de filtros ---------- */
+}
+@media (max-width: 768px) {
+  .catalogo {
+    padding-top: calc(60px + 3rem); /* Adjust for mobile */
+  }
 }
 .catalogo h1,
 .catalogo h2,
@@ -846,8 +858,14 @@ section:nth-of-type(4) {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 420px !important;
+  min-height: 420px;
   overflow: hidden;
+  margin-top: 72px; /* Space below fixed navbar */
+}
+@media (max-width: 768px) {
+  .catalogo .product-card {
+    margin-top: 60px; /* Adjust for mobile */
+  }
 }
 .catalogo .product-card:hover {
   transform: translateY(-4px);
@@ -906,7 +924,7 @@ section:nth-of-type(4) {
   flex: 0 0 calc(25% - 1.5rem);
   max-width: calc(25% - 1.5rem);
   margin-bottom: 1.5rem;
-  height: 420px;
+  min-height: 420px;
 }
 @media (max-width: 991.98px) {
   .catalogo .equal-cols > .col {
@@ -1070,6 +1088,7 @@ section:nth-of-type(4) {
 .modal-product {
   border: none;
   border-radius: 0.75rem;
+  margin-top: 65px;
 }
 .modal-product .modal-body {
   color: #333;
@@ -1761,5 +1780,14 @@ body {
 }
 #productos .btn-cta:hover, #productos .btn-cta:focus {
   background: #51440f;
+}
+
+body {
+  padding-top: 72px; /* Navbar height: 40px logo + 2*16px padding */
+}
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

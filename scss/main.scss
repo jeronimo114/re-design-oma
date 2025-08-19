@@ -22,3 +22,13 @@
 @use "layout/cat";
 
 @use "components/products";
+
+// Add padding to body to prevent content from being hidden behind fixed navbar
+body {
+  padding-top: 72px; /* Navbar height: 40px logo + 2*16px padding */
+
+  // Responsive adjustment for smaller screens
+  @media (max-width: 768px) {
+    padding-top: 60px;
+  }
+}
