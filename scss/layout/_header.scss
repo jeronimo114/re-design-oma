@@ -55,6 +55,26 @@ header {
           color: vars.$color-secundario;
         }
       }
+
+      /* Dropdown: Soluciones por Cultivo */
+      .dropdown-menu {
+        .btn {
+          display: grid;
+          place-items: center;
+          row-gap: 0.25rem;
+          padding: 0.6rem 0.5rem;
+          border-radius: 0.5rem;
+        }
+
+        .cultivo-icon {
+          width: 28px;
+          height: 28px;
+          display: block;
+          margin-inline: auto;
+          user-select: none;
+          pointer-events: none;
+        }
+      }
     }
   }
 }

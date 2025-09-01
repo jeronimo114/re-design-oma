@@ -305,90 +305,120 @@ section {
 
   /* Tarjeta */
   .news-card {
-    --radius: 22px;
+    --radius: 24px;
     background: #fff;
     border-radius: var(--radius);
     box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.12);
-    padding: 1.5rem 1.75rem 1.25rem;
     height: 100%;
     display: flex;
     flex-direction: column;
     text-align: left;
     transition: transform 0.35s ease, box-shadow 0.35s ease;
     position: relative;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden; /* ensure rounded media top corners */
 
     &:hover {
       transform: translateY(-6px);
       box-shadow: 0 22px 40px -12px rgba(0, 0, 0, 0.18);
+    }
+
+    &:focus-visible {
+      outline: 3px solid rgba(46, 125, 50, 0.35);
+      outline-offset: 2px;
     }
   }
 
   /* Imagen */
   .news-card__media {
     display: block;
-    margin: -1.5rem -1.75rem 1.25rem;
     border-radius: var(--radius) var(--radius) 0 0;
     overflow: hidden;
     position: relative;
+    aspect-ratio: 16 / 9; /* desktop 16:9 */
 
     img {
       width: 100%;
-      aspect-ratio: 4 / 3;
+      height: 100%;
       object-fit: cover;
       transition: transform 0.5s ease;
       display: block;
     }
+  }
 
-    &:hover img {
-      transform: scale(1.05);
-    }
+  /* leve zoom de imagen en hover/focus */
+  .news-card:hover .news-card__media img,
+  .news-card:focus-visible .news-card__media img {
+    transform: scale(1.06);
+  }
+
+  /* cuerpo con padding interno 24–32px */
+  .news-card__body {
+    padding: clamp(24px, 2.4vw, 32px);
+    display: flex;
+    flex-direction: column;
   }
 
   /* Chip categoría */
   .news-card__chips {
-    margin-bottom: 0.65rem;
+    margin: 0; /* spacing controlled by body padding */
+  }
 
-    .chip {
-      display: inline-block;
-      background: var(--color-principal, #2e7d32);
-      color: #fff;
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 0.35rem 0.75rem;
-      border-radius: 999px;
-      letter-spacing: 0.4px;
-      text-transform: uppercase;
-    }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    height: 30px; /* 28–32px */
+    padding: 0 12px;
+    background: var(--color-principal, #2e7d32);
+    color: #fff;
+    font-size: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
+    font-weight: 700;
+    border-radius: 999px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
   }
 
   .news-card__title {
-    font-size: 1.15rem;
-    line-height: 1.35;
-    margin-bottom: 0.6rem;
-
-    a {
-      color: #111;
-      text-decoration: none;
-    }
+    margin-top: 12px; /* Chip → título */
+    margin-bottom: clamp(12px, 1.2vw, 16px); /* Título → extracto */
+    color: #111;
+    font-weight: 800;
+    font-size: clamp(1.25rem, 1rem + 1.4vw, 2rem); /* 20–32px */
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* desktop 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .news-card__excerpt {
-    color: #555;
-    font-size: 0.9rem;
-    line-height: 1.45;
-    margin-bottom: 1.2rem;
+    color: #58606b; /* neutral tone */
+    font-size: clamp(0.875rem, 0.8rem + 0.2vw, 1.125rem); /* 14–18px */
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 2–3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0; /* spacing handled by divider */
+  }
+
+  /* separador entre extracto y meta */
+  .news-card__divider {
+    height: 1px;
+    background: rgba(17, 24, 39, 0.08);
+    margin: clamp(28px, 2.6vw, 32px) 0 16px; /* Extracto → separador: 28–32px, Separador → meta: 16px */
   }
 
   .news-card__meta {
     margin-top: auto;
-    padding-top: 0.9rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-    font-size: 0.8rem;
-    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem); /* 12–14px */
+    color: #6b7280; /* meta neutral */
 
-    .sep {
-      margin: 0 0.35rem;
-    }
+    .sep { opacity: 0.7; }
   }
 
   /* Botones navegación */
@@ -441,6 +471,10 @@ section {
     #articlesGrid > li {
       flex-basis: 88vw;
     }
+    .news-card__media { aspect-ratio: 3 / 2; }
+    .news-card__title { -webkit-line-clamp: 3; /* mobile can show 3 lines */ }
+    /* XS: si el alto es limitado/estrecho, oculta el extracto */
+    .news-card__excerpt { display: none; }
     .news-nav button.prev {
       left: 6px;
     }

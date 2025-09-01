@@ -14,27 +14,29 @@ function renderArticles(list) {
       });
       return `
 <li class="col-12 col-md-6 col-lg-4">
-  <article class="news-card h-100">
-    <a href="articulos/${a.slug}.html" class="news-card__media" aria-label="${a.titulo}">
+  <a class="news-card h-100" href="articulos/${a.slug}.html" aria-label="${a.titulo}">
+    <div class="news-card__media">
       <img src="${a.cover}" alt="${a.titulo}" loading="lazy" />
-    </a>
-
-    <div class="news-card__chips">
-      <span class="chip">${a.categoria}</span>
     </div>
 
-    <h3 class="news-card__title">
-      <a href="articulos/${a.slug}.html" class="stretched-link">${a.titulo}</a>
-    </h3>
+    <div class="news-card__body">
+      <div class="news-card__chips">
+        <span class="chip">${a.categoria}</span>
+      </div>
 
-    <p class="news-card__excerpt">${a.extracto}</p>
+      <h3 class="news-card__title">${a.titulo}</h3>
 
-    <div class="news-card__meta">
-      <time datetime="${a.fecha}">${fecha}</time>
-      <span class="sep">·</span>
-      <span>${a.lectura}</span>
+      <p class="news-card__excerpt">${a.extracto}</p>
+
+      <div class="news-card__divider" role="separator" aria-hidden="true"></div>
+
+      <div class="news-card__meta">
+        <time datetime="${a.fecha}">${fecha}</time>
+        <span class="sep">•</span>
+        <span>${a.lectura}</span>
+      </div>
     </div>
-  </article>
+  </a>
 </li>`;
     })
     .join("");
