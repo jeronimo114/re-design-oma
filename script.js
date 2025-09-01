@@ -736,6 +736,16 @@ function buildUsesTable(arr) {
     document.getElementById("modalTarjetaPdf").href = prod.tarjeta_pdf || "#";
     document.getElementById("modalHojaPdf").href = prod.hoja_pdf || "#";
 
+    // Hide Tarjeta de Emergencia and Hoja de Seguridad only for Fertilizantes Foliares
+    try {
+      const catSlug = (prod.category || "").toLowerCase().replace(/\s+/g, "-");
+      const isFertFoliar = catSlug === "fertilizante-foliar";
+      const tarjetaEl = document.getElementById("modalTarjetaPdf");
+      const hojaEl = document.getElementById("modalHojaPdf");
+      if (tarjetaEl) tarjetaEl.style.display = isFertFoliar ? "none" : "";
+      if (hojaEl) hojaEl.style.display = isFertFoliar ? "none" : "";
+    } catch (_) {}
+
     // Modal reveal animations
     try {
       const m = document.getElementById("productModal");
