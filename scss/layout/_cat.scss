@@ -66,6 +66,11 @@
     z-index: 1;
   }
 
+  /* If HTML includes a separate overlay element, keep it hidden to avoid double darkening */
+  .cat-overlay {
+    display: none;
+  }
+
   /* Contenido centrado */
   .cat-content {
     z-index: 2;

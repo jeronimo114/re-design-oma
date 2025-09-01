@@ -1,43 +1,4 @@
 // vendors/_bootstrap-overrides.scss
-// Override Bootstrap's defaults to fix & style the navbar, etc.
-
+// Keep this file for future Bootstrap overrides.
+// Navbar styling uses layout/_header.scss (white theme) to avoid conflicts.
 @use "abstracts/variables" as vars;
-
-/* Example: customize the navbar with brand colors & contrasting text */
-.navbar {
-  background-color: vars.$color-principal !important;
-  padding: 1rem 1rem !important;
-
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: vars.$color-blanco !important;
-    font-size: 1.25rem;
-    font-weight: 700;
-
-    img {
-      height: 40px;
-      width: auto;
-    }
-  }
-
-  .navbar-toggler {
-    border: 1px solid vars.$color-blanco;
-    .navbar-toggler-icon {
-      filter: invert(1);
-    }
-  }
-
-  .navbar-nav .nav-link {
-    color: vars.$color-blanco !important;
-    font-weight: 500;
-    margin: 0 0.5rem;
-    transition: color 0.3s ease;
-
-    &:hover,
-    &:focus {
-      color: vars.$color-secundario !important;
-    }
-  }
-}

@@ -76,6 +76,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /**
+   * 2.1) Swiper - Hero principal
+   */
+  try {
+    const hero = document.querySelector(".hero-swiper");
+    if (hero) {
+      new Swiper(hero, {
+        loop: true,
+        effect: "fade",
+        autoplay: { delay: 5000, disableOnInteraction: false },
+        speed: 800,
+        allowTouchMove: true,
+        fadeEffect: { crossFade: true },
+      });
+    }
+  } catch (error) {
+    console.error("Error al inicializar el slider del hero:", error);
+  }
+
+  /**
    * 3) Swiper - Slider de Productos
    */
   try {
@@ -98,6 +117,79 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   } catch (error) {
     console.error("Error al inicializar el slider de productos:", error);
+  }
+
+  /**
+   * 4) Header behavior on scroll (adds 'scrolled' class)
+   */
+  try {
+    const header = document.querySelector("header");
+    const onScroll = () => {
+      if (!header) return;
+      if (window.scrollY > 8) header.classList.add("scrolled");
+      else header.classList.remove("scrolled");
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  } catch (e) {
+    console.error("Header scroll handler error:", e);
+  }
+
+  /**
+   * 5) Smooth anchor navigation with fixed header offset
+   */
+  try {
+    const links = document.querySelectorAll('a[href^="#"]:not([href="#"])');
+    const getOffset = () => {
+      const root = getComputedStyle(document.documentElement);
+      const h = root.getPropertyValue("--header-height").trim();
+      return parseInt(h || "72", 10) || 72;
+    };
+    links.forEach((a) => {
+      a.addEventListener("click", (e) => {
+        const target = document.querySelector(a.getAttribute("href"));
+        if (!target) return;
+        e.preventDefault();
+        const offset = getOffset();
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: "smooth" });
+      });
+    });
+  } catch (e) {
+    console.error("Smooth anchor error:", e);
+  }
+
+  /**
+   * 6) Update category counts on home from products.json
+   */
+  try {
+    const countSpans = document.querySelectorAll(".cat-card .cat-count");
+    if (countSpans.length) {
+      fetch("products.json")
+        .then((r) => r.json())
+        .then((data) => {
+          const counts = (data.products || []).reduce((acc, p) => {
+            const c = (p.category || "").toLowerCase();
+            acc[c] = (acc[c] || 0) + 1;
+            return acc;
+          }, {});
+          // map card href query to count
+          document.querySelectorAll(".cat-card").forEach((card) => {
+            const link = card.getAttribute("href") || "";
+            const m = link.match(/categoria=([^&]+)/i);
+            const key = m ? decodeURIComponent(m[1]).toLowerCase() : null;
+            const span = card.querySelector(".cat-count");
+            if (key && span && counts[key]) {
+              span.textContent = `${counts[key]} productos`;
+            }
+          });
+        })
+        .catch(() => {
+          /* silent fail */
+        });
+    }
+  } catch (e) {
+    console.error("Category count updater error:", e);
   }
 
   /**
@@ -561,17 +653,17 @@ function buildUsesTable(arr) {
     grid.innerHTML = "";
 
     list.forEach((p) => {
+      const catSlug = (p.category || "").toLowerCase().replace(/\s+/g, "-");
       grid.insertAdjacentHTML(
         "beforeend",
         `
-      <div class="col">
-        <div class="product-card h-100">
+      <div class="col d-flex">
+        <div class="product-card h-100 w-100" data-cat="${catSlug}">
           <div class="img-wrapper">
             <img src="${p.image_url}" class="img-fluid rounded" alt="${p.name}" loading="lazy">
           </div>
           <div class="card-body">
-            <h5 class="fw-bold text-primary">${p.name}</h5>
-            <p class="small mb-2"><strong>${p.category}</strong></p>
+            <h5 class="fw-bold">${p.name}</h5>
           </div>
         </div>
       </div>`
@@ -580,6 +672,18 @@ function buildUsesTable(arr) {
         .querySelector(".product-card")
         .addEventListener("click", () => openProductModal(p));
     });
+
+    // Professional entrance animation for cards
+    try {
+      const cards = grid.querySelectorAll(".product-card");
+      gsap.from(cards, {
+        y: 16,
+        opacity: 0,
+        duration: 0.45,
+        ease: "power2.out",
+        stagger: 0.04,
+      });
+    } catch (_) {}
 
     if (!list.length) {
       grid.innerHTML =
@@ -597,7 +701,9 @@ function buildUsesTable(arr) {
     document.getElementById("modalImg").alt = prod.name;
     document.getElementById("modalCategory").textContent = prod.category;
     document.getElementById("modalName").textContent = prod.name;
-    document.getElementById("modalDesc").textContent = prod.description || "";
+    // No description snippet visible per request
+    const descEl = document.getElementById("modalDesc");
+    if (descEl) descEl.textContent = "";
 
     document.getElementById("modalCompList").innerHTML = (
       prod.composition || []
@@ -630,8 +736,26 @@ function buildUsesTable(arr) {
     document.getElementById("modalTarjetaPdf").href = prod.tarjeta_pdf || "#";
     document.getElementById("modalHojaPdf").href = prod.hoja_pdf || "#";
 
+    // Modal reveal animations
+    try {
+      const m = document.getElementById("productModal");
+      const tl = gsap.timeline();
+      tl.from(m.querySelector(".hero-img img"), {
+        y: 16,
+        opacity: 0,
+        duration: 0.5,
+        ease: "power2.out",
+      }).from(
+        m.querySelectorAll(".accordion-item"),
+        { y: 10, opacity: 0, duration: 0.35, ease: "power2.out", stagger: 0.05 },
+        "<+0.05"
+      );
+    } catch (_) {}
+
     modal.show();
   }
+
+  // no related products list per request
 
   fetch("products.json")
     .then((r) => r.json())
@@ -776,7 +900,9 @@ function buildUsesTable(arr) {
 
         // Limpia búsqueda y pinta resultados
         if (searchInput) searchInput.value = "";
-        renderProducts(visibleProducts);
-      });
+      renderProducts(visibleProducts);
     });
+  });
 })();
+
+// Contact form: static mailto link is handled in index.html via anchor.

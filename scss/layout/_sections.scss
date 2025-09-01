@@ -3,22 +3,9 @@
 @use "abstracts/variables" as vars;
 @use "abstracts/mixins" as mix;
 
+/* Generic section rhythm */
 section {
-  // By default, let's set each section to a distinct background
-  padding: 3rem 0;
-
-  &:nth-of-type(1) {
-    background: vars.$section-bg-1;
-  }
-  &:nth-of-type(2) {
-    background: vars.$section-bg-2;
-  }
-  &:nth-of-type(3) {
-    background: vars.$section-bg-3;
-  }
-  &:nth-of-type(4) {
-    background: vars.$section-bg-4;
-  }
+  padding: 3.5rem 0;
 }
 
 /* Sección “invitacion” specifically */

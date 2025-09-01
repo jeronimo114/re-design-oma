@@ -36,7 +36,6 @@
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="dist/css/main.css" />
   </head>
 
@@ -561,7 +560,7 @@
                 <div class="card-body">
                   <h4 class="text-center mb-4 fw-bold">Envíanos un mensaje</h4>
 
-                  <form action="#" method="post" novalidate>
+                  <form action="mailto:sig@quimicosoma.com" method="post" enctype="text/plain" novalidate>
                     <!-- Nombre -->
                     <div class="mb-3">
                       <label for="nombre" class="form-label fw-bold"
@@ -632,10 +631,14 @@
                       ></textarea>
                     </div>
 
-                    <!-- Botón de Enviar -->
-                    <button type="submit" class="btn-submit btn btn-lg w-100">
+                    <!-- Botón de Enviar (static mailto) -->
+                    <a
+                      href="mailto:sig@quimicosoma.com?subject=Contacto%20Web"
+                      class="btn-submit btn btn-lg w-100"
+                      role="button"
+                    >
                       <i class="fas fa-paper-plane"></i> Enviar Mensaje
-                    </button>
+                    </a>
                   </form>
                 </div>
               </div>
