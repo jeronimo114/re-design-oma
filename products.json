@@ -8,10 +8,10 @@
       "reg_ica": "PL0003802023",
       "formulation": "Suspensión concentrada",
       "chemical_group": "Dicarboximidas + Anilino‑pirimidinas",
-      "tox_category": "II",
+      "tox_category": "2",
       "presentations": ["1 L", "250 mL"],
       "mode_of_action": "Fungicida sistémico traslaminar de acción preventiva y curativa.",
-      "mechanism": "Impide la germinación de esporas ... Inhibe la actividad enzimática.",
+      "mechanism": "Impide la germinación de las esporas y el crecimiento del micelio, e impide la extensión del tubo germinativo (actividad fungistática) por lo que se detiene su penetración en las células epidérmicas del huésped. Inhibe la actividad enzimática.",
       "composition": [
         {
           "ai": "Iprodione",
@@ -26,26 +26,35 @@
       "uses": [
         {
           "crop": "Clavel",
-          "target": "Botrytis cinerea",
-          "dose": "1.5 mL/L",
+          "target": "Botrytis (<i>Botrytis cinerea</i>)",
+          "dose": "1.5 ml/L",
           "pc": "N.A.",
-          "pr": "24 h"
+          "pr": "24 horas"
         },
         {
           "crop": "Pompón",
-          "target": "Botrytis cinerea",
-          "dose": "1.5 mL/L",
+          "target": "Botrytis (<i>Botrytis cinerea</i>)",
+          "dose": "1.5 ml/L",
           "pc": "N.A.",
-          "pr": "24 h"
+          "pr": "24 horas"
         },
         {
           "crop": "Rosa",
-          "target": "Botrytis cinerea",
-          "dose": "1.5 mL/L",
+          "target": "Botrytis (<i>Botrytis cinerea</i>)",
+          "dose": "1.5 ml/L",
           "pc": "N.A.",
-          "pr": "24 h"
+          "pr": "24 horas"
+        },
+        {
+          "crop": "Rosa",
+          "target": "Mildeo polvoso (<i>Sphaerotheca pannosa</i>)",
+          "dose": "1.5 ml/L",
+          "pc": "N.A.",
+          "pr": "24 horas"
         }
       ],
+      "pr_definition": "P.R.: Periodo de Reentrada (Reingreso): Tiempo que debe transcurrir entre la aplicación del plaguicida y el ingreso de personas y animales al área o cultivo tratado sin elementos de protección personal. Las personas no podrán ingresar al área de cultivo dentro del tiempo establecido. PR calculado por evaluación de peligrosidad (método 1. Res. ICA 00011768)",
+      "pc_definition": "P.C.: Periodo de Carencia: Días que deben transcurrir entre la última aplicación y la cosecha. N.A.: No Aplica.",
       "ficha_pdf": "docs/ANKER_Ficha.pdf",
       "tarjeta_pdf": "docs/ANKER_Tarjeta.pdf",
       "hoja_pdf": "docs/ANKER_Hoja.pdf"
@@ -67,97 +76,97 @@
         }
       ],
       "presentations": ["1 L", "4 L", "100 mL", "250 mL"],
-      "mode_of_action": "Contacto e Ingestión",
+      "mode_of_action": "Insecticida — Acaricida que actúa por contacto e ingestión.",
       "mechanism": "Actúa sobre el sistema nervioso de los insectos alterando el flujo de iones.",
       "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
           "crop": "Algodón",
-          "target": "Spodoptera frugiperda",
+          "target": "Cogollero (<i>Spodoptera frugiperda</i>)",
           "dose": "100 ml/200 L",
-          "pr": "4 h",
+          "pr": "4 horas",
           "pc": "1 día"
         },
         {
           "crop": "Arroz",
-          "target": "Spodoptera frugiperda",
-          "dose": "90 – 100 ml/200 L",
-          "pr": "4 h",
+          "target": "Cogollero (<i>Spodoptera frugiperda</i>)",
+          "dose": "90 - 100 ml/200 L",
+          "pr": "4 horas",
           "pc": "1 día"
         },
         {
           "crop": "Clavel",
-          "target": "Tetranychus cinnabarinus",
+          "target": "Ácaros (<i>Tetranychus cinnabarinus</i>)",
           "dose": "0.30 ml/L",
-          "pr": "4 h",
+          "pr": "4 horas",
           "pc": "N.A."
         },
         {
-          "crop": "Frijol",
-          "target": "Trialeurodes vaporariorum",
-          "dose": "60 – 90 ml/200 L",
-          "pr": "4 h",
+          "crop": "Fríjol",
+          "target": "Mosca blanca (<i>Trialeurodes vaporariorum</i>)",
+          "dose": "60 - 90 ml/200 L",
+          "pr": "4 horas",
           "pc": "1 día"
         },
         {
-          "crop": "Maiz",
-          "target": "Spodoptera frugiperda",
-          "dose": "60 – 90 ml/200 L ó 180 – 270 ml/ha",
-          "pr": "4 h",
-          "pc": "1 día"
-        },
-        {
-          "crop": "Papa",
-          "target": "Epitrix sp",
-          "dose": "50 ml/200 L ó 100 ml/ha",
-          "pr": "4 h",
+          "crop": "Maíz",
+          "target": "Cogollero (<i>Spodoptera frugiperda</i>)",
+          "dose": "60 - 90 ml/200 L",
+          "pr": "4 horas",
           "pc": "1 día"
         },
         {
           "crop": "Papa",
-          "target": "Premnotrypes vorax",
-          "dose": "120 ml/200 L",
-          "pr": "4 h",
-          "pc": "1 día"
-        },
-        {
-          "crop": "Papa",
-          "target": "Tecia solanivora",
-          "dose": "120 ml/200 L ó 360 ml/ha",
-          "pr": "4 h",
-          "pc": "1 día"
-        },
-        {
-          "crop": "Pastos kikuyo",
-          "target": "Collaria scenica",
+          "target": "Pulguilla (<i>Epitrix</i> sp.)",
           "dose": "50 ml/200 L",
-          "pr": "24 h*",
+          "pr": "4 horas",
+          "pc": "1 día"
+        },
+        {
+          "crop": "Papa",
+          "target": "Gusano blanco (<i>Premnotrypes vorax</i>)",
+          "dose": "120 ml/200 L",
+          "pr": "4 horas",
+          "pc": "1 día"
+        },
+        {
+          "crop": "Papa",
+          "target": "Polilla guatemalteca (<i>Tecia solanivora</i>)",
+          "dose": "120 ml/200 L",
+          "pr": "4 horas",
+          "pc": "1 día"
+        },
+        {
+          "crop": "Pasto kikuyo",
+          "target": "Chinche de los pastos (<i>Collaria scenica</i>)",
+          "dose": "50 ml/200 L",
+          "pr": "24 horas",
           "pc": "N.A."
         },
         {
           "crop": "Pompón",
-          "target": "Lyriomiza trifoli",
+          "target": "Minador de la hoja (<i>Liriomyza trifolii</i>)",
           "dose": "0.3 ml/L",
-          "pr": "4 h",
+          "pr": "4 horas",
           "pc": "N.A."
         },
         {
           "crop": "Rosa",
-          "target": "Tetranychus urticae",
+          "target": "Ácaros (<i>Tetranychus urticae</i>)",
           "dose": "0.25 ml/L",
-          "pr": "4 h",
+          "pr": "4 horas",
           "pc": "N.A."
         },
         {
           "crop": "Tomate",
-          "target": "Agrotis ipsilon",
-          "dose": "60 – 90 ml/200 L ó 180 – 270 ml/ha",
-          "pr": "4 h",
+          "target": "Gusano cortador (<i>Agrotis ipsilon</i>)",
+          "dose": "60 - 90 ml/200 L",
+          "pr": "4 horas",
           "pc": "1 día"
         }
       ],
-      "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
-      "pc_definition": "Periodo de Carencia: días entre la última aplicación y la cosecha.",
+      "pr_definition": "P.R.: Periodo de Reentrada (Reingreso): Tiempo que debe transcurrir entre la aplicación del plaguicida y el ingreso de personas y animales al área o cultivo tratado sin elementos de protección personal. Las personas no podrán ingresar al área de cultivo dentro del tiempo establecido. El valor PR contenido en la presente etiqueta fue calculado por evaluación del riesgo (método 2. Res. ICA 00011768). * Para ganado: El periodo de reentrada aplica para el reingreso de animales al potrero o área de pastoreo. PR calculado por peligrosidad (método 1. Res. ICA 00011768)",
+      "pc_definition": "P.C.: Periodo de Carencia: Días que deben transcurrir entre la última aplicación y la cosecha. N.A.: No Aplica.",
       "ficha_pdf": "docs/ATHRINBRIO_Ficha.pdf",
       "tarjeta_pdf": "docs/ATHRINBRIO_Tarjeta.pdf",
       "hoja_pdf": "docs/ATHRINBRIO_Hoja.pdf"
@@ -189,24 +198,24 @@
       "uses": [
         {
           "crop": "Papa",
-          "target": "Rhizoctonia solani",
+          "target": "<i>Rhizoctonia solani</i>",
           "dose": "1.2 L/ha",
           "pc": "15 días",
-          "pr": "48 h"
+          "pr": "48 horas"
         },
         {
           "crop": "Arroz",
-          "target": "Rhizoctonia solani (Añublo de la vaina)",
+          "target": "Añublo de la vaina (<i>Rhizoctonia solani</i>)",
           "dose": "1 L/ha",
           "pc": "15 días",
-          "pr": "48 h"
+          "pr": "48 horas"
         },
         {
           "crop": "Arroz",
-          "target": "Complejo manchado de grano (Helmintosporium spp., Curvularia lunata, Cercospora oryzae, Sarocladium sp., Ophiobolus aryzinus)",
-          "dose": "1 – 1.25 L/ha",
+          "target": "Complejo del manchado de grano (<i>Helminthosporium oryzae, Helminthosporium sigmoideum, Curvularia lunata, Cercospora oryzae, Sarocladium</i> sp., <i>Ophiobolus oryzinus</i>)",
+          "dose": "1 - 1.25 L/ha",
           "pc": "15 días",
-          "pr": "48 h"
+          "pr": "48 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -240,8 +249,8 @@
       "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
-          "crop": "Arroz (Oryza sativa L.)",
-          "target": "Pyricularia oryzae",
+          "crop": "Arroz",
+          "target": "Piricularia (<i>Pyricularia oryzae</i>)",
           "dose": "1.5 L/ha",
           "pc": "14 días",
           "pr": "48 horas"
@@ -349,39 +358,39 @@
       "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
-          "crop": "Cebolla (bulbo)",
-          "target": "Liriomyza huidobrensis",
-          "dose": "300 – 500 cc/ha",
+          "crop": "Cebolla (Bulbo)",
+          "target": "Minador (<i>Liriomyza huidobrensis</i>)",
+          "dose": "300 a 500 cc/ha",
           "pc": "3 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Clavel",
-          "target": "Tetranychus cinnabarinus",
-          "dose": "0.3 cc/L",
+          "target": "Ácaros (<i>Tetranychus cinnabarinus</i>)",
+          "dose": "0,3 cc/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Fresa",
-          "target": "Tetranychus urticae",
+          "target": "Ácaros (<i>Tetranychus urticae</i>)",
           "dose": "300 cc/ha",
           "pc": "7 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Papaya",
-          "target": "Polyphagotarsonemus latus",
-          "dose": "0.4 – 0.5 cc/L ó 260 – 325 cc/ha",
+          "target": "Ácaros (<i>Polyphagotarsonemus latus</i>)",
+          "dose": "0,4 a 0,5 cc/L ó 260 a 325 cc/ha",
           "pc": "7 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Tetranychus urticae",
-          "dose": "0.3 – 0.4 cc/L",
+          "target": "Ácaros (<i>Tetranychus urticae</i>)",
+          "dose": "0,3 a 0,4 cc/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -413,43 +422,43 @@
       "uses": [
         {
           "crop": "Arveja",
-          "target": "Melanagromiza lini",
-          "dose": "60 mL/200 L ó 180 mL/ha",
+          "target": "Minador del tallo (<i>Melanagromyza lini</i>)",
+          "dose": "60 mL/200 L",
           "pc": "14 días",
           "pr": "4 horas"
         },
         {
           "crop": "Crisantemo",
-          "target": "Liriomyza trifolii",
-          "dose": "0.3–0.4 mL/L",
+          "target": "Minador (<i>Liriomyza trifolii</i>)",
+          "dose": "0.3 - 0.4 mL/L",
           "pc": "N.A.",
           "pr": "4 horas"
         },
         {
-          "crop": "Frijol",
-          "target": "Liriomyza spp.",
-          "dose": "50 mL/200 L ó 150 mL/ha",
+          "crop": "Fríjol",
+          "target": "Minador (<i>Liriomyza</i> spp.)",
+          "dose": "50 mL/200 L",
           "pc": "14 días",
           "pr": "4 horas"
         },
         {
           "crop": "Melón",
-          "target": "Liriomyza spp.",
-          "dose": "40–50 mL/200 L",
+          "target": "Minador (<i>Liriomyza</i> spp.)",
+          "dose": "40 - 50 mL/200 L",
           "pc": "4 días",
           "pr": "4 horas"
         },
         {
           "crop": "Papa",
-          "target": "Liriomyza quadrata",
-          "dose": "60–80 mL/200 L ó 180–240 mL/ha",
+          "target": "Tostón (<i>Liriomyza quadrata</i>)",
+          "dose": "60 - 80 mL/200 L",
           "pc": "35 días",
           "pr": "4 horas"
         },
         {
           "crop": "Tomate",
-          "target": "Liriomyza spp.",
-          "dose": "40–60 mL/200 L ó 180–240 mL/ha",
+          "target": "Minador (<i>Liriomyza</i> spp.)",
+          "dose": "40 - 60 mL/200 L",
           "pc": "4 días",
           "pr": "4 horas"
         }
@@ -459,6 +468,37 @@
       "ficha_pdf": "docs/CIROMEX_BRIO_Ficha.pdf",
       "tarjeta_pdf": "docs/CIROMEX_BRIO_Tarjeta.pdf",
       "hoja_pdf": "docs/CIROMEX_BRIO_Hoja.pdf"
+    },
+    {
+      "id": "ciromex-75-wp",
+      "name": "CIROMEX 75 WP",
+      "category": "insecticida",
+      "image_url": "/media/Productos/Catalogo/ciromex.png",
+      "reg_ica": "PL0005062023",
+      "formulation": "Polvo mojable (WP)",
+      "chemical_group": "Triazinas",
+      "tox_category": "3",
+      "composition": [
+        { "ai": "Ciromazina", "pct": "" }
+      ],
+      "presentations": ["250 g"],
+      "mode_of_action": "Ingestión",
+      "mechanism": "Regulador del crecimiento de las larvas de los insectos. Interfiere en la muda, la pupación normal y la posterior formación del adulto; interrumpe el ciclo de desarrollo.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
+        {
+          "crop": "Crisantemo",
+          "target": "Minador (<i>Liriomyza trifolii</i>)",
+          "dose": "0.4 cc/L 480 g/ha",
+          "pr": "4 horas",
+          "pc": "N.A."
+        }
+      ],
+      "pr_definition": "P.R.: Periodo de Reentrada (Reingreso): Tiempo que debe transcurrir entre la aplicación del plaguicida y el ingreso de personas y animales al área o cultivo tratado sin elementos de protección personal. Las personas no podrán ingresar al área de cultivo dentro del tiempo establecido. El valor PR contenido en la presente etiqueta fue calculado por evaluación del riesgo (método 2. Res. ICA 00011768).",
+      "pc_definition": "P.C.: Periodo de Carencia: Días que deben transcurrir entre la última aplicación y la cosecha. N.A.: No Aplica.",
+      "ficha_pdf": "docs/CIROMEX75_Ficha.pdf",
+      "tarjeta_pdf": "docs/CIROMEX75_Tarjeta.pdf",
+      "hoja_pdf": "docs/CIROMEX75_Hoja.pdf"
     },
     {
       "id": "coraza-480-sc",
@@ -483,28 +523,28 @@
       "uses": [
         {
           "crop": "Clavel",
-          "target": "Botrytis cinerea",
-          "dose": "2.5 mL/L",
+          "target": "Moho gris (<i>Botrytis cinerea</i>)",
+          "dose": "2.5 ml/L",
           "pc": "N.A.",
           "pr": "24 horas"
         },
         {
           "crop": "Crisantemo",
-          "target": "Botrytis cinerea",
-          "dose": "2.5 mL/L",
+          "target": "Moho gris (<i>Botrytis cinerea</i>)",
+          "dose": "2.5 ml/L",
           "pc": "N.A.",
           "pr": "24 horas"
         },
         {
           "crop": "Rosa",
-          "target": "Botrytis cinerea",
-          "dose": "2.5 mL/L",
+          "target": "Moho gris (<i>Botrytis cinerea</i>)",
+          "dose": "2.5 ml/L",
           "pc": "N.A.",
           "pr": "24 horas"
         },
         {
           "crop": "Tomate",
-          "target": "Alternaria solani",
+          "target": "Tizón temprano (<i>Alternaria solani</i>)",
           "dose": "1.5 L/ha",
           "pc": "7 días",
           "pr": "24 horas"
@@ -546,50 +586,50 @@
         },
         {
           "crop": "Clavel",
-          "target": "Botrytis cinerea",
-          "dose": "0.8 mL/L",
+          "target": "Moho gris (<i>Botrytis cinerea</i>)",
+          "dose": "0.8 ml/L",
           "pc": "N.A.",
           "pr": "4 horas"
         },
         {
-          "crop": "Pompon",
-          "target": "Botrytis cinerea",
-          "dose": "0.8 mL/L",
-          "pc": "N.A.",
-          "pr": "4 horas"
-        },
-        {
-          "crop": "Rosas",
-          "target": "Botrytis cinerea",
-          "dose": "0.8 mL/L",
+          "crop": "Pompón",
+          "target": "Moho gris (<i>Botrytis cinerea</i>)",
+          "dose": "0.8 ml/L",
           "pc": "N.A.",
           "pr": "4 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Sphaerotheca pannosa (Mildeo polvoso)",
-          "dose": "0.8 mL/L",
+          "target": "Moho gris (<i>Botrytis cinerea</i>)",
+          "dose": "0.8 ml/L",
+          "pc": "N.A.",
+          "pr": "4 horas"
+        },
+        {
+          "crop": "Rosas",
+          "target": "Mildeo polvoso (<i>Sphaerotheca pannosa</i>)",
+          "dose": "0.8 ml/L",
           "pc": "N.A.",
           "pr": "4 horas"
         },
         {
           "crop": "Fresa",
-          "target": "Botrytis cinerea",
-          "dose": "300 mL/200 L",
+          "target": "Moho gris (<i>Botrytis cinerea</i>)",
+          "dose": "300 ml/200 L",
           "pc": "14 días",
           "pr": "4 horas"
         },
         {
           "crop": "Granadilla",
-          "target": "Botrytis cinerea",
-          "dose": "300 mL/200 L",
+          "target": "Moho gris (<i>Botrytis cinerea</i>)",
+          "dose": "300 ml/200 L",
           "pc": "14 días",
           "pr": "4 horas"
         },
         {
           "crop": "Tomate",
-          "target": "Botrytis cinerea",
-          "dose": "300 mL/200 L",
+          "target": "Moho gris (<i>Botrytis cinerea</i>)",
+          "dose": "300 ml/200 L",
           "pc": "14 días",
           "pr": "4 horas"
         },
@@ -637,15 +677,15 @@
       "uses": [
         {
           "crop": "Clavel",
-          "target": "Tetranychus cinnabarinus",
-          "dose": "0.8 mL/L ó 960 mL/ha",
+          "target": "Ácaros (<i>Tetranychus cinnabarinus</i>)",
+          "dose": "0.8 ml/L",
           "pc": "N.A.",
           "pr": "24 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Tetranychus urticae",
-          "dose": "0.8 mL/L ó 960 mL/ha",
+          "target": "Ácaros (<i>Tetranychus urticae</i>)",
+          "dose": "0.8 ml/L",
           "pc": "N.A.",
           "pr": "24 horas"
         }
@@ -679,42 +719,42 @@
       "uses": [
         {
           "crop": "Arroz",
-          "target": "Spodoptera frugiperda (Cogollero)",
+          "target": "Cogollero (<i>Spodoptera frugiperda</i>)",
           "dose": "150 g/ha",
           "pc": "14 días",
           "pr": "72 horas"
         },
         {
           "crop": "Clavel",
-          "target": "Frankliniella occidentalis (Trips)",
+          "target": "Trips (<i>Frankliniella occidentalis</i>)",
           "dose": "0.5 g/L",
           "pc": "N.A.",
           "pr": "72 horas"
         },
         {
           "crop": "Papa",
-          "target": "Epitrix sp (Pulguilla)",
+          "target": "Pulguilla (<i>Epitrix</i> sp.)",
           "dose": "200 g/ha",
           "pc": "14 días",
           "pr": "4 horas"
         },
         {
-          "crop": "Pompon",
-          "target": "Frankliniella occidentalis (Trips)",
+          "crop": "Pompón",
+          "target": "Trips (<i>Frankliniella occidentalis</i>)",
           "dose": "0.6 g/L",
           "pc": "N.A.",
           "pr": "72 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Frankliniella occidentalis (Trips)",
-          "dose": "0.5–0.6 g/L",
+          "target": "Trips (<i>Frankliniella occidentalis</i>)",
+          "dose": "0.5 - 0.6 g/L",
           "pc": "N.A.",
           "pr": "72 horas"
         },
         {
           "crop": "Tomate",
-          "target": "Liriomyza spp (Minador)",
+          "target": "Minador (<i>Liriomyza</i> spp.)",
           "dose": "200 g/ha",
           "pc": "14 días",
           "pr": "72 horas"
@@ -749,8 +789,8 @@
       "uses": [
         {
           "crop": "Rosas",
-          "target": "Sphaerotheca pannosa (Mildeo polvoso)",
-          "dose": "1.5 mL/L ó 1.8 L/ha",
+          "target": "Mildeo polvoso (<i>Sphaerotheca pannosa</i>)",
+          "dose": "1.5 ml/L",
           "pc": "N.A.",
           "pr": "4 horas"
         }
@@ -784,22 +824,22 @@
       "uses": [
         {
           "crop": "Clavel",
-          "target": "Cladosporium echinulatum (Mancha anillada)",
-          "dose": "1–2 g/L",
+          "target": "Mancha púrpura o mancha foliar anillada (<i>Cladosporium echinulatum</i>)",
+          "dose": "1 - 2.0 g/L",
           "pc": "N.A.",
           "pr": "4 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Peronospora sparsa (Mildeo velloso)",
+          "target": "Mildeo velloso (<i>Peronospora sparsa</i>)",
           "dose": "2.5 g/L",
           "pc": "N.A.",
           "pr": "4 horas"
         },
         {
           "crop": "Papa",
-          "target": "Phytophthora infestans (Gota)",
-          "dose": "1.5–2.5 kg/ha",
+          "target": "Gota (<i>Phytophthora infestans</i>)",
+          "dose": "1.5 - 2.5 Kg/ha",
           "pc": "7 días",
           "pr": "4 horas"
         }
@@ -833,29 +873,29 @@
       "uses": [
         {
           "crop": "Papa",
-          "target": "Phytophthora infestans (Gota/tizón tardío)",
+          "target": "Gota o tizón tardío (<i>Phytophthora infestans</i>)",
           "dose": "1.87 kg/ha",
           "pc": "7 días",
           "pr": "4 horas"
         },
         {
           "crop": "Tomate de árbol",
-          "target": "Phytophthora infestans",
+          "target": "<i>Phytophthora infestans</i>",
           "dose": "3.5 g/L",
           "pc": "14 días",
           "pr": "4 horas"
         },
         {
           "crop": "Piña",
-          "target": "Phytophthora parasitica (Pudrición de corona)",
+          "target": "Pudrición de corona (<i>Phytophthora parasitica</i>)",
           "dose": "2.0 kg/ha",
           "pc": "14 días",
           "pr": "4 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Peronospora sparsa (Mildeo velloso)",
-          "dose": "2 g/L ó 2.4 kg/ha",
+          "target": "Mildeo velloso (<i>Peronospora sparsa</i>)",
+          "dose": "2 g/L",
           "pc": "N.A.",
           "pr": "4 horas"
         }
@@ -892,36 +932,36 @@
       "warnings": "Venta solo por prescripción de un Ingeniero Agrónomo. Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
-          "crop": "Frijol",
-          "target": "Thrips palmi (Trips)",
+          "crop": "Fríjol",
+          "target": "Trips (<i>Thrips palmi</i>)",
           "dose": "300 mL/ha",
           "pc": "14 días",
           "pr": "72 horas"
         },
         {
           "crop": "Papa",
-          "target": "Liriomyza quadrata (Minador)",
+          "target": "Minador (<i>Liriomyza quadrata</i>)",
           "dose": "360 mL/ha",
           "pc": "21 días",
           "pr": "72 horas"
         },
         {
           "crop": "Papa",
-          "target": "Tecia solanivora (Polilla guatemalteca)",
+          "target": "Polilla guatemalteca (<i>Tecia solanivora</i>)",
           "dose": "360 mL/ha",
           "pc": "21 días",
           "pr": "72 horas"
         },
         {
           "crop": "Papa",
-          "target": "Premnotrypes vorax (Gusano blanco)",
+          "target": "Gusano blanco (<i>Premnotrypes vorax</i>)",
           "dose": "360 mL/ha",
           "pc": "21 días",
           "pr": "72 horas"
         },
         {
           "crop": "Tomate",
-          "target": "Neoleucinodes elegantalis (Barrenador del fruto)",
+          "target": "Barrenador del fruto (<i>Neoleucinodes elegantalis</i>)",
           "dose": "360 mL/ha",
           "pc": "7 días",
           "pr": "72 horas"
@@ -932,6 +972,49 @@
       "ficha_pdf": "docs/FULMINATOR_Ficha.pdf",
       "tarjeta_pdf": "docs/FULMINATOR_Tarjeta.pdf",
       "hoja_pdf": "docs/FULMINATOR_Hoja.pdf"
+    },
+    {
+      "id": "heroe-100-me",
+      "name": "HEROE 100 ME",
+      "category": "fungicida",
+      "image_url": "/media/Productos/Catalogo/heroe.png",
+      "reg_ica": "PL0005712023",
+      "formulation": "Microemulsión (ME)",
+      "chemical_group": "Anilino-pirimidinas",
+      "tox_category": "3",
+      "composition": [{ "ai": "Pyrimethanil", "pct": "100 g/L" }],
+      "presentations": ["1 L"],
+      "mode_of_action": "Fungicida preventivo — curativo, sistémico, traslaminar; presenta fase de vapor activa para redistribución en la superficie de las hojas tratadas.",
+      "mechanism": "Inhibe la secreción de las enzimas que se producen durante la infección.",
+      "warnings": "CONSULTE CON UN INGENIERO AGRÓNOMO",
+      "uses": [
+        {
+          "crop": "Banano",
+          "target": "Sigatoka Negra (<i>Mycosphaerella fijiensis</i>)",
+          "dose": "0.75 L/ha",
+          "pc": "0 días",
+          "pr": "4 horas"
+        },
+        {
+          "crop": "Rosa",
+          "target": "Botrytis (<i>Botrytis cinerea</i>)",
+          "dose": "1.5 cc/L",
+          "pc": "N.A.",
+          "pr": "4 horas"
+        },
+        {
+          "crop": "Clavel",
+          "target": "Botrytis (<i>Botrytis cinerea</i>)",
+          "dose": "1.5 cc/L",
+          "pc": "N.A.",
+          "pr": "4 horas"
+        }
+      ],
+      "pr_definition": "P.R.: Periodo de Reentrada (Reingreso): Tiempo que debe transcurrir entre la aplicación del plaguicida y el ingreso de personas y animales al área o cultivo tratado sin elementos de protección personal. Las personas no podrán ingresar al área de cultivo dentro del tiempo establecido.",
+      "pc_definition": "P.C.: Periodo de Carencia: Días que deben transcurrir entre la última aplicación y la cosecha.",
+      "ficha_pdf": "docs/HEROE_Ficha.pdf",
+      "tarjeta_pdf": "docs/HEROE_Tarjeta.pdf",
+      "hoja_pdf": "docs/HEROE_Hoja.pdf"
     },
     {
       "id": "kazugal-20-sl",
@@ -951,17 +1034,17 @@
       "uses": [
         {
           "crop": "Arroz",
-          "target": "Pyricularia oryzae",
+          "target": "Piricularia (<i>Pyricularia oryzae</i>)",
           "dose": "1.5 L/ha",
           "pc": "14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
-          "crop": "Cebolla (bulbo)",
-          "target": "Pseudomonas gladioli pv. allicola, Erwinia carotovora, Pseudomonas cepacia",
+          "crop": "Cebolla (Bulbo)",
+          "target": "<i>Pseudomonas gladioli</i> pv. <i>allicola</i>, <i>Erwinia carotovora</i>, <i>Pseudomonas cepacia</i>",
           "dose": "0.18 L/ha",
           "pc": "1 día",
-          "pr": "4 h"
+          "pr": "4 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -991,7 +1074,7 @@
           "target": "Malezas (pre y pos-emergencia) — Echinochloa colona, Ischaemum rugosum, Rottboellia cochinchinensis, Digitaria sanguinalis, Eleusine indica, Leptochloa filiformis, Paspalum pilosum",
           "dose": "1.5 L/ha",
           "pc": "8–10 días",
-          "pr": "0 h"
+          "pr": "0 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -1021,14 +1104,14 @@
           "target": "Malezas de hoja ancha (Desmodium tortuosum, Mimosa pudica, Portulaca oleracea)",
           "dose": "1.0 L/ha (pre-emergencia, 3 días antes de la siembra)",
           "pc": "N.A.",
-          "pr": "0 h"
+          "pr": "0 horas"
         },
         {
           "crop": "Arroz",
           "target": "Gramíneas (Ischaemum rugosum, Rottboellia exaltata, Leptochloa filiformis, Echinochloa colonum, Digitaria sanguinalis, Paspalum pilosum, Eleusine indica)",
           "dose": "1.5 L/ha (pos-emergencia, 4–8 días después de la germinación)",
           "pc": "N.A.",
-          "pr": "0 h"
+          "pr": "0 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -1055,59 +1138,59 @@
       "uses": [
         {
           "crop": "Clavel",
-          "target": "Tetranychus cinnabarinus (ácaros)",
-          "dose": "0.3–0.4 mL/L",
+          "target": "Ácaros (<i>Tetranychus cinnabarinus</i>)",
+          "dose": "0.3 - 0.4 mL/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Clavel",
-          "target": "Frankliniella occidentalis (trips)",
-          "dose": "0.3–0.4 mL/L",
+          "target": "Trips (<i>Frankliniella occidentalis</i>)",
+          "dose": "0.3 - 0.4 mL/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Tetranychus urticae (ácaros)",
-          "dose": "0.3–0.4 mL/L",
+          "target": "Ácaros (<i>Tetranychus urticae</i>)",
+          "dose": "0.3 - 0.4 mL/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
-          "crop": "Pompon",
-          "target": "Tetranychus sp. (ácaros)",
-          "dose": "0.4–0.6 mL/L",
+          "crop": "Pompón",
+          "target": "Ácaros (<i>Tetranychus</i> sp.)",
+          "dose": "0.4 - 0.6 mL/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
-          "crop": "Pompon",
-          "target": "Frankliniella occidentalis (trips)",
-          "dose": "0.4–0.6 mL/L",
+          "crop": "Pompón",
+          "target": "Trips (<i>Frankliniella occidentalis</i>)",
+          "dose": "0.4 - 0.6 mL/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
-          "crop": "Pompon",
-          "target": "Liriomyza sp. (minador)",
-          "dose": "0.4–0.6 mL/L",
+          "crop": "Pompón",
+          "target": "Minador (<i>Liriomyza</i> sp.)",
+          "dose": "0.4 - 0.6 mL/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
-          "crop": "Frijol",
-          "target": "Thrips palmi (trips)",
-          "dose": "0.4–0.5 mL/L",
+          "crop": "Fríjol",
+          "target": "Trips (<i>Thrips palmi</i>)",
+          "dose": "0.4 - 0.5 mL/L",
           "pc": "7 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Tomate",
-          "target": "Tuta absoluta (gusano cogollero)",
-          "dose": "0.5–0.6 mL/L",
+          "target": "Gusano cogollero (<i>Tuta absoluta</i>)",
+          "dose": "0.5 - 0.6 mL/L",
           "pc": "7 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -1137,66 +1220,66 @@
       "uses": [
         {
           "crop": "Arroz",
-          "target": "Complejo manchado de grano (Helminthosporium spp., Curvularia lunata, Cercospora oryzae, Sarocladium oryzae, Ophiobolus oryzinus)",
+          "target": "Complejo del manchado del grano (<i>Helminthosporium oryzae, Helminthosporium sigmoideum, Curvularia lunata, Cercospora oryzae, Sarocladium oryzae, Ophiobolus oryzinus</i>)",
           "dose": "0.75 L/ha",
           "pc": "10 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Arveja",
-          "target": "Ascochyta pisi",
+          "target": "Ascochyta (<i>Ascochyta pisi</i>)",
           "dose": "0.75 L/ha",
           "pc": "14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Banano",
-          "target": "Mycosphaerella fijiensis (Sigatoka negra)",
+          "target": "Sigatoka Negra (<i>Mycosphaerella fijiensis</i>)",
           "dose": "1 L/ha",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Cebolla",
-          "target": "Alternaria porri",
+          "target": "Alternaria (<i>Alternaria porri</i>)",
           "dose": "0.75 L/ha",
           "pc": "7 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
-          "crop": "Frijol",
-          "target": "Colletotrichum lindemuthianum (Antracnosis)",
+          "crop": "Fríjol",
+          "target": "Antracnosis (<i>Colletotrichum lindemuthianum</i>)",
           "dose": "0.75 L/ha",
           "pc": "14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
-          "crop": "Pompon / Crisantemo",
-          "target": "Puccinia horiana (Roya blanca)",
+          "crop": "Pompón / Crisantemo",
+          "target": "Roya blanca (<i>Puccinia horiana</i>)",
           "dose": "1.25 cc/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Sphaerotheca pannosa (Mildeo polvoso)",
-          "dose": "1.0 – 1.25 cc/L",
+          "target": "Mildeo polvoso (<i>Sphaerotheca pannosa</i>)",
+          "dose": "1.0 - 1.25 cc/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Tomate",
-          "target": "Alternaria solani",
+          "target": "Alternaria (<i>Alternaria solani</i>)",
           "dose": "0.75 L/ha",
           "pc": "7 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Tomate de árbol",
-          "target": "Colletotrichum gloeosporioides (Antracnosis)",
-          "dose": "0.75 – 1.0 L/ha",
+          "target": "Antracnosis (<i>Colletotrichum gloeosporioides</i>)",
+          "dose": "0.75 - 1.0 L/ha",
           "pc": "21 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -1226,35 +1309,35 @@
           "target": "Manchado de grano (Helminthosporium spp., Drechslera spp., Sarocladium spp., Cercospora spp.)",
           "dose": "600 cc/ha",
           "pc": "14 días",
-          "pr": "24 h"
+          "pr": "24 horas"
         },
         {
           "crop": "Clavel",
           "target": "Botrytis cinerea (moho gris)",
           "dose": "1.0 cc/L",
           "pc": "N.A.",
-          "pr": "24 h"
+          "pr": "24 horas"
         },
         {
           "crop": "Pompon",
           "target": "Botrytis cinerea (moho gris)",
           "dose": "1.0 cc/L",
           "pc": "N.A.",
-          "pr": "24 h"
+          "pr": "24 horas"
         },
         {
           "crop": "Rosas",
           "target": "Botrytis cinerea (moho gris)",
           "dose": "1.0 – 1.5 cc/L",
           "pc": "N.A.",
-          "pr": "24 h"
+          "pr": "24 horas"
         },
         {
           "crop": "Tomate",
           "target": "Botrytis cinerea",
           "dose": "200 cc/200 L (600 cc/ha)",
           "pc": "14 días",
-          "pr": "24 h"
+          "pr": "24 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -1284,17 +1367,17 @@
       "uses": [
         {
           "crop": "Rosas",
-          "target": "Sphaerotheca pannosa (mildeo polvoso)",
-          "dose": "2.5 – 3.0 cc/L (3 – 3.6 L/ha)",
+          "target": "Mildeo polvoso (<i>Sphaerotheca pannosa</i>)",
+          "dose": "2.5 - 3.0 cc/L (3 - 3.6 L/ha)",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Uva",
-          "target": "Uncinula necator (mildeo polvoso)",
+          "target": "Mildeo polvoso (<i>Uncinula necator</i>)",
           "dose": "1 cc/L (0.4 L/ha)",
           "pc": "2 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -1321,38 +1404,38 @@
       "uses": [
         {
           "crop": "Aguacate",
-          "target": "Phytophthora cinnamomi (pudrición de raíz)",
+          "target": "Pudrición de raíz (<i>Phytophthora cinnamomi</i>)",
           "dose": "5 mL/L",
           "pc": "0 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
-          "crop": "Cebolla (bulbo)",
-          "target": "Peronospora destructor (mildeo velloso)",
+          "crop": "Cebolla (Bulbo)",
+          "target": "Mildeo velloso (<i>Peronospora destructor</i>)",
           "dose": "500 mL/200 L",
           "pc": "14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Papa",
-          "target": "Phytophthora infestans (gota o tizón tardío)",
+          "target": "Gota o tizón tardío (<i>Phytophthora infestans</i>)",
           "dose": "500 mL/200 L",
           "pc": "14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Peronospora sparsa (mildeo velloso)",
+          "target": "Mildeo velloso (<i>Peronospora sparsa</i>)",
           "dose": "1.5 mL/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Tomate",
-          "target": "Phytophthora infestans (gota o tizón tardío)",
+          "target": "Gota o tizón tardío (<i>Phytophthora infestans</i>)",
           "dose": "500 mL/200 L",
           "pc": "14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -1379,38 +1462,38 @@
       "uses": [
         {
           "crop": "Cebolla (bulbo)",
-          "target": "Alternaria porri (mancha púrpura)",
+          "target": "Mancha púrpura (<i>Alternaria porri</i>)",
           "dose": "100 mL/200 L",
           "pc": "7–14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Clavel",
-          "target": "Cladosporium echinulatum (mancha anillada)",
+          "target": "Mancha foliar anillada (<i>Cladosporium echinulatum</i>)",
           "dose": "0.6 mL/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
-          "crop": "Frijol",
-          "target": "Colletotrichum lindemuthianum (antracnosis)",
+          "crop": "Fríjol",
+          "target": "Antracnosis (<i>Colletotrichum lindemuthianum</i>)",
           "dose": "166 mL/200 L",
           "pc": "14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Sphaerotheca pannosa (mildeo polvoso)",
+          "target": "Mildeo polvoso (<i>Sphaerotheca pannosa</i>)",
           "dose": "0.6 mL/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Tomate",
-          "target": "Alternaria solani (tizón temprano)",
+          "target": "Tizón temprano (<i>Alternaria solani</i>)",
           "dose": "100 mL/200 L",
           "pc": "7 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -1437,45 +1520,45 @@
       "uses": [
         {
           "crop": "Café",
-          "target": "Hemileia vastatrix (roya)",
+          "target": "Roya (<i>Hemileia vastatrix</i>)",
           "dose": "1 L/ha",
           "pc": "15 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Clavel",
-          "target": "Cladosporium echinulatum (mancha anillada)",
-          "dose": "1.5 – 2.0 cc/L",
+          "target": "Mancha anillada (<i>Cladosporium echinulatum</i>)",
+          "dose": "1.5 - 2.0 cc/L",
           "pc": "N.A.",
-          "pr": "12 h"
+          "pr": "12 horas"
         },
         {
           "crop": "Crisantemo",
-          "target": "Puccinia horiana (roya blanca)",
+          "target": "Roya blanca (<i>Puccinia horiana</i>)",
           "dose": "1 cc/L",
           "pc": "N.A.",
-          "pr": "15 h"
+          "pr": "15 horas"
         },
         {
-          "crop": "Frijol",
-          "target": "Uromyces phaseoli (roya)",
+          "crop": "Fríjol",
+          "target": "Roya (<i>Uromyces phaseoli</i>)",
           "dose": "300 cc/200 L",
           "pc": "15 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Mora",
-          "target": "Oidium sp. (mildeo polvoso)",
-          "dose": "300 – 350 cc/200 L",
+          "target": "Mildeo polvoso (<i>Oidium</i> sp.)",
+          "dose": "300 - 350 cc/200 L",
           "pc": "15 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Sphaerotheca pannosa (mildeo polvoso)",
+          "target": "Mildeo polvoso (<i>Sphaerotheca pannosa</i>)",
           "dose": "0.8 cc/L",
           "pc": "N.A.",
-          "pr": "12 h"
+          "pr": "12 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -1505,52 +1588,52 @@
       "uses": [
         {
           "crop": "Arroz",
-          "target": "Rhizoctonia solani (añublo de la vaina)",
+          "target": "Añublo de la vaina (<i>Rhizoctonia solani</i>)",
           "dose": "0.6 L/ha",
           "pc": "15 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Arroz",
-          "target": "Complejo manchado del grano",
+          "target": "Complejo del manchado del grano",
           "dose": "0.6 L/ha",
           "pc": "15 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Banano",
-          "target": "Mycosphaerella fijiensis (sigatoka negra)",
+          "target": "Sigatoka Negra (<i>Mycosphaerella fijiensis</i>)",
           "dose": "0.7 L/ha",
           "pc": "1 día",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Clavel",
-          "target": "Botrytis cinerea (moho gris)",
+          "target": "Moho gris (<i>Botrytis cinerea</i>)",
           "dose": "0.75 cc/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
-          "crop": "Pompon",
-          "target": "Botrytis cinerea (moho gris)",
+          "crop": "Pompón",
+          "target": "Moho gris (<i>Botrytis cinerea</i>)",
           "dose": "0.75 cc/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Botrytis cinerea (moho gris)",
+          "target": "Moho gris (<i>Botrytis cinerea</i>)",
           "dose": "1.0 cc/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Sphaerotheca pannosa (mildeo polvoso)",
+          "target": "Mildeo polvoso (<i>Sphaerotheca pannosa</i>)",
           "dose": "1.0 cc/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -1580,52 +1663,52 @@
       "uses": [
         {
           "crop": "Arveja",
-          "target": "Lyriomyza trifolii (minador del tallo)",
+          "target": "Minador del tallo (<i>Liriomyza trifolii</i>)",
           "dose": "150 cc/200 L ó 450 cc/ha",
           "pc": "15 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
-          "crop": "Cebolla (bulbo)",
-          "target": "Lyriomyza huidobrensis (minador)",
+          "crop": "Cebolla (Bulbo)",
+          "target": "Minador (<i>Liriomyza huidobrensis</i>)",
           "dose": "250 cc/200 L ó 750 cc/ha",
           "pc": "14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
-          "crop": "Frijol",
-          "target": "Lyriomyza huidobrensis (minador)",
+          "crop": "Fríjol",
+          "target": "Minador (<i>Liriomyza huidobrensis</i>)",
           "dose": "150 cc/200 L ó 450 cc/ha",
           "pc": "15 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Melón",
-          "target": "Lyriomyza trifolii (minador)",
+          "target": "Minador (<i>Liriomyza trifolii</i>)",
           "dose": "120 cc/200 L",
           "pc": "3 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Papa",
-          "target": "Lyriomyza quadrata (minador)",
+          "target": "Minador (<i>Liriomyza quadrata</i>)",
           "dose": "150 cc/200 L ó 450 cc/ha",
           "pc": "14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Pompón",
-          "target": "Lyriomyza trifolii (minador)",
+          "target": "Minador (<i>Liriomyza trifolii</i>)",
           "dose": "0.75 cc/L ó 900 cc/ha",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Tomate",
-          "target": "Lyriomyza trifolii (minador)",
+          "target": "Minador (<i>Liriomyza trifolii</i>)",
           "dose": "150 cc/200 L ó 450 cc/ha",
           "pc": "5 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -1652,31 +1735,31 @@
       "uses": [
         {
           "crop": "Banano",
-          "target": "Mycosphaerella fijiensis (sigatoka negra)",
+          "target": "Sigatoka negra (<i>Mycosphaerella fijiensis</i>)",
           "dose": "0.5 L/ha",
           "pc": "0 días",
-          "pr": "24 h"
+          "pr": "24 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Sphaerotheca pannosa (mildeo polvoso)",
-          "dose": "1.0 – 1.2 cc/L",
+          "target": "Mildeo polvoso (<i>Sphaerotheca pannosa</i>)",
+          "dose": "1.0 - 1.2 cc/L",
           "pc": "N.A.",
-          "pr": "24 h"
+          "pr": "24 horas"
         },
         {
-          "crop": "Pompon",
-          "target": "Puccinia horiana (roya blanca)",
+          "crop": "Pompón",
+          "target": "Roya blanca (<i>Puccinia horiana</i>)",
           "dose": "0.5 cc/L",
           "pc": "N.A.",
-          "pr": "24 h"
+          "pr": "24 horas"
         },
         {
           "crop": "Crisantemo",
-          "target": "Puccinia horiana (roya blanca)",
+          "target": "Roya blanca (<i>Puccinia horiana</i>)",
           "dose": "0.5 cc/L",
           "pc": "N.A.",
-          "pr": "24 h"
+          "pr": "24 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -1705,46 +1788,46 @@
       "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
-          "crop": "Cebolla (bulbo)",
-          "target": "Peronospora destructor (mildeo velloso)",
-          "dose": "400–500 cc/200 L",
+          "crop": "Cebolla (Bulbo)",
+          "target": "Mildeo velloso (<i>Peronospora destructor</i>)",
+          "dose": "400 - 500 cc/200 L",
           "pc": "14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Papa",
-          "target": "Phytophthora infestans (gota / tizón tardío)",
+          "target": "Gota o tizón tardío (<i>Phytophthora infestans</i>)",
           "dose": "1.2 L/ha",
           "pc": "14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Piña",
-          "target": "Phytophthora parasitica (podredumbre del corazón)",
+          "target": "Podredumbre del corazón (<i>Phytophthora parasitica</i>)",
           "dose": "1 L/ha",
           "pc": "14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Peronospora sparsa (mildeo velloso)",
+          "target": "Mildeo velloso (<i>Peronospora sparsa</i>)",
           "dose": "0.6 cc/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Tomate",
-          "target": "Phytophthora infestans (gota / tizón tardío)",
+          "target": "Gota o tizón tardío (<i>Phytophthora infestans</i>)",
           "dose": "500 cc/200 L (1.5 L/ha)",
           "pc": "14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Uva",
-          "target": "Plasmopara viticola (mildeo velloso)",
+          "target": "Mildeo velloso (<i>Plasmopara viticola</i>)",
           "dose": "0.6 L/ha (1.5 cc/L)",
           "pc": "14 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
@@ -1773,46 +1856,46 @@
       "warnings": "Todos los productos químicos de uso agrícola son tóxicos; Peligrosos para la salud y el medio ambiente. Se deben manejar siguiendo las indicaciones de las etiquetas y fichas de datos de seguridad.",
       "uses": [
         {
-          "crop": "Cebolla (bulbo)",
-          "target": "Peronospora destructor (mildeo velloso)",
+          "crop": "Cebolla (Bulbo)",
+          "target": "Mildeo velloso (<i>Peronospora destructor</i>)",
           "dose": "400 cc/200 L",
           "pc": "7 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Papa",
-          "target": "Phytophthora infestans (gota / tizón tardío)",
+          "target": "Gota o tizón tardío (<i>Phytophthora infestans</i>)",
           "dose": "400 cc/200 L",
           "pc": "7 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Piña",
-          "target": "Phytophthora parasitica (podredumbre del corazón)",
+          "target": "Podredumbre del corazón (<i>Phytophthora parasitica</i>)",
           "dose": "3 cc/L",
           "pc": "90 días",
-          "pr": "24 h"
+          "pr": "24 horas"
         },
         {
           "crop": "Rosas",
-          "target": "Peronospora sparsa (mildeo velloso)",
+          "target": "Mildeo velloso (<i>Peronospora sparsa</i>)",
           "dose": "1.25 cc/L",
           "pc": "N.A.",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Tomate",
-          "target": "Phytophthora infestans (gota / tizón tardío)",
+          "target": "Gota o tizón tardío (<i>Phytophthora infestans</i>)",
           "dose": "400 cc/200 L",
           "pc": "7 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         },
         {
           "crop": "Uva",
-          "target": "Plasmopara viticola (mildeo velloso)",
+          "target": "Mildeo velloso (<i>Plasmopara viticola</i>)",
           "dose": "1.5 cc/L ó 0.6 L/ha",
           "pc": "7 días",
-          "pr": "4 h"
+          "pr": "4 horas"
         }
       ],
       "pr_definition": "Periodo de Reentrada: tiempo mínimo antes del ingreso sin protección.",
