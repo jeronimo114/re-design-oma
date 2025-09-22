@@ -1913,19 +1913,29 @@
       "toxicity": "",
       "category": "fertilizante-foliar",
       "active_ingredient": "NPK con AA",
-      "targets": [
-        {
-          "crop": "Todos",
-          "pest": "",
-          "dose": "1,5 L/ha",
-          "action": "Fertilizante Foliar "
-        },
-        {
-          "crop": "Fresa",
-          "pest": "",
-          "dose": "1,5 L/ha",
-          "action": "Fertilizante Foliar "
-        }
+      "presentations": ["1 L", "4 L"],
+      "composition": [
+        { "nutrient": "Nitrógeno TOTAL (N)", "pct": "90 g/L" },
+        { "nutrient": "Nitrógeno nítrico (N-NO3)", "pct": "22 g/L" },
+        { "nutrient": "Nitrógeno amoniacal (N-NH4)", "pct": "22 g/L" },
+        { "nutrient": "Nitrógeno ureico (N-NH2)", "pct": "44 g/L" },
+        { "nutrient": "Nitrógeno amínico (NH2)", "pct": "2 g/L" },
+        { "nutrient": "Fósforo ASIMILABLE (P2O5)", "pct": "230 g/L" },
+        { "nutrient": "Potasio SOLUBLE en agua (K2O)", "pct": "160 g/L" },
+        { "nutrient": "Magnesio TOTAL (MgO)", "pct": "5 g/L" },
+        { "nutrient": "Boro TOTAL (B)", "pct": "5 g/L" },
+        { "nutrient": "Cobre TOTAL (Cu)", "pct": "2 g/L" },
+        { "nutrient": "Manganeso TOTAL (Mn)", "pct": "0,5 g/L" },
+        { "nutrient": "Zinc TOTAL (Zn)", "pct": "10 g/L" },
+        { "nutrient": "Azufre TOTAL (S)", "pct": "14 g/L" },
+        { "nutrient": "Aminoácidos libres (19)", "pct": "20 g/L" },
+        { "nutrient": "pH (Sol. 10%)", "pct": "4,61" },
+        { "nutrient": "Densidad a 20 °C", "pct": "1,335 g/cc" },
+        { "nutrient": "Conductividad eléctrica 1:100", "pct": "5,84 dS/m" }
+      ],
+      "uses": [
+        { "crop": "Fresa", "target": "Fertilizante foliar", "dose": "1.0 L/ha", "pc": "N.A.", "pr": "N.A." },
+        { "crop": "Maíz",  "target": "Fertilizante foliar", "dose": "1.0 L/ha", "pc": "N.A.", "pr": "N.A." }
       ],
       "image_url": "/media/Productos/Catalogo/arranque.png",
       "ficha_pdf": "docs/ARRANQUE_Ficha.pdf",
@@ -1937,18 +1947,27 @@
       "id": "avance-sc",
       "name": "AVANCE MYCROS SC",
       "formulation": "SC",
-      "concentration": "P2O5 317 g/L; K2O 410 g/L; MgO 25 g/L; B 2 g/L; Cu 0.5 g/L; Mn 0.5 g/L; Zn 5 g/L; S 24 g/L",
+      "concentration": "P2O5 317 g/L; K2O 410 g/L; MgO 25 g/L; B 2 g/L; Cu 0,5 g/L; Mn 0,5 g/L; Zn 5 g/L; S 24 g/L",
       "ica": 9719,
       "toxicity": "",
       "category": "fertilizante-foliar",
       "active_ingredient": "PK con micronutrientes (Mg, B, Cu, Mn, Zn, S)",
-      "targets": [
-        {
-          "crop": "Fresa",
-          "pest": "",
-          "dose": "1.0 L/ha",
-          "action": "Fertilizante foliar"
-        }
+      "presentations": ["1 L", "4 L"],
+      "composition": [
+        { "nutrient": "Fósforo asimilable (P2O5)", "pct": "317 g/L" },
+        { "nutrient": "Potasio soluble en agua (K2O)", "pct": "410 g/L" },
+        { "nutrient": "Magnesio total (MgO)", "pct": "25 g/L" },
+        { "nutrient": "Boro total (B)", "pct": "2 g/L" },
+        { "nutrient": "Cobre total (Cu)", "pct": "0,5 g/L" },
+        { "nutrient": "Manganeso total (Mn)", "pct": "0,5 g/L" },
+        { "nutrient": "Zinc total (Zn)", "pct": "5 g/L" },
+        { "nutrient": "Azufre total (S)", "pct": "24 g/L" },
+        { "nutrient": "pH (Sol. 10%)", "pct": "1,85" },
+        { "nutrient": "Densidad a 20 °C", "pct": "1,433 g/cc" },
+        { "nutrient": "Conductividad eléctrica 1:100", "pct": "13,1 dS/m" }
+      ],
+      "uses": [
+        { "crop": "Fresa", "target": "Fertilizante foliar", "dose": "1.0 L/ha", "pc": "N.A.", "pr": "N.A." }
       ],
       "image_url": "/media/Productos/Catalogo/avance.png",
       "ficha_pdf": "docs/AVANCE_Ficha.pdf",

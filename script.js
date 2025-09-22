@@ -527,6 +527,19 @@ function buildUsesTable(arr) {
   const qs = new URLSearchParams(window.location.search);
   let currentCategoria = (qs.get("categoria") || "").toLowerCase();
   let currentCultivo = (qs.get("cultivo") || "").toLowerCase();
+  // Normaliza acentos y califica la clave de cultivo para emparejar datos
+  const norm = (s) => (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const cropKey = (s) => {
+    const t = norm(s);
+    const i = t.indexOf(" (");
+    let k = (i >= 0 ? t.slice(0, i) : t).trim();
+    // Si hay múltiple ("/"), tomamos el primero (p.ej., "pompon / crisantemo")
+    if (k.includes("/")) k = k.split("/")[0].trim();
+    // Alias comunes para emparejar títulos del UI
+    if (k === "rosas") k = "rosa";
+    return k;
+  };
+  let currentCultivoSlug = norm(currentCultivo);
 
   // Ocultar “Categorías” cuando se navega por cultivo
   const categoriasSection = document.getElementById("categorias");
@@ -633,12 +646,8 @@ function buildUsesTable(arr) {
 
         visibleProducts = allProducts.filter((p) => {
           const catSlug = (p.category || "").toLowerCase().replace(/\s+/g, "-");
-          const cultivos = (p.uses || []).map((u) =>
-            (u.crop || "").toLowerCase()
-          );
-          return (
-            catSlug === currentCategoria && cultivos.includes(currentCultivo)
-          );
+          const cultivos = (p.uses || []).map((u) => cropKey(u.crop));
+          return catSlug === currentCategoria && cultivos.includes(currentCultivoSlug);
         });
 
         if (searchInput) searchInput.value = "";
@@ -774,15 +783,9 @@ function buildUsesTable(arr) {
 
       visibleProducts = allProducts.filter((p) => {
         const catSlug = (p.category || "").toLowerCase().replace(/\s+/g, "-");
-        const cultivos = (p.uses || []).map((u) =>
-          (u.crop || "").toLowerCase()
-        );
-        const matchCategoria = currentCategoria
-          ? catSlug === currentCategoria
-          : true;
-        const matchCultivo = currentCultivo
-          ? cultivos.includes(currentCultivo)
-          : true;
+        const cultivos = (p.uses || []).map((u) => cropKey(u.crop));
+        const matchCategoria = currentCategoria ? catSlug === currentCategoria : true;
+        const matchCultivo = currentCultivo ? cultivos.includes(currentCultivoSlug) : true;
         return matchCategoria && matchCultivo;
       });
 
@@ -816,10 +819,8 @@ function buildUsesTable(arr) {
       const subCounts = {};
       if (currentCultivo) {
         products.forEach((p) => {
-          const cultivos = (p.uses || []).map((u) =>
-            (u.crop || "").toLowerCase()
-          );
-          if (cultivos.includes(currentCultivo)) {
+          const cultivos = (p.uses || []).map((u) => cropKey(u.crop));
+          if (cultivos.includes(currentCultivoSlug)) {
             const slug = (p.category || "").toLowerCase().replace(/\s+/g, "-");
             subCounts[slug] = (subCounts[slug] || 0) + 1;
           }
@@ -869,6 +870,7 @@ function buildUsesTable(arr) {
 
         // Actualiza estado interno y URL sin recargar
         currentCultivo = newCultivo;
+        currentCultivoSlug = norm(currentCultivo);
         currentCategoria = ""; // al elegir cultivo limpiamos la categoría
         window.history.replaceState(null, "", `?cultivo=${currentCultivo}`);
 
@@ -889,19 +891,15 @@ function buildUsesTable(arr) {
 
         // Recalcula productos visibles
         visibleProducts = allProducts.filter((p) => {
-          const cultivos = (p.uses || []).map((u) =>
-            (u.crop || "").toLowerCase()
-          );
-          return cultivos.includes(currentCultivo);
+          const cultivos = (p.uses || []).map((u) => cropKey(u.crop));
+          return cultivos.includes(currentCultivoSlug);
         });
 
         // Re‑genera conteos y refresca sub‑filtro
         const newCounts = {};
         allProducts.forEach((p) => {
-          const cultivos = (p.uses || []).map((u) =>
-            (u.crop || "").toLowerCase()
-          );
-          if (cultivos.includes(currentCultivo)) {
+          const cultivos = (p.uses || []).map((u) => cropKey(u.crop));
+          if (cultivos.includes(currentCultivoSlug)) {
             const slug = (p.category || "").toLowerCase().replace(/\s+/g, "-");
             newCounts[slug] = (newCounts[slug] || 0) + 1;
           }
