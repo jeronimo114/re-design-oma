@@ -192,10 +192,8 @@ ${ldJson}
     <header id="header">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="../index.html">
-            <img src="/media/oma.png" alt="${escapeXml(
-              BRAND_NAME
-            )}" width="120" />
+          <a class="navbar-brand" href="../index.html#inicio">
+            <img src="/media/oma.png" alt="${escapeXml(BRAND_NAME)} Logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -208,13 +206,154 @@ ${ldJson}
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
             <ul class="navbar-nav gap-3">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html#inicio">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../catalogo.html">Productos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Soluciones por Cultivo
+                </a>
+                <div class="dropdown-menu p-3" style="min-width: 320px">
+                  <div class="row row-cols-3 g-2">
+                    <div class="col">
+                      <a
+                        href="../catalogo.html?cultivo=papa"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/papa.svg"
+                          alt="Papa"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Papa</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="../catalogo.html?cultivo=tomate"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/tomate.svg"
+                          alt="Tomate"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Tomate</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="../catalogo.html?cultivo=maiz"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/maiz.svg"
+                          alt="Maíz"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Maíz</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="../catalogo.html?cultivo=arroz"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/arroz.svg"
+                          alt="Arroz"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Arroz</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="../catalogo.html?cultivo=cebolla"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/cebolla.svg"
+                          alt="Cebolla"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Cebolla</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="../catalogo.html?cultivo=frijol"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/frijol.svg"
+                          alt="Frijol"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Frijol</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="../catalogo.html?cultivo=fresa"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/fresa.svg"
+                          alt="Fresa"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Fresa</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="../catalogo.html?cultivo=aguacate"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/aguacate.svg"
+                          alt="Aguacate"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Aguacate</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="../catalogo.html?cultivo=arveja"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/arveja.svg"
+                          alt="Arveja"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Arveja</small>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#noticias">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#representantes">Cobertura Comercial</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../blog.html">Blog</a>

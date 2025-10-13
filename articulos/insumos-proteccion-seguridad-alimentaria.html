@@ -50,162 +50,57 @@
     </script>
   </head>
   <body>
-    <header id="header">
+    <header class="border-bottom">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="../index.html">
+          <a class="navbar-brand fw-bold" href="../index.html">
             <img src="/media/oma.png" alt="Químicos OMA" width="120" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Alternar navegación"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav gap-3">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html#inicio">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../catalogo.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html#contacto">Contacto</a>
-              </li>
-            </ul>
-          </div>
+          <a class="btn btn-outline-primary" href="../blog.html">
+            <i class="fa-solid fa-arrow-left-long me-2"></i>Volver al blog
+          </a>
         </div>
       </nav>
     </header>
 
-    <main class="blog-article-page">
-      <section class="blog-article-hero">
-        <div class="container">
-          <div class="blog-article-hero__top">
-            <a class="btn btn-outline-primary btn-sm" href="../blog.html">
-            <i class="fa-solid fa-arrow-left-long me-2"></i>Volver al blog
-          </a>
-          <nav aria-label="breadcrumb" class="blog-article-breadcrumb">
-            <ol class="breadcrumb mb-3">
-              <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-              <li class="breadcrumb-item"><a href="../blog.html">Blog</a></li>
-              <li class="breadcrumb-item active" aria-current="page">La Importancia de los Insumos de Protección en la Seguridad Alimentaria</li>
-            </ol>
-          </nav>
-          </div>
-          <div class="row align-items-start gy-4">
-            <div class="col-lg-7">
-              <h1 class="blog-article-title" itemprop="headline">
-                La Importancia de los Insumos de Protección en la Seguridad Alimentaria
-              </h1>
-              <p class="blog-article-excerpt">La seguridad alimentaria depende de que los cultivos lleguen sanos al mercado. Sin un programa técnico de protección frente a plagas, malezas y enfermedades, el riesgo de pérdida de cosechas se dispara y compromete el abastecimiento. Los insumos de protección…</p>
-              <div class="blog-article-meta">
-                <div class="blog-article-tags"><span class="chip">Alimentos</span><span class="chip">Seguridad Alimentaria</span></div>
-                <div class="blog-article-details">
-                  <span><i class="fa-solid fa-calendar-days me-2"></i>4 de jul de 2025</span>
-                  <span class="sep">•</span>
-                  <span><i class="fa-solid fa-clock me-2"></i>1 min lectura</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <figure class="blog-article-figure">
-                <img
-                  src="/articulos/media/seguridad-alimentaria.jpg"
-                  alt="La Importancia de los Insumos de Protección en la Seguridad Alimentaria"
-                  loading="lazy"
-                  itemprop="image"
-                />
-                <span class="blog-article-figure__tag">Alimentos</span>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
+    <main class="container my-5">
+      <article
+        class="mx-auto blog-article"
+        style="max-width: 760px"
+        itemscope
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <header class="mb-4 text-center">
+          <h1 class="fw-bold mb-3" itemprop="headline">
+            La Importancia de los Insumos de Protección en la Seguridad Alimentaria
+          </h1>
+          <p class="text-muted mb-1" itemprop="datePublished" content="2025-07-05T00:00:00.000Z">
+            4 de jul de 2025 · <span>1 min lectura</span>
+          </p>
+          <div class="blog-tags d-flex justify-content-center gap-2 mb-3"><span class="badge bg-primary-subtle text-primary">Alimentos</span><span class="badge bg-primary-subtle text-primary">Seguridad Alimentaria</span></div>
+          <img
+            src="/articulos/media/seguridad-alimentaria.jpg"
+            alt="La Importancia de los Insumos de Protección en la Seguridad Alimentaria"
+            class="w-100 rounded mb-4"
+            loading="lazy"
+            width="760"
+            height="420"
+            itemprop="image"
+          />
+        </header>
 
-      <section class="blog-article-content">
-        <div class="container">
-          <article class="blog-article-body" itemscope itemtype="https://schema.org/BlogPosting">
-            <meta itemprop="datePublished" content="2025-07-05T00:00:00.000Z" />
-            <meta itemprop="timeRequired" content="PT1M" />
-            <meta itemprop="headline" content="La Importancia de los Insumos de Protección en la Seguridad Alimentaria" />
-            <meta itemprop="image" content="/articulos/media/seguridad-alimentaria.jpg" />
-            <div class="blog-article-body__content" itemprop="articleBody">
-              <p>La seguridad alimentaria depende de que los cultivos lleguen sanos al mercado. Sin un programa técnico de protección frente a plagas, malezas y enfermedades, el riesgo de pérdida de cosechas se dispara y compromete el abastecimiento.</p>
+        <section itemprop="articleBody" class="blog-article__content">
+          <p>La seguridad alimentaria depende de que los cultivos lleguen sanos al mercado. Sin un programa técnico de protección frente a plagas, malezas y enfermedades, el riesgo de pérdida de cosechas se dispara y compromete el abastecimiento.</p>
 <p>Los <strong>insumos de protección</strong> modernos combinan sustancias activas selectivas con formulaciones que mejoran la adherencia y reducen el lavado por lluvias. Esto se traduce en intervalos de aplicación más amplios y menores residuos en cosecha.</p>
 <p>Además, las soluciones registradas para cultivos de alto consumo se someten a evaluaciones toxicológicas y ambientales estrictas. En Colombia, el ICA trabaja de la mano con la industria para asegurar que cada ingrediente activo cuente con respaldos científicos y dosis precisas según cultivo, plaga y zona agroclimática.</p>
 <p>Para los productores, contar con aliados técnicos que integren monitoreo, pronóstico y rotación de modos de acción es clave. Es la ruta para mantener la productividad, cumplir con certificaciones internacionales y asegurar alimentos inocuos para los consumidores.</p>
 
-            </div>
-          </article>
-          <div class="blog-article-nav">
-            <a class="btn btn-outline-primary" href="../blog.html">
-              <i class="fa-solid fa-arrow-left-long me-2"></i>Volver al listado
-            </a>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="blog-article-related">
-        <div class="container">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <h2 class="sec-title mb-0">Artículos relacionados</h2>
-            <a class="btn btn-link btn-sm" href="../blog.html">Ver todos</a>
-          </div>
-          <div class="row g-4">
-            <div class="col-12 col-md-4">
-  <a class="news-card h-100" href="../articulos/prueba.html" aria-label="Prueba">
-    <div class="news-card__media">
-      <img src="/articulos/media/whatsapp-image-2024-10-10-at-10-58-43-1760372076282.jpeg" alt="Prueba" loading="lazy" />
-    </div>
-    <div class="news-card__body">
-      <div class="news-card__chips">
-        
-      </div>
-      <h3 class="news-card__title">Prueba</h3>
-      <p class="news-card__excerpt">Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba Prueba…</p>
-      <div class="news-card__divider" role="separator" aria-hidden="true"></div>
-      <div class="news-card__meta">
-        <span>14 de oct de 2025</span>
-        <span class="sep">•</span><span>1 min lectura</span>
-      </div>
-    </div>
-  </a>
-</div><div class="col-12 col-md-4">
-  <a class="news-card h-100" href="../articulos/insumos-proteccion-flores-exportacion.html" aria-label="Insumos de Protección para Flores de Exportación">
-    <div class="news-card__media">
-      <img src="/articulos/media/flores-exportacion.jpg" alt="Insumos de Protección para Flores de Exportación" loading="lazy" />
-    </div>
-    <div class="news-card__body">
-      <div class="news-card__chips">
-        <span class="chip">Flores</span><span class="chip">Exportación</span>
-      </div>
-      <h3 class="news-card__title">Insumos de Protección para Flores de Exportación</h3>
-      <p class="news-card__excerpt">Colombia exporta más de 650 millones de tallos cada año, abasteciendo los mercados de Norteamérica y Europa con rosas, claveles y crisantemos de alta calidad. Detrás de ese éxito hay una evolución constante en el uso de insumos de protección…</p>
-      <div class="news-card__divider" role="separator" aria-hidden="true"></div>
-      <div class="news-card__meta">
-        <span>4 de jul de 2025</span>
-        <span class="sep">•</span><span>2 min lectura</span>
-      </div>
-    </div>
-  </a>
-</div>
-          </div>
-        </div>
-      </section>
-
-      <footer class="blog-article-footer text-center text-muted small">
-        <p>© 2025 Químicos OMA — Todos los derechos reservados.</p>
-      </footer>
+        <footer class="border-top pt-4 mt-5 text-center text-muted small">
+          <p>© 2025 Químicos OMA — Todos los derechos reservados.</p>
+        </footer>
+      </article>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
