@@ -136,6 +136,33 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /**
+   * 4.1) Close the collapsed navbar after selecting a link
+   */
+  try {
+    const navCollapse = document.getElementById("navbarNav");
+    if (navCollapse && window.bootstrap?.Collapse) {
+      const collapseInstance = window.bootstrap.Collapse.getOrCreateInstance(
+        navCollapse,
+        { toggle: false }
+      );
+      const selectors = "#navbarNav a";
+      document.querySelectorAll(selectors).forEach((el) => {
+        el.addEventListener("click", (event) => {
+          const target = event.currentTarget;
+          if (
+            target.classList.contains("dropdown-toggle") ||
+            !navCollapse.classList.contains("show")
+          )
+            return;
+          collapseInstance.hide();
+        });
+      });
+    }
+  } catch (e) {
+    console.error("Navbar collapse handler error:", e);
+  }
+
+  /**
    * 5) Smooth anchor navigation with fixed header offset
    */
   try {
