@@ -5,6 +5,10 @@ const state = {
   credentials: null,
   articles: [],
   activeId: null,
+  filters: {
+    status: "all",
+    query: "",
+  },
 };
 
 const els = {
@@ -20,6 +24,15 @@ const els = {
   newArticleBtn: document.getElementById("newArticleBtn"),
   deleteArticleBtn: document.getElementById("deleteArticleBtn"),
   publishToggleBtn: document.getElementById("publishToggleBtn"),
+  logoutBtn: document.getElementById("logoutBtn"),
+  articleSearch: document.getElementById("articleSearch"),
+  filterButtons: Array.from(
+    document.querySelectorAll(".article-filter-group [data-filter]")
+  ),
+  metricTotal: document.getElementById("metricTotal"),
+  metricPublished: document.getElementById("metricPublished"),
+  metricDrafts: document.getElementById("metricDrafts"),
+  editorTitle: document.getElementById("editorTitle"),
   fields: {
     id: document.getElementById("articleId"),
     title: document.getElementById("articleTitle"),
@@ -35,6 +48,72 @@ const els = {
     cover: document.getElementById("articleCover"),
   },
 };
+
+function enableTooltips() {
+  if (typeof bootstrap === "undefined") return;
+  document
+    .querySelectorAll('[data-bs-toggle="tooltip"]')
+    .forEach((trigger) => bootstrap.Tooltip.getOrCreateInstance(trigger));
+}
+
+function formatDate(value) {
+  if (!value) return "";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+  return date.toLocaleDateString("es-CO", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+  });
+}
+
+function getFilteredArticles() {
+  const query = state.filters.query.trim().toLowerCase();
+  const status = state.filters.status;
+
+  return state.articles.filter((article) => {
+    const matchStatus =
+      status === "all" ? true : article.status === status;
+
+    if (!matchStatus) return false;
+
+    if (!query) return true;
+
+    const haystack = [
+      article.title,
+      article.slug,
+      ...(article.tags || []),
+      article.seoTitle,
+      article.seoDescription,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+
+    return haystack.includes(query);
+  });
+}
+
+function updateMetrics() {
+  if (!els.metricTotal) return;
+  const total = state.articles.length;
+  const published = state.articles.filter(
+    (item) => item.status === "published"
+  ).length;
+  const drafts = total - published;
+  els.metricTotal.textContent = String(total);
+  els.metricPublished.textContent = String(published);
+  els.metricDrafts.textContent = String(drafts);
+}
+
+function updateEditorTitle(article) {
+  if (!els.editorTitle) return;
+  if (!article) {
+    els.editorTitle.textContent = "Editor de artículo";
+    return;
+  }
+  els.editorTitle.textContent = `Editando: ${article.title}`;
+}
 
 function getStoredCredentials() {
   const encoded = sessionStorage.getItem(STORAGE_KEY);
@@ -121,37 +200,51 @@ function showLogin() {
 
 function renderArticleList() {
   if (!els.articleList) return;
+  const filtered = getFilteredArticles();
+
   if (!state.articles.length) {
     els.articleList.innerHTML =
-      '<div class="alert alert-info">Aún no hay artículos. Crea el primero con el botón "Nuevo artículo".</div>';
+      '<div class="article-empty"><i class="fa-regular fa-file-lines mb-2 d-block fs-4"></i>Comienza creando el primer artículo con el botón “Nuevo artículo”.</div>';
     return;
   }
 
-  els.articleList.innerHTML = state.articles
+  if (!filtered.length) {
+    els.articleList.innerHTML =
+      '<div class="article-empty"><i class="fa-regular fa-filter mb-2 d-block fs-4"></i>No se encontraron artículos con los filtros actuales.</div>';
+    return;
+  }
+
+  els.articleList.innerHTML = filtered
     .map((article) => {
       const isActive = article.id === state.activeId;
       const statusClass =
         article.status === "published" ? "published" : "draft";
-      const date = article.publishedAt
-        ? new Date(article.publishedAt).toLocaleDateString("es-CO", {
-            day: "2-digit",
-            month: "short",
-            year: "numeric",
-          })
-        : "Sin publicar";
+      const date = formatDate(article.publishedAt || article.updatedAt);
+
       return `
         <article
           class="article-item${isActive ? " is-active" : ""}"
           data-id="${article.id}"
         >
           <div class="d-flex justify-content-between align-items-start">
-            <h4>${article.title}</h4>
+            <p class="article-item__title mb-1">${article.title}</p>
             <span class="badge-status ${statusClass}">
               ${article.status === "published" ? "Publicado" : "Borrador"}
             </span>
           </div>
-          <small>${article.slug}</small><br />
-          <small>${date}</small>
+          <div class="article-item__meta">
+            <span><i class="fa-solid fa-link me-1"></i>${article.slug}</span>
+            <span><i class="fa-solid fa-calendar-day me-1"></i>${
+              date || "Sin publicar"
+            }</span>
+            ${
+              (article.tags || []).length
+                ? `<span><i class="fa-solid fa-tag me-1"></i>${article.tags
+                    .slice(0, 2)
+                    .join(", ")}${article.tags.length > 2 ? "…" : ""}</span>`
+                : ""
+            }
+          </div>
         </article>
       `;
     })
@@ -169,6 +262,7 @@ function resetForm() {
   els.fields.id.value = "";
   state.activeId = null;
   updateActionButtons();
+  updateEditorTitle(null);
 }
 
 function fillForm(article) {
@@ -186,6 +280,7 @@ function fillForm(article) {
   els.fields.cover.value = "";
   state.activeId = article.id;
   updateActionButtons(article);
+  updateEditorTitle(article);
 }
 
 function collectFormData() {
@@ -218,12 +313,17 @@ async function loadArticles() {
     return new Date(bDate) - new Date(aDate);
   });
   state.articles = sorted;
+  updateMetrics();
   renderArticleList();
   if (state.activeId) {
     const active = state.articles.find((item) => item.id === state.activeId);
     if (active) {
       fillForm(active);
+    } else {
+      updateEditorTitle(null);
     }
+  } else {
+    updateEditorTitle(null);
   }
 }
 
@@ -380,8 +480,41 @@ async function handleDelete() {
   }
 }
 
+function handleFilterClick(event) {
+  const button = event.currentTarget;
+  const { filter } = button.dataset;
+  if (!filter) return;
+  state.filters.status = filter;
+  els.filterButtons.forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.filter === filter);
+  });
+  renderArticleList();
+}
+
+function handleSearchInput(event) {
+  state.filters.query = event.target.value;
+  renderArticleList();
+}
+
+function handleLogout() {
+  clearCredentials();
+  state.articles = [];
+  state.activeId = null;
+  state.filters = { status: "all", query: "" };
+  updateMetrics();
+  renderArticleList();
+  resetForm();
+  hideLoginError();
+  if (els.articleSearch) els.articleSearch.value = "";
+  els.filterButtons.forEach((btn) =>
+    btn.classList.toggle("active", btn.dataset.filter === "all")
+  );
+  showLogin();
+}
+
 function setupInitialState() {
   const credential = getStoredCredentials();
+  enableTooltips();
   if (credential) {
     state.credentials = credential;
     loadArticles()
@@ -404,5 +537,10 @@ els.newArticleBtn?.addEventListener("click", () => {
 });
 els.publishToggleBtn?.addEventListener("click", handlePublishToggle);
 els.deleteArticleBtn?.addEventListener("click", handleDelete);
+els.logoutBtn?.addEventListener("click", handleLogout);
+els.articleSearch?.addEventListener("input", handleSearchInput);
+els.filterButtons.forEach((button) =>
+  button.addEventListener("click", handleFilterClick)
+);
 
 setupInitialState();
