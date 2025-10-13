@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Blog | Químicos OMA</title>
+    <meta
+      name="description"
+      content="Artículos, novedades y guías prácticas sobre protección de cultivos, flores y seguridad alimentaria de Químicos OMA."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blog Químicos OMA" />
+    <meta
+      property="og:description"
+      content="Noticias, tendencias y experiencias técnicas en protección de cultivos y floricultura."
+    />
+    <meta property="og:url" content="https://www.quimicosoma.com/blog.html" />
+    <meta property="og:image" content="/media/oma.png" />
+    <meta name="twitter:card" content="summary" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="./">
+            <img src="/media/oma.png" alt="Químicos OMA Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Alternar navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalogo.html">Productos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Soluciones por Cultivo
+                </a>
+                <div class="dropdown-menu p-3" style="min-width: 320px">
+                  <div class="row row-cols-3 g-2">
+                    <div class="col">
+                      <a
+                        href="catalogo.html?cultivo=papa"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/papa.svg"
+                          alt="Papa"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Papa</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="catalogo.html?cultivo=tomate"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/tomate.svg"
+                          alt="Tomate"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Tomate</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="catalogo.html?cultivo=maiz"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/maiz.svg"
+                          alt="Maíz"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Maíz</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="catalogo.html?cultivo=arroz"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/arroz.svg"
+                          alt="Arroz"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Arroz</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="catalogo.html?cultivo=cebolla"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/cebolla.svg"
+                          alt="Cebolla"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Cebolla</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="catalogo.html?cultivo=frijol"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/frijol.svg"
+                          alt="Frijol"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Frijol</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="catalogo.html?cultivo=fresa"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/fresa.svg"
+                          alt="Fresa"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Fresa</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="catalogo.html?cultivo=aguacate"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/aguacate.svg"
+                          alt="Aguacate"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Aguacate</small>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a
+                        href="catalogo.html?cultivo=arveja"
+                        class="btn btn-light w-100 text-center"
+                      >
+                        <img
+                          src="/media/iconos-svg/arveja.svg"
+                          alt="Arveja"
+                          class="cultivo-icon mb-1"
+                        />
+                        <small class="d-block">Arveja</small>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="blog.html" aria-current="page"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="blogApp">
+      <section class="noticias" id="articulos">
+        <div class="container">
+          <div class="row align-items-center gy-3 mb-4">
+            <div class="col-lg-8">
+              <h1 class="sec-title mb-2">Noticias y Blog</h1>
+              <p class="text-muted mb-0">
+                Actualizaciones técnicas, recomendaciones y casos de éxito del equipo Químicos OMA.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <label for="blogSearch" class="visually-hidden">Buscar en el blog</label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input
+                  type="search"
+                  id="blogSearch"
+                  class="form-control"
+                  placeholder="Buscar artículos…"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap align-items-center gap-2 mb-3" aria-live="polite">
+            <strong class="text-uppercase small text-muted">Etiquetas:</strong>
+            <div id="blogFilters" class="d-flex flex-wrap gap-2"></div>
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-secondary ms-auto"
+              id="blogClearFilters"
+            >
+              Limpiar filtros
+            </button>
+          </div>
+
+          <div id="blogFeedback" class="alert alert-info mb-4" role="status">
+            Cargando artículos…
+          </div>
+
+          <div id="blogResults" class="row g-4"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <a href="index.html#inicio" class="footer-about__logo">
+            <img src="/media/oma.png" alt="Químicos OMA Logo" />
+            <span>Químicos OMA</span>
+          </a>
+          <p class="footer-about__text">
+            Más de 25 años brindando soluciones innovadoras para el cuidado y
+            protección de cultivos.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h5>Enlaces</h5>
+          <ul>
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="catalogo.html">Productos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h5>Contáctanos</h5>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span>Cota, Cundinamarca - Colombia</span>
+            </li>
+            <li>
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <a href="tel:6018985180">601-8985180</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:sig@quimicosoma.com">sig@quimicosoma.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h5>Síguenos</h5>
+          <div class="social-icons">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="social-icon"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="social-icon"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="social-icon"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Químicos OMA. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="blog.js"></script>
+  </body>
+</html>

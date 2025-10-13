@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Panel Blog | Químicos OMA</title>
+    <meta
+      name="description"
+      content="Administrador seguro para crear, editar, publicar o eliminar artículos del blog de Químicos OMA."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --oma-primary: #0c3a72;
+        --oma-bg: #f5f7fb;
+      }
+
+      body {
+        background: var(--oma-bg);
+        min-height: 100vh;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      .admin-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: clamp(2rem, 5vw, 3rem);
+      }
+
+      .admin-card {
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 24px 48px -32px rgba(12, 58, 114, 0.45);
+        padding: clamp(2rem, 4vw, 2.75rem);
+      }
+
+      .login-banner {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .login-banner img {
+        width: 120px;
+        margin-bottom: 1rem;
+      }
+
+      .badge-status {
+        font-size: 0.75rem;
+        border-radius: 999px;
+        padding: 0.25rem 0.75rem;
+        font-weight: 600;
+      }
+
+      .badge-status.draft {
+        background: rgba(255, 193, 7, 0.18);
+        color: #b8860b;
+      }
+
+      .badge-status.published {
+        background: rgba(25, 135, 84, 0.18);
+        color: #1f7a56;
+      }
+
+      .article-list {
+        max-height: 420px;
+        overflow-y: auto;
+        padding-right: 0.5rem;
+      }
+
+      .article-item {
+        border: 1px solid rgba(12, 58, 114, 0.12);
+        border-radius: 16px;
+        padding: 1rem 1.25rem;
+        margin-bottom: 0.75rem;
+        background: #fff;
+        cursor: pointer;
+        transition: border-color 200ms ease, box-shadow 200ms ease;
+      }
+
+      .article-item.is-active {
+        border-color: rgba(12, 58, 114, 0.45);
+        box-shadow: 0 16px 28px -28px rgba(12, 58, 114, 0.6);
+      }
+
+      .article-item h4 {
+        margin: 0;
+        font-size: 1rem;
+      }
+
+      .article-item small {
+        color: rgba(14, 32, 49, 0.65);
+      }
+
+      .editor-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      textarea#articleContent {
+        min-height: 240px;
+        font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo,
+          Consolas, "Liberation Mono", "Courier New", monospace;
+      }
+
+      .field-caption {
+        font-size: 0.85rem;
+        color: rgba(14, 32, 49, 0.6);
+      }
+
+      .table-scroll {
+        max-height: 480px;
+        overflow-y: auto;
+      }
+
+      @media (max-width: 991px) {
+        .admin-container {
+          padding: 1.5rem;
+        }
+
+        .article-list {
+          max-height: 240px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="admin-container">
+      <section class="admin-card" id="loginView">
+        <div class="login-banner">
+          <img src="/media/oma.png" alt="Químicos OMA" />
+          <h1 class="h4 fw-bold">Panel de administración del blog</h1>
+          <p class="text-muted mb-0">
+            Ingresa tus credenciales para gestionar artículos, portadas y
+            metadatos.
+          </p>
+        </div>
+        <form id="loginForm" class="row g-3">
+          <div class="col-12">
+            <label for="loginUser" class="form-label">Usuario</label>
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="loginUser"
+              placeholder="admin"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="loginPass" class="form-label">Contraseña</label>
+            <input
+              type="password"
+              class="form-control form-control-lg"
+              id="loginPass"
+              placeholder="••••••••"
+              required
+            />
+          </div>
+          <div class="col-12 d-grid">
+            <button type="submit" class="btn btn-primary btn-lg">
+              Acceder
+            </button>
+          </div>
+          <div class="col-12">
+            <div
+              class="alert alert-danger d-none"
+              role="alert"
+              id="loginError"
+            ></div>
+          </div>
+        </form>
+      </section>
+
+      <section class="admin-card d-none" id="dashboardView">
+        <div class="d-flex flex-column flex-lg-row gap-4">
+          <aside class="flex-fill flex-lg-grow-1">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <h2 class="h5 mb-0">Artículos</h2>
+                <p class="text-muted mb-0">
+                  Selecciona un artículo para editar o crea uno nuevo.
+                </p>
+              </div>
+              <button class="btn btn-outline-primary" id="newArticleBtn">
+                <i class="fa-solid fa-plus me-2"></i>Nuevo artículo
+              </button>
+            </div>
+            <div class="article-list" id="articleList"></div>
+          </aside>
+
+          <section class="flex-fill flex-lg-grow-2">
+            <form id="articleForm" class="row g-3">
+              <input type="hidden" id="articleId" />
+              <div class="col-12">
+                <label for="articleTitle" class="form-label">Título</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="articleTitle"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label for="articleSlug" class="form-label"
+                  >Slug (URL legible)</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="articleSlug"
+                  placeholder="se genera automáticamente"
+                />
+                <div class="field-caption mt-1">
+                  Minúsculas, sin espacios. Se recalcula si se deja en blanco.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="articleStatus" class="form-label">Estado</label>
+                <select id="articleStatus" class="form-select">
+                  <option value="draft">Borrador</option>
+                  <option value="published">Publicado</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label for="articleTags" class="form-label"
+                  >Etiquetas (separadas por coma)</label
+                >
+                <input type="text" id="articleTags" class="form-control" />
+              </div>
+              <div class="col-md-6">
+                <label for="articlePublishedAt" class="form-label"
+                  >Fecha de publicación</label
+                >
+                <input
+                  type="datetime-local"
+                  id="articlePublishedAt"
+                  class="form-control"
+                />
+              </div>
+
+              <div class="col-12">
+                <label for="articleExcerpt" class="form-label"
+                  >Extracto</label
+                >
+                <textarea
+                  id="articleExcerpt"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Resumen que se mostrará en tarjetas y SEO"
+                ></textarea>
+              </div>
+
+              <div class="col-md-6">
+                <label for="articleSeoTitle" class="form-label"
+                  >SEO Title</label
+                >
+                <input type="text" id="articleSeoTitle" class="form-control" />
+              </div>
+              <div class="col-md-6">
+                <label for="articleSeoDescription" class="form-label"
+                  >SEO Description</label
+                >
+                <input
+                  type="text"
+                  id="articleSeoDescription"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-12">
+                <label for="articleSeoKeywords" class="form-label"
+                  >SEO Keywords (coma)</label
+                >
+                <input
+                  type="text"
+                  id="articleSeoKeywords"
+                  class="form-control"
+                />
+              </div>
+
+              <div class="col-12">
+                <label for="articleContent" class="form-label"
+                  >Contenido (Markdown)</label
+                >
+                <textarea
+                  id="articleContent"
+                  class="form-control"
+                  required
+                ></textarea>
+                <div class="field-caption mt-1">
+                  Puedes usar Markdown estándar. Las imágenes se adjuntan como
+                  portada o desde múltiples ubicaciones públicas.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="articleCover" class="form-label"
+                  >Imagen de portada (JPG, PNG o WebP)</label
+                >
+                <input type="file" id="articleCover" class="form-control" />
+                <div class="field-caption mt-1">
+                  Opcional al editar; si no se selecciona, se mantiene la
+                  existente.
+                </div>
+              </div>
+
+              <div class="col-12 editor-actions">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa-solid fa-floppy-disk me-2"></i>Guardar cambios
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  id="publishToggleBtn"
+                >
+                  Publicar
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger ms-auto"
+                  id="deleteArticleBtn"
+                >
+                  Eliminar
+                </button>
+              </div>
+              <div class="col-12">
+                <div
+                  class="alert mt-3 d-none"
+                  role="alert"
+                  id="formFeedback"
+                ></div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./blog.js"></script>
+  </body>
+</html>

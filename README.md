@@ -90,12 +90,33 @@ Subir todos los archivos listados arriba a cualquier servidor web (Apache, Nginx
 2. Configurar build command: `npx gulp compileSCSS`
 3. Configurar publish directory: `.` (raíz)
 
+## 📰 Módulo BLOG
+
+El proyecto incluye un módulo de blog con gestión de artículos, generación de páginas estáticas, sitemap y RSS.
+
+- **Datos persistentes**: `data/blog.db.json`
+- **Artefactos públicos**: `blog/articles.json`, `blog/rss.xml`, `articulos/*.html`, `sitemap.xml`
+- **Servidor admin/API**: `npm run blog:serve` (Express con autenticación Basic)
+- **Build manual**: `npm run blog:build`
+- **Panel web**: abrir `admin/blog.html` y autenticar con las credenciales configuradas
+
+Variables de entorno relevantes:
+
+| Variable | Descripción | Valor por defecto |
+| --- | --- | --- |
+| `BLOG_ADMIN_USER` | Usuario para Basic Auth | `admin` |
+| `BLOG_ADMIN_PASSWORD` | Contraseña del panel | `change-me` |
+| `SITE_BASE_URL` | URL base usada en sitemap/RSS/canonicals | `https://www.quimicosoma.com` |
+| `SITE_BRAND_NAME` | Nombre comercial para metadatos | `Químicos OMA` |
+
+Al ejecutar `npm run blog:serve`, el servicio escucha en `http://localhost:3030` (configurable vía `BLOG_PORT`/`PORT`) y actualiza automáticamente los artefactos tras cada operación CRUD.
+
 ## 📝 Notas Importantes
 
 - Los estilos SCSS se compilan automáticamente en desarrollo
 - Para producción, asegurarse de ejecutar `npx gulp compileSCSS` antes del deploy
-- El sitio no requiere base de datos ni backend
-- Todos los recursos están incluidos localmente
+- El blog usa un backend Node.js ligero con archivos JSON; no requiere base de datos externa
+- Todos los recursos (imágenes, PDFs, artículos generados) están incluidos localmente
 
 ## 🆘 Troubleshooting
 

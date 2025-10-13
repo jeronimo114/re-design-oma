@@ -5,12 +5,20 @@
   "type": "module",
   "scripts": {
     "start": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "blog:serve": "node blog/server.js",
+    "blog:build": "node blog/builders.js --buildAll"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^2.0.0",
+    "marked": "^15.0.11"
+  },
   "devDependencies": {
     "browser-sync": "^3.0.3",
     "gulp": "^5.0.0",
