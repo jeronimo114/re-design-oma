@@ -331,7 +331,7 @@ document.addEventListener("DOMContentLoaded", () => {
           lat: 4.1,
           lng: -73.64,
           reps: [
-            "Mauricio Bastidas - Cel. 311-2761794",
+            "Wilson Sepúlveda - Cel. 321-2109585",
             "Claudia Alejandra Aponte - Cel. 320-3111346",
           ],
         },
@@ -360,7 +360,7 @@ document.addEventListener("DOMContentLoaded", () => {
           region: "CÓRDOBA – COSTA CARIBE",
           lat: 8.04,
           lng: -75.58,
-          reps: ["Wilson Calderín - Cel. 312-6032541"],
+          reps: [],
         },
         {
           country: "República Dominicana",
